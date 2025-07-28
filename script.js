@@ -108,6 +108,7 @@
             }, {});
         }
         console.clear();
+        console.log(Object.keys(CORRECTS).length + "/850")
         console.log(text);
 
         let pre = document.getElementById('examSummary');
