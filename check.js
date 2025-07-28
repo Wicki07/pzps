@@ -134,5 +134,5 @@
   console.log(`Usunięto ze słownika ${keysRemoved} klucz(e).`);
   console.log(`Ilość odpowiedzi ${Object.keys(questions).length}`);
   console.log(`Ilość odpowiedzi ${Object.keys(questions).map(e => e + "\n")}`);
-  console.log('Pozostałe pytania/odpowiedzi:', JSON.stringify(questions));
+  console.log('Pozostałe pytania/odpowiedzi:', JSON.stringify(questions, null, "\t"));
 })();
