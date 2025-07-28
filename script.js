@@ -23,6 +23,7 @@
         "Która pozycja początkowa wynika ze specjalizacji zawodnika środkowego:": "Pozycja w bloku.",
         "Siatkówka plażowa. Wystawę sposobem oburącz górnym stosujemy, gdy:": "Tor lotu i warunki pogodowe gwarantują możliwość czystego odbicia piłki."
     };
+    console.log(Object.keys(CORRECTS).length + "/850")
     /* kolejność liter dla odpowiedzi */
     const LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
     /* tablica z zapamiętanymi pytaniami */
