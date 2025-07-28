@@ -118,17 +118,21 @@
     if (!firstTd) return;
 
     // Tekst pytania – bez spacji i końcowego dwukropka
-    const q = firstTd.textContent.trim();
+    const q = firstTd.textContent.trim().replace(/ {2,}/g, ' ');
     if (q in questions) {
 
       /* 3b. Usuń odpowiadający wpis ze słownika */
       delete questions[q];
       keysRemoved++;
+    } else {
+        console.log(q)
+        console.log(questions[q])
     }
   });
 
   /* === 4. Raport końcowy === */
-  console.log(`Usunięto z tabeli ${rowsRemoved} wiersz(y).`);
   console.log(`Usunięto ze słownika ${keysRemoved} klucz(e).`);
+  console.log(`Ilość odpowiedzi ${Object.keys(questions).length}`);
+  console.log(`Ilość odpowiedzi ${Object.keys(questions).map(e => e + "\n")}`);
   console.log('Pozostałe pytania/odpowiedzi:', JSON.stringify(questions));
 })();
