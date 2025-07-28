@@ -77,7 +77,7 @@
             json = history.reduce((acc, q) => {
                 q.answers.forEach(a => {
                     if (a.checked) {
-                        acc[a.text] = a.text;
+                        acc[q.query] = a.text;
                     }
                 });
                 return acc;
