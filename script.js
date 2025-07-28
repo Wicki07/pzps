@@ -114,7 +114,7 @@
 	"Podczas przemieszczania w bloku do wystawionej piłki zawodnik powinien:": "Dostosować się do tempa wystawionej piłki.",
 	"Jaki jest zasadniczy powód brany pod uwagę przy ograniczeniu szerokości strefy do przyjęcia:": "Ogólnie słabsze umiejętności w przyjęciu.",
 	"Jaki rodzaj ćwiczeń jest charakterystyczny dla treningu wszechstronnego:": "Ćwiczenia rozwijające wrodzone zdolności ruchowe.",
-	"Siatkówka plażowa. Zagrywka słoneczna charakteryzuje się:": "Bardzo wysokim torem lotu piłki.",
+	"Siatkówka plażowa. Zagrywka słoneczna charakteryzuje się:": "Bardzo wysokim torem lotu piłki."
     };
     console.log(Object.keys(CORRECTS).length + "/850")
     /* kolejność liter dla odpowiedzi */
@@ -146,11 +146,11 @@
         });
         renderSummary();
         // przejście do następnego pytania
-        const nextButton = document.querySelector('#btnnext');
-        if (nextButton) {
+        const nextButton = document.getElementById("btnnext");
+        if (nextButton && !nextButton.classList.contains("disabled")) {
             setTimeout(() => {
-                nextButton.click
-            }, 500); // dajemy czas na zaznaczenie odpowiedzi   }
+                nextButton.click()
+            }, 500); 
         }
     }
 
