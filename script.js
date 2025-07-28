@@ -76,7 +76,7 @@
         if (history.length >= 99) {
             json = history.reduce((acc, q) => {
                 q.answers.forEach(a => {
-                    if (a.checked) {
+                    if (a.checked && !q.query.trim().replace(/ {2,}/g, ' ') in CORRECTS) {
                         acc[q.query] = a.text;
                     }
                 });
