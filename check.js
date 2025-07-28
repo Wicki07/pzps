@@ -54,5 +54,5 @@
   /* === 4. Raport końcowy === */
   console.log(`Usunięto z tabeli ${rowsRemoved} wiersz(y).`);
   console.log(`Usunięto ze słownika ${keysRemoved} klucz(e).`);
-  console.log('Pozostałe pytania/odpowiedzi:', questions);
+  console.log('Pozostałe pytania/odpowiedzi:', JSON.stringify(questions));
 })();
