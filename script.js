@@ -294,7 +294,32 @@
 	"Przykładowe przepisy w grze szkolnej to:": "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. po prostej).",
 	"Stosowanie w szkoleniu siatkarza zasady poglądowości gwarantuje, że:": "Przekazywanie wiadomości poprzez różnego rodzaju środki wizualne (np. pokaz) ułatwia opanowanie umiejętności.",
     "W której formie nauczania w treningu, trenerzy skupiają uwagę zawodników na kluczowych elementach gry:": "W grze szkolnej.",
-    "Która z form nauczania odbywa się z udziałem przeciwnika:": "Gra właściwa."
+    "Która z form nauczania odbywa się z udziałem przeciwnika:": "Gra właściwa.",
+	"Środki wspomagające to:": "Wszystkie odpowiedzi są prawdziwe.",
+	"Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:": "Submaksymalnej.",
+	"Wybierz właściwą odpowiedź dotyczącą urazów i obrażeń ostrych w siatkówce:": "Wszystkie odpowiedzi są fałszywe.",
+	"Przyczep końcowy mieśnia najszerszego grzbietu to:": "Grzebień guzka mniejszego.",
+	"Oznaczenie stężenia mleczanu we krwi:": "Wszystkie odpowiedzi są prawdziwe,",
+	"Substratem energetycznym uwalniającym najwięcej energii z 1 grama są:": "Tłuszcze.",
+	"II próg mleczanowy koreluje ze zdolnościami:": "Wytrzymałościowymi.",
+	"Powierzchnia stawowa stawu ramienno-łokciowego leży na:": "Bloczku kości ramiennej.",
+	"Wydolność aerobowa mierzona jest przez pomiar:": "Maksymalnego minutowego poboru tlenu.",
+	"Łąkotki stawu kolanowego:": "Wszystkie powyższe odpowiedzi są prawidłowe.",
+	"Do rotatorów zewnętrznych podudzia zaliczamy:": "Mięsień dwugłowy uda.",
+	"Skurcz ekscentryczny charakteryzuje się:": "Przyczepy mięśnia w czasie pracy oddalają się.",
+	"Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:": "Wszystkie odpowiedzi są prawdziwe.",
+	"Bezpośrednio po jednorazowym wysiłku występuje:": "Zmęczenie ostre.",
+	"Do celów odnowy biologicznej zaliczamy:": "Wszystkie odpowiedzi są prawdziwe.",
+	"Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:": "Stopniowany.",
+	"Fizykalne zabiegi odnawiająco–hartujące to:": "Wszystkie odpowiedzi są prawdziwe.",
+	"Czynniki determinujące wydolność fizyczną to:": "Wszystkie odpowiedzi są prawidłowe.",
+	"Nasilenie pracy serca powodują:": "Tyroksyna, glukagon, adrenalina.",
+	"Możliwe efekty treningu hipoksycznego to:": "Wszystkie odpowiedzi są prawidłowe.",
+	"Dobrymi markerami przetrenowania są pomiary we krwi:": "Zarówno stężenia testosteronu i kortyzolu.",
+	"Do rotatorów wewnętrznych stawu biodrowego należy:": "Mięsień pośladkowy średni.",
+	"Uzyskanie bezpłatnej porady sportowo-lekarskiej jest możliwe:": "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w poradni mającej kontrakt z NFZ, pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu (rodzinnego).",
+	"Do oceny mocy wybicia w wyskoku można użyć testu:": "Bosco.",
+	"I próg metaboliczny występuje przy intensywności pracy:": "40-60% VO2max."
 };
 
     const allQuestions = {
