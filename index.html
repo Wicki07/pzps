@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egzamin Trenerski – Quiz</title>
+  <style>
+    :root {
+      --bg: #f2f2f2;
+      --card: #ffffff;
+      --accent: #0077ff;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+    }
+
+    #quiz-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 1.75rem;
+    }
+
+    .question {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .options label {
+      display: block;
+      padding: 0.45rem 0.75rem;
+      margin-bottom: 0.35rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s, border 0.15s;
+    }
+
+    .options input {
+      margin-right: 0.75rem;
+    }
+
+    .options label:hover,
+    .options input:focus + label {
+      background: #f7faff;
+      border-color: var(--accent);
+    }
+
+    #next-btn {
+      margin-top: 1rem;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    #next-btn[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    #result-area h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    #review-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    #review-table th,
+    #review-table td {
+      border: 1px solid #e5e5e5;
+      padding: 0.5rem 0.75rem;
+    }
+
+    #review-table th {
+      background: #fafafa;
+      font-weight: 600;
+    }
+
+    .correct-answer {
+      font-weight: 700;
+    }
+
+    .user-wrong {
+      color: crimson;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Egzamin Trenerski – Quiz</h1>
+
+    <!-- Obszar pytań -->
+    <div id="question-area">
+      <p class="question" id="question-text"></p>
+      <div class="options" id="options-container"></div>
+      <button id="next-btn" disabled>Dalej</button>
+    </div>
+
+    <!-- Obszar wyników -->
+    <div id="result-area" class="hidden">
+      <h2>Wyniki</h2>
+      <p>
+        Prawidłowe odpowiedzi: <strong id="correct-count"></strong> z
+        <span id="total-count"></span>
+      </p>
+      <table id="review-table">
+        <thead>
+          <tr>
+            <th>Pytanie</th>
+            <th>Twoja odpowiedź</th>
+            <th>Poprawna odpowiedź</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    /* --- KONFIGURACJA --- */
+    const MAX_QUESTIONS = 10; // Ile pytań ma obejmować egzamin
+    const QUESTIONS_FILE = "allQuestions.json"; // Ścieżka do pliku z pytaniami
+    const ANSWERS_FILE = "answers.json"; // Ścieżka do pliku z odpowiedziami
+
+    /* --- Zmienne pomocnicze --- */
+    let questions = [];
+    let answersMap = {};
+    let currentIndex = 0;
+    const userResults = [];
+
+    /* --- Inicjalizacja po załadowaniu dokumentu --- */
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const [qRes, aRes] = await Promise.all([
+          fetch(QUESTIONS_FILE).then((r) => r.json()),
+          fetch(ANSWERS_FILE).then((r) => r.json()),
+        ]);
+
+        // Przekształcamy pytania do wygodnej formy tablicy obiektów
+        questions = Object.entries(qRes).map(([question, options]) => ({
+          question,
+          options,
+        }));
+
+        // Tasujemy i ograniczamy do MAX_QUESTIONS
+        questions = shuffleArray(questions).slice(0, MAX_QUESTIONS);
+        answersMap = aRes;
+
+        renderQuestion();
+      } catch (err) {
+        alert("Błąd wczytywania plików JSON. Sprawdź ścieżki lub uruchom serwer lokalny (np. Live Server / http-server).");
+        console.error(err);
+      }
+    });
+
+    /* --- Logika quizu --- */
+    function renderQuestion() {
+      if (currentIndex >= questions.length) {
+        return renderResults();
+      }
+
+      const { question, options } = questions[currentIndex];
+
+      // Pytanie
+      document.getElementById("question-text").textContent = `${currentIndex + 1}. ${question}`;
+
+      // Odpowiedzi
+      const optionsContainer = document.getElementById("options-container");
+      optionsContainer.innerHTML = "";
+      options.forEach((opt, idx) => {
+        const optionId = `opt-${idx}`;
+
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = "answer";
+        input.id = optionId;
+        input.value = opt;
+
+        // Aktywuj przycisk "Dalej" po wyborze
+        input.addEventListener("change", () => {
+          document.getElementById("next-btn").disabled = false;
+        });
+
+        const label = document.createElement("label");
+        label.setAttribute("for", optionId);
+        label.textContent = opt;
+        label.prepend(input);
+
+        optionsContainer.appendChild(label);
+      });
+
+      // Dezaktywujemy przycisk "Dalej", dopóki nie wybierzemy odpowiedzi
+      document.getElementById("next-btn").disabled = true;
+    }
+
+    document.getElementById("next-btn").addEventListener("click", () => {
+      const selected = document.querySelector("input[name='answer']:checked");
+      if (!selected) return; // bezpieczeństwo
+
+      const userAnswer = selected.value;
+      const { question } = questions[currentIndex];
+      const correctAnswer = answersMap[question] || "";
+
+      userResults.push({
+        question,
+        userAnswer,
+        correctAnswer,
+        isCorrect: userAnswer === correctAnswer,
+      });
+
+      currentIndex++;
+      renderQuestion();
+    });
+
+    /* --- Wyniki --- */
+    function renderResults() {
+      // Ukryj panel pytań, pokaż rezultaty
+      document.getElementById("question-area").classList.add("hidden");
+      document.getElementById("result-area").classList.remove("hidden");
+
+      const correctCount = userResults.filter((r) => r.isCorrect).length;
+      document.getElementById("correct-count").textContent = correctCount;
+      document.getElementById("total-count").textContent = userResults.length;
+
+      // Tabela z podsumowaniem
+      const tbody = document.querySelector("#review-table tbody");
+      tbody.innerHTML = "";
+      userResults.forEach((res) => {
+        const tr = document.createElement("tr");
+
+        const tdQ = document.createElement("td");
+        tdQ.textContent = res.question;
+
+        const tdU = document.createElement("td");
+        tdU.textContent = res.userAnswer;
+        if (!res.isCorrect) tdU.classList.add("user-wrong");
+
+        const tdC = document.createElement("td");
+        tdC.textContent = res.correctAnswer;
+        tdC.classList.add("correct-answer");
+
+        tr.append(tdQ, tdU, tdC);
+        tbody.appendChild(tr);
+      });
+    }
+
+    /* --- Funkcje pomocnicze --- */
+    function shuffleArray(arr) {
+      // Algorytm Fisher–Yates
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+  </script>
+</body>
+</html>
