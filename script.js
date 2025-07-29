@@ -258,7 +258,6 @@
 	"Który z poniższych przypadków jest przykładem prośby nieuzasadnionej nie skutkującej sankcjami dla zespołu?": "Kapitan zespołu poprosił o przerwę dla odpoczynku, chociaż trener siedział na ławce rezerwowych",
 	"Na czym polega planowanie właściwe treningu?": "Rozłożeniu metod, form i środków w określonym czasie: makrocyklu, okresie, mezocyklu.",
 	"Pozycje wyjściowe do bloku określane jako ustawienie wąsko w prawo – nie są stosowane w sytuacji gdy:": "Przeciwnik posiada mocnego przyjmującego w strefie IV.",
-	"Które z ćwiczeń służy nauczaniu odbić dolnych:": "Odbicia wielokrotne ponad głową po koźle.",
 	"Kolejność nauczania zagrywki szybującej w wyskoku to:": "Zagrywka szybująca w wyskoku po dwukrokowym rozbiegu, z odbicia obunóż (piłka trzymana oburącz) - zagrywka szybująca w wyskoku po 2-krokowym rozbiegu, z odbicia jednonóż ( piłka trzymana przed tułowiem jednorącz) od dołu ręką przeciwną uderzającej – obydwa warianty ze stopniowym wydłużaniem rozbiegu.",
 	"Które z podanych ćwiczeń nie jest przygotowującym do nauki odbić dolnych:": "Odbicia wielokrotne ponad głową po koźle.",
 	"Która z form nauczania jest najbardziej atrakcyjna dla uczniów:": "Forma gry.",
@@ -266,7 +265,36 @@
 	"W ustawieniu drużyny w obronie na rysunku 38 przedstawiona jest sytuacja:": "Blok na kierunku 1 w strefie IV/ blok zamknięty, obrona systemem 2:0:4.",
 	"Zawodnik atakujący jest zawodnikiem linii obrony w ustawieniach:": "R2, R3, R4.",
 	"Środkowy pierwszy jest zawodnikiem linii ataku w ustawieniach:": "R3, R4, R5.",
-	"Rozgrywający wbiegając po zagrywce na pozycję wyjściową powinien obserwować:": "Piłkę."
+	"Rozgrywający wbiegając po zagrywce na pozycję wyjściową powinien obserwować:": "Piłkę.",
+	"W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?": "Dwaj zawodnicy jednego zespołu pobili się",
+	"Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:": "Jasne cele.",
+	"Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?": "Bieg zwinnościowy ze zmianą kierunków.",
+	"Który z treningów siły jest wskazany dla młodocianych siatkarzy?": "Trening obwodowy.",
+	"Jakie okresy treningowe występują w makrocyklu?": "Przygotowawczy, startowy, przejściowy.",
+	"Ilu wystawiających musi być w drużynie, która atakować będzie wyłącznie w systemie po wystawie zawodnika z linii ataku:": "Co najmniej dwóch.",
+	"Środkowy zmienia akcję bazową, tak aby stanowić zagrożenie (otwiera siatkę) w sytuacji gdy:": "Piłka przyjęta jest wzdłuż siatki bliżej strefy IV lub strefy II.",
+	"Niewłaściwy sposób wykonania rozbiegu do ataku w 1 tempo ze strefy III to:": "Rozbieg czterokrokowy.",
+	"Rysunek 21 przedstawia moment odbicia do ataku z jednej nogi dla akcji bazowej:": "Akcja \"A\" /baza A.",
+	"Która z zasad nauczania zakłada dobór treści zajęć dostosowany do określonego poziomu umiejętności ćwiczących:": "Zasada stopniowania trudności.",
+	"Które z wymienionych cech są charakterystyczne dla planu szkoleniowego:": "Celowość, wykonalność.",
+	"Które z podanych poniżej wydarzeń pojawiło się najwcześniej:": "Puchar Świata kobiet.",
+	"Czy całościowa forma zagrywki rotacyjnej w wyskoku powinna być uwzględniona w metodyce nauczania w wieku młodzika:": "Nie, tylko po dojściu w przód, stopniowo zwiększając wysokość podrzutu, ale bez wyskoku.",
+	"Podstawowym zadaniem broniącego w minisiatkówce, w grze 2x2, jest:": "Dostosowanie pozycji w obronie do atakującego.",
+	"Które z umiejętności decydują o jakości przyjęcia zagrywki:": "Mentalne nastawienie do przyjęcia.",
+	"Jakie zadanie ma łączenie poprzez trening różnych dyspozycji w interdyspozycje do gry:": "Uzyskanie umiejętności sprawnego działania w osiągnięciu celów gry.",
+	"Które z działań w taktyce indywidualnej rozgrywającego „ustawia grę”:": "Utrzymanie stałego zagrożenia atakiem w I tempo lub atakiem z drugiej piłki.",
+	"Siatkówka plażowa. Pierwsze medale dla Polski w rozgrywkach międzynarodowych zdobyli :": "Tomasz Sińczak i Rafał Szternel – brązowy medal Mistrzostw Świata U-18 Pattaya Tajlandia.",
+	"Zadaniem której z form nauczania jest dostosowanie stopnia trudności gry do aktualnego poziomu umiejętności uczniów:": "Gry uproszczonej.",
+	"Zaletą zabawowej formy nauczania jest to, iż:": "Nauczanie odbywa się w warunkach rywalizacji i zabawy, co uatrakcyjnia zajęcia.",
+	"Nauczanie umiejętności technicznych i taktycznych, w których nacisk położony jest na uczenie się gry, określa się mianem:": "Podejścia całościowego.",
+	"Nauczanie gry w siatkówkę powinno odbywać się:": "Na takich samych zasadach, niezależnie czy szkolimy dzieci, młodzież, dorosłych, amatorów, czy profesjonalistów.",
+	"Rozpoczynając pracę z drużyną, trenerzy powinni zaczynać od:": "Wyobrażenia sobie gry zespołu, który będą prowadzić.",
+	"Celem gry szkolnej jest:": "Doskonalenie wybranego elementu techniki lub taktyki indywidualnej.",
+	"Który z wymienionych argumentów jest charakterystyczny dla podejścia całościowego w nauczaniu piłki siatkowej:": "Naucza się gry, a dopiero potem doskonali poszczególne jej części.",
+	"Przykładowe przepisy w grze szkolnej to:": "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. po prostej).",
+	"Stosowanie w szkoleniu siatkarza zasady poglądowości gwarantuje, że:": "Przekazywanie wiadomości poprzez różnego rodzaju środki wizualne (np. pokaz) ułatwia opanowanie umiejętności.",
+    "W której formie nauczania w treningu, trenerzy skupiają uwagę zawodników na kluczowych elementach gry:": "W grze szkolnej.",
+    "Która z form nauczania odbywa się z udziałem przeciwnika:": "Gra właściwa."
 };
 
     const allQuestions = {
@@ -283,9 +311,9 @@
     "Wszystkie odpowiedzi są prawdziwe."
   ],
   "W cyklu treningowym, kolejny trening powinien być zaplanowany:": [
-    "W szczytowym momencie superkompensacji.",
-    "Moment superkompensacji jest bez znaczenia w planowaniu treningu.",
     "Po zakończeniu superkompensacji.",
+    "Moment superkompensacji jest bez znaczenia w planowaniu treningu.",
+    "W szczytowym momencie superkompensacji.",
     "Przed wystąpieniem superkompensacji."
   ],
   "Dobrymi markerami przetrenowania są pomiary we krwi:": [
@@ -301,10 +329,10 @@
     "Tylko beztlenowych."
   ],
   "Potencjał siłowy mięśni zawodnika najlepiej charakteryzuje wartość:": [
-    "Maksymalnego momentu siły oporu.",
-    "Maksymalnej siły oporu.",
     "Spadku siły mięśniowej w działaniu długotrwałym.",
-    "Maksymalnej szybkości narastania siły mięśniowej."
+    "Maksymalnego momentu siły oporu.",
+    "Maksymalnej szybkości narastania siły mięśniowej.",
+    "Maksymalnej siły oporu."
   ],
   "Średnia ilość elementów morfotycznych w 1 mm3 wynosi:": [
     "PLT 10 tyś; WBC 5 tyś, RBC 4 mln.",
@@ -487,10 +515,10 @@
     "Wszystkie odpowiedzi są poprawne."
   ],
   "Rysunek 21 przedstawia moment odbicia do ataku z jednej nogi dla akcji bazowej:": [
-    "Akcja \"C\" /baza C.",
     "Akcja \"B\" /baza B.",
     "Akcja \"A\" /baza A.",
-    "Akcja \"1\" /baza 1."
+    "Akcja \"1\" /baza 1.",
+    "Akcja \"C\" /baza C."
   ],
   "Środkowy atakujący w 1 tempie:": [
     "Po zagrywce przeciwnika czeka na pozycji wyjściowej do momentu, gdy przyjmujący przyjmie piłkę i w tym momencie rozpoczyna rozbieg do ataku.",
@@ -571,16 +599,16 @@
     "Naucza się gry, a dopiero potem doskonali poszczególne części."
   ],
   "W nauczaniu zagrywki najlepiej stosować metodę:": [
+    "Wszystkie odpowiedzi są poprawne.",
     "Mieszaną w nauczaniu zagrywki tenisowej, izolującą fazę ruchu ramienia uderzającego",
     "Syntetyczną w nauczaniu zagrywki dolnej, gdyż jest to łatwa czynność ruchowa.",
-    "Syntetyczną w nauczaniu zagrywki w wyskoku, gdyż jest to trudna czynność ruchowa.",
-    "Wszystkie odpowiedzi są poprawne."
+    "Syntetyczną w nauczaniu zagrywki w wyskoku, gdyż jest to trudna czynność ruchowa."
   ],
   "Uproszczenia przepisów w grze uproszczonej to:": [
-    "Łapanie i rzucanie piłki, większa liczba odbić w jednej akcji (więcej niż 3), dopuszczenie dodatkowych odbić nad sobą przez jednego zawodnika.",
-    "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. \"po prostej\").",
     "Wszystkie odpowiedzi są poprawne.",
-    "Przybliżenie pola zagrywki (np. do 3 m od siatki), zagrywanie rzutem piłki, zagrywanie odbiciem oburącz."
+    "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. \"po prostej\").",
+    "Przybliżenie pola zagrywki (np. do 3 m od siatki), zagrywanie rzutem piłki, zagrywanie odbiciem oburącz.",
+    "Łapanie i rzucanie piłki, większa liczba odbić w jednej akcji (więcej niż 3), dopuszczenie dodatkowych odbić nad sobą przez jednego zawodnika."
   ],
   "Zachowanie w kontrataku zawodnika środkowego bloku w sytuacji, gdy blokuje on w strefie IV, jest następujące:": [
     "Dojście do bloku – wyskok/lądowanie, po lądowaniu zwrot przez prawe ramię, dostosowanie w tył skos krokiem dostawnym, obserwując całe boisko oraz tor lotu piłki, w momencie gdy piłka dogrywana jest ,,zawieszona’’ w najwyższym punkcie lub zaczyna opadać, rozpoczęcie rozbiegu.",
@@ -620,8 +648,8 @@
   ],
   "Zawodnik broniący w strefie I atak po skosie, powinien zatrzymać się w pozycji bazowej w momencie:": [
     "Kontaktu dłoni atakującego z piłką.",
-    "Rozpoczęcia rozbiegu do ataku przez zawodnika atakującego.",
     "W momencie, gdy piłka jest w dłoniach rozgrywającego.",
+    "Rozpoczęcia rozbiegu do ataku przez zawodnika atakującego.",
     "Zakończenia rozbiegu do ataku przez atakującego."
   ],
   "Zawodniczka stosująca w obronie rzut siatkarski z przetoczeniem przez plecy, po przemieszczeniu do pozycji bazowej w strefie V, powinna wykonać pierwszy krok:": [
@@ -721,8 +749,8 @@
     "Kształtowanie współpracy zawodników przyjmujących."
   ],
   "Który ze sposobów przemieszczania stosowany jest na krótkich odcinkach:": [
-    "Krok łączony.",
     "Krok skrzyżny.",
+    "Krok łączony.",
     "Krok biegowy.",
     "Krok dostawny."
   ],
@@ -823,8 +851,8 @@
     "Rozbudzenie zainteresowań sportem i dyscypliną."
   ],
   "Podstawowym celem naboru jest:": [
-    "Ciągłość procesu.",
     "Formowaniu grupy ćwiczebnej.",
+    "Ciągłość procesu.",
     "Sposób oceny zawodników.",
     "Etapowość procesu."
   ],
@@ -871,10 +899,10 @@
     "Dograć piłkę wysoko."
   ],
   "Na końcu tylnym żebra znajduje się:": [
-    "Kąt żebra.",
     "Trzon żebra.",
-    "Głowa żebra.",
-    "Bruzda żebra."
+    "Kąt żebra.",
+    "Bruzda żebra.",
+    "Głowa żebra."
   ],
   "Do kości twarzoczaszki zaliczamy wszystkie z wyjątkiem:": [
     "Kości nosowe, łzowe, jarzmowe.",
@@ -897,8 +925,8 @@
   "Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:": [
     "Wyłącznie większy od ciężaru ciała.",
     "Wyłącznie mniejszy od ciężaru ciała.",
-    "Mniejszy, większy jak i równy ciężarowi ciała.",
-    "Równy ciężarowi ciała."
+    "Równy ciężarowi ciała.",
+    "Mniejszy, większy jak i równy ciężarowi ciała."
   ],
   "Przyczep końcowy mięśnia zębatego przedniego to:": [
     "Wyrostek kruczy.",
@@ -919,10 +947,10 @@
     "Nawracania i odwracania."
   ],
   "Typowe elementy gry w piłce siatkowej oparte są na podłożu energetycznym:": [
-    "Oksydacja wolnych kwasów tłuszczowych.",
-    "Beztlenowym glikolitycznym.",
     "Tlenowym.",
-    "Beztlenowym fosfagenowym."
+    "Beztlenowym fosfagenowym.",
+    "Beztlenowym glikolitycznym.",
+    "Oksydacja wolnych kwasów tłuszczowych."
   ],
   "Do rotatorów wewnętrznych stawu biodrowego należy:": [
     "Mięsień pośladkowy wielki.",
@@ -1009,10 +1037,10 @@
     "Możliwość wykonania małego kroku lewą nogą w momencie podrzutu piłki."
   ],
   "Rysunek 4 przedstawia rozegranie ataku w systemie:": [
-    "Po wystawie zawodnika linii obrony bez zmiany stref.",
     "Po wystawie zawodnika linii ataku ze zmianą stref.",
-    "Po wystawie zawodnika linii ataku bez zmiany stref.",
-    "Po wystawie zawodnika linii obrony ze zmianą stref."
+    "Po wystawie zawodnika linii obrony bez zmiany stref.",
+    "Po wystawie zawodnika linii obrony ze zmianą stref.",
+    "Po wystawie zawodnika linii ataku bez zmiany stref."
   ],
   "Opis techniki odbicia w tył sposobem oburącz górnym powinien być następujący:": [
     "W fazie przyjęcia ustawienie takie jak podczas odbicia do przodu, w fazie podania następuje wyprost ramion w kierunku w górę w tył (za głowę) przy możliwym równoczesnym niewielkim odchyleniu tułowia.",
@@ -1075,15 +1103,15 @@
     "Żaden z wymienionych sposobów nie gwarantuje stabilności w bloku."
   ],
   "Strefa bloku - prosta - to określenie:": [
-    "Blok na kierunku 0.",
-    "Blok na kierunku 1.",
     "Bloku zasłaniającego strefę I.",
-    "Blok na kierunku 2."
+    "Blok na kierunku 2.",
+    "Blok na kierunku 1.",
+    "Blok na kierunku 0."
   ],
   "Podstawowym priorytetem trenera A. Anastasiego w systemie organizacji blokowania w grze Reprezentacji Polski dla zawodnika środkowego było:": [
     "Blokowanie zawodnika rozgrywającego.",
-    "Ustawienie w osi boiska – obowiązek przemieszczenia się za piłką bez względu na miejsce przyjęcia piłki.",
     "Obowiązkowe przemieszczenie do dwubloku w strefie II.",
+    "Ustawienie w osi boiska – obowiązek przemieszczenia się za piłką bez względu na miejsce przyjęcia piłki.",
     "Ustawienie w osi boiska – brak przemieszczenia za piłką bez względu na miejsce przyjęcia piłki."
   ],
   "Rysunek 4a przedstawia blokowanie systemem:": [
@@ -1112,9 +1140,9 @@
   ],
   "Cztery fazy (części) czynności zbicia w nauczaniu ataku metodą kompleksową to:": [
     "Rozbieg (dojście), wyskok, uderzenie, lądowanie.",
-    "Rozbieg (dojście), wyskok, ścięcie, lądowanie.",
+    "Dobieg, odbicie, uderzenie, lądowanie.",
     "Rozbieg (dojście), podskok, uderzenie, lądowanie.",
-    "Dobieg, odbicie, uderzenie, lądowanie."
+    "Rozbieg (dojście), wyskok, ścięcie, lądowanie."
   ],
   "Wskaż ćwiczenie zawierające błąd w nauczaniu pozycji przygotowawczej zagrywki rotacyjnej w wyskoku, metodą analityczną:": [
     "Przyjmowanie pozycji do wykonania zagrywki, przodem do kierunku zagrywania z prawą nogą z przodu, za linią końcową w odległości umożliwiającej wykonanie zagrywki, 3-krokowe przyspieszające przemieszczenie ( pierwszy krok lewą nogą – drugi prawą- trzeci lewą ).",
@@ -1249,10 +1277,10 @@
     "Blok pojedynczy na skrzydłach."
   ],
   "Który z wprowadzonych sposobów ataku w wieku juniora jest priorytetowy:": [
-    "Atak o blok i ponowienie ataku.",
     "Uderzenie z prowadzeniem ramienia pod kątem do tułowia.",
     "Gra środkowego w systemie „stałym”.",
-    "Atak z piłki „quick”."
+    "Atak z piłki „quick”.",
+    "Atak o blok i ponowienie ataku."
   ],
   "Jaki rodzaj pracy powinien być dominujący w programie I klasy gimnazjum:": [
     "Gra zadaniowa.",
@@ -1369,10 +1397,10 @@
     "Oba przybory."
   ],
   "Które z wymienionych działań powoduje niedokładność przyjęcia zawodnika I linii:": [
-    "Przyjęcie z boku tułowia.",
     "Brak skupienia się na przyjęciu do końca wykonania ruchu.",
     "Niska pozycja w przyjęciu.",
-    "Inny kierunek przemieszczania do przyjęcia niż do ataku."
+    "Inny kierunek przemieszczania do przyjęcia niż do ataku.",
+    "Przyjęcie z boku tułowia."
   ],
   "Jakie są główne zadania taktyki indywidualnej w ataku:": [
     "Wykorzystanie sytuacji w bloku.",
@@ -1387,10 +1415,10 @@
     "W 1997 roku."
   ],
   "Siatkówka plażowa. Jakie czynniki mają wpływ na wybór miejsca i sposobu wykonania zagrywki:": [
-    "Gramatura piasku (wielkość ziaren piasku) .",
     "Słońce, siła i kierunek wiatru.",
-    "Zachowanie publiczności.",
-    "Wilgotność powietrza."
+    "Wilgotność powietrza.",
+    "Gramatura piasku (wielkość ziaren piasku) .",
+    "Zachowanie publiczności."
   ],
   "Problemy jakimi zajmuje się medycyna sportowa to:": [
     "Monitorowanie stanu zdrowia sportowca, bezpieczeństwo w sporcie i udzielanie pierwszej pomocy.",
@@ -1399,10 +1427,10 @@
     "Przygotowanie sportowca do podróży i ocena wpływu warunków środowiskowych na zdrowie i wydolność zawodnika."
   ],
   "Na powierzchni żebrowej łopatki znajduje się:": [
+    "Dół nadgrzebieniowy.",
     "Dół podłopatkowy.",
     "Grzebień łopatki.",
-    "Wszystkie powyższe odpowiedzi są prawidłowe.",
-    "Dół nadgrzebieniowy."
+    "Wszystkie powyższe odpowiedzi są prawidłowe."
   ],
   "Do grupy bocznej mięśni przedramienia należy:": [
     "Zginacz łokciowy nadgarstka.",
@@ -1429,10 +1457,10 @@
     "Struktury czasowej zagrywki."
   ],
   "Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:": [
-    "Submaksymalnej.",
     "Supramaksymalnej.",
-    "Wszystkie odpowiedzi są błędne.",
-    "Maksymalnej."
+    "Maksymalnej.",
+    "Submaksymalnej.",
+    "Wszystkie odpowiedzi są błędne."
   ],
   "Oznaczenie stężenia mleczanu we krwi:": [
     "Może służyć także jako marker do planowania i prowadzenia treningu sportowego z określoną intensywnością.",
@@ -1519,16 +1547,16 @@
     "Trening sportowy jest procesem specjalizacji, który nie zaburzając harmonijnego rozwoju osobowości zawodnika zmierza do rozwinięcia tych jego cech fizycznych, psychicznych i sprawnościowych, które umożliwią mu osiągnięcie najwyższego wyniku sportowego."
   ],
   "Na czym polega planowanie właściwe treningu?": [
-    "Określeniu drogi realizacji celu.",
     "Rozłożeniu metod, form i środków w określonym czasie: makrocyklu, okresie, mezocyklu.",
     "Wyznaczeniu realnego celu.",
-    "Skoordynowanie zamierzeń z aktualnymi możliwościami zawodników oraz warunkami treningu."
+    "Skoordynowanie zamierzeń z aktualnymi możliwościami zawodników oraz warunkami treningu.",
+    "Określeniu drogi realizacji celu."
   ],
   "Jakie okresy treningowe występują w makrocyklu?": [
-    "Przedstartowy, główny, roztrenowania,",
     "Wstępny, ukierunkowany, specjalistyczny.",
-    "Ogólnorozwojowy, specjalny, startowy.",
-    "Przygotowawczy, startowy, przejściowy."
+    "Przygotowawczy, startowy, przejściowy.",
+    "Przedstartowy, główny, roztrenowania,",
+    "Ogólnorozwojowy, specjalny, startowy."
   ],
   "Które zdanie nie opisuje fazy podrzutu i rozbiegu w zagrywce szybującej w wyskoku:": [
     "Wszystkie odpowiedzi są nieprawidłowe.",
@@ -1544,9 +1572,9 @@
   ],
   "Do sposobów przemieszczania się w piłce siatkowej należy zaliczyć:": [
     "Wypad, naskok, pad.",
-    "Wszystkie odpowiedzi są nieprawidłowe.",
     "Piwot, pad siatkarski, obrót.",
-    "Krok dostawny, krok skrzyżny, zwód pojedynczy."
+    "Krok dostawny, krok skrzyżny, zwód pojedynczy.",
+    "Wszystkie odpowiedzi są nieprawidłowe."
   ],
   "W zbiciu tenisowym pracę ramienia charakteryzuje ruch wykonany w płaszczyźnie strzałkowej zakończony:": [
     "Uderzeniem w piłkę z przodu, ponad lewym barkiem.",
@@ -1561,10 +1589,10 @@
     "Wyskok do ataku rozpoczynany w momencie gdy wystawiona piłka zaczyna opuszczać dłonie rozgrywającego."
   ],
   "Niewłaściwy sposób wykonania rozbiegu do ataku w 1 tempo ze strefy III to:": [
-    "Wszystkie odpowiedzi są prawidłowe.",
-    "Rozbieg dwukrokowy - z pozycji przygotowawczej z lewą nogą z przodu, naskok prawa-lewa.",
     "Rozbieg do miejsca wyskoku ze stopniowym zwiększaniem prędkości i przyspieszeniem w ostatnich dwóch krokach; w przypadku rozbiegu trzykrokowego – z pozycji przygotowawczej z prawą nogą z przodu, krok lewą nogą i naskok prawa-lewa.",
-    "Rozbieg czterokrokowy."
+    "Rozbieg czterokrokowy.",
+    "Wszystkie odpowiedzi są prawidłowe.",
+    "Rozbieg dwukrokowy - z pozycji przygotowawczej z lewą nogą z przodu, naskok prawa-lewa."
   ],
   "Cechą charakterystyczną akcji A /bazy A/ krótkiej z tyłu atakowanej z jednej nogi jest:": [
     "Zadaniem rozgrywającej jest wystawić piłkę od siatki, za plecy do antenki.",
@@ -1573,10 +1601,10 @@
     "Środkowa wykonuje rozbieg za rozgrywającą około 1,5 do 2 metrów bez względu na miejsce dogrania piłki."
   ],
   "Rysunek 14 przedstawia:": [
-    "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie) ze strefy II.",
-    "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie) ze strefy II.",
+    "Wszystkie odpowiedzi są nieprawidłowe.",
     "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej ( w trzecim tempie) ze strefy II.",
-    "Wszystkie odpowiedzi są nieprawidłowe."
+    "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie) ze strefy II.",
+    "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie) ze strefy II."
   ],
   "W zbiciu tenisowym - u początkujących - ruch powinien odbywać się w płaszczyźnie:": [
     "Poprzecznej w ruchu tułowia i ramienia.",
@@ -1585,10 +1613,10 @@
     "Czołowej w ruchu tułowia i ramienia."
   ],
   "Rysunek 11 przedstawia:": [
-    "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
     "Wszystkie odpowiedzi są nieprawidłowe.",
-    "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie).",
-    "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie)."
+    "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie).",
+    "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
+    "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie)."
   ],
   "Rodzaje tempa bloku to:": [
     "Normalne. Nisko.",
@@ -1627,10 +1655,10 @@
     "Wszystkich rodzajów ataku należy nauczać jednocześnie."
   ],
   "Nauczanie blokowania metodą analityczną odbywa się w następujących etapach (po pokazie i objaśnieniu):": [
-    "Nauczanie blokowania piłki zawieszonej – piłki przerzucanej – piłki atakowanej.",
-    "Nauczanie blokowania w miejscu – nauczanie blokowania po przemieszczeniu.",
-    "Nauczanie postawy – nauczanie pracy ramion – nauczanie blokowania piłki zawieszonej – nauczanie blokowania piłki rzucanej – nauczanie blokowania piłki atakowanej.",
-    "Wszyskie odpowiedzi są błędne."
+    "Nauczanie blokowania w miejscu, po przemieszczeniu się.",
+    "Nauczanie blokowania pojedynczego, podwójnego, potrójnego.",
+    "Nauczanie blokowania: piłki zawieszonej, piłki przerzucanej, piłki atakowanej.",
+    "Nauczanie: postawy, ruchu ramion, wyskoku i lądowania."
   ],
   "Kolejność nauczania zagrywki szybującej w wyskoku to:": [
     "Zagrywka szybująca w wyskoku po dwukrokowym rozbiegu, z odbicia jednonóż (piłka trzymana przed tułowiem jednorącz) od dołu ręką przeciwną uderzającej - zagrywka szybująca w wyskoku po 2-krokowym rozbiegu, z odbicia obunóż (piłka trzymana oburącz).",
@@ -1663,14 +1691,14 @@
     "Obrona systemem 1:1:4 – obrońcy 1-0-3."
   ],
   "Zawodniczka stosująca w obronie rzut siatkarski z przetoczeniem przez plecy powinna odbić się:": [
-    "Żadna odpowiedź nie jest prawidłowa.",
     "Z obu nóg jednocześnie.",
     "Z nogi wykrocznej.",
+    "Żadna odpowiedź nie jest prawidłowa.",
     "Z nogi zakrocznej."
   ],
   "Którą z poniższych zasad, współpracując w obronie, stosują zawodnicy (rysunek 47): nieblokujący w strefie IV ze skrzydłowym w strefie V, w przypadku bloku w strefie II na kierunku 1 - zasłaniający prostą:": [
-    "Zawodnik 4 - wbiega do asekuracji za blok / Zawodnik 5 - broni piłki atakowane skosie i po przekątnej.",
     "Zawodnik 4 – broni piłki atakowane po ostrym skosie i spadające wzdłuż siatki oraz do środka boiska / Zawodnik 5 - broni piłki atakowane skosie i po przekątnej.",
+    "Zawodnik 4 - wbiega do asekuracji za blok / Zawodnik 5 - broni piłki atakowane skosie i po przekątnej.",
     "Żadna z wymienionych zasad nie dotyczy opisanej sytuacji.",
     "Zawodnik 4 – broni piłki atakowane po ostrym skosie i spadające wzdłuż siatki oraz do środka boiska / Zawodnik 5 - wbiega do asekuracji za blok."
   ],
@@ -1712,9 +1740,9 @@
   ],
   "Który czynnik należy brać pod uwagę w różnicowaniu treningu wszechstronnego:": [
     "Nabywanie i doskonalenie umiejętności oraz sprawności specjalnej.",
-    "Prognozowane wymogi zamierzonej specjalizacji.",
     "Kryterium rozwoju biologicznego.",
-    "Dotychczas ukształtowany poziom potencjału ruchowego."
+    "Dotychczas ukształtowany poziom potencjału ruchowego.",
+    "Prognozowane wymogi zamierzonej specjalizacji."
   ],
   "Jaki rodzaj treningu jest bazą dla treningu specjalistycznego:": [
     "Trening taktyczny.",
@@ -1723,10 +1751,10 @@
     "Trening fizyczny."
   ],
   "Które z podanych poniżej wydarzeń pojawiło się najwcześniej:": [
-    "Grand Prix siatkarek.",
     "Wprowadzenie do gry Libero.",
     "Puchar Świata kobiet.",
-    "Liga Światowa."
+    "Liga Światowa.",
+    "Grand Prix siatkarek."
   ],
   "Jaki rodzaj pracy powinien być dominujący w programie III klasy gimnazjum:": [
     "Ćwiczenia analityczne.",
@@ -1735,10 +1763,10 @@
     "Ćwiczenia syntetyczne."
   ],
   "Czy całościowa forma zagrywki rotacyjnej w wyskoku powinna być uwzględniona w metodyce nauczania w wieku młodzika:": [
-    "Nie, tylko uderzenie rotacyjne z miejsca.",
-    "Nie, tylko zagrywka szybująca.",
     "Tak, pełna zagrywka w wyskoku.",
-    "Nie, tylko po dojściu w przód, stopniowo zwiększając wysokość podrzutu, ale bez wyskoku."
+    "Nie, tylko po dojściu w przód, stopniowo zwiększając wysokość podrzutu, ale bez wyskoku.",
+    "Nie, tylko uderzenie rotacyjne z miejsca.",
+    "Nie, tylko zagrywka szybująca."
   ],
   "Który z etapów szkolenia S.O.S. nie jest finansowany z budżetu państwa:": [
     "Szkoły Gimnazjalne z programem S.O.S.",
@@ -1771,10 +1799,10 @@
     "Kombinacje krzyżujących się dróg dwóch zawodników."
   ],
   "W grze obronnej system opisany jako 2:1:3 oznacza:": [
-    "W kolejności liczbę zawodników broniących pola, asekurujących i blokujących.",
+    "Opis sposobu ustawienia zawodników w obronie względem bloku.",
     "Opis sposobu asekuracji bloku.",
-    "W kolejności liczbę zawodników blokujących, asekurujących i broniących pola.",
-    "Opis sposobu ustawienia zawodników w obronie względem bloku."
+    "W kolejności liczbę zawodników broniących pola, asekurujących i blokujących.",
+    "W kolejności liczbę zawodników blokujących, asekurujących i broniących pola."
   ],
   "Jaki element treningu taktycznego szczególnie podnosi wartość bojową w zespole:": [
     "Techniczne rozwiązanie zadań taktycznych.",
@@ -1783,10 +1811,10 @@
     "Równomierne wydatkowanie energii."
   ],
   "Która z zasad minisiatkówki dotyczy gry 3 x 3:": [
-    "Atakować może tylko jeden zawodnik w każdym ustawieniu",
     "Wszyscy atakują w każdym ustawieniu",
     "Nie uznaje się błędu ustawienia zawodników I i II linii",
-    "Zawodnik zagrywający nie może atakować piłki powyżej górnej taśmy siatki"
+    "Zawodnik zagrywający nie może atakować piłki powyżej górnej taśmy siatki",
+    "Atakować może tylko jeden zawodnik w każdym ustawieniu"
   ],
   "Która umiejętność zagrywania powinna być częścią planu gry każdego zespołu:": [
     "Umiejętność wykorzystania zagrywki taktycznej.",
@@ -1837,10 +1865,10 @@
     "Równowaga ciała w powietrzu."
   ],
   "W treningu siłowym liczba 3-5 serii na ćwiczenie po 8-12 powtórzeń, to proces kształtowania:": [
+    "Adaptacji anatomicznej.",
     "Hipertrofii.",
-    "Siły dynamicznej.",
     "Mocy.",
-    "Adaptacji anatomicznej."
+    "Siły dynamicznej."
   ],
   "Metodą, którą kształtujemy szybkość w piłce siatkowej jest:": [
     "Metoda ciągła.",
@@ -1867,16 +1895,394 @@
     "Skrócenie odległości wystawianej piłki do atakującego."
   ],
   "Siatkówka plażowa. Pierwsze medale dla Polski w rozgrywkach międzynarodowych zdobyli :": [
-    "Grzegorz Fijałek i Mariusz Prudel – brązowy medal World Tour w Marsylii.",
-    "Monika Brzostek i Kinga Kołosińska – brązowy medal Mistrzostw Europy w Klagenfurcie.",
+    "Michał Kądzioła i Jakub Szałankiewicz srebrny medal Mistrzostw Świata w Rzymie.",
     "Tomasz Sińczak i Rafał Szternel – brązowy medal Mistrzostw Świata U-18 Pattaya Tajlandia.",
-    "Michał Kądzioła i Jakub Szałankiewicz srebrny medal Mistrzostw Świata w Rzymie."
+    "Grzegorz Fijałek i Mariusz Prudel – brązowy medal World Tour w Marsylii.",
+    "Monika Brzostek i Kinga Kołosińska – brązowy medal Mistrzostw Europy w Klagenfurcie."
   ],
   "Siatkówka plażowa. Wystawę sposobem oburącz górnym stosujemy, gdy:": [
     "Zawsze, gdy wystawiamy piłkę.",
     "Wystawiana jest piłka z kontry.",
     "Tor lotu i warunki pogodowe gwarantują możliwość czystego odbicia piłki.",
     "Piłka jest \"wgrana\" wysoko na górną część siatki."
+  ],
+  "Środki wspomagające to:": [
+    "Wszystkie odpowiedzi są prawdziwe.",
+    "Tylko legalne (nie zabronione) środki i metody.",
+    "Środki i metody nielegalne, zabronione, znajdujące się na liście WADA.",
+    "Legalne i nielegalne środki ergogeniczne."
+  ],
+  "Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:": [
+    "Wszystkie odpowiedzi są prawdziwe.",
+    "Podawane płyny są o odpowiednim ciśnieniu osmotycznym podobnym do ciśnienia osmotycznego krwi.",
+    "Wraz z wodą podawane są roztwory elektrolitów (chlorki potasu i sodu) oraz glukozy.",
+    "Podawane płyny są izotoniczne."
+  ],
+  "Bóle w dolnym odcinku kręgosłupa są spowodowane:": [
+    "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa oraz mięśni rotatorów.",
+    "Stanami przeciążeniowymi mięśni rotatorów oraz mięśnia 4-głowego.",
+    "Wszystkie odpowiedzi są fałszywe.",
+    "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa."
+  ],
+  "Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:": [
+    "Wingate.",
+    "Bosco.",
+    "Stopniowany.",
+    "Harwardzki."
+  ],
+  "Wydolność aerobowa mierzona jest przez pomiar:": [
+    "Maksymalnego minutowego poboru tlenu.",
+    "Maksymalnej siły mięśni.",
+    "Maksymalnej mocy mięśni.",
+    "Submaksymalnej częstości skurczów serca."
+  ],
+  "Przed rozpoczęciem meczu na boisku znalazł się zawodnik niewpisany na kartce z ustawieniem. Jakie są konsekwencje?": [
+    "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, a w tym celu przeprowadzana jest zmiana regulaminowa",
+    "Sekretarz poprawia zapis na kartce z ustawieniem oraz w protokole zawodów na zgodny ze stanem na boisku – bez pytania trenera zespołu",
+    "Trener może zdecydować o pozostawieniu tego zawodnika na boisku, zapis na kartce z ustawieniem jest korygowany",
+    "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, wówczas nie przeprowadza się zmiany regulaminowej"
+  ],
+  "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?": [
+    "W żadnym z tych przypadków zespół nie straci punktu",
+    "Dwaj zawodnicy jednego zespołu pobili się",
+    "Po tym jak zawodnikowi nr 3 sędzia pokazał czerwoną kartkę, zawodnik nr 9 wdał się w dyskusję z przeciwnikiem (zachował się grubiańsko)",
+    "Po tym, jak sędzia pokazał zawodnikowi nr 5 żółtą kartkę, kapitan zespołu zaprotestował przeciwko decyzji sędziego machając rękoma i wyrażając sprzeciw okrzykiem"
+  ],
+  "Które wykonanie zagrywki jest nieprawidłowe?": [
+    "Zawodnik po gwizdku sędziego I zorientował się, że nie on ma wykonać zagrywkę. Przywołał właściwego zawodnika, przekazał mu piłkę i wbiegł na boisko. Zagrywka została wykonana w ciągu 8 sekund od gwizdka sędziego",
+    "Po gwizdku sędziego I zagrywający wyszedł z pola zagrywki i stamtąd rozpoczął rozbieg. Odbicie do zagrywki z wyskoku nastąpiło już w polu zagrywki",
+    "Zawodnik rozsunął panele reklamowe za boiskiem i wykonał zagrywkę spomiędzy nich",
+    "Zawodnik wykonał zagrywkę łokciem"
+  ],
+  "Najskuteczniejsze działania integrujące i budujące więzi w sytuacji rozwiązywania konfliktów to:": [
+    "Przyjęcie odpowiedzialności, podkreślenie wspólnoty, brak wsparcia osobistego.",
+    "Wsparcie osobiste, uściślenie zarzutów, brak prośby o odsłonięcie rozmówcy.",
+    "Odsłonięcie rozmówcy, wsparcie osobiste, uściślenie zarzutów.",
+    "Odsłanianie się, brak wsparcia osobistego, podkreślenie wspólnoty."
+  ],
+  "Według koncepcji Selingmana zawodnicy tłumaczą swoje sukcesy/porażki poniższymi wymiarami:": [
+    "Personalizacja, stałość, zasięg.",
+    "Samokontrola, personalizacja, zaangażowanie.",
+    "Zasięg, zaangażowanie, niezależność.",
+    "Personalizacja, stałość, zaangażowanie."
+  ],
+  "Do najważniejszych etapów treningu umiejętności psychologicznych należy:": [
+    "Opanowanie technik włączania się w bodżce negatywne.",
+    "Opanowanie technik budowania pewności siebie w oparciu o negatywny dialog wewnętrzny.",
+    "Opanowanie technik prawidłowego formułowania celów wynikowych.",
+    "Opanowanie technik relaksacji autogennej i progresywnej."
+  ],
+  "Cele pedagogiczne funkcjonowania młodego zespołu to:": [
+    "Kształtowanie ducha gry zespołowej i współpracy.",
+    "Kształtowanie świadomości kontuzji.",
+    "Przekazywanie wiedzy na temat psychologii wychowawczej.",
+    "Pozytywne wzmacnianie zdolności młodych zawodników."
+  ],
+  "Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:": [
+    "Utrata podświadomości.",
+    "Jasne cele.",
+    "Koncentracja na przeszłości.",
+    "Niejednoznaczna informacja zwrotna."
+  ],
+  "W czym przejawia się zasada indywidualizacji?": [
+    "Doborze ćwiczeń.",
+    "Liczbie powtórzeń, tempie wykonania, liczbie serii.",
+    "Regulacji masy ciała.",
+    "Dostosowanie rozwiązań metodycznych do możliwości i potrzeb zawodników."
+  ],
+  "Selekcja kierowana polega na:": [
+    "Parametrów somatycznych zawodników.",
+    "Samoocenie i samokontroli zawodników.",
+    "Doświadczeniu i wiedzy praktycznej oraz intuicji trenera prowadzącego szkolenie.",
+    "Sformalizowany system norm i ich wartości w przechodzeniu kolejnych etapów szkolenia."
+  ],
+  "Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?": [
+    "Bieg na 10 m ze startu zatrzymanego.",
+    "Bieg zwinnościowy ze zmianą kierunków.",
+    "Rzut piłką lekarską.",
+    "Zasięg oburącz w wyskoku z miejsca."
+  ],
+  "Który z treningów siły jest wskazany dla młodocianych siatkarzy?": [
+    "Trening kulturystyczny.",
+    "Trening obwodowy.",
+    "Trening ciężkoatletyczny.",
+    "Trening izometryczny."
+  ],
+  "Które z cech motorycznych warunkują poziom skoczności?": [
+    "Koordynacja ruchowa i szybkość.",
+    "Szybkość i wytrzymałość.",
+    "Szybkość i siła.",
+    "Siła i gibkość."
+  ],
+  "Który okres rozwojowy nazywany jest złotym wiekiem rozwoju sprawności?": [
+    "Okres młodszy szkolny.",
+    "Okres dojrzałości.",
+    "Okres młodzieńczy.",
+    "Okres starszy szkolny."
+  ],
+  "Ilu wystawiających musi być w drużynie, która atakować będzie wyłącznie w systemie po wystawie zawodnika z linii ataku:": [
+    "Jeden.",
+    "Co najmniej dwóch.",
+    "Czterech.",
+    "Co najmniej trzech."
+  ],
+  "Sposoby przemieszczania się po boisku w piłce siatkowej to:": [
+    "Piwot, rzut siatkarski, rozbieg.",
+    "Wyskok, pad siatkarski, obrót.",
+    "Wypad, doskok, pad siatkarski.",
+    "Krok dostawny, krok skrzyżny, zwód podwójny przodem."
+  ],
+  "Systemy rozbiegu do ataku w 1 tempo to:": [
+    "System stały i płynny.",
+    "Nie istnieje żaden system.",
+    "System stabilny i płynny.",
+    "System stały i zmienny."
+  ],
+  "Warianty ataku w 1 tempo ustala:": [
+    "Zawodnik przyjmujący.",
+    "Trener - to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki.",
+    "Zawodnik środkowy – to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki.",
+    "Zawodnik rozgrywający – to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki."
+  ],
+  "Środkowy zmienia akcję bazową, tak aby stanowić zagrożenie (otwiera siatkę) w sytuacji gdy:": [
+    "Piłka przyjęta jest w strefę \"0\".",
+    "Piłka przyjęta jest wzdłuż siatki bliżej strefy IV lub strefy II.",
+    "Środkowy nie może zmieniać akcji bazowej.",
+    "W każdym kolejnym kontrataku."
+  ],
+  "Zdanie najdokładniej opisujące rytm rozbiegu do ataku to:": [
+    "Długi krok lewą nogą i spokojne przemieszczenie w dwa ostatnie kroki (prawa/lewa).",
+    "Wszystkie odpowiedzi są nieprawidłowe.",
+    "Krótki krok lewą nogą i przyspieszenie w dwóch ostatnich krokach (prawa/lewa).",
+    "Długi, spokojny krok lewą nogą i przyspieszenie w dwóch ostatnich krokach (prawa/lewa)."
+  ],
+  "Pozycje wyjściowe do bloku po zmianie stref to:": [
+    "Wąsko w prawo, wąsko na środku.",
+    "Wąsko w lewo, nogi ugięte.",
+    "Szeroko, ciasno.",
+    "Wąsko, szeroko."
+  ],
+  "Wskaż właściwy sposób ustawiania bloku w strefie II lub IV przez zawodnika skrzydłowego:": [
+    "Wszystkie odpowiedzi są prawidłowe.",
+    "Po kroku skrzyżnym z ustawienia wąskiego.",
+    "Po kroku dostawnym z ustawienia szerokiego.",
+    "Po kroku dostawnym z ustawienia wąskiego."
+  ],
+  "Kolejność nauczania odbić górnych jest następująca:": [
+    "Wszystkie odpowiedzi są nieprawidłowe.",
+    "Odbicie oburącz górne w przód i w tył w miejscu - odbicie oburącz górne w przód i w tył po przemieszczeniu - odbicie oburącz górne w przód i w tył w wyskoku.",
+    "Odbicie oburącz górne w przód i w tył w wyskoku - odbicie oburącz górne w przód i w tył po przemieszczeniu - odbicie oburącz górne w przód i w tył w miejscu.",
+    "Odbicie oburącz górne w przód i w tył po przemieszczeniu - odbicie oburącz górne w przód i w tył w miejscu - odbicie oburącz górne w przód i w tył w wyskoku."
+  ],
+  "Które z ćwiczeń nie jest przygotowującym do nauki odbić górnych:": [
+    "Podrzut i chwyt piłki oburącz ponad głową.",
+    "Po podrzucie obrót, chwyt piłki.",
+    "Wszystkie odpowiedzi są właściwe.",
+    "Odbicia wielokrotne ponad głową."
+  ],
+  "Wskaż ćwiczenie zawierające błąd w nauczaniu ruchu ramienia uderzającego przy zagrywce szybującej bez wyskoku:": [
+    "Ćwiczący z piłką, ręka ugięta w stawie łokciowym",
+    "Ddoprowadzanie ramienia do piłki znajdującej się nad barkiem ręki uderzającej, trzymanej przez współćwiczącego lub trenera, stojącego na podwyższeniu.",
+    "Z ustawienia przodem do ściany, w postawie rozkroczno-wykrocznej, z nogą wykroczną jednoimienną do ręki uderzającej, ręka uderzająca uniesiona do góry, nieznacznie ugięta w stawie łokciowym, zamach i uderzenie dłonią w ścianę lub drabinki na maksymalnym zasięgu.",
+    "Z ustawienia przodem do ściany, w postawie rozkroczno-wykrocznej, z nogą wykroczną przeciwną do ręki uderzającej, ręka uderzająca uniesiona do góry, nieznacznie ugięta w stawie łokciowym, zamach i uderzenie dłonią w ścianę lub drabinki na maksymalnym zasięgu."
+  ],
+  "Która z zasad nauczania zakłada dobór treści zajęć dostosowany do określonego poziomu umiejętności ćwiczących:": [
+    "Zasada świadomości i aktywności.",
+    "Zasada stopniowania trudności.",
+    "Zasada wszechstronności.",
+    "Zasada poglądowości."
+  ],
+  "System gry w obronie to współdziałanie zawodników:": [
+    "Rozgrywających - atakujących.",
+    "Wszystkie odpowiedzi są błędne.",
+    "Blokujących – broniących w polu – asekurujących.",
+    "Atakujących – blokujących – broniących w polu."
+  ],
+  "Która z zasad organizacji kontrataku obowiązuje w przypadku obrony przez zawodnika rozgrywającego:": [
+    "Wystawia ten, kto ma piłkę z prawej strony.",
+    "Wystawia zawodnik strefy II.",
+    "Wystawia środkowy ataku, jeżeli piłka spada w polu ataku.",
+    "Wystawia zawodnik strefy IV."
+  ],
+  "Taktykę indywidualną ataku z piłki sytuacyjnej ze skrzydła opisuje zdanie:": [
+    "Niedokładnie wystawioną piłkę kiwamy na libero.",
+    "Podejmujemy ryzyko w każdej akcji.",
+    "Piłkę niedokładnie wystawioną atakujemy \"mądrze\", najczęściej do strefy I na atakującego lub rozgrywającego drużyny przeciwnej.",
+    "Każdą piłkę atakujemy po bloku w aut."
+  ],
+  "W grze obronnej od początku szkolenia zawodnicy powinni dążyć do takiego ustawiania na boisku, aby obrona odbywała się:": [
+    "W możliwie stabilnej postawie.",
+    "W zachwianej równowadze, ponieważ jest to obrona widowiskowa.",
+    "Wyłącznie sposobem oburącz dolnym.",
+    "Wyłącznie sposobem oburącz górnym."
+  ],
+  "Przewidując (czytając) działania przeciwnika w grze, w przypadku gdy piłka została wystawiona za wąsko do skrzydła i jest zasłonięta przez blok, obrońca ustawiony po prostej powinien:": [
+    "Dostosować się i wykonać ruch do środka boiska.",
+    "Dostosować się i wykonać ruch wzdłuż linii bocznej.",
+    "Przemieścić się do asekuracji za każdym razem.",
+    "Zawodnik pozostaje na swojej pozycji."
+  ],
+  "Schemat ustawienia obrońców na pozycjach wyjściowych przedstawiony na rysunku 33a stosowany jest:": [
+    "Wyłącznie na poziomie kadeta.",
+    "Wyłącznie na poziomie młodzika.",
+    "Wyłącznie na poziomie juniora",
+    "Jako najczęściej występujący system."
+  ],
+  "W pozycji bazowej obrońca, który prawidłowo zareagował (przewidział działania przeciwnika), powinien:": [
+    "Wszystkie odpowiedzi są prawidłowe.",
+    "Być w ciągłym ruchu.",
+    "Zatrzymać się.",
+    "Wykonać naskok na pięty."
+  ],
+  "Rola pierwszego przyjmującego w grze. Wskaż zdanie prawdziwe:": [
+    "Jest zawodnikiem obrony w ustawieniach R4, R5, R6.",
+    "Wykonuje atak po przyjęciu zagrywki również z prawego skrzydła.",
+    "Wszystkie odpowiedzi są prawdziwe.",
+    "Jest zawodnikiem linii ataku w ustawieniach R1, R2, R3."
+  ],
+  "W którym ustawieniu lub ustawieniach zawodnik przyjmujący grający w linii ataku ustawiony jest do przyjęcia zagrywki na prawej stronie boiska:": [
+    "R 6.",
+    "R 1 i R 6",
+    "R 1.",
+    "R 1 i R 2."
+  ],
+  "Stosunek ilości wszystkich działań w danym elemencie wykonanym przez zawodnika do ilości wszystkich działań w tym samym elemencie wykonanym przez zespół wyraża:": [
+    "Współczynnik udziału w grze.",
+    "Współczynnik skuteczności.",
+    "Wszystkie odpowiedzi są prawdziwe.",
+    "Współczynnik \"WEG\"."
+  ],
+  "Które z wymienionych cech są charakterystyczne dla planu szkoleniowego:": [
+    "Plastyczność, przebojowość.",
+    "Celowość, wykonalność.",
+    "Niezmienialność, niewymierność.",
+    "Wszystkie odpowiedzi są prawidłowe."
+  ],
+  "Plan organizacji szkolenia składa się z dwóch części, wskaż właściwe:": [
+    "Przygotowawcza, startowa.",
+    "Papierowa, elektroniczna.",
+    "Opisowa, graficzna.",
+    "Wstępna, końcowa."
+  ],
+  "Wyższość ćwiczeń przeplatanych nad powtarzanymi w nauczaniu ruchu polega na:": [
+    "Możliwości dokonywania poprawek w następnej próbie.",
+    "Większej dokładności nauczania w danym momencie.",
+    "Większym efekcie nauczania po jakimś czasie.",
+    "Szybszej możliwości opanowania podstawowego wzorca ruchu."
+  ],
+  "Który system jako pierwszy pozwala na wprowadzanie specjalizacji środkowego:": [
+    "System mieszany.",
+    "System 4-2 z rozgrywającym z II linii.",
+    "System 3-3.",
+    "System 4-2 z rozgrywającym w I linii."
+  ],
+  "Jaki zakres informacji w przewidywaniu ataku, powinien być przekazywany blokującemu w pierwszej kolejności, w wieku juniora:": [
+    "Obserwacja nóg atakującego.",
+    "Ocena miejsca wystawienia.",
+    "Świadomość wyniku i tempa gry.",
+    "Obserwacja ręki i dłoni atakującego."
+  ],
+  "Jaki sposób gry wprowadzany jest w kategorii juniora:": [
+    "Kombinacja „pipe”.",
+    "Przyjęcie zagrywki przez trzech zawodników.",
+    "Szybka piłka do skrzydła „quick”.",
+    "Specjalizacja atakującego."
+  ],
+  "Podstawowym zadaniem broniącego w minisiatkówce, w grze 2x2, jest:": [
+    "Stała pozycja w obronie.",
+    "Dostosowanie pozycji w obronie do atakującego.",
+    "Gra bez specjalizacji funkcji.",
+    "Gra bez specjalizacji pozycji."
+  ],
+  "Które z umiejętności decydują o jakości przyjęcia zagrywki:": [
+    "Sytuacyjne techniki przyjęcia.",
+    "Mentalne nastawienie do przyjęcia.",
+    "Technika przyjęcia piłki szybującej i rotacyjnej.",
+    "Płynne przejście od przyjęcia do ataku."
+  ],
+  "Na jaki element w nauczaniu bloku zwraca się uwagę po opanowaniu innych wcześniejszych elementów bloku:": [
+    "Przemieszczanie.",
+    "Przełożenie ramion.",
+    "Położenie dłoni.",
+    "Postawa wyjściowa."
+  ],
+  "Który rodzaj asekuracji jest najczęściej stosowany przez zespoły grające atak z „pipe”:": [
+    "2-3 stały.",
+    "3-2 stały.",
+    "1-3 z libero z tyłu.",
+    "1-3 z libero z przodu."
+  ],
+  "Zmiana założeń zespołowych gry w etapach szkolenia młodzieży zależy od rozwoju umiejętności:": [
+    "Gry w obronie.",
+    "Gry w bloku.",
+    "Gry w ataku.",
+    "Zagrywki."
+  ],
+  "Jakie działanie zawodnika atakującego w treningu indywidualnym jest priorytetowe:": [
+    "Atak z II linii.",
+    "Blokowanie w sytuacji 1 na 1.",
+    "Zagrywka tenisowa z wyskoku.",
+    "Asekuracja piłki."
+  ],
+  "System obrony 1 -1 -2 oznacza:": [
+    "Dwóch broniących po skosie, jeden po prostej i jeden w asekuracji.",
+    "Jeden broniący po skosie, dwóch w głębi pola i jeden w asekuracji.",
+    "Jeden broniący po prostej, jeden na „szwie” bloku i dwóch po skosie.",
+    "Jeden broniący po skosie, jeden na „szwie” bloku i dwóch po prostej."
+  ],
+  "Jakie zadania ma zawodnik lepiej przyjmujący ustawiony do przyjęcia w trzech zawodników:": [
+    "Bierze piłki na styku (\"pomiędzy\").",
+    "Reaguje na piłkę.",
+    "Nie przemieszcza się w kierunku przyjęcia.",
+    "Jest współodpowiedzialny, gdy piłka spadnie \"pomiędzy\"."
+  ],
+  "Jaką rolę w treningu spełnia atrapa bloku:": [
+    "Ułatwia wykonanie czynności.",
+    "Przekazuje informację zwrotną o działaniu.",
+    "Zastępuje działanie zawodnika.",
+    "Umożliwia pomiar."
+  ],
+  "Który rodzaj treningu prowadzi do znacznej poprawy szybkości działania oraz poszczególnych składowych szybkości:": [
+    "Trening techniczny.",
+    "Trening kompleksowy zbliżony do profilu gry.",
+    "Trening motoryczny.",
+    "Trening psychologiczny."
+  ],
+  "Przejście z fazy ataku do fazy obrony następuje w momencie:": [
+    "Po przejściu piłki nad siatką na stronę rywala.",
+    "Po wystawieniu piłki przez własny zespół .",
+    "Po zaatakowaniu piłki przez własny zespół.",
+    "Po przejściu piłki na własną połowę."
+  ],
+  "Która z zasad zwiększania kompetencji bloku w kolejnych latach szkolenia jest istotna:": [
+    "Ustawienie bloku naprzeciwko atakowanej piłki.",
+    "Ustawienie bloku na kierunku rozbiegu atakującego.",
+    "Ustawienie bloku w kontekście boiska z uwzględnieniem broniących w polu.",
+    "Wszystkie odpowiedzi są prawidłowe."
+  ],
+  "Jakie zadanie ma łączenie poprzez trening różnych dyspozycji w interdyspozycje do gry:": [
+    "Zwiększenie sumy działania poszczególnych dyspozycji.",
+    "Uzyskanie umiejętności sprawnego działania w osiągnięciu celów gry.",
+    "Rozwój każdej dyspozycji z osobna.",
+    "Nie ma to większego znaczenia."
+  ],
+  "Jaka umiejętność przyjmującego wynika z „głębokiego widzenia”:": [
+    "Dostosowanie trajektorii przyjęcia.",
+    "Czucie „kątów” przyjęcia.",
+    "Wczesny ruch do piłki.",
+    "Dostosowanie ustawienia do przewidywanej zagrywki."
+  ],
+  "Które z działań w taktyce indywidualnej rozgrywającego „ustawia grę”:": [
+    "Ukrywanie zamiarów.",
+    "Utrzymanie stałego zagrożenia atakiem w I tempo lub atakiem z drugiej piłki.",
+    "Rozegranie sytuacyjne i kombinacyjne.",
+    "Utrzymanie widzenia peryferycznego."
+  ],
+  "Siatkówka plażowa. Zagrywka słoneczna charakteryzuje się:": [
+    "Bardzo wysokim torem lotu piłki.",
+    "Szybującym torem lotu piłki.",
+    "Dużą rotacją.",
+    "Podatnością na wpływ wiatru."
   ]
 }; // tablica z wszystkimi pytaniami
 
@@ -1914,7 +2320,8 @@ const allAnswers = {
     "Nie może wybrać żadnej z powyższych opcji"
   ],
   "Do najważniejszych etapów treningu umiejętności psychologicznych należy:": [
-    "Opanowanie technik relaksacji autogennej i progresywnej."
+    "Opanowanie technik relaksacji autogennej i progresywnej.",
+    "Opanowanie technik włączania się w bodżce negatywne."
   ],
   "Jaki styl zachowania na boisku powinni przyjąć zawodnicy w sytuacji zagrożenia:": [
     "Styl kierujący: zawodnik kieruje innymi zawodnikami a nie swoim zachowaniem."
@@ -1938,7 +2345,8 @@ const allAnswers = {
     "Wszechstronne."
   ],
   "W czym przejawia się zasada indywidualizacji?": [
-    "Regulacji masy ciała."
+    "Regulacji masy ciała.",
+    "Doborze ćwiczeń."
   ],
   "Który z parametrów treningu nie jest korzystny dla właściwego treningu szybkości?": [
     "Zmęczenie."
@@ -1948,7 +2356,8 @@ const allAnswers = {
     "Zespół oddziaływań trenera na zawodnika."
   ],
   "Sposoby przemieszczania się po boisku w piłce siatkowej to:": [
-    "Piwot, rzut siatkarski, rozbieg."
+    "Piwot, rzut siatkarski, rozbieg.",
+    "Wyskok, pad siatkarski, obrót."
   ],
   "Które zdanie najlepiej opisuje odbicie dolne oburącz:": [
     "Ramiona wyprostowane, nogi ugięte, tułów pochylony w przód."
@@ -1996,10 +2405,15 @@ const allAnswers = {
     "Niewłaściwe miejsce kontaktu z piłką w fazie uderzenia, np. uderzenie piłki za głową lub za nisko na wysokości głowy."
   ],
   "Przykładowe przepisy w grze szkolnej to:": [
-    "Łapanie i rzucanie piłki, większa liczba odbić w jednej akcji (więcej niż 3), dopuszczenie dodatkowych odbić nad sobą przez jednego zawodnika."
+    "Łapanie i rzucanie piłki, większa liczba odbić w jednej akcji (więcej niż 3), dopuszczenie dodatkowych odbić nad sobą przez jednego zawodnika.",
+    "Wszystkie odpowiedzi są poprawne.",
+    "Przybliżenie pola zagrywki (np. do 3 m od siatki), zagrywanie rzutem piłki, zagrywanie odbiciem oburącz.",
+    "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. po prostej).",
+    "Wszystkie odpowiedzi są poprawne."
   ],
   "System gry w obronie to współdziałanie zawodników:": [
-    "Rozgrywających - atakujących."
+    "Rozgrywających - atakujących.",
+    "Wszystkie odpowiedzi są błędne."
   ],
   "W fazie Break Point efektywność gry w obronie nie może być zwiększona poprzez:": [
     "Przygotowanie pierwszej akcji w obronie wykorzystując zagrywkę."
@@ -2012,7 +2426,8 @@ const allAnswers = {
     "Zawodnik 4 - wbiega do asekuracji  za blok / Zawodnik 5 - broni piłki atakowane skosie i po przekątnej."
   ],
   "Zawodnik broniący w strefie I atak po skosie, powinien zatrzymać się w pozycji bazowej w momencie:": [
-    "Rozpoczęcia rozbiegu do ataku przez zawodnika atakującego."
+    "Rozpoczęcia rozbiegu do ataku przez zawodnika atakującego.",
+    "Kontaktu dłoni atakującego z piłką."
   ],
   "W przygotowaniu statystyk stosunek działań zakończonych sukcesem do sumy wszystkich działań w tym elemencie wyraża:": [
     "Wspołczynnik skuteczności."
@@ -2077,7 +2492,8 @@ const allAnswers = {
   ],
   "W treningu siłowym liczba 3-5 serii na ćwiczenie po 8-12 powtórzeń, to proces kształtowania:": [
     "Adaptacji anatomicznej.",
-    "Hipertrofii."
+    "Hipertrofii.",
+    "Mocy."
   ],
   "W którym roku odbyły się w Polsce Mistrzostwa Świata w siatkówce plażowej mężczyzn:": [
     "W 1998 roku."
@@ -2087,7 +2503,8 @@ const allAnswers = {
   ],
   "Siatkówka plażowa. Pierwsze medale dla Polski w rozgrywkach międzynarodowych zdobyli :": [
     "Michał Kądzioła i Jakub Szałankiewicz srebrny medal  Mistrzostw Świata w Rzymie.",
-    "Grzegorz Fijałek i Mariusz Prudel – brązowy medal World Tour w Marsylii."
+    "Grzegorz Fijałek i Mariusz Prudel – brązowy medal World Tour w Marsylii.",
+    "Michał Kądzioła i Jakub Szałankiewicz srebrny medal  Mistrzostw Świata w Rzymie."
   ],
   "Problemy jakimi zajmuje się medycyna sportowa to:": [
     "Monitorowanie stanu zdrowia sportowca, bezpieczeństwo w sporcie i udzielanie pierwszej pomocy."
@@ -2099,7 +2516,8 @@ const allAnswers = {
     "Co 6 miesięcy."
   ],
   "Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:": [
-    "Submaksymalnej."
+    "Submaksymalnej.",
+    "Supramaksymalnej."
   ],
   "Niekwasomlekowa faza długu tlenowego trwa około:": [
     "10 min."
@@ -2138,7 +2556,8 @@ const allAnswers = {
     "Określeniu drogi realizacji celu."
   ],
   "Jakie okresy treningowe występują w makrocyklu?": [
-    "Przedstartowy, główny, roztrenowania,"
+    "Przedstartowy, główny, roztrenowania,",
+    "Wstępny, ukierunkowany, specjalistyczny."
   ],
   "W zbiciu tenisowym pracę ramienia charakteryzuje ruch wykonany w płaszczyźnie strzałkowej zakończony:": [
     "Uderzeniem w piłkę z przodu, ponad lewym barkiem."
@@ -2147,13 +2566,15 @@ const allAnswers = {
     "Wyskok do ataku rozpoczynany w  momencie gdy dogrywana piłka zaczyna opadać w kierunku dłoni rozgrywającego."
   ],
   "Niewłaściwy sposób wykonania rozbiegu do ataku w 1 tempo ze strefy III to:": [
-    "Wszystkie odpowiedzi są prawidłowe."
+    "Wszystkie odpowiedzi są prawidłowe.",
+    "Rozbieg do miejsca wyskoku ze stopniowym zwiększaniem prędkości i przyspieszeniem w ostatnich dwóch krokach; w przypadku rozbiegu trzykrokowego – z pozycji przygotowawczej z prawą nogą z przodu, krok lewą nogą  i naskok prawa-lewa."
   ],
   "Właściwy rytm rozbiegu do ataku należy opisać w następujący sposób:": [
     "Atakujący - ma zadanie rozpoczynać wolno i szybko kończyć."
   ],
   "Rysunek 11 przedstawia:": [
-    "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie)."
+    "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
+    "Wszystkie odpowiedzi są nieprawidłowe."
   ],
   "Rodzaje tempa bloku to:": [
     "Normalne. Nisko."
@@ -2165,7 +2586,8 @@ const allAnswers = {
     "Atak z piłki szybkiej (\"quick\"), atak z piłki przyspieszonej (\"super\"), atak z piłki wysokiej."
   ],
   "Nauczanie blokowania metodą analityczną odbywa się w następujących etapach (po pokazie i objaśnieniu):": [
-    "Nauczanie blokowania piłki zawieszonej – piłki przerzucanej – piłki atakowanej."
+    "Nauczanie blokowania piłki zawieszonej – piłki przerzucanej – piłki atakowanej.",
+    "Nauczanie blokowania w miejscu, po przemieszczeniu się."
   ],
   "Kolejność nauczania zagrywki szybującej w wyskoku to:": [
     "Zagrywka szybująca w wyskoku po dwukrokowym rozbiegu, z odbicia jednonóż (piłka trzymana przed tułowiem jednorącz) od dołu ręką przeciwną uderzającej  - zagrywka szybująca w wyskoku po 2-krokowym rozbiegu, z odbicia obunóż (piłka trzymana oburącz)."
@@ -2201,16 +2623,19 @@ const allAnswers = {
     "Trenerzy uznają swą odpowiedzialność kierowniczą i przewodzą grupie w osiąganiu założonych przez nich celów (własnych)."
   ],
   "Który czynnik należy brać pod uwagę w różnicowaniu treningu wszechstronnego:": [
-    "Nabywanie i doskonalenie umiejętności oraz sprawności specjalnej."
+    "Nabywanie i doskonalenie umiejętności oraz sprawności specjalnej.",
+    "Kryterium rozwoju biologicznego."
   ],
   "Które z podanych poniżej wydarzeń pojawiło się najwcześniej:": [
-    "Grand Prix siatkarek."
+    "Grand Prix siatkarek.",
+    "Wprowadzenie do gry Libero."
   ],
   "Jaki rodzaj pracy powinien być dominujący w programie III klasy gimnazjum:": [
     "Ćwiczenia analityczne."
   ],
   "Czy całościowa forma zagrywki rotacyjnej w wyskoku powinna być uwzględniona w metodyce nauczania w wieku młodzika:": [
-    "Nie, tylko uderzenie rotacyjne z miejsca."
+    "Nie, tylko uderzenie rotacyjne z miejsca.",
+    "Tak, pełna zagrywka w wyskoku."
   ],
   "Który z etapów szkolenia S.O.S. nie jest finansowany z budżetu państwa:": [
     "Szkoły Gimnazjalne z programem S.O.S."
@@ -2222,10 +2647,12 @@ const allAnswers = {
     "Obrona dwoma zawodnikami z przodu z obrotem."
   ],
   "W grze obronnej system opisany jako 2:1:3 oznacza:": [
-    "W kolejności liczbę zawodników broniących pola, asekurujących i blokujących."
+    "W kolejności liczbę zawodników broniących pola, asekurujących i blokujących.",
+    "Opis sposobu ustawienia zawodników w obronie względem bloku."
   ],
   "Która z zasad minisiatkówki dotyczy gry 3 x 3:": [
-    "Atakować może tylko jeden zawodnik w każdym ustawieniu"
+    "Atakować może tylko jeden zawodnik w każdym ustawieniu",
+    "Wszyscy atakują w każdym ustawieniu"
   ],
   "Jaki jest nadrzędny element skutecznego przyjęcia:": [
     "Postawa w przyjęciu."
@@ -2259,6 +2686,228 @@ const allAnswers = {
   ],
   "Siatkówka plażowa. Wystawa sposobem oburącz dolnym zapewnia:": [
     "Możliwość wystawy na dowolną odległość."
+  ],
+  "Środki wspomagające to:": [
+    "Wszystkie odpowiedzi są prawdziwe."
+  ],
+  "W cyklu treningowym, kolejny trening powinien być zaplanowany:": [
+    "Po zakończeniu superkompensacji."
+  ],
+  "Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:": [
+    "Wyłącznie większy od ciężaru ciała."
+  ],
+  "Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:": [
+    "Wszystkie odpowiedzi są prawdziwe."
+  ],
+  "Bóle w dolnym odcinku kręgosłupa są spowodowane:": [
+    "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa oraz mięśni rotatorów."
+  ],
+  "Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:": [
+    "Wingate."
+  ],
+  "Wydolność aerobowa mierzona jest przez pomiar:": [
+    "Maksymalnego minutowego poboru tlenu."
+  ],
+  "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?": [
+    "W żadnym z tych przypadków zespół nie straci punktu"
+  ],
+  "Najskuteczniejsze działania integrujące i budujące więzi w sytuacji rozwiązywania konfliktów to:": [
+    "Przyjęcie odpowiedzialności, podkreślenie wspólnoty, brak wsparcia osobistego."
+  ],
+  "Według koncepcji Selingmana zawodnicy tłumaczą swoje sukcesy/porażki poniższymi wymiarami:": [
+    "Personalizacja, stałość, zasięg."
+  ],
+  "Cele pedagogiczne funkcjonowania młodego zespołu to:": [
+    "Kształtowanie ducha gry zespołowej i współpracy."
+  ],
+  "Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:": [
+    "Utrata podświadomości."
+  ],
+  "Selekcja kierowana polega na:": [
+    "Parametrów somatycznych zawodników."
+  ],
+  "Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?": [
+    "Bieg na 10 m ze startu zatrzymanego."
+  ],
+  "Który z treningów siły jest wskazany dla młodocianych siatkarzy?": [
+    "Trening kulturystyczny."
+  ],
+  "Ilu wystawiających musi być w drużynie, która atakować będzie wyłącznie w systemie po wystawie zawodnika z linii ataku:": [
+    "Jeden."
+  ],
+  "Systemy rozbiegu do ataku w 1 tempo to:": [
+    "System stały i płynny."
+  ],
+  "Warianty ataku w 1 tempo ustala:": [
+    "Zawodnik przyjmujący."
+  ],
+  "Środkowy zmienia akcję bazową, tak aby stanowić zagrożenie (otwiera siatkę) w sytuacji gdy:": [
+    "Piłka przyjęta jest w strefę \"0\"."
+  ],
+  "Rysunek 21 przedstawia moment odbicia do ataku z jednej nogi dla akcji bazowej:": [
+    "Akcja \"B\" /baza B."
+  ],
+  "Pozycje wyjściowe do bloku po zmianie stref to:": [
+    "Wąsko w prawo, wąsko na środku."
+  ],
+  "Podstawowym priorytetem trenera A. Anastasiego w systemie organizacji blokowania w grze Reprezentacji Polski dla zawodnika środkowego było:": [
+    "Blokowanie zawodnika rozgrywającego."
+  ],
+  "Wskaż właściwy sposób ustawiania bloku w strefie II lub IV przez zawodnika skrzydłowego:": [
+    "Wszystkie odpowiedzi są prawidłowe."
+  ],
+  "Które z ćwiczeń nie jest przygotowującym do nauki odbić górnych:": [
+    "Podrzut i chwyt piłki oburącz ponad głową."
+  ],
+  "Wskaż ćwiczenie zawierające błąd w nauczaniu ruchu ramienia uderzającego przy zagrywce szybującej bez wyskoku:": [
+    "Ćwiczący z piłką, ręka ugięta w stawie łokciowym"
+  ],
+  "Która z zasad nauczania zakłada dobór treści zajęć dostosowany do określonego poziomu umiejętności ćwiczących:": [
+    "Zasada świadomości i aktywności.",
+    "Zasada poglądowości.",
+    "Zasada stopniowania trudności.",
+    "Zasada wszechstronności.",
+    "Zasada wszechstronności."
+  ],
+  "Która z zasad organizacji kontrataku obowiązuje w przypadku obrony przez zawodnika rozgrywającego:": [
+    "Wystawia ten, kto ma piłkę z prawej strony."
+  ],
+  "Taktykę indywidualną ataku z piłki sytuacyjnej ze skrzydła opisuje zdanie:": [
+    "Niedokładnie wystawioną piłkę kiwamy na libero."
+  ],
+  "Schemat ustawienia obrońców na pozycjach wyjściowych przedstawiony na rysunku 33a stosowany jest:": [
+    "Wyłącznie na poziomie kadeta."
+  ],
+  "W pozycji bazowej obrońca, który prawidłowo zareagował (przewidział działania przeciwnika), powinien:": [
+    "Wszystkie odpowiedzi są prawidłowe."
+  ],
+  "Rola pierwszego przyjmującego w grze. Wskaż zdanie prawdziwe:": [
+    "Jest zawodnikiem obrony w ustawieniach R4, R5, R6."
+  ],
+  "W którym ustawieniu lub ustawieniach zawodnik przyjmujący grający w linii ataku ustawiony jest do przyjęcia zagrywki na prawej stronie boiska:": [
+    "R 6."
+  ],
+  "Stosunek ilości wszystkich działań w danym elemencie wykonanym przez zawodnika do ilości wszystkich działań w tym samym elemencie wykonanym przez zespół wyraża:": [
+    "Współczynnik udziału w grze."
+  ],
+  "Które z wymienionych cech są charakterystyczne dla planu szkoleniowego:": [
+    "Plastyczność, przebojowość."
+  ],
+  "Plan organizacji szkolenia składa się z dwóch części, wskaż właściwe:": [
+    "Przygotowawcza, startowa."
+  ],
+  "Który system jako pierwszy pozwala na wprowadzanie specjalizacji środkowego:": [
+    "System mieszany."
+  ],
+  "Który z wprowadzonych sposobów ataku w wieku juniora jest priorytetowy:": [
+    "Uderzenie z prowadzeniem ramienia pod kątem do tułowia."
+  ],
+  "Jaki sposób gry wprowadzany jest w kategorii juniora:": [
+    "Kombinacja „pipe”."
+  ],
+  "Podstawowym zadaniem broniącego w minisiatkówce, w grze 2x2, jest:": [
+    "Stała pozycja w obronie."
+  ],
+  "Które z umiejętności decydują o jakości przyjęcia zagrywki:": [
+    "Sytuacyjne techniki przyjęcia."
+  ],
+  "Na jaki element w nauczaniu bloku zwraca się uwagę po opanowaniu innych wcześniejszych elementów bloku:": [
+    "Przemieszczanie."
+  ],
+  "Który rodzaj asekuracji jest najczęściej stosowany przez zespoły grające atak z „pipe”:": [
+    "2-3 stały."
+  ],
+  "Zmiana założeń zespołowych gry w etapach szkolenia młodzieży zależy od rozwoju umiejętności:": [
+    "Gry w obronie."
+  ],
+  "System obrony 1 -1 -2 oznacza:": [
+    "Dwóch broniących po skosie, jeden po prostej i jeden w asekuracji."
+  ],
+  "Jakie zadania ma zawodnik lepiej przyjmujący ustawiony do przyjęcia w trzech zawodników:": [
+    "Bierze piłki na styku (\"pomiędzy\")."
+  ],
+  "Jaką rolę w treningu spełnia atrapa bloku:": [
+    "Ułatwia wykonanie czynności."
+  ],
+  "Podstawowym celem naboru jest:": [
+    "Formowaniu grupy ćwiczebnej."
+  ],
+  "Który z elementów taktyki zespołowej jest szczególnie dostosowany do gry rywala:": [
+    "Taktyka asekuracji własnego ataku."
+  ],
+  "Przejście z fazy ataku do fazy obrony następuje w momencie:": [
+    "Po przejściu piłki nad siatką na stronę rywala."
+  ],
+  "Która z zasad zwiększania kompetencji bloku w kolejnych latach szkolenia jest istotna:": [
+    "Ustawienie bloku naprzeciwko atakowanej piłki."
+  ],
+  "Jakie zadanie ma łączenie poprzez trening różnych dyspozycji w interdyspozycje do gry:": [
+    "Zwiększenie sumy działania poszczególnych dyspozycji."
+  ],
+  "Jaka umiejętność przyjmującego wynika z „głębokiego widzenia”:": [
+    "Dostosowanie trajektorii przyjęcia."
+  ],
+  "Które z działań w taktyce indywidualnej rozgrywającego „ustawia grę”:": [
+    "Ukrywanie zamiarów."
+  ],
+  "Siatkówka plażowa. Jakie czynniki mają wpływ na wybór miejsca i sposobu wykonania zagrywki:": [
+    "Słońce, siła i kierunek wiatru."
+  ],
+  "Stosowanie w szkoleniu siatkarza zasady poglądowości gwarantuje, że:": [
+    "Zdobyte wiadomości i opanowane umiejętności będą utrwalane (doskonalone) w toku kolejnych zajęć treningowych.",
+    "Przekazywanie wiadomości poprzez różnego rodzaju środki wizualne (np. pokaz) ułatwia opanowanie umiejętności.",
+    "Oddziałujemy przez ćwiczenia na wszystkie grupy mięśniowe, równomiernie rozwijając organizm.",
+    "Dostosowujemy trudność zadań stawianych zawodnikom do ich możliwości.",
+    "Przekazywanie wiadomości poprzez różnego rodzaju środki wizualne (np. pokaz) ułatwia opanowanie umiejętności."
+  ],
+  "Zaletą zabawowej formy nauczania jest to, iż:": [
+    "Jest to jedyna forma nauczania, która daje możliwość stosowania zasady indywidualizacji w nauczaniu czynności ruchowych.",
+    "Nauczanie odbywa się w warunkach rywalizacji i zabawy, co uatrakcyjnia zajęcia.",
+    "Wszystkie odpowiedzi są poprawne."
+  ],
+  "Nauczanie umiejętności technicznych i taktycznych, w których nacisk położony jest na uczenie się gry, określa się mianem:": [
+    "Podejścia nowoczesnego.",
+    "Podejścia preferowanego.",
+    "Podejścia całościowego.",
+    "Podejścia tradycyjnego."
+  ],
+  "Która z form nauczania odbywa się z udziałem przeciwnika:": [
+    "Gra właściwa.",
+    "Forma fragmentów gry.",
+    "Gra szkolna.",
+    "Gra uproszczona.",
+    "Gra szkolna."
+  ],
+  "W której formie nauczania w treningu, trenerzy skupiają uwagę zawodników na kluczowych elementach gry:": [
+    "W grze właściwej.",
+    "W grze uproszczonej.",
+    "W grze szkolnej.",
+    "W grze zabawowej.",
+    "W grze uproszczonej."
+  ],
+  "Nauczanie gry w siatkówkę powinno odbywać się:": [
+    "Na zasadach zróżnicowanych w zależności od tego, czy szkolimy, dzieci, młodzież, czy dorosłych.",
+    "Wszystkie odpowiedzi są właściwe.",
+    "Na takich samych zasadach, niezależnie czy szkolimy dzieci, młodzież, dorosłych, amatorów, czy profesjonalistów.",
+    "Na takich samych zasadach , ale tylko dzieci i młodzież."
+  ],
+  "Który z wymienionych argumentów jest charakterystyczny dla podejścia całościowego w nauczaniu piłki siatkowej:": [
+    "Trener podejmuje wszystkie decyzje.",
+    "Treningi są często nudne i demotywujące zawodników.",
+    "Naucza się specyficznych elementów gry i dopiero potem łączy je w całość.",
+    "Naucza się gry, a dopiero potem doskonali poszczególne jej części."
+  ],
+  "Celem gry szkolnej jest:": [
+    "Przeprowadzenie zawodów drużyn szkolnych.",
+    "Doskonalenie wybranego elementu techniki lub taktyki indywidualnej.",
+    "Podniesienie poziomu atrakcyjności zajęć.",
+    "Umożliwienie rywalizacji w zespołach młodzieżowych."
+  ],
+  "Rozpoczynając pracę z drużyną, trenerzy powinni zaczynać od:": [
+    "Wyobrażenia sobie gry zespołu, który będą prowadzić.",
+    "Skopiowania gry zespołu, który odnosi sukcesy.",
+    "Usystematyzowania ćwiczeń, które będą stosować w procesie szkoleniowym.",
+    "Wszystkie odpowiedzi są nieprawidłowe."
   ]
 }; // tablica z odpowiedziami do pytań
 
@@ -2298,7 +2947,7 @@ const allAnswers = {
 
         Array.from(document.querySelectorAll('#contentAnswers .box_answer')).forEach(box => {
             const btnText = box.querySelector('.btn')?.innerText.trim() || '';
-            if (btnText !== correct) {
+            if (btnText == correct) {
                 const input = box.querySelector('input');
                 if (input && !input.checked) input.click(); // klikamy, żeby zadziałały skrypty strony
                 return;
