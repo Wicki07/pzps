@@ -1522,5 +1522,546 @@
       "Instruuje swoich zawodników.",
       "Przekazuje informacje o tym jak skorygować błąd."
     ]
+  },
+  // teoria treningu
+  "5b67aa41a33b": {
+    "question": "Na jakim poziomie struktury czasowej prowadzona jest kontrola operacyjna?",
+    "answers": [
+      "Mikrocyklu i mezocyklu.",
+      "Cwiczenia i jednostki trenigowej.",
+      "Podokresu i okresu.",
+      "Etapu szkolenia."
+    ]
+  },
+  "3b0fb17e8adc": {
+    "question": "Dlaczego kształtowanie koordynacji odbywa się metodą powtórzeniową?",
+    "answers": [
+      "Intensywność ćwiczeń nie jest wysoka.",
+      "Konieczna jest duża liczba powtórzeń.",
+      "Wymagany jest duży stopień trudności ćwiczeń.",
+      "Ćwiczenia koordynacyjne stosunkowo szybko prowadzą do zmęczenia."
+    ]
+  },
+  "191a7e32c8fc": {
+    "question": "Które z cech motorycznych warunkują poziom skoczności?",
+    "answers": [
+      "Siła i gibkość.",
+      "Szybkość i wytrzymałość.",
+      "Szybkość i siła.",
+      "Koordynacja ruchowa i szybkość."
+    ]
+  },
+  "6399164910f1": {
+    "question": "Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?",
+    "answers": [
+      "Bieg na 10 m ze startu zatrzymanego.",
+      "Bieg zwinnościowy ze zmianą kierunków.",
+      "Zasięg oburącz w wyskoku z miejsca.",
+      "Rzut piłką lekarską."
+    ]
+  },
+  "1e1ea1f5a4ba": {
+    "question": "Z którą z cech motorycznych szybkość ma najmniejszy związek?",
+    "answers": [
+      "Gibkość.",
+      "Siła.",
+      "Koordynacja.",
+      "Wytrzymałość."
+    ]
+  },
+  "df9ffc3caef4": {
+    "question": "Najważniejsze elementy warsztatu trenerskiego to:",
+    "answers": [
+      "Formy i środki treningu.",
+      "Metody treningowe.",
+      "Metody, formy i środki treningu.",
+      "Zasady treningu."
+    ]
+  },
+  "50450035be16": {
+    "question": "Jakie okresy treningowe występują w makrocyklu?",
+    "answers": [
+      "Przedstartowy, główny, roztrenowania,",
+      "Ogólnorozwojowy, specjalny, startowy.",
+      "Wstępny, ukierunkowany, specjalistyczny.",
+      "Przygotowawczy, startowy, przejściowy."
+    ]
+  },
+  "a2dd50b359a9": {
+    "question": "Która z metod oceny techniki stosowana jest w początkowej fazie szkolenia młodocianych zawodników?",
+    "answers": [
+      "Arkusze obserwacji gry.",
+      "Obserwacja trenerska.",
+      "Testy sprawności technicznej.",
+      "Rejestracja filmowa."
+    ]
+  },
+  "c12f352b4a52": {
+    "question": "Na czym polega trening strumieniowy?",
+    "answers": [
+      "Kikakrotnym powtarzaniu obwodu ćwiczebnego bez przerw między obwodami.",
+      "Aktywizacja ćwiczących zgodnie z zasadami aktywności i świadomości.",
+      "Systematycznym powtarzaniu poszczególnych rodzajów ćwiczeń.",
+      "Systematycznym i kolejnym ćwiczeniu poszczególnych grup mięśniowych."
+    ]
+  },
+  "37985fe1ee24": {
+    "question": "Etapy w szkoleniu sportowym siatkarza:",
+    "answers": [
+      "Wszechstronny, ukierunkowany, specjalistyczny, mistrzowski.",
+      "Ogólnorozwojowy i specjalistyczny.",
+      "Wstępny, ukierunkowany, specjalistyczny.",
+      "Młodzik, kadet, junior."
+    ]
+  },
+  "95938c7b50e4": {
+    "question": "Który okres rozwojowy nazywany jest złotym wiekiem rozwoju sprawności?",
+    "answers": [
+      "Okres młodzieńczy.",
+      "Okres młodszy szkolny.",
+      "Okres dojrzałości.",
+      "Okres starszy szkolny."
+    ]
+  },
+  "a9b5fdd60fc4": {
+    "question": "Który rodzaj siły dominuje w wyskoku do ataku?",
+    "answers": [
+      "Siła zrywowa.",
+      "Siła aktywna.",
+      "Względna siła mięśniowa.",
+      "Siła wolna."
+    ]
+  },
+  "5518a2a8e1cd": {
+    "question": "Która z definicji treningu sportowego w pełni oddzwierciedla jego istotę?",
+    "answers": [
+      "Jednostka treningowa, zajęcia szkoleniowe.",
+      "Trening sportowy jest procesem specjalizacji, który nie zaburzając harmonijnego rozwoju osobowości zawodnika zmierza do rozwinięcia tych jego cech fizycznych, psychicznych i sprawnościowych, które umożliwią mu osiągnięcie najwyższego wyniku sportowego.",
+      "Zespół oddziaływań trenera na zawodnika.",
+      "Uporządkowany zestaw ćwiczeń skierowany na realizację zadania szkoleniowego."
+    ]
+  },
+  "5f9ac44e8f06": {
+    "question": "Jakie jest główne zadanie okresu przygotowawczego?",
+    "answers": [
+      "Budowanie formy sportowej.",
+      "Trening specjalistyczny.",
+      "Przygotowanie sprawnościowe.",
+      "Doskonalenie techniki i taktyki."
+    ]
+  },
+  "ceaaf1c93c2e": {
+    "question": "Na czym polega planowanie właściwe treningu?",
+    "answers": [
+      "Skoordynowanie zamierzeń z aktualnymi możliwościami zawodników oraz warunkami treningu.",
+      "Określeniu drogi realizacji celu.",
+      "Rozłożeniu metod, form i środków w określonym czasie: makrocyklu, okresie, mezocyklu.",
+      "Wyznaczeniu realnego celu."
+    ]
+  },
+  "eb1fc0ecd6a1": {
+    "question": "Zadania przygotowania sprawnościowego:",
+    "answers": [
+      "Przygotowanie do podjęcia i kontynuowania treningu specjalistycznego.",
+      "Eliminowanie błędów.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Przygotowanie dostosowane do wymogów wynikających z działań w grze."
+    ]
+  },
+  "66d9646265e3": {
+    "question": "Który z elementów przygotowania psychicznego zawodników kształtuje ich cechy charakteru?",
+    "answers": [
+      "Kształtowanie umiejętności zmian napięcia emocjonalnego.",
+      "Kształtowanie motywów.",
+      "Przygotowanie wolicjonalne.",
+      "Kształtowanie odporności psychicznej."
+    ]
+  },
+  "85788134f8e8": {
+    "question": "Co jest istotą metody interwałowej w kształtowaniu wytrzymałości?",
+    "answers": [
+      "Czas wysiłku.",
+      "Intensywność.",
+      "Niepełny czas przerwy wypoczynkowej.",
+      "Liczba powtórzeń ćwiczenia."
+    ]
+  },
+  "749c12786522": {
+    "question": "Który rodzaj rozgrzewki jest zgodny z wymogami wysiłku startowego?",
+    "answers": [
+      "Aktywna.",
+      "Specjalistyczna.",
+      "Przedstartowa.",
+      "Pasywna."
+    ]
+  },
+  "ff87af3fdba6": {
+    "question": "Selekcja kierowana polega na:",
+    "answers": [
+      "Sformalizowany system norm i ich wartości w przechodzeniu kolejnych etapów szkolenia.",
+      "Samoocenie i samokontroli zawodników.",
+      "Doświadczeniu i wiedzy praktycznej oraz intuicji trenera prowadzącego szkolenie.",
+      "Parametrów somatycznych zawodników."
+    ]
+  },
+  "78fcd2bdb2ab": {
+    "question": "Która z metod treningowych nie wymaga określenia wszystkich czterech parametrów tj. czasu trwania wysiłku, liczby powtórzeń, intensywności, czasu i charakteru przerw wypoczynkowych:",
+    "answers": [
+      "Interwałowa.",
+      "Startowa.",
+      "Zmienna.",
+      "Powtórzeniowa."
+    ]
+  },
+  "230fcc9586a9": {
+    "question": "Która z faz kształtowania nawyku ruchowego ma miejsce zarówno w nauczaniu jak i doskonaleniu techniki?",
+    "answers": [
+      "Koncentracji.",
+      "Plastyczności.",
+      "Generalizacji.",
+      "Automatyzacji."
+    ]
+  },
+  "dd0cf504da9b": {
+    "question": "Które rodzaje treningu realizowane są w przekroju całej kariery zawodnika?",
+    "answers": [
+      "Wszechstronny, ukierunkowany, specjalistyczny.",
+      "Funkcjonalny.",
+      "Ogólnorozwojowy i specjalistyczny.",
+      "Techniczny i taktyczny."
+    ]
+  },
+  "6ba2413695f2": {
+    "question": "Co składa się na strukturę rzeczową treningu?",
+    "answers": [
+      "Etapy szkolenia.",
+      "Rodzaje treningu.",
+      "Przygotownie sprawnościowe, techniczne, taktyczne, psychiczne, teoretyczne, intelektualne.",
+      "Obciążenia treningowe."
+    ]
+  },
+  "e7048c8fd9b1": {
+    "question": "Wymogi do organizacji treningu sprawności funkcjonalnej:",
+    "answers": [
+      "Profilaktyka urazów i zmian przeciążeniowych narządu ruchu.",
+      "Struktura działań i ruchów w wykonywanej technice ruchu.",
+      "Możliwość realizacji zadań treningowych.",
+      "Optymalizacja treningu sprawności fizycznej."
+    ]
+  },
+  "fff48c60700c": {
+    "question": "Którą z metod treningu kształtuje się skoczność?",
+    "answers": [
+      "Interwałową.",
+      "Ciągłą.",
+      "Zmienną.",
+      "Powtórzeniową."
+    ]
+  },
+  "9cb1ef0b26e5": {
+    "question": "Które z kryteriów do piłki siatkowej może opierać się na obserwacji trenera?",
+    "answers": [
+      "Uzdolnienia ruchowe.",
+      "Sprawność fizyczna.",
+      "Stan zdrowia.",
+      "Budowa somatyczna."
+    ]
+  },
+  "389b98461178": {
+    "question": "Czym jest dokumentacja szkoleniowa?",
+    "answers": [
+      "Uporządkowanym zbiorem informacji dotyczących przedsięwzięć organizacyjno-szkoleniowych.",
+      "Zapisem pracy w dzienniku treningowym.",
+      "Planem szkoleniowym złożonym w klubie.",
+      "Sprawozdaniem z realizacj szkolenia po zakończeniu makrocyklu."
+    ]
+  },
+  "e2eaa50517a7": {
+    "question": "Który z treningów siły jest wskazany dla młodocianych siatkarzy?",
+    "answers": [
+      "Trening ciężkoatletyczny.",
+      "Trening obwodowy.",
+      "Trening izometryczny.",
+      "Trening kulturystyczny."
+    ]
+  },
+  "8a3be91360cb": {
+    "question": "Jaka powinna być dobra technika w procesie szkolenia młodych siatkarzy?",
+    "answers": [
+      "Zgodna z aktualnym wzorcem wykonania startowego.",
+      "Skuteczna.",
+      "Dostosowana do indywidualnych cech ćwiczącego.",
+      "Plastyczna."
+    ]
+  },
+  "4d0f953cf3fa": {
+    "question": "Co jest głównym zadaniem przygotowania teoretycznego i intelektualnego?",
+    "answers": [
+      "Wytworzenie aktywności i świadomości u zawodników.",
+      "Wyposażenie zawodnika w odpowiedni zasób wiedzy.",
+      "Wychowanie sportowca.",
+      "Dokonywanie samokontroli i samooceny przez zawodników."
+    ]
+  },
+  "4354c3386b6b": {
+    "question": "Obciążenie wewnętrzne określa:",
+    "answers": [
+      "Częstość skurczów serca.",
+      "Stężenie mleczanu.",
+      "Wielkość napięcia mięśniowego.",
+      "Zespół reakcji organizmu na obciążenie zewnętrzne."
+    ]
+  },
+  "83552a87982a": {
+    "question": "Czym jest kontrola treningu?",
+    "answers": [
+      "Procesem zbierania informacji o treningu, zawodach, odnowie.",
+      "Rejestracją i analizą gry.",
+      "Zapisem i oceną wykonanej pracy na treningu.",
+      "Sprawdzaniem poziomu wytrenowania zawodników."
+    ]
+  },
+  "50db47981235": {
+    "question": "Czy selekcja w piłce siatkowej polega na:",
+    "answers": [
+      "Egzaminie sprawnościowym do klasy lub szkoły sportowej.",
+      "Jednorazowym postępowaniu przy konstruowaniu zespołu.",
+      "Prowadzeniu obserwacji w przebiegu całego procesu szkolenia.",
+      "Jednorazowym postępowaniu na początku szkolenia."
+    ]
+  },
+  "6683c9770ad8": {
+    "question": "Podstawowa forma w nauczaniu techniki:",
+    "answers": [
+      "Fragmentów gry.",
+      "Gra szkolna.",
+      "Ścisła.",
+      "Zadaniowa."
+    ]
+  },
+  "77bb1e6e50fc": {
+    "question": "Podstawową cechą charakteryzującą dobrego trenera jest:",
+    "answers": [
+      "Umiejętność organizacji zajęć.",
+      "Auotrytet.",
+      "Systematyczność i celowość działania.",
+      "Wiedza fachowa."
+    ]
+  },
+  "d03888ea8b23": {
+    "question": "Planowanie makrocyklu powinno rozpoczynać się od:",
+    "answers": [
+      "Wyznaczenia ram czasowych okresu startowego w oparciu o kalendarz zawodów.",
+      "Określenia globalnych wielkości obciążeń: dni, treningi, godziny, kilometry, powtórzenia.",
+      "Wyznaczenia ram czasowych okresu przygotowawczego.",
+      "Wyznaczenia celu głównego i celów pośrednich oraz terminów i miejsc ich realizacji."
+    ]
+  },
+  "e637ea3cca46": {
+    "question": "Który z parametrów treningu nie jest korzystny dla właściwego treningu szybkości?",
+    "answers": [
+      "Krótki czas trwania ćwiczenia.",
+      "Zmęczenie.",
+      "Maksymalna prędkość ruchu.",
+      "Dobra technika."
+    ]
+  },
+  "75d5a2b4ec5b": {
+    "question": "Co jest najistotniejsze w procesie kierowania treningiem sportowym?",
+    "answers": [
+      "Realizowanie zadań w treningu, zawodach i odnowie.",
+      "Kształtowanie się trendu wyników sportowych.",
+      "Wyznaczenie głównych zadań zawodnikom w cyklu.",
+      "Relacja trener-zawodnik."
+    ]
+  },
+  "8f0b9c26430c": {
+    "question": "Jakie jest główne zadanie okresu przejściowego?",
+    "answers": [
+      "Czasowe obniżenie formy sportowej.",
+      "Leczenie i odbudowa zdolności do treningu.",
+      "Wypoczynek bierny i wdrażanie do kolejnego okresu przygotowawczego.",
+      "Roztrenowanie i wypoczynek."
+    ]
+  },
+  "691890420fa5": {
+    "question": "Które z cech motorycznych mają wymiar jakościowy?",
+    "answers": [
+      "Koordynacja ruchowa.",
+      "Szybkość, siła.",
+      "Gibkość, siła.",
+      "Skoczność, zwinność."
+    ]
+  },
+  "598915d97008": {
+    "question": "Jakie ćwiczenia mogą ograniczać rozwój gibkości?",
+    "answers": [
+      "Koordynacyjne.",
+      "Wytrzymałościowe.",
+      "Szybkościowe.",
+      "Siłowe."
+    ]
+  },
+  "3545768ee2aa": {
+    "question": "Wybitny talent to ten, który:",
+    "answers": [
+      "Uczy się techniki szybko, doładnie i trwale.",
+      "Uczy się dokładnie i trwale.",
+      "Uczy się szybko i dokładnie.",
+      "Uczy się szybko i trwale."
+    ]
+  },
+  "8b064b983d56": {
+    "question": "W którym okresie w makrocyklu występuje mikrocykl wprowadzający?",
+    "answers": [
+      "Startowym.",
+      "We wszystkich okresach.",
+      "Przejściowym.",
+      "Przygotowawczym."
+    ]
+  },
+  "3f2558390396": {
+    "question": "Jakie jest główne zadanie części końcowej jednostki treningowej?",
+    "answers": [
+      "Rozciąganie.",
+      "Zabiegi higieniczne: kąpiel, zmiana ubioru.",
+      "Doprowadzenie organizmu ćwiczących do względnego stanu równowagi funkcjonalnej.",
+      "Podsumowanie wyniku zajęć."
+    ]
+  },
+  "c759835ad91f": {
+    "question": "Koordynacja ruchowa jest funkcją?",
+    "answers": [
+      "Budowy somatycznej i szybkości.",
+      "Doświadczeń ruchowych i wytrenowania.",
+      "Gibkości i sprawności układu nerwowego.",
+      "Zwinności i zręczności."
+    ]
+  },
+  "c08e61ec22b1": {
+    "question": "Co jest istotą treningu plyometrycznego?",
+    "answers": [
+      "Zwiększenie mocy wykorzystując pracę mięśni w cyklu rozciągnięcie – skurcz.",
+      "Poprawa koordynacji i czucia nerwowo-mięśniowego.",
+      "Umiejętność amortyzacji przy lądowaniu.",
+      "Profilaktyka urazów i zmian przeciążeniowych."
+    ]
+  },
+  "ae13f251935f": {
+    "question": "Istotą stosowania trenażerów jest:",
+    "answers": [
+      "Zwrotna informacja o skuteczności działania.",
+      "Programowanie treningu i sterowanie nim.",
+      "Odtwarzanie ćwiczenia startowego w całości lub we fragmentach.",
+      "Modelowanie wykonywania ćwiczeń."
+    ]
+  },
+  "94e850025a92": {
+    "question": "W czym przejawia się zasada indywidualizacji?",
+    "answers": [
+      "Dostosowanie rozwiązań metodycznych do możliwości i potrzeb zawodników.",
+      "Liczbie powtórzeń, tempie wykonania, liczbie serii.",
+      "Regulacji masy ciała.",
+      "Doborze ćwiczeń."
+    ]
+  },
+  "491a3b85134f": {
+    "question": "Podstawowy warunek metodyczny, który powinien być przestrzegany podczas ćwiczenia gibkości:",
+    "answers": [
+      "Wysoka temperatura zewnętrzna.",
+      "Wykonywanie ćwiczeń gibkościowych w części końcowej treningu.",
+      "Rozgrzewka.",
+      "Rozluźnienie mięśni przed przystąpieniem do wykonywania ćwiczeń."
+    ]
+  },
+  "82f4d0155c08": {
+    "question": "Które mezocykle pełnią główną rolę w okresie przygotowawczym?",
+    "answers": [
+      "Pośrednie.",
+      "Wprowadzający, odbudowujący.",
+      "Kontrolno-przygotowawczy, przedstartowy.",
+      "Rozwijający, stabilizujący."
+    ]
+  },
+  "183713622960": {
+    "question": "Do jakiej grupy ćwiczeń należy zaliczyć sporty uzupełniające?",
+    "answers": [
+      "Ukierunkowane.",
+      "Regenerujące.",
+      "Podtrzymujące.",
+      "Wszechstronne."
+    ]
+  },
+  "7e35e292c635": {
+    "question": "Podstawowymi środkami stosowanymi w treningu są:",
+    "answers": [
+      "Suplementy diety i produkty medyczne.",
+      "Ćwiczenia.",
+      "Trenażery.",
+      "Obiekty, urządzenia i sprzęt sportowy."
+    ]
+  },
+  "b7dbdbe50484": {
+    "question": "Co jest podstawą rozwoju wytrzymałości?",
+    "answers": [
+      "Wielkość mięśni.",
+      "Cechy psychiczne.",
+      "Budowa somatyczna.",
+      "Wydolność."
+    ]
+  },
+  "b00d6e36e020": {
+    "question": "Która z zasad pełni w treningu zasadniczą rolę?",
+    "answers": [
+      "Stopniowania trudności.",
+      "Celowości.",
+      "Podmiotowości i indywidualizacji.",
+      "Specjalizacji."
+    ]
+  },
+  "f298f6e4994f": {
+    "question": "Co jest istotą coachingu?",
+    "answers": [
+      "Wyzwolenie jak największego potencjału zawodnika i osiągnięcie maksimum jego możliwości.",
+      "Pomoc zawodnikom w osiąganiu wyniku sportowego.",
+      "Kierowanie zespołem ludzi w dążeniu do osiągnięcia celu.",
+      "Dostosowanie programu treningu sportowego do indywidualnych potrzeb, możliwości i predyspozycji zawodnika."
+    ]
+  },
+  "eb29babaec10": {
+    "question": "W której części jednostki treningowej odbywa się nauczanie techniki?",
+    "answers": [
+      "Rozgrzewce specjalistycznej.",
+      "Części końcowej.",
+      "Części głównej.",
+      "Części wstępnej."
+    ]
+  },
+  "a641c4bf6852": {
+    "question": "W którym momencie struktury makrocyklu odbywa się utrwalenie i uplastycznienie wariantów taktycznych?",
+    "answers": [
+      "Podokresie przygotowania specjalnego.",
+      "Mezocyklu kontrolno-przygotowawczym.",
+      "Okresie przygotowawczym.",
+      "Okresie startowym."
+    ]
+  },
+  "18e7d4245a8e": {
+    "question": "Cechy motoryczne przejawiające się w wykonaniu zagrywki:",
+    "answers": [
+      "Czas reakcji, koordynacja.",
+      "Koordynacja, siła.",
+      "Skoczność, siła, szybkość, koordynacja.",
+      "Wytrzymałość siłowa, antycypacja, czas reakcji, orientacja przestrzenna."
+    ]
+  },
+  "7136394db11b": {
+    "question": "Z czego wynika wewnętrzna struktura okresu startowego?",
+    "answers": [
+      "Poziomu wytrenowania zawodników.",
+      "Z zadań realizowanych w okresie startowym.",
+      "Z kalendarza zawodów.",
+      "Składu osobowego drużyny."
+    ]
   }
 }
