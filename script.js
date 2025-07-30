@@ -319,7 +319,26 @@
 	"Do rotatorów wewnętrznych stawu biodrowego należy:": "Mięsień pośladkowy średni.",
 	"Uzyskanie bezpłatnej porady sportowo-lekarskiej jest możliwe:": "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w poradni mającej kontrakt z NFZ, pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu (rodzinnego).",
 	"Do oceny mocy wybicia w wyskoku można użyć testu:": "Bosco.",
-	"I próg metaboliczny występuje przy intensywności pracy:": "40-60% VO2max."
+	"I próg metaboliczny występuje przy intensywności pracy:": "40-60% VO2max.",
+	"W utrzymaniu stałego pH płynów ustrojowych biorą udział:": "Wszystkie wymienione.",
+	"Ruchy w stawie biodrowym to wszystkie z wyjątkiem:": "Unoszenie.",
+	"Pojemność tlenowa krwi wynosi:": "20 ml O2 na 100 ml krwi.",
+	"Bóle w dolnym odcinku kręgosłupa są spowodowane:": "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa.",
+	"Hematokryt wynosi średnio:": "42 % u kobiet i 47 % u mężczyzn.",
+	"Do cech budowy kręgu szczytowego należy:": "Wszystkie powyższe odpowiedzi są prawidłowe.",
+	"Wskaż efekty treningu fizycznego:": "Zwiększenie masy mięśni, poprawa koordynacji, zwiększenie objętości krwi.",
+	"Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:": "Mniejszy, większy jak i równy ciężarowi ciała.",
+	"Po około 25 roku życia zmniejsza się:": "Tylko wydolność aerobowa.",
+	"Do oceny zdolności wytrzymałościowych w grach zespołowych można zastosować test:": "Yo-Yo.",
+	"Po stwierdzeniu, że poszkodowany jest nieprzytomny:": "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do pośredniego masażu serca i sztucznych oddechów.",
+	"W płaszczyźnie czołowej zachodzą ruchy:": "Odwodzenia i przywodzenia.",
+	"Największy wpływ na poziom maksymalnego minutowego poboru tlenu ma:": "Maksymalna pojemność minutowa serca.",
+	"Intensywność rozgrzewki powinna wynosić:": "40-60%VO2max.",
+    "W przypadku pełnosprawnych zawodników orzeczenie o zdolności do sportu może wydać:": "Specjalista medycyny sportowej lub lekarz z certyfikatem PTMS.",
+	"Do grupy bocznej mięśni przedramienia należy:": "Prostownik promieniowy krótki nadgarstka.",
+	"Procesy anaboliczne to:": "Procesy endoergiczne (syntez) do których potrzebna jest energia z ATP.",
+	"U człowieka dorosłego wentylacja minutowa płuc w spoczynku wynosi około:": "6-8 L· min-1.",
+    "W skład ściany przedniej jamy brzusznej wchodzą:": "Mięsień prosty brzucha."
 };
 
     const allQuestions = {
