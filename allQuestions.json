@@ -2325,5 +2325,537 @@
       "Ramiona wyprostowane, nogi ugięte, tułów pochylony w przód.",
       "Wszystkie odpowiedzi są poprawne."
     ]
+  },
+  // siata 2
+  "18849287a302": {
+    "question": "Współpracę atakującego z rozgrywającym - w przypadku ataku z piłki przyspieszonej - najdokładniej opisuje zdanie:",
+    "answers": [
+      "Po ocenie przyjęcia, atakujący nie sygnalizuje głosem jakie chce otrzymać wystawienie.",
+      "Po ocenie przyjęcia, atakujący sygnalizuje głosem jakie chce otrzymać wystawienie - krzycząc - super!!!",
+      "Atakujący sygnalizuje głosem jakie chce otrzymać wystawienie - krzycząc - rzuć!!!",
+      "Rozgrywający umawia się przed akcją z atakującym, że wystawi piłkę przyspieszoną."
+    ]
+  },
+  "37a0a1f01093": {
+    "question": "Na rysunku 16 środkowy wykonuje rozbieg do ataku w 1 tempo w systemie stałym:",
+    "answers": [
+      "Akcja \"1\" (krótka) - środkowy wykonuje rozbieg na rozgrywającego.",
+      "Akcja \"1\" (krótka) - środkowy wykonuje rozbieg w osi boiska.",
+      "Akcja \"2\" (krótka z tyłu).",
+      "Wszystkie odpowiedzi są nieprawidłowe."
+    ]
+  },
+  "dcebe8b136a9": {
+    "question": "Rysunek 17 przedstawia środkowego atakującego w 1 tempo w systemie płynnym:",
+    "answers": [
+      "Akcja \"2\": krótka z tyłu.",
+      "Akcja \"7\": krótka przesunięta - środkowy wykonuje rozbieg trzy metry od linii bocznej.",
+      "Akcja \"C\": haczyk - środkowy wykonuje rozbieg trzy metry od linii bocznej.",
+      "Akcja \"7\": krótka przesunięta - środkowy wykonuje rozbieg przed rozgrywającym około 1,5 do 2 metrów bez względu na miejsce dogrania piłki."
+    ]
+  },
+  "83795adbe734": {
+    "question": "Rozbieg do ataku w 1 tempo w systemie stałym charakteryzuje:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "W przypadku akcji \"7\" środkowy wykonuje rozbieg trzy metry od linii bocznej.",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy wykonuje rozbieg w stałym, ustalonym wcześniej miejscu.",
+      "Zadaniem rozgrywającego jest wystawić piłkę w ustalone miejsce (dlatego system ten jest trudniejszy do stosowania dla rozgrywającego)."
+    ]
+  },
+  "c9fabbff7d06": {
+    "question": "Prawidłowy opis sposobu naskoku do ataku w 1 tempo jest następujący:",
+    "answers": [
+      "W momencie wyskoku tułów zwrócony w kierunku strefy I (zawodnik praworęczny) – rozbieg pod kątem 60˚.",
+      "W momencie wyskoku tułów zwrócony w kierunku strefy V (zawodnik praworęczny) – rozbieg wzdłuż siatki.",
+      "W momencie wyskoku tułów zwrócony w kierunku strefy V (zawodnik praworęczny) – rozbieg pod kątem 30˚.",
+      "W momencie wyskoku tułów zwrócony w kierunku strefy V (zawodnik praworęczny) – rozbieg pod kątem 60˚."
+    ]
+  },
+  "eb2b78ac4815": {
+    "question": "W zbiciu tenisowym pracę ramienia charakteryzuje ruch wykonany w płaszczyźnie strzałkowej zakończony:",
+    "answers": [
+      "Uderzeniem w piłkę w najwyższym punkcie, wyprostowanym ramieniem, otwartą dłonią z aktywnym ruchem nadgarstka (dłoń nakrywa piłkę).",
+      "Uderzeniem w piłkę w najwyższym punkcie dosiężnym przed sobą.",
+      "Uderzeniem w piłkę z przodu, ponad lewym barkiem.",
+      "Uderzeniem w piłkę z tyłu, ponad głową."
+    ]
+  },
+  "e03c8cf66826": {
+    "question": "Warianty ataku w 1 tempo ustala:",
+    "answers": [
+      "Zawodnik rozgrywający – to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki.",
+      "Trener - to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki.",
+      "Zawodnik przyjmujący.",
+      "Zawodnik środkowy – to on w pierwszej kolejności wywołuje akcje po przyjęciu zagrywki."
+    ]
+  },
+  "25a10cad13b9": {
+    "question": "Współpracę atakującego z rozgrywającym - w przypadku ataku z piłki wysokiej ze strefy II - najdokładniej opisuje zdanie:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Rozgrywający umawia się przed akcją z atakującym, że wystawi wysoką piłkę.",
+      "Atakujący sygnalizuje głosem jakie chce otrzymać wystawienie - krzycząc - daj!!!",
+      "Cisza – to sygnał dla zawodnika rozgrywającego, że piłka ma być wystawiona wysoko."
+    ]
+  },
+  "3b480bc0ac5c": {
+    "question": "Rysunek 11 przedstawia:",
+    "answers": [
+      "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie).",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie).",
+      "Wszystkie odpowiedzi są nieprawidłowe."
+    ]
+  },
+  "bf31fbeb0125": {
+    "question": "Systemy rozbiegu do ataku w 1 tempo to:",
+    "answers": [
+      "Nie istnieje żaden system.",
+      "System stabilny i płynny.",
+      "System stały i zmienny.",
+      "System stały i płynny."
+    ]
+  },
+  "8520852afbed": {
+    "question": "Na rycinie 1 kierunek uderzenia atakujący reguluje poprzez:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Zmianę kierunku rozbiegu (praca ramienia prostopadła do linii barków).",
+      "Pracę ręki atakującej prostopadle do barków, ze skrętem nadgarstka na zewnątrz.",
+      "Zmianę ustawienia tułowia w czasie lotu i ruch skrętny dłoni."
+    ]
+  },
+  "0c681c889c1f": {
+    "question": "Wskaż zdanie opisujące prawidłową technikę ataku w drugim tempie:",
+    "answers": [
+      "Rozpoczęcie rozbiegu do ataku z piłki przyspieszonej (super) przed wystawieniem po ocenie trajektorii lotu piłki dogrywanej do rozgrywającego (gdy piłka dogrywana jest w najwyższym punkcie trajektorii lotu).",
+      "Rozpoczęcie rozbiegu do ataku z piłki przyspieszonej (super) równo z wystawieniem (gdy piłka przyjęta jest w dłoniach rozgrywającego).",
+      "Rozpoczęcie rozbiegu do ataku z piłki przyspieszonej (super) w momencie, gdy piłka zaczyna spadać (piłka wystawiona jest w najwyższym punkcie trajektorii lotu).",
+      "Żadne zdanie nie opisuje prawidłowo techniki ataku w drugim tempie."
+    ]
+  },
+  "1b41cfc2dc66": {
+    "question": "Rysunki 19 i 20 przedstawiają zasadę obowiązującą środkowego w następującej sytuacji:",
+    "answers": [
+      "Przy dokładnym przyjęciu trener wywołuje akcję bazową (akcje \"1\",\"C\", \"2\", \"7\"), natomiast w przypadku dogrania w okolice 3 m zadaniem R jest wywołać akcję \"7\" (przesunięta-\"suw\").",
+      "Przy dokładnym przyjęciu środkowy idzie na ustaloną akcję bazową (akcje \"1\", \"C\", \"2\", \"7\"), natomiast w przypadku dogrania w okolice 3 m zadaniem Ś jest płynne przejście do ataku \"7\" (przesunięta-\"suw\").",
+      "Przy dokładnym przyjęciu środkowy wywołuje akcję bazową (akcje \"1\", \"C\", \"2\", \"7\"), natomiast w przypadku dogrania w okolice 3 m zadaniem Ś jest wywołać akcję \"7\" (przesunięta-\"suw\")",
+      "Przy dokładnym przyjęciu środkowy idzie wyłącznie na ustaloną akcję bazową (akcje \"1\", \"C\", \"2\", \"7\"), natomiast w przypadku dogrania w okolice 3 m zadaniem Ś jest atak wyłącznie z piłki \"7\" (przesunięta-\"suw\")."
+    ]
+  },
+  "8cc9b12b7e6e": {
+    "question": "Rozbieg do ataku w 1 tempo w systemie płynnym charakteryzuje zdanie:",
+    "answers": [
+      "W przypadku akcji \"7\" środkowy wykonuje rozbieg trzy metry od linii bocznej.",
+      "Wszystkie odpowiedzi są poprawne.",
+      "Zadaniem rozgrywającego jest wystawić piłkę w ustalone miejsce (dlatego system ten jest trudniejszy do stosowania dla rozgrywającego).",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki środkowy zawsze wykonuje rozbieg przed lub za zawodnikiem rozgrywającym."
+    ]
+  },
+  "54b5c0380ac7": {
+    "question": "Wskaż zdanie opisujące prawidłową technikę ataku w pierwszym tempie:",
+    "answers": [
+      "Rozpoczęcie rozbiegu do ataku z piłki szybkiej (quick) i krótkiej (1 tempo) równo z wystawieniem (gdy piłka przyjęta jest w dłoniach rozgrywającego).",
+      "Rozpoczęcie rozbiegu do ataku z piłki szybkiej (quick) i krótkiej (1 tempo) w momencie, gdy piłka zaczyna spadać (piłka wystawiona jest w najwyższym punkcie trajektorii lotu).",
+      "Żadne zdanie nie opisuje prawidłowo techniki ataku w pierwszym tempie.",
+      "Rozpoczęcie rozbiegu do ataku z piłki szybkiej (quick) i krótkiej (1 tempo) przed wystawieniem po ocenie trajektorii lotu piłki dogrywanej do rozgrywającego (gdy piłka dogrywana jest w najwyższym punkcie trajektorii lotu)."
+    ]
+  },
+  "45dcf32a3355": {
+    "question": "Kto decyduje o założeniach gry w ataku zawodnika środkowego w I tempo ze strefy III:",
+    "answers": [
+      "Wszystkie odpowiedzi są właściwe.",
+      "Wyboru dokonują zawodnicy rozgrywający ze środkowymi.",
+      "Wyboru dokonuje sztab szkoleniowy w zależności od poziomu zaawansowania grupy, a w szczególności zawodników środkowych i rozgrywających.",
+      "Wyboru dokonuje trener na podstawie oceny możliwości i charakterystyki poszczególnych zawodników."
+    ]
+  },
+  "41989b41cb81": {
+    "question": "Atakujący może regulować kierunek uderzenia poprzez:",
+    "answers": [
+      "Poprzez zmianę prowadzenia ramienia uderzającego ze stałego ustawienia tułowia.",
+      "Zmianę ustawienia tułowia w czasie lotu i ruch skrętny dłoni.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Zmianę kierunku rozbiegu (praca ramienia prostopadła do linii barków)."
+    ]
+  },
+  "adb508ea9783": {
+    "question": "Przy wystawie do ataku w 1 tempo zadaniem zawodnika rozgrywającego jest:",
+    "answers": [
+      "Wystawić piłkę od siatki w kierunku środkowego, zawsze na wysokość 1 m.",
+      "Wystawić piłkę od siatki w kierunku środkowego (,,wystawić pod rękę’’).",
+      "Wystawić piłkę na siatkę w kierunku ręki atakującej.",
+      "Wystawić piłkę z jak największą rotacją."
+    ]
+  },
+  "1e1cb9e4ab11": {
+    "question": "Technikę wykonania ostatniego kroku dojścia do zbicia należy opisać jako:",
+    "answers": [
+      "Naskok na wyprostowane nogi, do ugięcia we wszystkich stawach, połączony z zamachem ramion w tył; jednoczesny kontakt obu stóp z podłożem - \"na śródstopie\".",
+      "Doskok na ugięte we wszystkich stawach nogi, połączony z zamachem ramion w górę; jednoczesny kontakt obu stóp z podłożem - kolejno: przez pięty, na śródstopie.",
+      "Doskok na ugięte we wszystkich stawach nogi, połączony z zamachem ramion przed tułowiem; jednoczesny kontakt obu stóp z podłożem - kolejno: przez pięty, na śródstopie.",
+      "Naskok na ugięte we wszystkich stawach nogi, połączony z zamachem ramion w tył; jednoczesny kontakt obu stóp z podłożem - kolejno: przez pięty, na śródstopie."
+    ]
+  },
+  "692b679e49e0": {
+    "question": "Na rycinie 2 kierunek uderzenia atakująca reguluje poprzez:",
+    "answers": [
+      "Pracę ręki atakującej prostopadle do barków, ze skrętem nadgarstka na zewnątrz.",
+      "Zmianę prowadzenia ramienia uderzającego ze stałego ustawienia tułowia.",
+      "Zmianę ustawienia tułowia w czasie lotu i ruch skrętny dłoni.",
+      "Zmianę kierunku rozbiegu (praca ramienia prostopadła do linii barków)."
+    ]
+  },
+  "69a0f9acf1e2": {
+    "question": "W którym momencie atakujący ze strefy II informuje rozgrywającego, że chce atakować z piłki szybkiej:",
+    "answers": [
+      "Gdy przyjęta piłka wpada w dłonie rozgrywającego - krzyczy do rozgrywającego - quick!!!",
+      "Nie informuje rozgrywającego jakie chce otrzymać wystawienie, rozgrywający powinien wiedzieć z jakich wystaw lubi atakować.",
+      "Ustala wcześniej, że atakuje wyłącznie z szybkich wystaw.",
+      "Gdy atakujący oceni że piłką przyjęta jest dokładnie - krzyczy do rozgrywającego - quick!!!"
+    ]
+  },
+  "c9d0661c92a8": {
+    "question": "Wskaż zasadę obowiązującą zawodnika środkowego w przypadku ataku z akcji C (haczyk):",
+    "answers": [
+      "Środkowy wykonuje rozbieg dokładnie w ten sam sposób jak przy akcji \"7\", tzn. bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy wykonuje rozbieg 3 m przed zawodnikiem rozgrywającym (jest ,,powiązany’’ z zawodnikiem R).",
+      "Środkowy wykonuje rozbieg dokładnie w ten sam sposób jak przy akcji \"1\", tzn. bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy zawsze wykonuje rozbieg przed zawodnikiem rozgrywającym (jest ,,powiązany’’ z zawodnikiem R).",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy zawsze wykonuje rozbieg za zawodnikiem rozgrywającym (około 1,5-2 m za zawodnikiem R).",
+      "Wszystkie odpowiedzi są poprawne."
+    ]
+  },
+  "1c6c2195ea56": {
+    "question": "Rysunek 21 przedstawia moment odbicia do ataku z jednej nogi dla akcji bazowej:",
+    "answers": [
+      "Akcja \"C\" /baza C.",
+      "Akcja \"A\" /baza A.",
+      "Akcja \"1\" /baza 1.",
+      "Akcja \"B\" /baza B."
+    ]
+  },
+  "05035c13333a": {
+    "question": "Naskok do ataku (odbicie z jednej nogi) w przypadku ataku z jednej nogi w akcji bazowej A i B następuje:",
+    "answers": [
+      "Wszystkie odpowiedzi są poprawne.",
+      "Gdy piłka jest w rękach rozgrywającej.",
+      "Po wystawieniu piłki.",
+      "Zanim piłka dojdzie do rąk rozgrywającej."
+    ]
+  },
+  "6f65a3a34ac6": {
+    "question": "Które zdanie opisuje współpracę atakującego z rozgrywającym – w przypadku ataku z piłki szybkiej:",
+    "answers": [
+      "Gdy atakujący oceni, że piłka przyjęta jest dokładnie, krzyczy do rozgrywającego - quick!!! Jest to sygnał dla zawodnika rozgrywającego, że piłka ma być szybka (wystawiona w pierwszym tempie).",
+      "Gdy atakujący oceni, że piłka przyjęta jest niedokładnie, krzyczy do rozgrywającego - super!!! Jest to sygnał dla zawodnika rozgrywającego, że piłka ma być szybka (wystawiona w pierwszym tempie).",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Gdy atakujący oceni, że piłka przyjęta jest niedokładnie, krzyczy do rozgrywającego - quick!!! Jest to sygnał dla zawodnika rozgrywającego, że piłka ma być szybka (wystawiona w pierwszym tempie)."
+    ]
+  },
+  "b43e445e5076": {
+    "question": "Wskaż zdanie opisujące prawidłową technikę ataku w trzecim tempie:",
+    "answers": [
+      "Żadne zdanie nie opisuje prawidłowo techniki ataku w trzecim tempie.",
+      "Rozpoczęcie rozbiegu do ataku z piłki wysokiej w momencie, gdy piłka zaczyna spadać (piłka wystawiona jest w najwyższym punkcie trajektorii lotu).",
+      "Rozpoczęcie rozbiegu do ataku z piłki wysokiej równo z wystawieniem (gdy piłka przyjęta jest w dłoniach rozgrywającego).",
+      "Rozpoczęcie rozbiegu do ataku z piłki wysokiej przed wystawieniem po ocenie trajektorii lotu piłki dogrywanej do rozgrywającego (gdy piłka dogrywana jest w najwyższym punkcie trajektorii lotu)."
+    ]
+  },
+  "07355b72ebce": {
+    "question": "Rysunek 18 przedstawia sytuację, w której środkowy atakujący w 1 tempo w systemie płynnym:",
+    "answers": [
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki zawsze wykonuje rozbieg w ten sam sposób.",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki zawsze wykonuje rozbieg przed lub za zawodnikiem rozgrywającym ( jest ,,powiązany’’ z zawodnikiem R).",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki wykonuje rozbieg w stałym, ustalonym wcześniej miejscu."
+    ]
+  },
+  "76bf486d27a0": {
+    "question": "Wskaż zasadę obowiązującą zawodnika środkowego w przypadku ataku z akcji 2 (krótka z tyłu):",
+    "answers": [
+      "Środkowy wykonuje rozbieg za zawodnikiem rozgrywającym (jest ,,powiązany’’ z zawodnikiem R) wyłącznie przy przyjęciu bliżej strefy II.",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy zawsze wykonuje rozbieg za zawodnikiem rozgrywającym (jest ,,powiązany’’ z zawodnikiem R).",
+      "Środkowy wykonuje rozbieg za zawodnikiem rozgrywającym (jest ,,powiązany’’ z zawodnikiem R) wyłącznie przy przyjęciu w oś boiska.",
+      "Bez względu na rodzaj i dokładność przyjęcia lub dogrania piłki, środkowy zawsze wykonuje rozbieg za zawodnikiem rozgrywającym (około 1,5-2 m za zawodnikiem R)."
+    ]
+  },
+  "98f504b60069": {
+    "question": "Który rysunek przedstawia prawidłowe miejsce odbicia do ataku z jednej nogi dla akcji bazowej C:",
+    "answers": [
+      "Rysunek 24.",
+      "Rysunek 23.",
+      "Żaden z przedstawionych rysunków.",
+      "Rysunek 25."
+    ]
+  },
+  "5b0b8813f87b": {
+    "question": "Zdanie najdokładniej opisujące rytm rozbiegu do ataku to:",
+    "answers": [
+      "Długi, spokojny krok lewą nogą i przyspieszenie w dwóch ostatnich krokach (prawa/lewa).",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Krótki krok lewą nogą i przyspieszenie w dwóch ostatnich krokach (prawa/lewa).",
+      "Długi krok lewą nogą i spokojne przemieszczenie w dwa ostatnie kroki (prawa/lewa)."
+    ]
+  },
+  "3ed258bc6200": {
+    "question": "Atakujący ze strefy II wykonuje rozbieg i ustawia tułów w następujący sposób:",
+    "answers": [
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Rozbieg i tułów ustawione w kierunku strefy I boiska przeciwnika (zawodnik leworęczny).",
+      "Rozbieg i tułów ustawione w kierunku strefy I boiska przeciwnika (zawodnik praworęczny).",
+      "Rozbieg i tułów ustawione w kierunku strefy V boiska przeciwnika (zawodnik leworęczny)."
+    ]
+  },
+  "17c4e4e0eaf3": {
+    "question": "W zbiciu tenisowym - u początkujących - ruch powinien odbywać się w płaszczyźnie:",
+    "answers": [
+      "Strzałkowej w ruchu tułowia, czołowej w ruchu ramienia.",
+      "Strzałkowej w ruchu tułowia i ramienia.",
+      "Poprzecznej w ruchu tułowia i ramienia.",
+      "Czołowej w ruchu tułowia i ramienia."
+    ]
+  },
+  "acf92551949b": {
+    "question": "Akcja bazowa 7 (krótka przesunięta) może być rozegrana:",
+    "answers": [
+      "W systemie płynnym - środkowy wykonuje rozbieg przed rozgrywającym około 1,5 do 2 metrów bez względu na miejsce dogrania piłki.",
+      "Wszystkie odpowiedzi są poprawne.",
+      "Jako zasada obowiązująca środkowego przy niedokładnym przyjęciu - przy dokładnym przyjęciu środkowy idzie na ustaloną akcję bazową, natomiast w przypadku dogrania w okolice 3 m zadaniem Ś jest płynne przejście do ataku \"7\" (przesunięta-\"suw\").",
+      "W systemie stałym - środkowy wykonuje rozbieg trzy metry od linii bocznej (najczęściej przy dokładnym przyjęciu)."
+    ]
+  },
+  "3c0524cd8455": {
+    "question": "Które zdanie nie opisuje dokładnie momentu wyskoku do ataku w 1 tempie:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Wyskok do ataku rozpoczynany w momencie gdy wystawiona piłka zaczyna opuszczać dłonie rozgrywającego.",
+      "Wyskok do ataku rozpoczynany w momencie gdy dogrywana piłka zaczyna opadać w kierunku dłoni rozgrywającego.",
+      "Wyskok do ataku rozpczynany w momencie, gdy dogrywana piłka jest w dłoniach rozgrywającego."
+    ]
+  },
+  "50ede52480ac": {
+    "question": "Rysunek 15 przedstawia następujące fazy rozbiegu do ataku z piłki przyspieszonej:",
+    "answers": [
+      "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie) ze strefy II, gdy piłka wpada w ręce rozgrywającego.",
+      "Dostosowanie do linii bocznej krokiem dostawnym lub biegowym; moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie) ze strefy IV.",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Dostosowanie do linii bocznej krokiem dostawnym lub biegowym; zatrzymanie z prawą nogą z przodu, gdy piłka wpada w ręce rozgrywającego."
+    ]
+  },
+  "c4712ecdc478": {
+    "question": "W przypadku przyjęcia wzdłuż siatki, bliżej strefy II lub strefy IV, atakujący zmienia akcję bazową wg klucza:",
+    "answers": [
+      "Z \"2\" na \"1\" w przypadku przyjęcia/dogrania bliżej strefy II.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Z \"1\" na \"7\" (graną w osi boiska) w przypadku przyjęcia/dogrania bliżej strefy II.",
+      "Z \"1\" na \"2\" w przypadku przyjęcia/dogrania bliżej strefy IV."
+    ]
+  },
+  "bc4836270683": {
+    "question": "W systemie stałym rozbieg do ataku - akcja 7 (krótka przesunięta) - środkowy wykonuje:",
+    "answers": [
+      "3 metry od linii bocznej w strefie II.",
+      "3 metry od rozgrywającego.",
+      "Rozbieg w dowolnej odległości od rozgrywającego.",
+      "3 metry od linii bocznej w strefie IV."
+    ]
+  },
+  "dd2dad704d58": {
+    "question": "Które zdanie nie opisuje prawidłowej techniki rozbiegu do ataku ze strefy IV z piłki szybkiej:",
+    "answers": [
+      "Jeżeli piłka przyjęta jest za nisko, nie ma potrzeby wychodzenia za linię boczną w trakcie rozbiegu do ataku.",
+      "Jeżeli piłka przyjęta jest dokładnie i wysoko, zawodnik przemieszcza się za linię boczną.",
+      "Bez względu na rodzaj przyjęcia zawodnik zawsze przemieszcza się za linię boczną.",
+      "Wszystkie odpowiedzi są prawidłowe."
+    ]
+  },
+  "a6f2e30de342": {
+    "question": "W zbiciu tenisowym pracę ramienia uderzającego charakteryzują kolejne fazy wykonywane w płaszczyźnie strzałkowej:",
+    "answers": [
+      "Zamach - z przodu, dołem w tył, ugięcie ramienia w stawie łokciowym; wyprost ramienia połączony z ruchem obrotowym w stawie ramiennym w przód; uderzenie w piłkę w najwyższym punkcie dosiężnym ponad głową.",
+      "Zamach - z tyłu, przodem, w górę, za głowę: ruch obrotowy prostego ramienia w stawie ramiennym w przód; uderzenie w piłkę w najwyższym punkcie dosiężnym ponad głową.",
+      "Wszystkie odpowiedzi są poprawne.",
+      "Zamach - z tyłu, przodem, w górę , za głowę: ugięcie ramienia w stawie łokciowym: ruch obrotowy w stawie ramiennym w przód z jednoczesnym wyprostem ramienia w stawie łokciowym; uderzenie w piłkę następuje z przodu ponad głową"
+    ]
+  },
+  "509f6ea6b57b": {
+    "question": "Rysunek 22 przedstawia sposób wykonania rozbiegu do ataku z jednej nogi dla akcji bazowej:",
+    "answers": [
+      "Akcja \"B\" /baza B.",
+      "Akcja \"A\" /baza A.",
+      "Akcja \"C\" /baza C.",
+      "Akcja \"1\" /baza 1."
+    ]
+  },
+  "2ce94ab68a21": {
+    "question": "Rysunek 14 przedstawia:",
+    "answers": [
+      "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie) ze strefy II.",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie) ze strefy II.",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej ( w trzecim tempie) ze strefy II."
+    ]
+  },
+  "f04823bb31bd": {
+    "question": "Pierwszą fazę rozbiegu do ataku z piłki przyspieszonej opisuje stwierdzenie:",
+    "answers": [
+      "Szybkie dostosowanie za linię boczną krokiem biegowym; zatrzymanie z prawą nogą z przodu, gdy dogrywana piłka zaczyna opadać.",
+      "Przyjęcie/dogranie lub obserwacja/ocena przyjętej piłki; szybkie dostosowanie do linii bocznej krokiem dostawnym lub biegowym; zatrzymanie z prawą nogą z przodu, gdy dogrywana piłka zaczyna opadać.",
+      "Przyjęcie/dogranie lub obserwacja/ocena przyjętej piłki; wolne dostosowanie do linii bocznej krokiem dostawnym; zatrzymanie z prawą nogą z przodu, gdy dogrywana piłka zaczyna opadać.",
+      "Okrzyk - super!!! i płynne rozpoczęcie rozbiegu w kierunku strefy I boiska przeciwnika."
+    ]
+  },
+  "954579ea1802": {
+    "question": "Środkowy zmienia akcję bazową, tak aby stanowić zagrożenie (otwiera siatkę) w sytuacji gdy:",
+    "answers": [
+      "Piłka przyjęta jest wzdłuż siatki bliżej strefy IV lub strefy II.",
+      "Piłka przyjęta jest w strefę \"0\".",
+      "Środkowy nie może zmieniać akcji bazowej.",
+      "W każdym kolejnym kontrataku."
+    ]
+  },
+  "e4ddbe539661": {
+    "question": "Rysunek 12 przedstawia:",
+    "answers": [
+      "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie).",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie)."
+    ]
+  },
+  "2056d8a4d091": {
+    "question": "Niewłaściwy sposób wykonania rozbiegu do ataku w 1 tempo ze strefy III to:",
+    "answers": [
+      "Rozbieg dwukrokowy - z pozycji przygotowawczej z lewą nogą z przodu, naskok prawa-lewa.",
+      "Rozbieg czterokrokowy.",
+      "Rozbieg do miejsca wyskoku ze stopniowym zwiększaniem prędkości i przyspieszeniem w ostatnich dwóch krokach; w przypadku rozbiegu trzykrokowego – z pozycji przygotowawczej z prawą nogą z przodu, krok lewą nogą i naskok prawa-lewa.",
+      "Wszystkie odpowiedzi są prawidłowe."
+    ]
+  },
+  "6de71686e04d": {
+    "question": "Właściwy rytm rozbiegu do ataku należy opisać w następujący sposób:",
+    "answers": [
+      "Atakujący - ma zadanie rozpoczynać wolno i szybko kończyć.",
+      "Atakujący - ma zadanie rozpoczynać wolno i wolno kończyć.",
+      "Wszystkie odpowiedzi sa niewłaściwe.",
+      "Atakujący - ma zadanie rozpoczynać szybko i szybko kończyć."
+    ]
+  },
+  "9c30d60c7ac2": {
+    "question": "Miejsce naskoku do ataku (mężczyźni) w 1 tempo to:",
+    "answers": [
+      "Około 1 m od siatki.",
+      "Około 2,5–3 m od siatki.",
+      "Jak najbliżej siatki, aby wykorzystać w uderzeniu pracę nadgarstka.",
+      "Wszystkie odpowiedzi są prawidłowe."
+    ]
+  },
+  "2eddba626262": {
+    "question": "Rysunek 13 przedstawia:",
+    "answers": [
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki wysokiej (w trzecim tempie).",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki szybkiej (w pierwszym tempie).",
+      "Moment rozpoczęcia rozbiegu do ataku z piłki przyspieszonej (w drugim tempie)."
+    ]
+  },
+  "a7ba14544079": {
+    "question": "Którą zasadę obowiązującą środkowego przy przyjęciu bliżej strefy II, przedstawia rysunek 43:",
+    "answers": [
+      "Przyjęcie bliżej strefy II, atakujący zmienia akcję bazową z \"1\" na \"2\" graną w systemie stałym.",
+      "Przyjęcie bliżej strefy II, atakujący zmienia akcję bazową z \"1\" na \"7\" graną w systemie stałym (rozbieg do ataku wykonany w osi boiska).",
+      "Przyjęcie bliżej strefy II, środkowy atakuje na granicy stref III i II, za lub przed R.",
+      "Wszystkie odpowiedzi są prawidłowe."
+    ]
+  },
+  "e1340222f52c": {
+    "question": "Środkowy atakujący w 1 tempie:",
+    "answers": [
+      "Po zagrywce przeciwnika czeka na pozycji wyjściowej do momentu, gdy przyjmujący przyjmie piłkę i w tym momencie rozpoczyna rozbieg do ataku.",
+      "Po zagrywce przeciwnika obserwuje wyłącznie piłkę.",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Po zagrywce przeciwnika obserwuje całe boisko oraz tor lotu zagranej piłki, jednocześnie przemieszczając się krokiem dostawnym lub biegowym z pozycji wyjściowej."
+    ]
+  },
+  "04e1148e5ae9": {
+    "question": "Techniczne formy atakowania jednorącz to (wszystkie części odpowiedzi muszą być prawidłowe):",
+    "answers": [
+      "Zbicie kierowane, minięcie.",
+      "Zbicie hakiem, zbicie tenisowe.",
+      "Plasowanie, kiwnięcie.",
+      "Ścięcie, plasowanie."
+    ]
+  },
+  "f71dfd2e91d6": {
+    "question": "Rysunek 29 przedstawia zasadę obowiązującą środkowego przy przyjęciu niedokładnym, wskaż prawidłową:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Przyjęcie bliżej strefy IV, atakujący zmienia akcję bazową z \"1\" na \"2\" graną w systemie płynnym.",
+      "Przyjęcie bliżej strefy IV, środkowy atakuje na granicy stref III i II, za lub przed R.",
+      "Przyjęcie bliżej strefy IV, atakujący zmienia akcję bazową z \"1\" na \"2\" graną w systemie stałym."
+    ]
+  },
+  "0cb5f474b2c9": {
+    "question": "Atakujący ze strefy II poprzez ustawienie tułowia w kierunku strefy V może:",
+    "answers": [
+      "Atakować we wszystkich kierunkach.",
+      "Atakować tylko po prostej.",
+      "Wszystkie odpowiedzi nieprawidłowe.",
+      "Atakować tylko po przekątnej."
+    ]
+  },
+  "fc773c173b5a": {
+    "question": "Który z systemów rozbiegu do ataku w 1 tempo jest łatwiejszy do zastosowania dla zawodnika rozgrywającego:",
+    "answers": [
+      "Oba systemy: stały i płynny są łatwe dla rozgrywającego.",
+      "System stabilny.",
+      "System płynny.",
+      "System stały."
+    ]
+  },
+  "95d1f1fd832f": {
+    "question": "Na rycinach 3 i 4 środkowy wykonuje rozbieg przed rozgrywającym, lecz uderza w piłkę na wysokości lewego ramienia - określ dla jakiej akcji bazowej jest to uderzenie charakterystyczne:",
+    "answers": [
+      "W przypadku akcji \"1\" środkowy wykonuje rozbieg przed rozgrywającym, lecz uderzenie piłki na wysokości lewego ramienia (,,atak przez bark’’ w kierunku strefy I, VI).",
+      "Wszystkie odpowiedzi są poprawne.",
+      "Akcja \"7\" (krótka przesunięta) środkowy wykonuje rozbieg trzy metry od linii bocznej i uderza w piłkę zawsze na wysokości lewego ramienia (,,atak przez bark’’ w kierunku strefy I, VI).",
+      "W przypadku akcji \"C\" środkowy wykonuje rozbieg przed rozgrywającym, lecz uderzenie piłki na wysokości lewego ramienia (,,atak przez bark’’ w kierunku strefy I, VI)."
+    ]
+  },
+  "f2b890046b81": {
+    "question": "Cechą charakterystyczną akcji A /bazy A/ krótkiej z tyłu atakowanej z jednej nogi jest:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Zadaniem rozgrywającej jest wystawić piłkę od siatki, za plecy do antenki.",
+      "Środkowa odbija się z lewej nogi przed lub na wysokości rozgrywającej.",
+      "Środkowa wykonuje rozbieg za rozgrywającą około 1,5 do 2 metrów bez względu na miejsce dogrania piłki."
+    ]
+  },
+  "c1a2552f6f48": {
+    "question": "Współpracę atakującego z rozgrywającym - w przypadku ataku z piłki wysokiej - najdokładniej opisuje zdanie:",
+    "answers": [
+      "Atakujący nie sygnalizuje głosem jakie chce otrzymać wystawienie.",
+      "Atakujący sygnalizuje głosem jakie chce otrzymać wystawienie - krzycząc quick!!!",
+      "Atakujący sygnalizuje głosem jakie chce otrzymać wystawienie - krzycząc super!!!",
+      "Rozgrywający umawia się przed akcją z atakującym, że wystawi wysoką piłkę."
+    ]
+  },
+  "4fd8b462cf9b": {
+    "question": "Który rysunek przedstawia prawidłowy sposób wykonania rozbiegu do ataku z jednej nogi dla akcji bazowej B:",
+    "answers": [
+      "Rysunek 28.",
+      "Rysunek 26.",
+      "Żaden z przedstawionych rysunków.",
+      "Rysunek 27."
+    ]
+  },
+  "8dd9db06190f": {
+    "question": "Która z zasad obowiązujących środkowego przy przyjęciu dokładnym, jest zasadą nadrzędną:",
+    "answers": [
+      "Przy przyjęciu niedokładnym zakaz grania 1-go tempa.",
+      "Atak w 1 tempo ustalonej akcji (np. akcje \"1\", \"C\"- haczyk, \"2\", \"7\").",
+      "Przyjęcie bliżej strefy IV, atakujący zmienia akcję bazową z \"1\" na \"2\" graną w systemie płynnym.",
+      "W przypadku przyjęcia/dogrania w okolice 2-3 m zadaniem środkowego jest płynne przejście do ataku \"7\" (przesunięta-\"suw\")."
+    ]
   }
 }
