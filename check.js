@@ -1,20 +1,7 @@
 (() => {
   /* === 1. Słownik pytań/odpowiedzi === */
   const questions = {
-  "W skurczu izometrycznym:": "Wszystkie powyższe odpowiedzi są błędne.",
-  "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:": "Co 12 miesięcy.",
-  "Problemy jakimi zajmuje się medycyna sportowa to:": "Wszystkie odpowiedzi są prawdziwe.",
-  "Pierwszą czynnością w przypadku oparzenia termicznego jest:": "Smarujemy tłuszczem oparzone miejsce.",
-  "W cyklu treningowym, kolejny trening powinien być zaplanowany:": "W szczytowym momencie superkompensacji.",
-  "Niekwasomlekowa faza długu tlenowego trwa około:": "60 min.",
-  "Test harwardzki (harvard step-test) służy do oceny:": "Sprawności termoregulacji.",
-  "Jaki jest wpływ wysiłku fizycznego o charakterze wytrzymałościowym na wydzielanie GH:": "Wszystkie odpowiedzi są prawdziwe.",
-  "Satysfakcjonujący poziom maksymalnego minutowego poboru tlenu u siatkarzy powinien wynosić:": "Powyżej 60 ml/kg/min.",
-  "Opóźniona bolesność mięśnia spowodowana jest przez:": "Wzrost pH w mięśniu.",
-  "Wskaźnikiem oceniającym potencjał fosfagenowy zawodnika mierzony w teście Wingate jest:": "Moc średnia.",
-  "W stawie skokowym górnym można wykonywać ruchy:": "Przywodzenia, odwodzenia, nawracania i odwracania.",
-  "Mięśnie nadgrzebieniowy i podgrzebieniowy:": "Przyczepiają się do powierzchni żebrowej łopatki.",
-  "Piłka siatkowa jest dyscypliną sportową o podłożu energetycznym:": "Aerobowo-anaerobowym."
+  "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:": "Co 2 lata."
 };
 
   /* === 2. Znalezienie tabeli === */
