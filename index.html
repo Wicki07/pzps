@@ -15,7 +15,7 @@
       margin: 0;
       padding: 2rem;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       background: var(--bg);
     }
 
@@ -145,143 +145,3170 @@
     </div>
   </div>
 
-  <script>
-    /* --- KONFIGURACJA --- */
-    const MAX_QUESTIONS = 10; // Ile pytań ma obejmować egzamin
-    const QUESTIONS_FILE = "allQuestions.json"; // Ścieżka do pliku z pytaniami
-    const ANSWERS_FILE = "answers.json"; // Ścieżka do pliku z odpowiedziami
+<script>
+  /* ---------------------------------------------
+   *  KONFIGURACJA
+   *  -------------------------------------------*/
+  const MAX_QUESTIONS = 10;               // Ile pytań ma obejmować egzamin
+  const QUESTIONS_FILE = "allQuestions.json"; // Ścieżka do pliku z pytaniami
+  const ANSWERS_FILE   = "allAnswers.json";      // Ścieżka do pliku z odpowiedziami
 
-    /* --- Zmienne pomocnicze --- */
-    let questions = [];
-    let answersMap = {};
-    let currentIndex = 0;
-    const userResults = [];
+  /* ---------------------------------------------
+   *  Zmienne pomocnicze
+   *  -------------------------------------------*/
+  let questions = [];            // [{ id, question, options }]
+  let answersMap = {};           // { [id]: correctAnswerText }
+  let currentIndex = 0;
+  const userResults = [];        // { question, userAnswer, correctAnswer, isCorrect }
 
-    /* --- Inicjalizacja po załadowaniu dokumentu --- */
-    document.addEventListener("DOMContentLoaded", async () => {
-      try {
-        const [qRes, aRes] = await Promise.all([
-          fetch(QUESTIONS_FILE).then((r) => r.json()),
-          fetch(ANSWERS_FILE).then((r) => r.json()),
-        ]);
-
-        // Przekształcamy pytania do wygodnej formy tablicy obiektów
-        questions = Object.entries(qRes).map(([question, options]) => ({
-          question,
-          options,
-        }));
-
-        // Tasujemy i ograniczamy do MAX_QUESTIONS
-        questions = shuffleArray(questions).slice(0, MAX_QUESTIONS);
-        answersMap = aRes;
-
-        renderQuestion();
-      } catch (err) {
-        alert("Błąd wczytywania plików JSON. Sprawdź ścieżki lub uruchom serwer lokalny (np. Live Server / http-server).");
-        console.error(err);
+  /* ---------------------------------------------
+   *  Inicjalizacja po załadowaniu dokumentu
+   *  -------------------------------------------*/
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const qRes = {
+//   przepisy gry
+        "8180409aadb7": {
+          "question": "W której z sytuacji sędzia popełnił błąd?",
+          "answers": [
+            "Po przyjęciu zagrywki piłka poleciała w siatkę. Przeciwnik wykonał ruch rękoma do siatki i dotknął ją, dzięki czemu zmienił lot piłki. Sędzia odgwizdał błąd dotknięcia siatki i dodatkowo ukarał zawodnika czerwoną kartką",
+            "Po wykonanym ataku zawodnik wykonał jeszcze krok i oparł się klatką piersiową o siatkę, centralnie o taśmę boczną przymocowaną do siatki. Sędzia nie odgwizdał błędu.",
+            "Po wykonanym bloku punktowym zawodnik ratując się przed utratą równowagi silnie pociągnął za siatkę poza antenką. Sędzia nie odgwizdał błędu",
+            "W reakcji na wystawę po stronie przeciwnika zawodnik środkowy przemieszczał się do bloku podwójnego. Jeszcze przed wyskokiem dotknął dolną taśmę siatki. Sędzia odgwizdał błąd dotknięcia siatki"
+          ]
+        },
+        "bd76e3426887": {
+          "question": "Które ze zdań nie jest prawdziwe odnośnie składu i lokalizacji zespołu?",
+          "answers": [
+            "Wolno grać w okularach",
+            "Zawodnicy mogą rozgrzewać się z użyciem piłek tylko pomiędzy setami",
+            "Libero może być kapitanem zespołu.",
+            "W rozgrywkach szczebla centralnego PZPS może zostać wpisanych do protokołu zawodów i brać udział w meczu maksymalnie 14 zawodników"
+          ]
+        },
+        "d3a8d552a949": {
+          "question": "Które ze zdań jest prawdziwe odnośnie siatki?",
+          "answers": [
+            "Na wewnętrznej krawędzi każdej taśmy bocznej zamocowana jest antenka",
+            "Przed meczem kadetów wysokość siatki przy antenkach może wynosić 237 cm",
+            "Dla gry czwórkami w mini siatkówce wysokość siatki jest taka sama dla chłopców, jak dla dziewczynek",
+            "Dwie białe taśmy przymocowane są pionowo do siatki dokładnie nad każdą linią boczną."
+          ]
+        },
+        "d70a41c29804": {
+          "question": "Jakie są konsekwencje błędu rotacji?",
+          "answers": [
+            "Wszystkie odpowiedzi są prawidłowe",
+            "Zagrywać będzie zespół przeciwny",
+            "Zespół, który zagrywał tkwiąc w błędzie rotacji straci punktu zdobyte od momentu powstania błędu – ale tylko, jeśli można ustalić moment powstania błędu",
+            "Zespół przeciwny zdobywa punkt"
+          ]
+        },
+        "3b9011ae1743": {
+          "question": "Która z sytuacji nie jest błędem?",
+          "answers": [
+            "Piłka po bloku opadała wzdłuż siatki. Zawodnik zespołu blokującego sięgnął pod siatką i wykonał ruch, jakby chciał dotknąć piłkę, co zmyliło obrońcę próbującego piłkę podbić",
+            "Zawodnik po obronie padem „wślizgnął” się na boisko przeciwnika, przy czym stopy pozostały nad jego częścią boiska. Nie dotknął żadnego przeciwnika, a gra kontynuowana była w innej części boiska. Pozostawił jednak sporą mokrą plamę w polu ataku przeciwnika, gdy się wycofywał na swoje pole gry",
+            "Po bloku spadająca po stronie zespołu atakującego piłką uderzyła w stopę opadającego blokującego, która znajdowała się nad boiskiem przeciwnika",
+            "Po ataku piłka odbiła się od dłoni blokujących i wysokim łukiem leciała daleko za boisko. Atakujący usiłując nie wkroczyć na boisko przeciwnika przebiegł schylony po linii środkowej i wbiegł w wolną strefę przeciwnika pod siatką"
+          ]
+        },
+        "a833c7e80768": {
+          "question": "Piłka po przyjęciu przeleciała nad antenką w stronę wolnej strefy przeciwnika. Które zdanie jest prawdziwe?",
+          "answers": [
+            "Trener stojący zgodnie z przepisami przed swoją ławką rezerwowych nie musi się odsunąć, by zrobić miejsce biegnącemu przeciwnikowi",
+            "Zawodnik nie może pobiec za piłką pod siatką, by ją odratować",
+            "Wracana piłka musi przelecieć także nad antenką (nie może całkowicie poza przestrzenią przejścia, skoro nad wolną strefę przeciwnika przeleciała nad antenką)",
+            "Zawodnik biegnący za piłką może chwycić się słupka, by sobie pomóc w biegu"
+          ]
+        },
+        "bc51b5c6ad7f": {
+          "question": "Które zdanie dotyczące korzystania z regulaminowych przerw w grze jest nieprawdziwe?",
+          "answers": [
+            "Trener może dokonać w ramach jednej przerwy zmiany zawodników i zmiany powrotnej między tymi samymi zawodnikami",
+            "Zespół może skorzystać z przerwy dla odpoczynku po zakończeniu przerwy technicznej, przed wznowieniem gry",
+            "Po zakończeniu wymiany zespół „A” dokonał zmiany zawodników. Następnie zespół „B” także dokonał zmiany. Zespół „A” może przed wznowieniem gry poprosić o przerwę dla odpoczynku",
+            "Zespół „A” może skorzystać z dwóch przerw dla odpoczynku bez wznawiania gry"
+          ]
+        },
+        "33974fdc07bf": {
+          "question": "Przed rozpoczęciem meczu na boisku znalazł się zawodnik niewpisany na kartce z ustawieniem. Jakie są konsekwencje?",
+          "answers": [
+            "Trener może zdecydować o pozostawieniu tego zawodnika na boisku, zapis na kartce z ustawieniem jest korygowany",
+            "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, wówczas nie przeprowadza się zmiany regulaminowej",
+            "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, a w tym celu przeprowadzana jest zmiana regulaminowa",
+            "Sekretarz poprawia zapis na kartce z ustawieniem oraz w protokole zawodów na zgodny ze stanem na boisku – bez pytania trenera zespołu"
+          ]
+        },
+        "a264c94f7d52": {
+          "question": "Jakie zachowanie zespołu wskazuje na popełnianie błędu zasłony?",
+          "answers": [
+            "Wszyscy zawodnicy zespołu zagrywającego (poza zagrywającym) grupują się w strefie II, gdy zagrywka wykonywana jest zza strefy I",
+            "Zawodnicy zespołu zagrywającego zmieniają pozycję w reakcji na przesuwanie się zawodników przyjmujących, którzy „szukają” wzrokiem zagrywającego",
+            "Wszystkie odpowiedzi są prawidłowe",
+            "Trener instruuje zawodników, by zasłonili zagrywającego i lot piłki"
+          ]
+        },
+        "8191771519de": {
+          "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?",
+          "answers": [
+            "Po tym, jak sędzia pokazał zawodnikowi nr 5 żółtą kartkę, kapitan zespołu zaprotestował przeciwko decyzji sędziego machając rękoma i wyrażając sprzeciw okrzykiem",
+            "Po tym jak zawodnikowi nr 3 sędzia pokazał czerwoną kartkę, zawodnik nr 9 wdał się w dyskusję z przeciwnikiem (zachował się grubiańsko)",
+            "Dwaj zawodnicy jednego zespołu pobili się",
+            "W żadnym z tych przypadków zespół nie straci punktu"
+          ]
+        },
+        "8c32c131b8c0": {
+          "question": "Które z poniższych stwierdzeń nie jest prawdziwe w kontekście przepisów dotyczących zawodników Libero?",
+          "answers": [
+            "Jeżeli w zespole jest dwóch Libero, nie mogą oni mieć koszulek w różnych kolorach (każda z nich odróżniająca Libero od „zwykłych” zawodników)",
+            "Trener nie jest zadowolony z gry Libero. Ma wówczas prawo zgłosić go jako niezdolnego do gry i wyznaczyć innego zawodnika do roli Libero",
+            "Zespół miał jednego Libero, który doznał kontuzji. Trener redesygnował do roli Libero nowego zawodnika. Jeżeli i on będzie kontuzjowany, to trener może redesygnować kolejnego zawodnika jako nowego Libero",
+            "Libero może rozegrać palcami sposobem górnym i piłka z tego rozegrania może być atakowana powyżej górnej taśmy siatki, jeżeli w momencie odbicia Libero był w strefie obrony"
+          ]
+        },
+        "4b2e55e8f782": {
+          "question": "Jaka jest właściwa kolejność w ceremoniale przedmeczowym?",
+          "answers": [
+            "Pomiar wysokości siatki, rozgrzewka przy siatce, losowanie, dostarczenie kartek z ustawieniem początkowym, przywitanie się zespołów",
+            "Losowanie, dostarczenie kartek z ustawieniem początkowym, pomiar wysokości siatki, rozgrzewka przy siatce, przywitanie się zespołów",
+            "Pomiar wysokości siatki, losowanie, rozgrzewka przy siatce, dostarczenie kartek z ustawieniem początkowym, przywitanie się zespołów",
+            "Przywitanie się zespołów, losowanie, rozgrzewka przy siatce, pomiar wysokości siatki, dostarczenie kartek z ustawieniem początkowym"
+          ]
+        },
+        "ab26e3348904": {
+          "question": "Które ze zdań jest prawdziwe odnośnie protestu?",
+          "answers": [
+            "Kapitan zespołu nie może własnoręcznie wpisać treści oficjalnego protestu do protokołu zawodów",
+            "Kapitan zespołu może skutecznie zgłosić chęć wpisania oficjalnego protestu do protokołu zawodów po zakończeniu meczu, ale pod warunkiem, że nastąpi to przed podpisaniem protokołu",
+            "Jeśli kapitan zespołu nie zgadza się z wyjaśnieniami sędziego pierwszego udzielonymi grającemu kapitanowi, może złożyć protest przeciwko danej decyzji i musi natychmiast zgłosić sędziemu pierwszemu, że rezerwuje sobie prawo do wpisania oficjalnego protestu w protokole zawodów po zakończeniu meczu",
+            "Oficjalny protest zapisywany jest w protokole zawodów wyłącznie po zakończeniu meczu"
+          ]
+        },
+        "8574451abc1b": {
+          "question": "Zawodnik rozgrywający, będący w tym momencie zawodnikiem linii obrony, po złym przyjęciu zagrywki w swoim zespole – piłka poleciała nad siatkę, gdzie została zaatakowana przez przeciwnika – stanął na trzecim metrze od siatki i podniósł w górę ręce, sięgając wyżej niż siatka. Piłka uderzyła go w dłonie. Które z poniższych zdań jest prawdziwe?",
+          "answers": [
+            "Rozgrywający nie może teraz odbić piłki zanim nie zrobi tego któryś z jego partnerów",
+            "Zespół ma prawo do jeszcze trzech odbić piłki",
+            "Rozgrywający popełnił błąd bloku zawodnika linii obrony",
+            "Wszystkie odpowiedzi są prawidłowe"
+          ]
+        },
+        "7ae49d11b04a": {
+          "question": "Która z akcji nie jest atakiem?",
+          "answers": [
+            "Złe przyjęcie zagrywki, po którym piłka przelatuje nad siatką na stronę przeciwnika",
+            "Piłka po bloku odbija się od głowy zawodnik atakującego i przelatuje na stronę przeciwnika",
+            "Wszystkie powyższe akcje są atakami",
+            "Kiwka rozgrywającego w drugim uderzeniu zespołu"
+          ]
+        },
+        "85df9e4de1a9": {
+          "question": "Przeciwnik wygrał losowanie i wskazał stronę boiska, na której chce rozpocząć mecz. Co może wybrać w tym momencie kapitan drugiego zespołu?",
+          "answers": [
+            "Że jego zespół rozpocznie seta decydującego (piątego) od wykonania zagrywki",
+            "Stronę boiska, na której jego zespół rozpocznie seta decydującego (piątego)",
+            "Że jego zespół rozpocznie mecz od odbioru zagrywki",
+            "Nie może wybrać żadnej z powyższych opcji"
+          ]
+        },
+        "ebf4524d86b1": {
+          "question": "Która z sytuacji nie jest błędem?",
+          "answers": [
+            "Blokujący sięga na stronę przeciwnika ponad siatką i dotyka piłki wystawionej przez przeciwnika, której lot jest równoległy do siatki",
+            "Rozgrywający kiwa piłkę nad siatką, przy czym kontakt z piłką ma miejsce nad jego boiskiem, ale po kiwce dłoń zawodnik sięga na stronę przeciwnika",
+            "Wystawiona przez przeciwnika piłka znalazła się blisko siatki. Blokujący sięgnął na drugą stronę i dotknął piłkę równocześnie z atakującym",
+            "Rozgrywający wystawia piłkę znad siatki mając część dłoni dotykającej piłki po stronie przeciwnika"
+          ]
+        },
+        "3c5d5f2e7d39": {
+          "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary za opóźnianie?",
+          "answers": [
+            "Trener poprosił o przerwę dla odpoczynku po gwizdku sędziego na zagrywkę. Był to pierwszy tego typu przypadek w meczu, ale zespół miał już upomnienie za opóźnianie z powodu opóźniania wznowienia gry",
+            "Zawodnik poprosił o zgodę na zawiązanie buta. Zespół miał już wcześniej karę za opóźnianie",
+            "Trzeci raz w meczu sędziowie odrzucili prośbę trenera (o przerwę dla odpoczynku, o zmianę zawodników), bo zgłaszał je zbyt późno (po sygnale sędziego na wykonanie zagrywki)",
+            "Do strefy zmian wszedł zawodnik, który seta rozpoczynał jako zawodnik rezerwowy i zagrał już w tym secie. Sekretarz wychwycił błąd przed dokonaniem zmiany. Zespół miał już upomnienie za opóźnianie"
+          ]
+        },
+        "6606a942ca50": {
+          "question": "Które wykonanie zagrywki jest nieprawidłowe?",
+          "answers": [
+            "Po gwizdku sędziego I zagrywający wyszedł z pola zagrywki i stamtąd rozpoczął rozbieg. Odbicie do zagrywki z wyskoku nastąpiło już w polu zagrywki",
+            "Zawodnik po gwizdku sędziego I zorientował się, że nie on ma wykonać zagrywkę. Przywołał właściwego zawodnika, przekazał mu piłkę i wbiegł na boisko. Zagrywka została wykonana w ciągu 8 sekund od gwizdka sędziego",
+            "Zawodnik wykonał zagrywkę łokciem",
+            "Zawodnik rozsunął panele reklamowe za boiskiem i wykonał zagrywkę spomiędzy nich"
+          ]
+        },
+        "0b6ebf730113": {
+          "question": "Który z poniższych przypadków jest przykładem prośby nieuzasadnionej nie skutkującej sankcjami dla zespołu?",
+          "answers": [
+            "Kapitan zespołu poprosił o przerwę dla odpoczynku, chociaż trener siedział na ławce rezerwowych",
+            "Zespół poprosił o zmianę zawodnika, przy czym na boisko miał wejść zawodnik niewpisany do protokołu zawodów",
+            "Trener poprosił o trzecią przerwę dla odpoczynku w secie i została ona przyznana. Po dłuższej chwili zespołom kazano powrócić na boisko",
+            "Drugi raz w meczu trener poprosił o przerwę dla odpoczynku po gwizdku sędziego I na zagrywkę"
+          ]
+        },
+        "b05c8069f640": {
+          "question": "Podstawowy rozgrywający zespołu został zmieniony przez drugiego rozgrywającego. Następnie miała miejsce zmiana powrotna, która był szóstą zmianą w tym zespole w tym secie. Chwilę później zawodnik rozgrywający doznał kontuzji. Libero zespołu przebywał w tym momencie na ławce. Jakie pole manewru ma trener zespołu?",
+          "answers": [
+            "Nie ma żadnego pola manewru, bo wykorzystał sześć zmian i w tym zmianę rozgrywającego. Kontuzjowanemu zostanie przyznana 3-minutwa przerwa i jeśli po tym czasie zawodnik nie będzie mógł grać, to zespół przegra seta jako zdekompletowany",
+            "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero",
+            "Trener może dokonać zmiany kontuzjowanego tylko z drugim rozgrywającym",
+            "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero oraz drugiego rozgrywającego"
+          ]
+        },
+        "f825ef38de15": {
+          "question": "Które z poniższych zdań nie jest prawdziwe w kontekście charakterystyki odbicia piłki?",
+          "answers": [
+            "Jeżeli zawodnik nie jest w bardzo dobrej pozycji do odbicia piłki, sędzia pierwszy powinien być mniej rygorystyczny w ocenie odbicia piłk",
+            "Nie ma takiego błędu jak „piłka niesiona”",
+            "W bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu",
+            "Przy odbiciu piłki palcami jednej dłoni zawodnikowi nie można odgwizdać błędu podwójnego odbicia"
+          ]
+        },
+        "c06e7c87e8f7": {
+          "question": "Na poniższych zdjęciach numery na koszulkach zawodniczek odpowiadają ich pozycjom na boisku (2, 3, 4). Czy i w jaki sposób popełniają one błąd ustawienia?",
+          "answers": [
+            "Tak, stopa zawodniczki prawego ataku nie może być bliżej lewej linii bocznej niż obie stopy zawodniczki środkowej",
+            "Tak, prawa stopa zawodniczki lewego ataku znajduje się bliżej prawej linii bocznej od obu stóp zawodniczki środkowej",
+            "Nie ma błędu ustawienia",
+            "Tak, zawodniczka lewego ataku znajduje się na prawo od zawodniczki prawego ataku"
+          ]
+        },
+        // biomed
+        "6dd30e3e377c": {
+          "question": "W przypadku ogólnego wychłodzenia ciała:",
+          "answers": [
+            "Podajemy poszkodowanemu gorące, słodkie napoje z alkoholem.",
+            "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do sztucznych oddechów i pośredniego masażu serca.",
+            "Wszystkie odpowiedzi są fałszywe.",
+            "Zawsze wzywamy pomoc, układamy poszkodowanego w pozycji bocznej ustalonej i czekamy na przyjazd karetki."
+          ]
+        },
+        "7c00c0846451": {
+          "question": "Potencjalne efekty Kinesio Tapingu to:",
+          "answers": [
+            "Zmniejszenie bólu.",
+            "Zmniejszenie obrzęku.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Zwiększenie zakresu ruchu."
+          ]
+        },
+        "a5f84ed94d57": {
+          "question": "Sarkomer zbudowany jest:",
+          "answers": [
+            "Z aktyny, troponiny i tropomiozyny.",
+            "Z aktyny i miozyny.",
+            "Z neuronów.",
+            "Z miocytów."
+          ]
+        },
+        "c95619a9ed63": {
+          "question": "Ogólny wydatek energetyczny związany z aktywnością fizyczną:",
+          "answers": [
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Wpływa na wysokość ogólnej dobowej przemiany materii",
+            "Określa się go doświadczalnie najczęściej przy zastosowaniu metodyki kalorymetrii pośredniej.",
+            "Określa się go również doświadczalnie na podstawie szybkości akcji serca."
+          ]
+        },
+        "c94a6ae2bbf9": {
+          "question": "Wydolność aerobowa mierzona jest przez pomiar:",
+          "answers": [
+            "Maksymalnej mocy mięśni.",
+            "Maksymalnej siły mięśni.",
+            "Submaksymalnej częstości skurczów serca.",
+            "Maksymalnego minutowego poboru tlenu."
+          ]
+        },
+        "6e08fe6e1689": {
+          "question": "Do rotatorów zewnętrznych podudzia zaliczamy:",
+          "answers": [
+            "Mięsień półbłoniasty.",
+            "Mięsień smukły.",
+            "Mięsień dwugłowy uda.",
+            "Mięsień krawiecki."
+          ]
+        },
+        "f0d24f403f1e": {
+          "question": "Mechaniczna sztywność mięśnia podczas czynnościowego rozciągania:",
+          "answers": [
+            "Może zwiększać się bądź zmienijszeć w zależności od kierunku ruchu.",
+            "Maleje.",
+            "Pozostaje bez zmian.",
+            "Rośnie."
+          ]
+        },
+        "7fd9ecb1de32": {
+          "question": "Systemy do trójwymiarowej rejestracji ruchu (3D) umożliwiają:",
+          "answers": [
+            "Pomiar sił działających na dowolny punkt ciała.",
+            "Ocenę kosztu energetycznego rejestrowanego ruchu.",
+            "Obliczenie wewnętrznej pracy mechanicznej wykonanej przez mięśnie.",
+            "Rejestrację trajektorii dowolnego punktu ciała."
+          ]
+        },
+        "4b4550ae1dcb": {
+          "question": "Czynniki determinujące wydolność fizyczną to:",
+          "answers": [
+            "Koordynacja nerwowo-mięśniowa i termoregulacja.",
+            "Technika i przemiany energetyczne ustroju.",
+            "Budowa ciała i gospodarka wodno-elektrolitowa.",
+            "Wszystkie odpowiedzi są prawidłowe."
+          ]
+        },
+        "b3a4fdd6be9c": {
+          "question": "Do grupy bocznej mięśni przedramienia należy:",
+          "answers": [
+            "Prostownik promieniowy krótki nadgarstka.",
+            "Zginacz promieniowy nadgarstka.",
+            "Zginacz łokciowy nadgarstka.",
+            "Prostownik łokciowy nadgarstka."
+          ]
+        },
+        "848c00e53d0d": {
+          "question": "Urazy w sporcie dzielimy na:",
+          "answers": [
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Typowo sportowe.",
+            "Ostre i przewlekłe.",
+            "Przypadkowe."
+          ]
+        },
+        "a886df12cbeb": {
+          "question": "Wybierz właściwą odpowiedź dotyczącą urazów i obrażeń ostrych w siatkówce:",
+          "answers": [
+            "Do ostrych obrażeń w siatkówce nie należą skręcenia i uszkodzenia stawu skokowego.",
+            "Do ostrych obrażeń w siatkówce nie należą skręcenia i uszkodzenia stawu kolanowego.",
+            "Do ostrych obrażeń w siatkówce nie należą obrażenia palców.",
+            "Wszystkie odpowiedzi są fałszywe."
+          ]
+        },
+        "6b02296a02ee": {
+          "question": "Satysfakcjonujący poziom maksymalnego minutowego poboru tlenu u siatkarzy powinien wynosić:",
+          "answers": [
+            "Powyżej 15 W/kg.",
+            "Około 45 ml/kg/min.",
+            "Około 15 ml/kg/min.",
+            "Powyżej 60 ml/kg/min."
+          ]
+        },
+        "b2dbdc02fd94": {
+          "question": "W utrzymaniu stałego pH płynów ustrojowych biorą udział:",
+          "answers": [
+            "Wszystkie wymienione.",
+            "Sprawnie działające płuca.",
+            "Układy buforowe.",
+            "Sprawnie działające nerki."
+          ]
+        },
+        "9ff6a189c9bd": {
+          "question": "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:",
+          "answers": [
+            "Co 2 lata.",
+            "Co 12 miesięcy.",
+            "Co 6 miesięcy.",
+            "Przy każdej wizycie u lekarza sportowego."
+          ]
+        },
+        "6c82e13e87b4": {
+          "question": "Ruchy w stawie biodrowym to wszystkie z wyjątkiem:",
+          "answers": [
+            "Odwodzenie.",
+            "Obwodzenie.",
+            "Prostowanie.",
+            "Unoszenie."
+          ]
+        },
+        "67999e89a3e6": {
+          "question": "W skurczu izometrycznym:",
+          "answers": [
+            "Zmienia się zarówno długość jak i napięcie mięśnia.",
+            "Zmienia się napięcie mięśnia.",
+            "Zmienia się długość mięśnia.",
+            "Wszystkie powyższe odpowiedzi są błędne."
+          ]
+        },
+        "607a314c4a8a": {
+          "question": "Procesy anaboliczne to:",
+          "answers": [
+            "Procesy pozyskiwania energii z pożywienia.",
+            "Procesy nie wymagające energii.",
+            "Procesy egzoergiczne.",
+            "Procesy endoergiczne (syntez) do których potrzebna jest energia z ATP."
+          ]
+        },
+        "ee94723a98b2": {
+          "question": "U człowieka dorosłego wentylacja minutowa płuc w spoczynku wynosi około:",
+          "answers": [
+            "250-300 mL · min-1.",
+            "2-3 L· min-1.",
+            "6-8 mL· min-1.",
+            "6-8 L· min-1."
+          ]
+        },
+        "3f16bec4e77f": {
+          "question": "Markerami uszkodzenia komórek mięśni we krwi są:",
+          "answers": [
+            "Troponina.",
+            "Mioglobina.",
+            "Enzymy komórkowe np. kinaza kreatynowa lub dehydrogenaza mleczanowa.",
+            "Wszystkie wymienione."
+          ]
+        },
+        "50c03ed54800": {
+          "question": "Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:",
+          "answers": [
+            "Supramaksymalnej.",
+            "Wszystkie odpowiedzi są błędne.",
+            "Maksymalnej.",
+            "Submaksymalnej."
+          ]
+        },
+        "52c7fb5feb39": {
+          "question": "Możliwe efekty treningu hipoksycznego to:",
+          "answers": [
+            "Poprawa wydolności tlenowej.",
+            "Zwiększenie pojemności tlenowej krwi.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Zwiększenie poziomu erytrocytów."
+          ]
+        },
+        "6978c40c3518": {
+          "question": "Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:",
+          "answers": [
+            "Mniejszy, większy jak i równy ciężarowi ciała.",
+            "Równy ciężarowi ciała.",
+            "Wyłącznie większy od ciężaru ciała.",
+            "Wyłącznie mniejszy od ciężaru ciała."
+          ]
+        },
+        "15365a24d9a5": {
+          "question": "Analiza fazowa ruchu w siatkówce nie umożliwia określenia:",
+          "answers": [
+            "Czasu trwania odbicia do bloku.",
+            "Struktury czasowej zagrywki.",
+            "Liczby i częstotliwości kroków podczas np. rozbiegu.",
+            "Położenia ogólnego środka ciężkości zawodnika."
+          ]
+        },
+        "d57507c1731e": {
+          "question": "Hematokryt wynosi średnio:",
+          "answers": [
+            "42 % u kobiet i 55 % u mężczyzn.",
+            "Jest taki sam u mężczyzn i kobiet.",
+            "42 % u kobiet i 47 % u mężczyzn.",
+            "46 % u mężczyzn i 55 % u kobiet."
+          ]
+        },
+        "d5a9ec74936e": {
+          "question": "Dobrymi markerami przetrenowania są pomiary we krwi:",
+          "answers": [
+            "Tylko stężenie tylko kortyzolu.",
+            "Zarówno stężenia testosteronu i kortyzolu.",
+            "Tylko stężenie testosteronu.",
+            "Nie ma wskaźników przetrenowania."
+          ]
+        },
+        "ecf10b0e5f1c": {
+          "question": "Kształtowanie nawyku ruchowego przebiega kolejno w:",
+          "answers": [
+            "4 fazach: hamowanie, generalizacja, stabilizacja, automatyzacja.",
+            "4 fazach: generalizacja, hamowanie, stabilizacja, automatyzacja.",
+            "3 fazach: generalizacja, stabilizacja, automatyzacja.",
+            "5 fazach: generalizacja, hamowanie, stabilizacja, automatyzacja, pobudzanie."
+          ]
+        },
+        "578848b9a26d": {
+          "question": "Podstawowe cele w żywieniu sportowców w okresie treningowym to:",
+          "answers": [
+            "Zapewnienie optymalnego udziału poszczególnych składników pokarmowych w dobowej diecie, czyli ok. 55-60% to węglowodany, 25-30% tłuszcze, a 12-15% to białka.",
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Optymalna podaż białek w praktyce sportowej - 1,2-1,6 g/kg m.c./dobę, regeneracja zasobów węglowodanów oraz wody i elektrolitów po treningu.",
+            "Utrzymanie zrównoważonego bilansu energetycznego i utrzymanie optymalnej masy ciała oraz jego składu."
+          ]
+        },
+        "2b6eabf2dde8": {
+          "question": "II próg mleczanowy koreluje ze zdolnościami:",
+          "answers": [
+            "Skocznościowymi.",
+            "Siłowymi.",
+            "Szybkościowymi.",
+            "Wytrzymałościowymi."
+          ]
+        },
+        "945790f7d660": {
+          "question": "Potencjał siłowy mięśni zawodnika najlepiej charakteryzuje wartość:",
+          "answers": [
+            "Spadku siły mięśniowej w działaniu długotrwałym.",
+            "Maksymalnej szybkości narastania siły mięśniowej.",
+            "Maksymalnej siły oporu.",
+            "Maksymalnego momentu siły oporu."
+          ]
+        },
+        "fb8d744c379c": {
+          "question": "Pojemność tlenowa krwi wynosi:",
+          "answers": [
+            "60%.",
+            "20 ml O2 na 100 ml krwi.",
+            "30%.",
+            "10%."
+          ]
+        },
+        "f25114a4d391": {
+          "question": "Łąkotki stawu kolanowego:",
+          "answers": [
+            "Pogłębiają panewkę stawu kolanowego.",
+            "Wszystkie powyższe odpowiedzi są prawidłowe.",
+            "Leżą między kłykciami kości udowej i piszczelowej.",
+            "Dzielą częściowo jamę stawu na piętro górne i dolne."
+          ]
+        },
+        "ebca50948428": {
+          "question": "Najefektywniejszą drogą oddawania ciepła podczas pracy fizycznej jest:",
+          "answers": [
+            "Promieniowanie.",
+            "Przewodzenie.",
+            "Konwekcja.",
+            "Parowanie."
+          ]
+        },
+        "80e3415f6881": {
+          "question": "W cyklu treningowym, kolejny trening powinien być zaplanowany:",
+          "answers": [
+            "Moment superkompensacji jest bez znaczenia w planowaniu treningu.",
+            "Przed wystąpieniem superkompensacji.",
+            "Po zakończeniu superkompensacji.",
+            "W szczytowym momencie superkompensacji."
+          ]
+        },
+        "d8ad7224c9d2": {
+          "question": "Ilość krwi tłoczona przez serce człowieka w spoczynku wynosi w trakcie 1 minuty:",
+          "answers": [
+            "Od 4 do 6 litrów.",
+            "Od 1 do 4 litrów.",
+            "Od 6 do 9 litrów.",
+            "Od 20 do 40 litrów."
+          ]
+        },
+        "007bf394777b": {
+          "question": "Na końcu tylnym żebra znajduje się:",
+          "answers": [
+            "Trzon żebra.",
+            "Kąt żebra.",
+            "Głowa żebra.",
+            "Bruzda żebra."
+          ]
+        },
+        "4b17fb357b11": {
+          "question": "Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:",
+          "answers": [
+            "Wingate.",
+            "Harwardzki.",
+            "Stopniowany.",
+            "Bosco."
+          ]
+        },
+        "a00c986cbb0e": {
+          "question": "Siła mięśniowa determinowana jest:",
+          "answers": [
+            "Siłą bodźca i przekrojem poprzecznym, długością mięśnia.",
+            "Siłą bodźca, przekrojem fizjologicznym, stopniem rozciągnięcia, typem komórek mięśniowych i temperaturą.",
+            "Siłą bodźca, temperaturą, przekrojem poprzecznym, stopniem rozciągnięcia.",
+            "Przekrojem poprzecznym mięśnia, jego długością, rodzajem impulsu."
+          ]
+        },
+        "eaeb5c6e42e3": {
+          "question": "Powierzchnia stawowa stawu ramienno-łokciowego leży na:",
+          "answers": [
+            "Guzowatości kości łokciowej.",
+            "Bloczku kości ramiennej.",
+            "Głowie kości łokciowej.",
+            "Wszystkie powyższe odpowiedzi są prawidłowe."
+          ]
+        },
+        "8f85c8ef7556": {
+          "question": "Do oceny zdolności wytrzymałościowych w grach zespołowych można zastosować test:",
+          "answers": [
+            "Yo-Yo.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "RAST.",
+            "Wingate."
+          ]
+        },
+        "8c405885835b": {
+          "question": "I próg metaboliczny występuje przy intensywności pracy:",
+          "answers": [
+            "60-80% VO2max.",
+            "20-30% VO2max.",
+            "40-60% VO2max.",
+            "100-120% VO2max."
+          ]
+        },
+        "eb3cb251ca5f": {
+          "question": "Największy wpływ na poziom maksymalnego minutowego poboru tlenu ma:",
+          "answers": [
+            "Zaopatrzenie mięśni w substraty energetyczne.",
+            "Maksymalna pojemność minutowa serca.",
+            "Maksymalna wentylacja płuc.",
+            "Gęstość kapilar w mięśniu."
+          ]
+        },
+        "86a9c5e95f06": {
+          "question": "Przyczep końcowy mięśnia zębatego przedniego to:",
+          "answers": [
+            "Wyrostek barkowy.",
+            "Wyrostek kruczy.",
+            "Brzeg przyśrodkowy łopatki.",
+            "Grzebień guzka większego."
+          ]
+        },
+        "de1849244db9": {
+          "question": "Bezpośrednio po jednorazowym wysiłku występuje:",
+          "answers": [
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Przetrenowanie.",
+            "Zmęczenie przewlekłe.",
+            "Zmęczenie ostre."
+          ]
+        },
+        "edbaf68b7e27": {
+          "question": "Maksymalny sprint trwający 6 sekund wymaga od zawodnika wysokiej wydolności:",
+          "answers": [
+            "Anaerobowej fosfagenowej.",
+            "Aerobowej glikolitycznej.",
+            "Aerobowej.",
+            "Anaerobowej glikolitycznej."
+          ]
+        },
+        "27a3904b228c": {
+          "question": "Problemy jakimi zajmuje się medycyna sportowa to:",
+          "answers": [
+            "Monitorowanie stanu zdrowia sportowca, bezpieczeństwo w sporcie i udzielanie pierwszej pomocy.",
+            "Przygotowanie sportowca do podróży i ocena wpływu warunków środowiskowych na zdrowie i wydolność zawodnika.",
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Stosowanie dopingu w sporcie"
+          ]
+        },
+        "ecd8d3429d87": {
+          "question": "Do oceny mocy wybicia w wyskoku można użyć testu:",
+          "answers": [
+            "Bosco.",
+            "PWC170.",
+            "Astranda.",
+            "Wingate."
+          ]
+        },
+        "2d0c032f792b": {
+          "question": "Po około 25 roku życia zmniejsza się:",
+          "answers": [
+            "Wszystkie odpowiedzi są błędne.",
+            "Tylko wydolność aerobowa.",
+            "Tylko wydolność anaerobowa.",
+            "Wydolność aerobowa i anaerobowa."
+          ]
+        },
+        "544b2af12c44": {
+          "question": "Test harwardzki (harvard step-test) służy do oceny:",
+          "answers": [
+            "Sprawności termoregulacji.",
+            "Koordynacji nerwowo-mięśniowej.",
+            "Szybkości reakcji.",
+            "Wydolności fizycznej."
+          ]
+        },
+        "225c1cc8661f": {
+          "question": "Do rotatorów wewnętrznych stawu biodrowego należy:",
+          "answers": [
+            "Mięsień biodrowy.",
+            "Mięsień biodrowo-lędźwiowy.",
+            "Mięsień pośladkowy wielki.",
+            "Mięsień pośladkowy średni."
+          ]
+        },
+        "7a80702c8616": {
+          "question": "Po stwierdzeniu, że poszkodowany jest nieprzytomny:",
+          "answers": [
+            "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do pośredniego masażu serca i sztucznych oddechów.",
+            "Wszystkie odpowiedzi są fałszywe.",
+            "Sprawdzamy oddech i przystępujemy do sztucznych oddechów i pośredniego masażu serca.",
+            "Zawsze wzywamy pomoc, układamy poszkodowanego w pozycji bocznej ustalonej i czekamy na przyjazd karetki."
+          ]
+        },
+        "1b294df3ee14": {
+          "question": "Wskaźnikiem oceniającym potencjał fosfagenowy zawodnika mierzony w teście Wingate jest:",
+          "answers": [
+            "Spadek mocy.",
+            "Czas utrzymania mocy szczytowej.",
+            "Moc szczytowa (maksymalna).",
+            "Moc średnia."
+          ]
+        },
+        "1936fe9ee806": {
+          "question": "Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:",
+          "answers": [
+            "Wraz z wodą podawane są roztwory elektrolitów (chlorki potasu i sodu) oraz glukozy.",
+            "Podawane płyny są izotoniczne.",
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Podawane płyny są o odpowiednim ciśnieniu osmotycznym podobnym do ciśnienia osmotycznego krwi."
+          ]
+        },
+        "3ec1f860bd3b": {
+          "question": "ATP w mięśniach powstaje na drodze przemian:",
+          "answers": [
+            "Zarówno tlenowych jak i beztlenowych.",
+            "ATP w mięśniach nie powstaje.",
+            "Tylko beztlenowych.",
+            "Tylko tlenowych."
+          ]
+        },
+        "462d270d4871": {
+          "question": "Przyczep końcowy mieśnia najszerszego grzbietu to:",
+          "answers": [
+            "Grzebień guzka większego.",
+            "Wyrostek kruczy.",
+            "Wyrostek barkowy.",
+            "Grzebień guzka mniejszego."
+          ]
+        },
+        "6da779d1fd9a": {
+          "question": "Substratem energetycznym uwalniającym najwięcej energii z 1 grama są:",
+          "answers": [
+            "Węglowodany.",
+            "Tłuszcze.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Białka."
+          ]
+        },
+        "3fae31074695": {
+          "question": "Nasilenie pracy serca powodują:",
+          "answers": [
+            "Adrenalina, jony potasu, insulina.",
+            "Insulina, adrenalina, tyroksyna.",
+            "Tyroksyna, glukagon, adrenalina.",
+            "Tyroksyna, insulina, acetylocholina."
+          ]
+        },
+        "e7090dbeac70": {
+          "question": "Fizykalne zabiegi odnawiająco–hartujące to:",
+          "answers": [
+            "Zabiegi w których stosowane są bodźce termiczne.",
+            "Zabiegi w których stosowane sa bodźce elektryczne i świetlne.",
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Zabiegi w których stosowane są bodźce mechaniczne."
+          ]
+        },
+        "a6101a59d0e1": {
+          "question": "Do cech budowy kręgu szczytowego należy:",
+          "answers": [
+            "Brak trzonu.",
+            "Wszystkie powyższe odpowiedzi są prawidłowe.",
+            "Brak wyrostka kolczystego.",
+            "Otwór wyrostka poprzecznego."
+          ]
+        },
+        "5852f89d4474": {
+          "question": "Bóle w dolnym odcinku kręgosłupa są spowodowane:",
+          "answers": [
+            "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa oraz mięśni rotatorów.",
+            "Stanami przeciążeniowymi mięśni rotatorów oraz mięśnia 4-głowego.",
+            "Wszystkie odpowiedzi są fałszywe.",
+            "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa."
+          ]
+        },
+        "98b09b1d11fc": {
+          "question": "Średnia ilość elementów morfotycznych w 1 mm3 wynosi:",
+          "answers": [
+            "WBC 7,5 tyś; RBC 5 mln; PLT 250 tyś.",
+            "PLT 10 tyś; WBC 5 tyś, RBC 4 mln.",
+            "PLT 4,5 mln; RBC 300 tyś; WBC 5 tyś.",
+            "RBC 5 tyś; WBC 200 tyś; PLT 4 mln."
+          ]
+        },
+        "06b966eaa784": {
+          "question": "Piłka siatkowa jest dyscypliną sportową o podłożu energetycznym:",
+          "answers": [
+            "Aerobowo-anaerobowym.",
+            "Anaerobowo-aerobowym.",
+            "Beztlenowym.",
+            "Tlenowym."
+          ]
+        },
+        "885dcc785db2": {
+          "question": "Oznaczenie stężenia mleczanu we krwi:",
+          "answers": [
+            "Może służyć także jako marker do planowania i prowadzenia treningu sportowego z określoną intensywnością.",
+            "Wszystkie odpowiedzi są prawdziwe,",
+            "Stężenie mleczanu po wysiłkach o charakterze beztlenowym zależy m.in. od specyfiki treningowej i stopnia wytrenowania zawodnika.",
+            "Zależy od zasobów i rodzaju źródeł energetycznych oraz czasu i intensywności wysiłku."
+          ]
+        },
+        "77da9ff851e5": {
+          "question": "Pierwszą czynnością w przypadku oparzenia termicznego jest:",
+          "answers": [
+            "Zakładamy jałowy opatrunek z gazy na oparzone miejsce i czekamy na pogotowie.",
+            "Polewanie skóry czystą, chłodną wodą przez około 20 minut celem odebrania ciepła z tkanek.",
+            "Smarujemy tłuszczem oparzone miejsce.",
+            "Wszystkie odpowiedzi są fałszywe."
+          ]
+        },
+        "76277fbe0781": {
+          "question": "Typowe elementy gry w piłce siatkowej oparte są na podłożu energetycznym:",
+          "answers": [
+            "Beztlenowym fosfagenowym.",
+            "Oksydacja wolnych kwasów tłuszczowych.",
+            "Tlenowym.",
+            "Beztlenowym glikolitycznym."
+          ]
+        },
+        "fa7246a883d2": {
+          "question": "Opóźniona bolesność mięśnia spowodowana jest przez:",
+          "answers": [
+            "Zaburzenia wodno-elektrolitowe.",
+            "Mechaniczne uszkodzenia tkanki mięśniowej i łącznej.",
+            "Wzrost pH w mięśniu.",
+            "Zakwaszenie mięśnia."
+          ]
+        },
+        "1d3c4dc21c06": {
+          "question": "Uzyskanie bezpłatnej porady sportowo-lekarskiej jest możliwe:",
+          "answers": [
+            "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w poradni mającej kontrakt z NFZ, pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu (rodzinnego).",
+            "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w każdej poradni sportowo-lekarskiej.",
+            "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia.",
+            "Tylko przez dzieci i młodzież do ukończenia 21 roku życia pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu."
+          ]
+        },
+        "21309ade08b2": {
+          "question": "Bezpośrednim źródłem energii do pracy komórek mięśniowych jest:",
+          "answers": [
+            "ADP.",
+            "ATP.",
+            "NAD+.",
+            "AMP."
+          ]
+        },
+        "c0053a3cc8ac": {
+          "question": "Przyczyny zmęczenia to:",
+          "answers": [
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Odwodnienie i wyczerpanie zasobów energetycznych.",
+            "Hipertermia i utrata elektrolitów.",
+            "Zakwaszenie i niedotlenienie."
+          ]
+        },
+        "c60f5470f8aa": {
+          "question": "W stawie skokowym górnym można wykonywać ruchy:",
+          "answers": [
+            "Przywodzenia, odwodzenia, nawracania i odwracania.",
+            "Zginania i prostowania.",
+            "Zginania, prostowania, nawracania i odwracania.",
+            "Nawracania i odwracania."
+          ]
+        },
+        "416a2a0d9c9d": {
+          "question": "W skład ściany przedniej jamy brzusznej wchodzą:",
+          "answers": [
+            "Mięsień biodrowy.",
+            "Mięsień biodrowo-lędźwiowy.",
+            "Mięsień lędźwiowy większy.",
+            "Mięsień prosty brzucha."
+          ]
+        },
+        "03fb3487ca76": {
+          "question": "Do kości twarzoczaszki zaliczamy wszystkie z wyjątkiem:",
+          "answers": [
+            "Kości nosowe, łzowe, żuchwa.",
+            "Kości nosowe, łzowe, jarzmowe.",
+            "Kości nosowe, łzowe, sitowe.",
+            "Kości nosowe, łzowe, gnykowa."
+          ]
+        },
+        "b602db59a4ba": {
+          "question": "W płaszczyźnie czołowej zachodzą ruchy:",
+          "answers": [
+            "Zginania i prostowania.",
+            "Skrętu na zewnątrz i do wewnątrz.",
+            "Odwodzenia i przywodzenia.",
+            "Przeciwstawiania i odprowadzania."
+          ]
+        },
+        "6bb6250d2c13": {
+          "question": "Skurcz ekscentryczny charakteryzuje się:",
+          "answers": [
+            "Przyczepy mięśnia w czasie pracy oddalają się.",
+            "Stałym napięciem włókien, zmienna jest ich długość.",
+            "Przyczepy mięśnia w czasie pracy przybliżają się.",
+            "Zmienną długością i napięciem."
+          ]
+        },
+        "a161a6251f0e": {
+          "question": "Zasada PRICE stosowana jest:",
+          "answers": [
+            "Przy uszkodzeniach zamkniętych tkanek miękkich narządu ruchu.",
+            "W przypadku każdego uszkodzenia pourazowego w sporcie.",
+            "Wszystkie odpowiedzi są fałszywe.",
+            "Przy uszkodzeniach zamkniętych i otwartych tkanek miękkich narządu ruchu."
+          ]
+        },
+        "cf38b57c542d": {
+          "question": "Mięsień piszczelowy przedni:",
+          "answers": [
+            "Prostuje i nawraca stopę.",
+            "Zgina i nawraca stopę.",
+            "Zgina i odwraca stopę.",
+            "Prostuje i odwraca stopę."
+          ]
+        },
+        "5f2e6fb03134": {
+          "question": "Co to jest TLC i ile wynosi.",
+          "answers": [
+            "Pojemność całkowita płuc, 6000 ml.",
+            "Pojemność minutowa płuc, 4800 ml.",
+            "Pojemność życiowa płuc, 6000 ml.",
+            "Objętość zapasowa wdechowa, 4800 ml."
+          ]
+        },
+        "deeb6c4f8047": {
+          "question": "Do celów odnowy biologicznej zaliczamy:",
+          "answers": [
+            "Aktywizację procesów wypoczynkowych.",
+            "Hartowanie (uodparnianie) organizmu na zmiany warunków środowiskowych.",
+            "Wszystkie odpowiedzi są prawdziwe.",
+            "Profilaktykę i zmniejszenie skutków przeciążeń powolnych."
+          ]
+        },
+        "c464abbc353b": {
+          "question": "Środki wspomagające to:",
+          "answers": [
+            "Legalne i nielegalne środki ergogeniczne.",
+            "Tylko legalne (nie zabronione) środki i metody.",
+            "Środki i metody nielegalne, zabronione, znajdujące się na liście WADA.",
+            "Wszystkie odpowiedzi są prawdziwe."
+          ]
+        },
+        "cecacf4a20c6": {
+          "question": "Na powierzchni żebrowej łopatki znajduje się:",
+          "answers": [
+            "Dół nadgrzebieniowy.",
+            "Grzebień łopatki.",
+            "Wszystkie powyższe odpowiedzi są prawidłowe.",
+            "Dół podłopatkowy."
+          ]
+        },
+        "586c0ad6d5ca": {
+          "question": "Wskaż efekty treningu fizycznego:",
+          "answers": [
+            "Poprawa termoregulacji, zwiększenie otłuszczenia ciała, spadek hemoglobiny.",
+            "Bradykardia, podwyższenie poziomu lipidów we krwi, wzrost poziomu hemoglobiny.",
+            "Zwiększenie masy mięśni, poprawa koordynacji, zwiększenie objętości krwi.",
+            "Zwiększenie siły, wzrost spoczynkowego tętna, pogrubienie chrząstek stawowych."
+          ]
+        },
+        "79d2cc8428b0": {
+          "question": "Niekwasomlekowa faza długu tlenowego trwa około:",
+          "answers": [
+            "60 min.",
+            "30 min.",
+            "3 min.",
+            "10 min."
+          ]
+        },
+        "908dc16380c0": {
+          "question": "Mięśnie nadgrzebieniowy i podgrzebieniowy:",
+          "answers": [
+            "Rotują do wewnątrz w stawie ramiennym.",
+            "Przyczepiają się do guzka mniejszego kości ramiennej.",
+            "Przyczepiają się do powierzchni żebrowej łopatki.",
+            "Przyczepiają się do guzka większego kości ramiennej."
+          ]
+        },
+        "a61e11148f79": {
+          "question": "Jaki jest wpływ wysiłku fizycznego o charakterze wytrzymałościowym na wydzielanie GH:",
+          "answers": [
+            "Wzrasta wydzielanie GH.",
+            "Wzrost stężenia GH zależy od intensywności wysiłku i od czasu trwania wysiłku.",
+            "Zjawisko to występuje w czasie wysiłku i bezpośrednio po jego zakończeniu.",
+            "Wszystkie odpowiedzi są prawdziwe."
+          ]
+        },
+        "b92cf201b3ec": {
+          "question": "W przypadku pełnosprawnych zawodników orzeczenie o zdolności do sportu może wydać:",
+          "answers": [
+            "Tylko specjalista medycyny sportowej.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Każdy lekarz.",
+            "Specjalista medycyny sportowej lub lekarz z certyfikatem PTMS."
+          ]
+        },
+        "5c7755d34f93": {
+          "question": "Intensywność rozgrzewki powinna wynosić:",
+          "answers": [
+            "Poniżej 40%VO2max.",
+            "Nie ma to znaczenia.",
+            "Powyżej 80%VO2max.",
+            "40-60%VO2max."
+          ]
+        },
+        // psychologia
+        "dfa352324125": {
+          "question": "Efektywna regulacja nastroju powinna dotyczyć następujących wymiarów nastroju:",
+          "answers": [
+            "Kontrolowania kontaktów towarzyskich, rozluźnienia, energii.",
+            "Kontrolowania energii, zmęczenia, gniewu.",
+            "Kontrolowania diety, dezorientacji, depresyjności.",
+            "Kontrolowania motywacji, zmęczenia, lęku."
+          ]
+        },
+        "f5480201727d": {
+          "question": "Zawodnicy sukcesu:",
+          "answers": [
+            "Nie stosują treningu wyobrażeniowego w okresie słabszego funkcjonowania.",
+            "Stawiają sobie cele realistyczne, ale trochę przekraczające ich możliwości.",
+            "Obawiają się stresu, jako zjawiska zagrażającego sukcesowi.",
+            "Nie akceptują doświadczania silnych emocji pozytywnych i negatywnych."
+          ]
+        },
+        "afc3f7fe86fe": {
+          "question": "Wykorzystując wiedzę na temat teorii motywacji osiągnięć J.W.Atkinsona wybierz zdanie prawdziwe:",
+          "answers": [
+            "Osoby, u których motyw dążenia do sukcesu (Ms) jest niższy niż motyw do unikania niepowodzenia (Maf), podnoszą swój poziom aspiracji po osiągnięciu sukcesu a obniżają po niepowodzeniu.",
+            "Osoby, u których motyw dążenia do sukcesu( Ms) jest wyższy niż motyw do unikania niepowodzenia (Maf), podnoszą swój poziom aspiracji po osiągnięcie sukcesu a obniżają go po niepowodzeniu.",
+            "Osoby, u których motyw dążenia do sukcesu (Ms) jest niższy niż motyw do unikania niepowodzenia( Maf) są bardziej wytrwałe przy początkowym zadaniu związanym z osiągnięciem.",
+            "Osoby, u których motyw dążenia do sukcesu (Ms) jest wyższy niż motyw do unikania niepowodzenia( Maf) preferują zadania o wysokim stopniu trudności."
+          ]
+        },
+        "bc2321f7a061": {
+          "question": "Kwestionariusz radzenia sobie w sytuacjach stresowych - CISS mierzy następujące style radzenia sobie ze stresem:",
+          "answers": [
+            "Styl skoncentrowany na zadaniu, styl skoncentrowany na emocjach i styl skoncentrowany na unikaniu.",
+            "Styl skoncentrowany na unikaniu.",
+            "Styl skoncentrowany na poszukiwaniu kontaktów towarzyskich.",
+            "Styl skoncentrowany na zadaniu i styl skoncentrowany na emocjach."
+          ]
+        },
+        "7a6f0862374f": {
+          "question": "Wybierz zdanie fałszywe na temat lęku w sporcie:",
+          "answers": [
+            "Lęk - cecha odpowiada za różnice indywidualne.",
+            "Lęk – stan odpowiada za zmienność wyników z sytuacji na sytuację .",
+            "Sportowcy o wysokim poziomie lęku – cechy nie będą reagować lękiem w sytuacjach silnie zagrażających.",
+            "Formowanie się osobowości lękowej wiąże się z wczesnym okresem dzieciństwa."
+          ]
+        },
+        "c14fc39f0334": {
+          "question": "Efekty zastosowania twórczych wyobrażeń w treningu umiejętności psychologicznych to:",
+          "answers": [
+            "Wyobrażanie sobie strategii używanych podczas realnego startu.",
+            "Wyobrażanie sobie negatywnych i pozytywnych emocji podczas startu.",
+            "Wyobrażanie sobie strategii używanych podczas treningu.",
+            "Wyobrażanie sobie miejsca startu."
+          ]
+        },
+        "f8906e24fdf0": {
+          "question": "Wybierz zdanie prawdziwe:",
+          "answers": [
+            "Sfera narządu ruchu nie integruje osobowości, mięsni i struktur łącznotkankowych.",
+            "Zapis informacji genetycznej całkowicie decyduje o równowadze psychofizycznej.",
+            "Sfera środowiskowo–społeczna nie wpływa na równowagę między ciałem i umysłem.",
+            "Podstawowym narzędziem ekspresji w ciele jest oddech i mięśnie."
+          ]
+        },
+        "cee476590400": {
+          "question": "Trzy style komunikacji motywującej to:",
+          "answers": [
+            "Podążanie, prowadzenie, kierowanie.",
+            "Słuchanie, podążanie, kierowanie.",
+            "Słuchanie, informowanie, prowadzenie.",
+            "Słuchanie, informowanie, kierowanie."
+          ]
+        },
+        "c86da86c8e4c": {
+          "question": "Wybierz zdanie prawdziwe:",
+          "answers": [
+            "Zagrożenie trenerskimi emocjami utrudnia zawodnikom radzenie sobie ze stresem startowym.",
+            "Najlepsza praktyką jest praktyka.",
+            "Praca trenera nie wymaga stałego poszukiwania nowych, doskonalszych narzędzi i metod nawiązywania i utrzymywania pozytywnych relacji.",
+            "Cechy osobowości w odróżnieniu od cech temperamentu nie podlegają modyfikacji."
+          ]
+        },
+        "af229f3c3b1f": {
+          "question": "Wybierz zdanie fałszywe:",
+          "answers": [
+            "Doradzanie w sporcie powinno służyć przekonaniu zawodnika o jego przydatności do zespołu.",
+            "Doradzanie w sporcie powinno służyć nabywaniu nowej wiedzy i umiejętności.",
+            "Doradzanie w sporcie powinno służyć faworyzowaniu zawodników.",
+            "Doradzanie w sporcie powinno służyć podnoszeniu pewności siebie i poczucia bezpieczeństwa zawodnika."
+          ]
+        },
+        "feb94c412be2": {
+          "question": "W czasie treningu wyobrażeniowego sportowiec powinien:",
+          "answers": [
+            "Budować obrazy z pozycji obserwatora a nie aktora zdarzenia.",
+            "Koncentrować się na szczegółach i ogółach.",
+            "Zawsze rozpoczynać od relaksacji.",
+            "Używać tylko jednego zmysłu."
+          ]
+        },
+        "1fe93acf6867": {
+          "question": "Kontrola i kierowanie stresem polega na:",
+          "answers": [
+            "Odwoływaniu się do przeszłych doświadczeń zawodnika.",
+            "Pozbyciu się pozytywnego myślenia.",
+            "Odwołaniu się do asertywności.",
+            "Równoważeniu stresu traumą."
+          ]
+        },
+        "119bd711b40f": {
+          "question": "Zawodnicy pokonują swój lęk przed porażką:",
+          "answers": [
+            "Stawiając sobie realistyczne cele.",
+            "Stawiając sobie wysokie cele.",
+            "Formułując negatywne cele.",
+            "Wizualizując porażkę."
+          ]
+        },
+        "f6543219f4d2": {
+          "question": "Samokontrola jako czynnik motywacji osiągnięć charakteryzuje zawodników:",
+          "answers": [
+            "Niezadowolonych z różnych przeszkód, które pojawiają się na drodze do realizacji celów długoterminowych.",
+            "Tłumaczących konsekwencje swoich zachowań przyczynami zewnętrznymi.",
+            "Reagujących zmniejszonym zaangażowaniem i wysiłkiem w trudnych sytuacjach.",
+            "Wytrwale i energicznie pracujących na treningu i zawodach."
+          ]
+        },
+        "0eb4f9032613": {
+          "question": "Zwycięskie zespoły:",
+          "answers": [
+            "Prawidłowo formułują cele mistrzowskie i wynikowe.",
+            "Rozwijają się tylko wtedy, gdy ponoszą porażki.",
+            "Pokonują swoje słabości trenując tylko z lepszymi od siebie zespołami.",
+            "Żródeł sukcesu upatrują w negatywnych doświadczeniach."
+          ]
+        },
+        "a25235d439de": {
+          "question": "Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:",
+          "answers": [
+            "Jasne cele.",
+            "Koncentracja na przeszłości.",
+            "Utrata podświadomości.",
+            "Niejednoznaczna informacja zwrotna."
+          ]
+        },
+        "206ba7c59609": {
+          "question": "Które wymiary uwagi opisuje Model Koncentracji Nideffera:",
+          "answers": [
+            "Koncentrację szeroką, wąską, zewnętrzną i wewnętrzną.",
+            "Koncentrację wąską i bliską.",
+            "Koncentrację szeroką i koncentrację odległą.",
+            "Koncentrację szeroką i wewnętrzną."
+          ]
+        },
+        "1006e34c3949": {
+          "question": "Skutkami mechanizmów negatywnego stymulowania nie jest dotknięta płaszczyzna:",
+          "answers": [
+            "Górnego otworu klatki piersiowej.",
+            "Pasma brzuszno–pępkowego.",
+            "Powierzchni podeszwowej stopy.",
+            "Obręczy bioder z dnem miednicy mniejszej."
+          ]
+        },
+        "47528d43d02b": {
+          "question": "Emocje wpływają na poziom wykonania zadania sportowego u dzieci, ponieważ:",
+          "answers": [
+            "Dziecko martwi się tym, że zawiedzie oczekiwania osób dorosłych.",
+            "Dziecko obawia się, że w sytuacji sukcesu straci prestiż wśród rówieśników.",
+            "Dziecko zawsze czuje się osamotnione w przeżywaniu silnych emocji.",
+            "Dziecko nie kieruje się w rywalizacji sportowej zasadą fair play."
+          ]
+        },
+        "9f76fabee751": {
+          "question": "Funkcja motywacyjna wyobrażeń to:",
+          "answers": [
+            "Sprzyjanie formułowaniu celów wynikowych.",
+            "Utrwalenie zależności pomiędzy samoskutecznością a pobudzeniem.",
+            "Obniżenie odczuwanego pobudzenia oraz lęku startowego.",
+            "Zwiększenie odczuwanego pobudzenie i zmniejszenie lęku startowego."
+          ]
+        },
+        "7f5324992bbd": {
+          "question": "Najskuteczniejsze działania integrujące i budujące więzi w sytuacji rozwiązywania konfliktów to:",
+          "answers": [
+            "Przyjęcie odpowiedzialności, podkreślenie wspólnoty, brak wsparcia osobistego.",
+            "Odsłanianie się, brak wsparcia osobistego, podkreślenie wspólnoty.",
+            "Wsparcie osobiste, uściślenie zarzutów, brak prośby o odsłonięcie rozmówcy.",
+            "Odsłonięcie rozmówcy, wsparcie osobiste, uściślenie zarzutów."
+          ]
+        },
+        "7087b6fe2f8e": {
+          "question": "Skuteczny trener:",
+          "answers": [
+            "Rozszerza liczbę swoich celów.",
+            "Reaguje na zmiany sytuacji.",
+            "Kształtuje swoje relacje z zawodnikami na kierowaniu zawodnikami.",
+            "Ceni siłę charakteru zawodnika, nie doceniając jego zdolności."
+          ]
+        },
+        "df2410e61009": {
+          "question": "Wybierz zdanie prawdziwe:",
+          "answers": [
+            "Warunkiem skutecznego doradzania w sporcie powinno być nieustanne stymulowanie zawodnika do wytężonej pracy.",
+            "Warunkiem skutecznego doradzania w sporcie powinno być zaufanie do zawodnika i przekonanie zawodnika o tym zaufaniu.",
+            "Warunkiem skutecznego doradzania w sporcie powinno być utrudnianie zawodnikowi zadawania pytań.",
+            "Warunkiem skutecznego doradzania w sporcie powinna być zasada zamkniętych drzwi."
+          ]
+        },
+        "8b4097b1d874": {
+          "question": "Wybierz zadanie fałszywe:",
+          "answers": [
+            "Środek ciężkości ciała ludzkiego znajduje się tuż przed trzecim kręgiem kości krzyżowej.",
+            "Napięcie mięśni biodrowo–lędźwiowych powoduje napięcie mięśnia prostownika grzbietu i przepony.",
+            "Ochronie przed traumą służy grupa mięśni biodrowo–lędźwiowych.",
+            "Wzorce zachowań traumatycznych powstałe u dzieci w wyniku traumy są szkodliwe dla ich całego życia."
+          ]
+        },
+        "e9df177e250b": {
+          "question": "Pewnością siebie charakteryzują się zawodnicy:",
+          "answers": [
+            "Podporządkowani i wierzący w porażkę.",
+            "Preferujący łatwe zadania i elastyczni.",
+            "Wierzący w sukces i preferujący łatwe zadania.",
+            "Niezależni i odważni."
+          ]
+        },
+        "e6c136cd69fe": {
+          "question": "W czasie prawidłowego wydechu służącego regulacji pobudzenia organizmu biorą udział:",
+          "answers": [
+            "Mięsień prosty brzucha.",
+            "Przepona.",
+            "Mięśnie międzyżebrowe zewnętrzne.",
+            "Mięśnie karku."
+          ]
+        },
+        "a3e09b6f1e67": {
+          "question": "Zawodnicy czynnie uprawiający sport kierują się poniższymi motywami działalności sportowej:",
+          "answers": [
+            "Chęcią pokonania lęku przed porażką.",
+            "Dążeniem do osiągnięcia rekordowych wyników mimo istniejących trudności.",
+            "Uświadomieniem sobie swoich słabości.",
+            "Skupieniem się na sobie."
+          ]
+        },
+        "399a178ef44d": {
+          "question": "Według koncepcji Selingmana zawodnicy tłumaczą swoje sukcesy/porażki poniższymi wymiarami:",
+          "answers": [
+            "Personalizacja, stałość, zaangażowanie.",
+            "Personalizacja, stałość, zasięg.",
+            "Samokontrola, personalizacja, zaangażowanie.",
+            "Zasięg, zaangażowanie, niezależność."
+          ]
+        },
+        "ba6acc83bd30": {
+          "question": "Podstawowe cechy powięzi to:",
+          "answers": [
+            "Dzięki szybkiemu rozciąganiu deformuje się plastycznie.",
+            "Porozumiewa się szybciej niż układ nerwowy.",
+            "Kiedy traci płynność staje się bardziej wodnista.",
+            "Otacza tylko niektóre grupy mięśni."
+          ]
+        },
+        "184c97c507af": {
+          "question": "Najważniejsze zasady tworzenia zespołu sportowego to:",
+          "answers": [
+            "Bezpieczeństwo i wyzwania, uszanowanie indywidualnych zasad etycznych.",
+            "Brak skutecznej komunikacji, prawidłowe procesy strukturalne.",
+            "Skuteczna komunikacja, zajmowanie się wszystkimi zawodnikami.",
+            "Uznanie i docenienie roli każdego zawodnika w drużynie, filozofia drużyny."
+          ]
+        },
+        "02db329b7c1c": {
+          "question": "Niepożądane postawy rodziców wobec dzieci uprawiających sport to:",
+          "answers": [
+            "Autokratyczny styl wychowania, służący „wyręczeniu” trenera w pracy trenerskiej.",
+            "Docenianie umiejętności dziecka i stawianie mu w związku z tym adekwatnych wymagań.",
+            "Wspieranie dziecka w sytuacji poniesionego niepowodzenia.",
+            "Rodzice mają realne oczekiwania wobec wiedzy i umiejętności sportowych dziecka."
+          ]
+        },
+        "5f3cf7f5f912": {
+          "question": "Podstawowy błąd popełniany w sytuacji przypisywania przyczyn ludzkiego zachowania to:",
+          "answers": [
+            "Przecenianie roli cech osobowości i niedocenianie wpływu właściwości sytuacji, będąc obserwatorem określonego zdarzenia.",
+            "Skłonność do upatrywania przyczyn zdarzeń w obiektywnych aspektach sytuacji.",
+            "Jedno zjawisko ma nie tylko jedną przyczynę.",
+            "Skłonność do upatrywania przyczyn własnych niepowodzeń w samym sobie, przyczyn sukcesów zaś we właściwościach środowiska."
+          ]
+        },
+        "6619a09b7a4e": {
+          "question": "Źródła pewności siebie w sporcie to:",
+          "answers": [
+            "Trener, środowisko startowe i przygotowanie mentalne.",
+            "Biegłość i brak wsparcia.",
+            "Biegłość i skuteczna komunikacja w zespole.",
+            "Przygotowanie mentalne i brak biegłości."
+          ]
+        },
+        "e36966dc98fa": {
+          "question": "Ćwiczenia oddechowe, jako podstawowa forma relaksacji służą:",
+          "answers": [
+            "Uświadomieniu sobie sposobu oddychania.",
+            "Nauce oddechu paradoksalnego.",
+            "Lepszemu utlenieniu układu nerwowego.",
+            "Zwolnieniu regeneracji organizmu."
+          ]
+        },
+        "5c415277b168": {
+          "question": "Cele pedagogiczne funkcjonowania młodego zespołu to:",
+          "answers": [
+            "Przekazywanie wiedzy na temat psychologii wychowawczej.",
+            "Kształtowanie świadomości kontuzji.",
+            "Kształtowanie ducha gry zespołowej i współpracy.",
+            "Pozytywne wzmacnianie zdolności młodych zawodników."
+          ]
+        },
+        "5580f2c6f797": {
+          "question": "Ambicję zawodnika w rozumieniu motywacji osiągnięć charakteryzuje:",
+          "answers": [
+            "Satysfakcja z osiągnięć, zaangażowanie, wysiłek kompensacyjny.",
+            "Brak zapału do nauki, flow, satysfakcja z niepowodzeń innych.",
+            "Flow, brak zaangażowania, dbanie o prestiż.",
+            "Satysfakcja, ukierunkowanie na cel, niechęć porównywania się z innymi."
+          ]
+        },
+        "977922e453df": {
+          "question": "Technika wizualizacji sprzyja wspieraniu rehabilitacji zawodnika w trakcie kontuzji, ponieważ sportowcy używają poniższych rodzajów wyobrażeń:",
+          "answers": [
+            "Wyobrażeń poznawczych i motywacyjnych.",
+            "Wyobrażeń poznawczych specyficznych i wyobrażeń motywacyjnych specyficznych.",
+            "Wyobrażeń motywacyjnych.",
+            "Wyobrażeń poznawczych."
+          ]
+        },
+        "56e004e4bd92": {
+          "question": "Wzorce myślowe zawsze tworzą wzorce przeżywania uczuć w narządzie ruchu, ponieważ narząd ruchu :",
+          "answers": [
+            "Nie reaguje na specyficzne bodżce lecznicze.",
+            "Jest doskonałym odbiorcą emocjonalności.",
+            "Funkcjonuje niezależnie od innych sfer naszego ciała.",
+            "Nie integruje osobowości."
+          ]
+        },
+        "db0cbdf8b60d": {
+          "question": "Najczęściej spotykane reakcje w sytuacji konfliktu to:",
+          "answers": [
+            "Prowadzenie rozmówcy, negatywne domniemania.",
+            "Unikanie odpowiedzialności, negatywne domniemania, zmiana tematu konfliktu.",
+            "Wrogie pytania, pożądanie za rozmówcą, żartowanie.",
+            "Negowanie istnienia konfliktu, pozytywne domniemania, przyjazne pytania."
+          ]
+        },
+        "93a48c74e4aa": {
+          "question": "Rodzice dzieci zaangażowanych w sport:",
+          "answers": [
+            "Nie pozwalają dziecku na podejmowanie samodzielnych decyzji, ponieważ boją się, że stanie się zbyt dojrzałe i samodzielne.",
+            "Mają prawo do złości na dziecko w sytuacji jego niepowodzenia.",
+            "Nie towarzyszą dziecku na zawodach, bo są przekonani, że poradzi sobie samo.",
+            "Potrafią zaakceptować porażki swojego dziecka, aby pomóc mu dostrzec w doświadczeniu przegranej pozytywne aspekty."
+          ]
+        },
+        "b09578640671": {
+          "question": "Do najważniejszych etapów treningu umiejętności psychologicznych należy:",
+          "answers": [
+            "Opanowanie technik włączania się w bodżce negatywne.",
+            "Opanowanie technik budowania pewności siebie w oparciu o negatywny dialog wewnętrzny.",
+            "Opanowanie technik prawidłowego formułowania celów wynikowych.",
+            "Opanowanie technik relaksacji autogennej i progresywnej."
+          ]
+        },
+        "6a1fe72cb654": {
+          "question": "Najczęściej wykorzystywane zasady komunikacji interpersonalnej w relacji trener-zawodnik to:",
+          "answers": [
+            "Założenie, że zawodnicy mają podobne lub takie same doświadczenia.",
+            "Formułowanie przede wszystkim celów wynikowych.",
+            "Podawanie racjonalnych powodów dla wyznaczonych reguł.",
+            "Negatywne wzmacnianie niewłaściwych zachowań zawodników."
+          ]
+        },
+        "2d4b4f4ee73c": {
+          "question": "Najważniejsze aspekty motywacji osiągnięć w sporcie to:",
+          "answers": [
+            "Internalizacja, flow, nastawienie na brak rywalizacji.",
+            "Brak samokontroli, wytrwałość, flow.",
+            "Zaangażowanie, elastyczność, niezależność.",
+            "Uzależnienie od autorytetu, wiara w sukces, odwaga."
+          ]
+        },
+        "8f9d99915431": {
+          "question": "Jaki styl zachowania na boisku powinni przyjąć zawodnicy w sytuacji zagrożenia:",
+          "answers": [
+            "Styl mistrzowski: zawodnik doświadcza emocji pozytywnych i negatywnych, ale potrafi skoncentrować się na zadaniu i utrzymuje optymalny poziom wykonania.",
+            "Styl wynikowy: zawodnik koncentruje się na wyniku a nie na wykonaniu.",
+            "Styl syntetyczny: zawodnik koncentruje się przede wszystkim na pozytywnych emocjach.",
+            "Styl kierujący: zawodnik kieruje innymi zawodnikami a nie swoim zachowaniem."
+          ]
+        },
+        "9aa15fd5e133": {
+          "question": "Zasady wzmacniania odporności emocjonalnej dzieci i młodzieży to:",
+          "answers": [
+            "Silne naciski na osiągnięcia maksymalne.",
+            "Wzmacnianie wytrwałości w pokonywaniu trudności sportowych.",
+            "Stosowanie zbyt radykalnych metod redukcji pobudzenia.",
+            "Kontrolowanie stosowania specjalistycznych technik zmiany napięcia emocjonalnego sportowca."
+          ]
+        },
+        "638edfedbeb3": {
+          "question": "W sytuacji pomocy zawodnikowi po kontuzji należy zastosować:",
+          "answers": [
+            "Technikę wyobrażeń dotycząca kontroli pozytywnych emocji.",
+            "Technikę wyobrażeń dotyczących celów wynikowych.",
+            "Technikę wyobrażeń koncentrujących się na przezwyciężaniu lęku przed ponowną kontuzją.",
+            "Technikę wyobrażeń dotyczących wzmocnienia negatywnych emocji."
+          ]
+        },
+        "a3280c7575f4": {
+          "question": "Znajomość podstawowych zasad poprawnego komunikowania się zmniejsza prawdopodobieństwo pojawienia się konfliktów, ponieważ:",
+          "answers": [
+            "Rozmówcy poznają samych siebie, są wnikliwymi obserwatorami, szanują swojego rozmówcę.",
+            "Udzielają dobrych rad.",
+            "Formułują przedwczesne oceny i sądy.",
+            "Nie zwracają uwagi na szczegóły wypowiedzi i działań."
+          ]
+        },
+        "0f81ac2410b9": {
+          "question": "Motywację wewnętrzną osłabia:",
+          "answers": [
+            "Pozytywna informacja zwrotna.",
+            "Informacje zwrotne ukazujące negatywne efekty działalności.",
+            "Możliwość wyboru sposobu wykonania zadania.",
+            "Informacje zwrotne potwierdzające poprawne wykonanie zadania."
+          ]
+        },
+        "1b33f9a6f77c": {
+          "question": "Trening relaksacji autogennej służy do:",
+          "answers": [
+            "Podwyższenia napięcia w narządach jamy brzusznej poprzez działanie na splot trzewny.",
+            "Opanowania regulacji naczynioruchowej w obrębie jamy brzusznej.",
+            "Odczuwania masy ciała prowadzącego do stopniowego bezwładu i zwiotczenia mięśni szkieletowych.",
+            "Odczuwania chłodu prowadzącego stopniowo do zwiotczenia mięśni gładkich i zwężenia naczyń krwionośnych."
+          ]
+        },
+        "8261da8f7e6a": {
+          "question": "Specyfika komunikacji z dziećmi polega na uwzględnieniu:",
+          "answers": [
+            "Podejścia uległego.",
+            "Podejścia opartego na współpracy z dzieckiem.",
+            "Braku informacji o zachowaniu dziecka.",
+            "Podejścia autorytarnego."
+          ]
+        },
+        "6c2a35bcccf5": {
+          "question": "Narzędzia i metody zapobiegania i leczenia syndromu wypalenia w sporcie to:",
+          "answers": [
+            "Formułowanie wysokich celów wynikowych.",
+            "Traktowanie wypoczynku, jako równie ważnego jak trening.",
+            "Wzięcie całkowitej odpowiedzialności za siebie i zawodnika.",
+            "Trening umiejętności fizycznych."
+          ]
+        },
+        "afe89b7c3a05": {
+          "question": "Żwawość mierzona kwestionariuszem temperamentu FCZ–KT to:",
+          "answers": [
+            "Skłonność do drobiazgowej analizy zdarzeń, sumienność w wykonywaniu czynności, umiejętność wolnego reagowania.",
+            "Elastyczność w zachowaniu, skłonność do zachowań impulsywnych, negatywna reakcja na brak zajęć.",
+            "Umiejętność szybkiego reagowania, utrzymywania dużego tempa wykonywanych czynności i łatwa zmiana zachowania w odpowiedzi na zmianę warunków zewnętrznych.",
+            "Wytrzymałość na trudy życia, umiejętność pracy ze szczególna intensywnością."
+          ]
+        },
+        "29304d5c9aed": {
+          "question": "Prawidłowe sugestie dla zawodników doświadczających „wyuczonej bezradności”:",
+          "answers": [
+            "Wzmacniaj pozytywnie każdy wynik a nie mistrzostwo wykonania.",
+            "Ustal cele na każdy dzień treningu i zapisuj czy udało ci się je zrealizować.",
+            "Formułuj cel mistrzowski tylko dla potrzeb treningu a nie meczu.",
+            "Rywalizuj na każdym treningu i na każdych zawodach."
+          ]
+        },
+        "e787e2e06f75": {
+          "question": "Charakterystyczne objawy wypalenia w sporcie to:",
+          "answers": [
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Fizjologiczne wyczerpanie.",
+            "Poczucie obniżonych osiągnięć, często niezgodne z obiektywnymi wynikami.",
+            "Emocjonalne wyczerpanie."
+          ]
+        },
+        "7d284345987b": {
+          "question": "Wyróżniamy następujące rodzaje celów sportowych:",
+          "answers": [
+            "Cele wewnętrzne i zewnętrzne.",
+            "Cele zmienne i cele stałe.",
+            "Cele uniwersalne i cele ograniczone.",
+            "Cele mistrzowskie i cele wynikowe."
+          ]
+        },
+        "bc8677c1a542": {
+          "question": "W profilu umiejętności stosowanym w pracy trenera należy uwzględnić:",
+          "answers": [
+            "Aspekty psychologiczne, fizyczne, strategiczne i techniczne.",
+            "Aspekty fizyczne, techniczne, koordynacyjne, strategiczne i psychologiczne.",
+            "Aspekty fizyczne i aspekty strategiczne.",
+            "Aspekty psychologiczne."
+          ]
+        },
+        "013312853a48": {
+          "question": "Dzieci uprawiające sport nie lubią u swoich rodziców:",
+          "answers": [
+            "Zaangażowania w sport dziecka.",
+            "Podkreślania błędów w wykonaniu zadania sportowego.",
+            "Zachęcania do doskonalenia sportowych umiejętności.",
+            "Akceptacji po przegranej dziecka."
+          ]
+        },
+        "9fce1a71f718": {
+          "question": "Zjawisko załamania wiąże się ze stanem podaktywności organizmu. Oznacza to, że:",
+          "answers": [
+            "Organizm jest wystarczająco pobudzony, aby optymalnie funkcjonować.",
+            "Organizm nie jest wystarczająco pobudzony, aby optymalnie funkcjonować.",
+            "Zawodnik ma zbyt wysokie tętno i zbyt wysokie ciśnienie krwi.",
+            "W procesach biochemicznych organizm nie wytwarza odpowiedniej ilości energii."
+          ]
+        },
+        "48ceb882c76b": {
+          "question": "Wybierz zdanie prawdziwe dotyczące rozwoju motywacji wewnętrznej:",
+          "answers": [
+            "Rozwijamy motywację wewnętrzną, aby wykonać działania, które nie dają nam satysfakcji.",
+            "W dzieciństwie styl rodzicielski, który jest wspierający a nie kontrolujący rodzi motywację zewnętrzną.",
+            "Przy bardzo skomplikowanych i trudnych zadaniach motywację wewnętrzna można rozwinąć poprzez podejmowanie początkowo łatwych celów cząstkowych.",
+            "Dzieci, którym dawane są zadania zbyt zaawansowane na ich wiek, pozostają motywowane zewnętrznie do ich wykonania."
+          ]
+        },
+        "35cc07d928c1": {
+          "question": "Trener sędzia:",
+          "answers": [
+            "Przekazuje informację zwrotną w sytuacji poprawnego wykonania zadania sportowego.",
+            "Nieustannie ocenia zawodnika, wprowadzając go tym samym w stan niepewności.",
+            "Instruuje swoich zawodników.",
+            "Przekazuje informacje o tym jak skorygować błąd."
+          ]
+        },
+        // teoria treningu
+        "5b67aa41a33b": {
+          "question": "Na jakim poziomie struktury czasowej prowadzona jest kontrola operacyjna?",
+          "answers": [
+            "Mikrocyklu i mezocyklu.",
+            "Cwiczenia i jednostki trenigowej.",
+            "Podokresu i okresu.",
+            "Etapu szkolenia."
+          ]
+        },
+        "3b0fb17e8adc": {
+          "question": "Dlaczego kształtowanie koordynacji odbywa się metodą powtórzeniową?",
+          "answers": [
+            "Intensywność ćwiczeń nie jest wysoka.",
+            "Konieczna jest duża liczba powtórzeń.",
+            "Wymagany jest duży stopień trudności ćwiczeń.",
+            "Ćwiczenia koordynacyjne stosunkowo szybko prowadzą do zmęczenia."
+          ]
+        },
+        "191a7e32c8fc": {
+          "question": "Które z cech motorycznych warunkują poziom skoczności?",
+          "answers": [
+            "Siła i gibkość.",
+            "Szybkość i wytrzymałość.",
+            "Szybkość i siła.",
+            "Koordynacja ruchowa i szybkość."
+          ]
+        },
+        "6399164910f1": {
+          "question": "Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?",
+          "answers": [
+            "Bieg na 10 m ze startu zatrzymanego.",
+            "Bieg zwinnościowy ze zmianą kierunków.",
+            "Zasięg oburącz w wyskoku z miejsca.",
+            "Rzut piłką lekarską."
+          ]
+        },
+        "1e1ea1f5a4ba": {
+          "question": "Z którą z cech motorycznych szybkość ma najmniejszy związek?",
+          "answers": [
+            "Gibkość.",
+            "Siła.",
+            "Koordynacja.",
+            "Wytrzymałość."
+          ]
+        },
+        "df9ffc3caef4": {
+          "question": "Najważniejsze elementy warsztatu trenerskiego to:",
+          "answers": [
+            "Formy i środki treningu.",
+            "Metody treningowe.",
+            "Metody, formy i środki treningu.",
+            "Zasady treningu."
+          ]
+        },
+        "50450035be16": {
+          "question": "Jakie okresy treningowe występują w makrocyklu?",
+          "answers": [
+            "Przedstartowy, główny, roztrenowania,",
+            "Ogólnorozwojowy, specjalny, startowy.",
+            "Wstępny, ukierunkowany, specjalistyczny.",
+            "Przygotowawczy, startowy, przejściowy."
+          ]
+        },
+        "a2dd50b359a9": {
+          "question": "Która z metod oceny techniki stosowana jest w początkowej fazie szkolenia młodocianych zawodników?",
+          "answers": [
+            "Arkusze obserwacji gry.",
+            "Obserwacja trenerska.",
+            "Testy sprawności technicznej.",
+            "Rejestracja filmowa."
+          ]
+        },
+        "c12f352b4a52": {
+          "question": "Na czym polega trening strumieniowy?",
+          "answers": [
+            "Kikakrotnym powtarzaniu obwodu ćwiczebnego bez przerw między obwodami.",
+            "Aktywizacja ćwiczących zgodnie z zasadami aktywności i świadomości.",
+            "Systematycznym powtarzaniu poszczególnych rodzajów ćwiczeń.",
+            "Systematycznym i kolejnym ćwiczeniu poszczególnych grup mięśniowych."
+          ]
+        },
+        "37985fe1ee24": {
+          "question": "Etapy w szkoleniu sportowym siatkarza:",
+          "answers": [
+            "Wszechstronny, ukierunkowany, specjalistyczny, mistrzowski.",
+            "Ogólnorozwojowy i specjalistyczny.",
+            "Wstępny, ukierunkowany, specjalistyczny.",
+            "Młodzik, kadet, junior."
+          ]
+        },
+        "95938c7b50e4": {
+          "question": "Który okres rozwojowy nazywany jest złotym wiekiem rozwoju sprawności?",
+          "answers": [
+            "Okres młodzieńczy.",
+            "Okres młodszy szkolny.",
+            "Okres dojrzałości.",
+            "Okres starszy szkolny."
+          ]
+        },
+        "a9b5fdd60fc4": {
+          "question": "Który rodzaj siły dominuje w wyskoku do ataku?",
+          "answers": [
+            "Siła zrywowa.",
+            "Siła aktywna.",
+            "Względna siła mięśniowa.",
+            "Siła wolna."
+          ]
+        },
+        "5518a2a8e1cd": {
+          "question": "Która z definicji treningu sportowego w pełni oddzwierciedla jego istotę?",
+          "answers": [
+            "Jednostka treningowa, zajęcia szkoleniowe.",
+            "Trening sportowy jest procesem specjalizacji, który nie zaburzając harmonijnego rozwoju osobowości zawodnika zmierza do rozwinięcia tych jego cech fizycznych, psychicznych i sprawnościowych, które umożliwią mu osiągnięcie najwyższego wyniku sportowego.",
+            "Zespół oddziaływań trenera na zawodnika.",
+            "Uporządkowany zestaw ćwiczeń skierowany na realizację zadania szkoleniowego."
+          ]
+        },
+        "5f9ac44e8f06": {
+          "question": "Jakie jest główne zadanie okresu przygotowawczego?",
+          "answers": [
+            "Budowanie formy sportowej.",
+            "Trening specjalistyczny.",
+            "Przygotowanie sprawnościowe.",
+            "Doskonalenie techniki i taktyki."
+          ]
+        },
+        "ceaaf1c93c2e": {
+          "question": "Na czym polega planowanie właściwe treningu?",
+          "answers": [
+            "Skoordynowanie zamierzeń z aktualnymi możliwościami zawodników oraz warunkami treningu.",
+            "Określeniu drogi realizacji celu.",
+            "Rozłożeniu metod, form i środków w określonym czasie: makrocyklu, okresie, mezocyklu.",
+            "Wyznaczeniu realnego celu."
+          ]
+        },
+        "eb1fc0ecd6a1": {
+          "question": "Zadania przygotowania sprawnościowego:",
+          "answers": [
+            "Przygotowanie do podjęcia i kontynuowania treningu specjalistycznego.",
+            "Eliminowanie błędów.",
+            "Wszystkie odpowiedzi są prawidłowe.",
+            "Przygotowanie dostosowane do wymogów wynikających z działań w grze."
+          ]
+        },
+        "66d9646265e3": {
+          "question": "Który z elementów przygotowania psychicznego zawodników kształtuje ich cechy charakteru?",
+          "answers": [
+            "Kształtowanie umiejętności zmian napięcia emocjonalnego.",
+            "Kształtowanie motywów.",
+            "Przygotowanie wolicjonalne.",
+            "Kształtowanie odporności psychicznej."
+          ]
+        },
+        "85788134f8e8": {
+          "question": "Co jest istotą metody interwałowej w kształtowaniu wytrzymałości?",
+          "answers": [
+            "Czas wysiłku.",
+            "Intensywność.",
+            "Niepełny czas przerwy wypoczynkowej.",
+            "Liczba powtórzeń ćwiczenia."
+          ]
+        },
+        "749c12786522": {
+          "question": "Który rodzaj rozgrzewki jest zgodny z wymogami wysiłku startowego?",
+          "answers": [
+            "Aktywna.",
+            "Specjalistyczna.",
+            "Przedstartowa.",
+            "Pasywna."
+          ]
+        },
+        "ff87af3fdba6": {
+          "question": "Selekcja kierowana polega na:",
+          "answers": [
+            "Sformalizowany system norm i ich wartości w przechodzeniu kolejnych etapów szkolenia.",
+            "Samoocenie i samokontroli zawodników.",
+            "Doświadczeniu i wiedzy praktycznej oraz intuicji trenera prowadzącego szkolenie.",
+            "Parametrów somatycznych zawodników."
+          ]
+        },
+        "78fcd2bdb2ab": {
+          "question": "Która z metod treningowych nie wymaga określenia wszystkich czterech parametrów tj. czasu trwania wysiłku, liczby powtórzeń, intensywności, czasu i charakteru przerw wypoczynkowych:",
+          "answers": [
+            "Interwałowa.",
+            "Startowa.",
+            "Zmienna.",
+            "Powtórzeniowa."
+          ]
+        },
+        "230fcc9586a9": {
+          "question": "Która z faz kształtowania nawyku ruchowego ma miejsce zarówno w nauczaniu jak i doskonaleniu techniki?",
+          "answers": [
+            "Koncentracji.",
+            "Plastyczności.",
+            "Generalizacji.",
+            "Automatyzacji."
+          ]
+        },
+        "dd0cf504da9b": {
+          "question": "Które rodzaje treningu realizowane są w przekroju całej kariery zawodnika?",
+          "answers": [
+            "Wszechstronny, ukierunkowany, specjalistyczny.",
+            "Funkcjonalny.",
+            "Ogólnorozwojowy i specjalistyczny.",
+            "Techniczny i taktyczny."
+          ]
+        },
+        "6ba2413695f2": {
+          "question": "Co składa się na strukturę rzeczową treningu?",
+          "answers": [
+            "Etapy szkolenia.",
+            "Rodzaje treningu.",
+            "Przygotownie sprawnościowe, techniczne, taktyczne, psychiczne, teoretyczne, intelektualne.",
+            "Obciążenia treningowe."
+          ]
+        },
+        "e7048c8fd9b1": {
+          "question": "Wymogi do organizacji treningu sprawności funkcjonalnej:",
+          "answers": [
+            "Profilaktyka urazów i zmian przeciążeniowych narządu ruchu.",
+            "Struktura działań i ruchów w wykonywanej technice ruchu.",
+            "Możliwość realizacji zadań treningowych.",
+            "Optymalizacja treningu sprawności fizycznej."
+          ]
+        },
+        "fff48c60700c": {
+          "question": "Którą z metod treningu kształtuje się skoczność?",
+          "answers": [
+            "Interwałową.",
+            "Ciągłą.",
+            "Zmienną.",
+            "Powtórzeniową."
+          ]
+        },
+        "9cb1ef0b26e5": {
+          "question": "Które z kryteriów do piłki siatkowej może opierać się na obserwacji trenera?",
+          "answers": [
+            "Uzdolnienia ruchowe.",
+            "Sprawność fizyczna.",
+            "Stan zdrowia.",
+            "Budowa somatyczna."
+          ]
+        },
+        "389b98461178": {
+          "question": "Czym jest dokumentacja szkoleniowa?",
+          "answers": [
+            "Uporządkowanym zbiorem informacji dotyczących przedsięwzięć organizacyjno-szkoleniowych.",
+            "Zapisem pracy w dzienniku treningowym.",
+            "Planem szkoleniowym złożonym w klubie.",
+            "Sprawozdaniem z realizacj szkolenia po zakończeniu makrocyklu."
+          ]
+        },
+        "e2eaa50517a7": {
+          "question": "Który z treningów siły jest wskazany dla młodocianych siatkarzy?",
+          "answers": [
+            "Trening ciężkoatletyczny.",
+            "Trening obwodowy.",
+            "Trening izometryczny.",
+            "Trening kulturystyczny."
+          ]
+        },
+        "8a3be91360cb": {
+          "question": "Jaka powinna być dobra technika w procesie szkolenia młodych siatkarzy?",
+          "answers": [
+            "Zgodna z aktualnym wzorcem wykonania startowego.",
+            "Skuteczna.",
+            "Dostosowana do indywidualnych cech ćwiczącego.",
+            "Plastyczna."
+          ]
+        },
+        "4d0f953cf3fa": {
+          "question": "Co jest głównym zadaniem przygotowania teoretycznego i intelektualnego?",
+          "answers": [
+            "Wytworzenie aktywności i świadomości u zawodników.",
+            "Wyposażenie zawodnika w odpowiedni zasób wiedzy.",
+            "Wychowanie sportowca.",
+            "Dokonywanie samokontroli i samooceny przez zawodników."
+          ]
+        },
+        "4354c3386b6b": {
+          "question": "Obciążenie wewnętrzne określa:",
+          "answers": [
+            "Częstość skurczów serca.",
+            "Stężenie mleczanu.",
+            "Wielkość napięcia mięśniowego.",
+            "Zespół reakcji organizmu na obciążenie zewnętrzne."
+          ]
+        },
+        "83552a87982a": {
+          "question": "Czym jest kontrola treningu?",
+          "answers": [
+            "Procesem zbierania informacji o treningu, zawodach, odnowie.",
+            "Rejestracją i analizą gry.",
+            "Zapisem i oceną wykonanej pracy na treningu.",
+            "Sprawdzaniem poziomu wytrenowania zawodników."
+          ]
+        },
+        "50db47981235": {
+          "question": "Czy selekcja w piłce siatkowej polega na:",
+          "answers": [
+            "Egzaminie sprawnościowym do klasy lub szkoły sportowej.",
+            "Jednorazowym postępowaniu przy konstruowaniu zespołu.",
+            "Prowadzeniu obserwacji w przebiegu całego procesu szkolenia.",
+            "Jednorazowym postępowaniu na początku szkolenia."
+          ]
+        },
+        "6683c9770ad8": {
+          "question": "Podstawowa forma w nauczaniu techniki:",
+          "answers": [
+            "Fragmentów gry.",
+            "Gra szkolna.",
+            "Ścisła.",
+            "Zadaniowa."
+          ]
+        },
+        "77bb1e6e50fc": {
+          "question": "Podstawową cechą charakteryzującą dobrego trenera jest:",
+          "answers": [
+            "Umiejętność organizacji zajęć.",
+            "Auotrytet.",
+            "Systematyczność i celowość działania.",
+            "Wiedza fachowa."
+          ]
+        },
+        "d03888ea8b23": {
+          "question": "Planowanie makrocyklu powinno rozpoczynać się od:",
+          "answers": [
+            "Wyznaczenia ram czasowych okresu startowego w oparciu o kalendarz zawodów.",
+            "Określenia globalnych wielkości obciążeń: dni, treningi, godziny, kilometry, powtórzenia.",
+            "Wyznaczenia ram czasowych okresu przygotowawczego.",
+            "Wyznaczenia celu głównego i celów pośrednich oraz terminów i miejsc ich realizacji."
+          ]
+        },
+        "e637ea3cca46": {
+          "question": "Który z parametrów treningu nie jest korzystny dla właściwego treningu szybkości?",
+          "answers": [
+            "Krótki czas trwania ćwiczenia.",
+            "Zmęczenie.",
+            "Maksymalna prędkość ruchu.",
+            "Dobra technika."
+          ]
+        },
+        "75d5a2b4ec5b": {
+          "question": "Co jest najistotniejsze w procesie kierowania treningiem sportowym?",
+          "answers": [
+            "Realizowanie zadań w treningu, zawodach i odnowie.",
+            "Kształtowanie się trendu wyników sportowych.",
+            "Wyznaczenie głównych zadań zawodnikom w cyklu.",
+            "Relacja trener-zawodnik."
+          ]
+        },
+        "8f0b9c26430c": {
+          "question": "Jakie jest główne zadanie okresu przejściowego?",
+          "answers": [
+            "Czasowe obniżenie formy sportowej.",
+            "Leczenie i odbudowa zdolności do treningu.",
+            "Wypoczynek bierny i wdrażanie do kolejnego okresu przygotowawczego.",
+            "Roztrenowanie i wypoczynek."
+          ]
+        },
+        "691890420fa5": {
+          "question": "Które z cech motorycznych mają wymiar jakościowy?",
+          "answers": [
+            "Koordynacja ruchowa.",
+            "Szybkość, siła.",
+            "Gibkość, siła.",
+            "Skoczność, zwinność."
+          ]
+        },
+        "598915d97008": {
+          "question": "Jakie ćwiczenia mogą ograniczać rozwój gibkości?",
+          "answers": [
+            "Koordynacyjne.",
+            "Wytrzymałościowe.",
+            "Szybkościowe.",
+            "Siłowe."
+          ]
+        },
+        "3545768ee2aa": {
+          "question": "Wybitny talent to ten, który:",
+          "answers": [
+            "Uczy się techniki szybko, doładnie i trwale.",
+            "Uczy się dokładnie i trwale.",
+            "Uczy się szybko i dokładnie.",
+            "Uczy się szybko i trwale."
+          ]
+        },
+        "8b064b983d56": {
+          "question": "W którym okresie w makrocyklu występuje mikrocykl wprowadzający?",
+          "answers": [
+            "Startowym.",
+            "We wszystkich okresach.",
+            "Przejściowym.",
+            "Przygotowawczym."
+          ]
+        },
+        "3f2558390396": {
+          "question": "Jakie jest główne zadanie części końcowej jednostki treningowej?",
+          "answers": [
+            "Rozciąganie.",
+            "Zabiegi higieniczne: kąpiel, zmiana ubioru.",
+            "Doprowadzenie organizmu ćwiczących do względnego stanu równowagi funkcjonalnej.",
+            "Podsumowanie wyniku zajęć."
+          ]
+        },
+        "c759835ad91f": {
+          "question": "Koordynacja ruchowa jest funkcją?",
+          "answers": [
+            "Budowy somatycznej i szybkości.",
+            "Doświadczeń ruchowych i wytrenowania.",
+            "Gibkości i sprawności układu nerwowego.",
+            "Zwinności i zręczności."
+          ]
+        },
+        "c08e61ec22b1": {
+          "question": "Co jest istotą treningu plyometrycznego?",
+          "answers": [
+            "Zwiększenie mocy wykorzystując pracę mięśni w cyklu rozciągnięcie – skurcz.",
+            "Poprawa koordynacji i czucia nerwowo-mięśniowego.",
+            "Umiejętność amortyzacji przy lądowaniu.",
+            "Profilaktyka urazów i zmian przeciążeniowych."
+          ]
+        },
+        "ae13f251935f": {
+          "question": "Istotą stosowania trenażerów jest:",
+          "answers": [
+            "Zwrotna informacja o skuteczności działania.",
+            "Programowanie treningu i sterowanie nim.",
+            "Odtwarzanie ćwiczenia startowego w całości lub we fragmentach.",
+            "Modelowanie wykonywania ćwiczeń."
+          ]
+        },
+        "94e850025a92": {
+          "question": "W czym przejawia się zasada indywidualizacji?",
+          "answers": [
+            "Dostosowanie rozwiązań metodycznych do możliwości i potrzeb zawodników.",
+            "Liczbie powtórzeń, tempie wykonania, liczbie serii.",
+            "Regulacji masy ciała.",
+            "Doborze ćwiczeń."
+          ]
+        },
+        "491a3b85134f": {
+          "question": "Podstawowy warunek metodyczny, który powinien być przestrzegany podczas ćwiczenia gibkości:",
+          "answers": [
+            "Wysoka temperatura zewnętrzna.",
+            "Wykonywanie ćwiczeń gibkościowych w części końcowej treningu.",
+            "Rozgrzewka.",
+            "Rozluźnienie mięśni przed przystąpieniem do wykonywania ćwiczeń."
+          ]
+        },
+        "82f4d0155c08": {
+          "question": "Które mezocykle pełnią główną rolę w okresie przygotowawczym?",
+          "answers": [
+            "Pośrednie.",
+            "Wprowadzający, odbudowujący.",
+            "Kontrolno-przygotowawczy, przedstartowy.",
+            "Rozwijający, stabilizujący."
+          ]
+        },
+        "183713622960": {
+          "question": "Do jakiej grupy ćwiczeń należy zaliczyć sporty uzupełniające?",
+          "answers": [
+            "Ukierunkowane.",
+            "Regenerujące.",
+            "Podtrzymujące.",
+            "Wszechstronne."
+          ]
+        },
+        "7e35e292c635": {
+          "question": "Podstawowymi środkami stosowanymi w treningu są:",
+          "answers": [
+            "Suplementy diety i produkty medyczne.",
+            "Ćwiczenia.",
+            "Trenażery.",
+            "Obiekty, urządzenia i sprzęt sportowy."
+          ]
+        },
+        "b7dbdbe50484": {
+          "question": "Co jest podstawą rozwoju wytrzymałości?",
+          "answers": [
+            "Wielkość mięśni.",
+            "Cechy psychiczne.",
+            "Budowa somatyczna.",
+            "Wydolność."
+          ]
+        },
+        "b00d6e36e020": {
+          "question": "Która z zasad pełni w treningu zasadniczą rolę?",
+          "answers": [
+            "Stopniowania trudności.",
+            "Celowości.",
+            "Podmiotowości i indywidualizacji.",
+            "Specjalizacji."
+          ]
+        },
+        "f298f6e4994f": {
+          "question": "Co jest istotą coachingu?",
+          "answers": [
+            "Wyzwolenie jak największego potencjału zawodnika i osiągnięcie maksimum jego możliwości.",
+            "Pomoc zawodnikom w osiąganiu wyniku sportowego.",
+            "Kierowanie zespołem ludzi w dążeniu do osiągnięcia celu.",
+            "Dostosowanie programu treningu sportowego do indywidualnych potrzeb, możliwości i predyspozycji zawodnika."
+          ]
+        },
+        "eb29babaec10": {
+          "question": "W której części jednostki treningowej odbywa się nauczanie techniki?",
+          "answers": [
+            "Rozgrzewce specjalistycznej.",
+            "Części końcowej.",
+            "Części głównej.",
+            "Części wstępnej."
+          ]
+        },
+        "a641c4bf6852": {
+          "question": "W którym momencie struktury makrocyklu odbywa się utrwalenie i uplastycznienie wariantów taktycznych?",
+          "answers": [
+            "Podokresie przygotowania specjalnego.",
+            "Mezocyklu kontrolno-przygotowawczym.",
+            "Okresie przygotowawczym.",
+            "Okresie startowym."
+          ]
+        },
+        "18e7d4245a8e": {
+          "question": "Cechy motoryczne przejawiające się w wykonaniu zagrywki:",
+          "answers": [
+            "Czas reakcji, koordynacja.",
+            "Koordynacja, siła.",
+            "Skoczność, siła, szybkość, koordynacja.",
+            "Wytrzymałość siłowa, antycypacja, czas reakcji, orientacja przestrzenna."
+          ]
+        },
+        "7136394db11b": {
+          "question": "Z czego wynika wewnętrzna struktura okresu startowego?",
+          "answers": [
+            "Poziomu wytrenowania zawodników.",
+            "Z zadań realizowanych w okresie startowym.",
+            "Z kalendarza zawodów.",
+            "Składu osobowego drużyny."
+          ]
+        }
       }
-    });
+      const aRes = {
+        "85df9e4de1a9": {
+          "text": "Że jego zespół rozpocznie mecz od odbioru zagrywki",
+          "question": "Przeciwnik wygrał losowanie i wskazał stronę boiska, na której chce rozpocząć mecz. Co może wybrać w tym momencie kapitan drugiego zespołu?"
+        },
+        "a264c94f7d52": {
+          "text": "Wszystkie odpowiedzi są prawidłowe",
+          "question": "Jakie zachowanie zespołu wskazuje na popełnianie błędu zasłony?"
+        },
+        "bc51b5c6ad7f": {
+          "text": "Trener może dokonać w ramach jednej przerwy zmiany zawodników i zmiany powrotnej między tymi samymi zawodnikami",
+          "question": "Które zdanie dotyczące korzystania z regulaminowych przerw w grze jest nieprawdziwe?"
+        },
+        "8574451abc1b": {
+          "text": "Rozgrywający nie może teraz odbić piłki zanim nie zrobi tego któryś z jego partnerów",
+          "question": "Zawodnik rozgrywający, będący w tym momencie zawodnikiem linii obrony, po złym przyjęciu zagrywki w swoim zespole – piłka poleciała nad siatkę, gdzie została zaatakowana przez przeciwnika – stanął na trzecim metrze od siatki i podniósł w górę ręce, sięgając wyżej niż siatka. Piłka uderzyła go w dłonie. Które z poniższych zdań jest prawdziwe?"
+        },
+        "8191771519de": {
+          "text": "Dwaj zawodnicy jednego zespołu pobili się",
+          "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?"
+        },
+        "3c5d5f2e7d39": {
+          "text": "Trener poprosił o przerwę dla odpoczynku po gwizdku sędziego na zagrywkę. Był to pierwszy tego typu przypadek w meczu, ale zespół miał już upomnienie za opóźnianie z powodu opóźniania wznowienia gry",
+          "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary za opóźnianie?"
+        },
+        "d70a41c29804": {
+          "text": "Wszystkie odpowiedzi są prawidłowe",
+          "question": "Jakie są konsekwencje błędu rotacji?"
+        },
+        "8c32c131b8c0": {
+          "text": "Jeżeli w zespole jest dwóch Libero, nie mogą oni mieć koszulek w różnych kolorach (każda z nich odróżniająca Libero od „zwykłych” zawodników)",
+          "question": "Które z poniższych stwierdzeń nie jest prawdziwe w kontekście przepisów dotyczących zawodników Libero?"
+        },
+        "0b6ebf730113": {
+          "text": "Kapitan zespołu poprosił o przerwę dla odpoczynku, chociaż trener siedział na ławce rezerwowych",
+          "question": "Który z poniższych przypadków jest przykładem prośby nieuzasadnionej nie skutkującej sankcjami dla zespołu?"
+        },
+        "a833c7e80768": {
+          "text": "Zawodnik biegnący za piłką może chwycić się słupka, by sobie pomóc w biegu",
+          "question": "Piłka po przyjęciu przeleciała nad antenką w stronę wolnej strefy przeciwnika. Które zdanie jest prawdziwe?"
+        },
+        "33974fdc07bf": {
+          "text": "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, wówczas nie przeprowadza się zmiany regulaminowej",
+          "question": "Przed rozpoczęciem meczu na boisku znalazł się zawodnik niewpisany na kartce z ustawieniem. Jakie są konsekwencje?"
+        },
+        "4b2e55e8f782": {
+          "text": "Pomiar wysokości siatki, losowanie, rozgrzewka przy siatce, dostarczenie kartek z ustawieniem początkowym, przywitanie się zespołów",
+          "question": "Jaka jest właściwa kolejność w ceremoniale przedmeczowym?"
+        },
+        "c06e7c87e8f7": {
+          "text": "Nie ma błędu ustawienia",
+          "question": "Na poniższych zdjęciach numery na koszulkach zawodniczek odpowiadają ich pozycjom na boisku (2, 3, 4). Czy i w jaki sposób popełniają one błąd ustawienia?"
+        },
+        "7ae49d11b04a": {
+          "text": "Wszystkie powyższe akcje są atakami",
+          "question": "Która z akcji nie jest atakiem?"
+        },
+        "3b9011ae1743": {
+          "text": "Po ataku piłka odbiła się od dłoni blokujących i wysokim łukiem leciała daleko za boisko. Atakujący usiłując nie wkroczyć na boisko przeciwnika przebiegł schylony po linii środkowej i wbiegł w wolną strefę przeciwnika pod siatką",
+          "question": "Która z sytuacji nie jest błędem?"
+        },
+        "8180409aadb7": {
+          "text": "Po wykonanym ataku zawodnik wykonał jeszcze krok i oparł się klatką piersiową o siatkę, centralnie o taśmę boczną przymocowaną do siatki. Sędzia nie odgwizdał błędu.",
+          "question": "W której z sytuacji sędzia popełnił błąd?"
+        },
+        "ebf4524d86b1": {
+          "text": "Rozgrywający kiwa piłkę nad siatką, przy czym kontakt z piłką ma miejsce nad jego boiskiem, ale po kiwce dłoń zawodnik sięga na stronę przeciwnika",
+          "question": "Która z sytuacji nie jest błędem?"
+        },
+        "d3a8d552a949": {
+          "text": "Dwie białe taśmy przymocowane są pionowo do siatki dokładnie nad każdą linią boczną.",
+          "question": "Które ze zdań jest prawdziwe odnośnie siatki?"
+        },
+        "6606a942ca50": {
+          "text": "Zawodnik rozsunął panele reklamowe za boiskiem i wykonał zagrywkę spomiędzy nich",
+          "question": "Które wykonanie zagrywki jest nieprawidłowe?"
+        },
+        "bd76e3426887": {
+          "text": "Libero może być kapitanem zespołu.",
+          "question": "Które ze zdań nie jest prawdziwe odnośnie składu i lokalizacji zespołu?"
+        },
+        "b05c8069f640": {
+          "text": "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero",
+          "question": "Podstawowy rozgrywający zespołu został zmieniony przez drugiego rozgrywającego. Następnie miała miejsce zmiana powrotna, która był szóstą zmianą w tym zespole w tym secie. Chwilę później zawodnik rozgrywający doznał kontuzji. Libero zespołu przebywał w tym momencie na ławce. Jakie pole manewru ma trener zespołu?"
+        },
+        "f825ef38de15": {
+          "text": "W bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu",
+          "question": "Które z poniższych zdań nie jest prawdziwe w kontekście charakterystyki odbicia piłki?"
+        },
+        "ab26e3348904": {
+          "text": "Oficjalny protest zapisywany jest w protokole zawodów wyłącznie po zakończeniu meczu",
+          "question": "Które ze zdań jest prawdziwe odnośnie protestu?"
+        },
 
-    /* --- Logika quizu --- */
-    function renderQuestion() {
-      if (currentIndex >= questions.length) {
-        return renderResults();
+        "77da9ff851e5": {
+          "text": "Polewanie skóry czystą, chłodną wodą przez około 20 minut celem odebrania ciepła z tkanek.",
+          "question": "Pierwszą czynnością w przypadku oparzenia termicznego jest:"
+        },
+        "1b294df3ee14": {
+          "text": "Moc szczytowa (maksymalna).",
+          "question": "Wskaźnikiem oceniającym potencjał fosfagenowy zawodnika mierzony w teście Wingate jest:"
+        },
+        "15365a24d9a5": {
+          "text": "Położenia ogólnego środka ciężkości zawodnika.",
+          "question": "Analiza fazowa ruchu w siatkówce nie umożliwia określenia:"
+        },
+        "225c1cc8661f": {
+          "text": "Mięsień pośladkowy średni.",
+          "question": "Do rotatorów wewnętrznych stawu biodrowego należy:"
+        },
+        "b92cf201b3ec": {
+          "text": "Specjalista medycyny sportowej lub lekarz z certyfikatem PTMS.",
+          "question": "W przypadku pełnosprawnych zawodników orzeczenie o zdolności do sportu może wydać:"
+        },
+        "6bb6250d2c13": {
+          "text": "Przyczepy mięśnia w czasie pracy oddalają się.",
+          "question": "Skurcz ekscentryczny charakteryzuje się:"
+        },
+        "462d270d4871": {
+          "text": "Grzebień guzka mniejszego.",
+          "question": "Przyczep końcowy mieśnia najszerszego grzbietu to:"
+        },
+        "8c405885835b": {
+          "text": "40-60% VO2max.",
+          "question": "I próg metaboliczny występuje przy intensywności pracy:"
+        },
+        "1d3c4dc21c06": {
+          "text": "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w poradni mającej kontrakt z NFZ, pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu (rodzinnego).",
+          "question": "Uzyskanie bezpłatnej porady sportowo-lekarskiej jest możliwe:"
+        },
+        "52c7fb5feb39": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Możliwe efekty treningu hipoksycznego to:"
+        },
+        "03fb3487ca76": {
+          "text": "Kości nosowe, łzowe, sitowe.",
+          "question": "Do kości twarzoczaszki zaliczamy wszystkie z wyjątkiem:"
+        },
+        "416a2a0d9c9d": {
+          "text": "Mięsień prosty brzucha.",
+          "question": "W skład ściany przedniej jamy brzusznej wchodzą:"
+        },
+        "e7090dbeac70": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Fizykalne zabiegi odnawiająco–hartujące to:"
+        },
+        "2d0c032f792b": {
+          "text": "Tylko wydolność aerobowa.",
+          "question": "Po około 25 roku życia zmniejsza się:"
+        },
+        "fa7246a883d2": {
+          "text": "Mechaniczne uszkodzenia tkanki mięśniowej i łącznej.",
+          "question": "Opóźniona bolesność mięśnia spowodowana jest przez:"
+        },
+        "d5a9ec74936e": {
+          "text": "Zarówno stężenia testosteronu i kortyzolu.",
+          "question": "Dobrymi markerami przetrenowania są pomiary we krwi:"
+        },
+        "945790f7d660": {
+          "text": "Maksymalnego momentu siły oporu.",
+          "question": "Potencjał siłowy mięśni zawodnika najlepiej charakteryzuje wartość:"
+        },
+        "6c82e13e87b4": {
+          "text": "Unoszenie.",
+          "question": "Ruchy w stawie biodrowym to wszystkie z wyjątkiem:"
+        },
+        "eb3cb251ca5f": {
+          "text": "Maksymalna pojemność minutowa serca.",
+          "question": "Największy wpływ na poziom maksymalnego minutowego poboru tlenu ma:"
+        },
+        "7fd9ecb1de32": {
+          "text": "Rejestrację trajektorii dowolnego punktu ciała.",
+          "question": "Systemy do trójwymiarowej rejestracji ruchu (3D) umożliwiają:"
+        },
+        "79d2cc8428b0": {
+          "text": "3 min.",
+          "question": "Niekwasomlekowa faza długu tlenowego trwa około:"
+        },
+        "f25114a4d391": {
+          "text": "Wszystkie powyższe odpowiedzi są prawidłowe.",
+          "question": "Łąkotki stawu kolanowego:"
+        },
+        "c95619a9ed63": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Ogólny wydatek energetyczny związany z aktywnością fizyczną:"
+        },
+        "b3a4fdd6be9c": {
+          "text": "Prostownik promieniowy krótki nadgarstka.",
+          "question": "Do grupy bocznej mięśni przedramienia należy:"
+        },
+        "848c00e53d0d": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Urazy w sporcie dzielimy na:"
+        },
+        "b2dbdc02fd94": {
+          "text": "Wszystkie wymienione.",
+          "question": "W utrzymaniu stałego pH płynów ustrojowych biorą udział:"
+        },
+        "9ff6a189c9bd": {
+          "text": "Co 2 lata.",
+          "question": "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:"
+        },
+        "67999e89a3e6": {
+          "text": "Zmienia się napięcie mięśnia.",
+          "question": "W skurczu izometrycznym:"
+        },
+        "6978c40c3518": {
+          "text": "Mniejszy, większy jak i równy ciężarowi ciała.",
+          "question": "Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:"
+        },
+        "578848b9a26d": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Podstawowe cele w żywieniu sportowców w okresie treningowym to:"
+        },
+        "fb8d744c379c": {
+          "text": "20 ml O2 na 100 ml krwi.",
+          "question": "Pojemność tlenowa krwi wynosi:"
+        },
+        "d8ad7224c9d2": {
+          "text": "Od 4 do 6 litrów.",
+          "question": "Ilość krwi tłoczona przez serce człowieka w spoczynku wynosi w trakcie 1 minuty:"
+        },
+        "8f85c8ef7556": {
+          "text": "Yo-Yo.",
+          "question": "Do oceny zdolności wytrzymałościowych w grach zespołowych można zastosować test:"
+        },
+        "edbaf68b7e27": {
+          "text": "Anaerobowej fosfagenowej.",
+          "question": "Maksymalny sprint trwający 6 sekund wymaga od zawodnika wysokiej wydolności:"
+        },
+        "ecd8d3429d87": {
+          "text": "Bosco.",
+          "question": "Do oceny mocy wybicia w wyskoku można użyć testu:"
+        },
+        "7a80702c8616": {
+          "text": "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do pośredniego masażu serca i sztucznych oddechów.",
+          "question": "Po stwierdzeniu, że poszkodowany jest nieprzytomny:"
+        },
+        "3ec1f860bd3b": {
+          "text": "Zarówno tlenowych jak i beztlenowych.",
+          "question": "ATP w mięśniach powstaje na drodze przemian:"
+        },
+        "98b09b1d11fc": {
+          "text": "WBC 7,5 tyś; RBC 5 mln; PLT 250 tyś.",
+          "question": "Średnia ilość elementów morfotycznych w 1 mm3 wynosi:"
+        },
+        "76277fbe0781": {
+          "text": "Beztlenowym fosfagenowym.",
+          "question": "Typowe elementy gry w piłce siatkowej oparte są na podłożu energetycznym:"
+        },
+        "c0053a3cc8ac": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Przyczyny zmęczenia to:"
+        },
+        "c60f5470f8aa": {
+          "text": "Zginania i prostowania.",
+          "question": "W stawie skokowym górnym można wykonywać ruchy:"
+        },
+        "a161a6251f0e": {
+          "text": "Przy uszkodzeniach zamkniętych tkanek miękkich narządu ruchu.",
+          "question": "Zasada PRICE stosowana jest:"
+        },
+        "5f2e6fb03134": {
+          "text": "Pojemność całkowita płuc, 6000 ml.",
+          "question": "Co to jest TLC i ile wynosi."
+        },
+        "eaeb5c6e42e3": {
+          "text": "Bloczku kości ramiennej.",
+          "question": "Powierzchnia stawowa stawu ramienno-łokciowego leży na:"
+        },
+        "cecacf4a20c6": {
+          "text": "Dół podłopatkowy.",
+          "question": "Na powierzchni żebrowej łopatki znajduje się:"
+        },
+        "3f16bec4e77f": {
+          "text": "Wszystkie wymienione.",
+          "question": "Markerami uszkodzenia komórek mięśni we krwi są:"
+        },
+        "607a314c4a8a": {
+          "text": "Procesy endoergiczne (syntez) do których potrzebna jest energia z ATP.",
+          "question": "Procesy anaboliczne to:"
+        },
+        "5852f89d4474": {
+          "text": "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa.",
+          "question": "Bóle w dolnym odcinku kręgosłupa są spowodowane:"
+        },
+        "27a3904b228c": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Problemy jakimi zajmuje się medycyna sportowa to:"
+        },
+        "a5f84ed94d57": {
+          "text": "Z aktyny i miozyny.",
+          "question": "Sarkomer zbudowany jest:"
+        },
+        "21309ade08b2": {
+          "text": "ATP.",
+          "question": "Bezpośrednim źródłem energii do pracy komórek mięśniowych jest:"
+        },
+        "ee94723a98b2": {
+          "text": "6-8 L· min-1.",
+          "question": "U człowieka dorosłego wentylacja minutowa płuc w spoczynku wynosi około:"
+        },
+        "544b2af12c44": {
+          "text": "Wydolności fizycznej.",
+          "question": "Test harwardzki (harvard step-test) służy do oceny:"
+        },
+        "007bf394777b": {
+          "text": "Głowa żebra.",
+          "question": "Na końcu tylnym żebra znajduje się:"
+        },
+        "de1849244db9": {
+          "text": "Zmęczenie ostre.",
+          "question": "Bezpośrednio po jednorazowym wysiłku występuje:"
+        },
+        "c464abbc353b": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Środki wspomagające to:"
+        },
+        "f0d24f403f1e": {
+          "text": "Rośnie.",
+          "question": "Mechaniczna sztywność mięśnia podczas czynnościowego rozciągania:"
+        },
+        "6e08fe6e1689": {
+          "text": "Mięsień dwugłowy uda.",
+          "question": "Do rotatorów zewnętrznych podudzia zaliczamy:"
+        },
+        "1936fe9ee806": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:"
+        },
+        "86a9c5e95f06": {
+          "text": "Brzeg przyśrodkowy łopatki.",
+          "question": "Przyczep końcowy mięśnia zębatego przedniego to:"
+        },
+        "4b17fb357b11": {
+          "text": "Stopniowany.",
+          "question": "Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:"
+        },
+        "3fae31074695": {
+          "text": "Tyroksyna, glukagon, adrenalina.",
+          "question": "Nasilenie pracy serca powodują:"
+        },
+        "908dc16380c0": {
+          "text": "Przyczepiają się do guzka większego kości ramiennej.",
+          "question": "Mięśnie nadgrzebieniowy i podgrzebieniowy:"
+        },
+        "cf38b57c542d": {
+          "text": "Prostuje i odwraca stopę.",
+          "question": "Mięsień piszczelowy przedni:"
+        },
+        "885dcc785db2": {
+          "text": "Wszystkie odpowiedzi są prawdziwe,",
+          "question": "Oznaczenie stężenia mleczanu we krwi:"
+        },
+        "5c7755d34f93": {
+          "text": "40-60%VO2max.",
+          "question": "Intensywność rozgrzewki powinna wynosić:"
+        },
+        "ebca50948428": {
+          "text": "Parowanie.",
+          "question": "Najefektywniejszą drogą oddawania ciepła podczas pracy fizycznej jest:"
+        },
+        "c94a6ae2bbf9": {
+          "text": "Maksymalnego minutowego poboru tlenu.",
+          "question": "Wydolność aerobowa mierzona jest przez pomiar:"
+        },
+        "a61e11148f79": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Jaki jest wpływ wysiłku fizycznego o charakterze wytrzymałościowym na wydzielanie GH:"
+        },
+        "deeb6c4f8047": {
+          "text": "Wszystkie odpowiedzi są prawdziwe.",
+          "question": "Do celów odnowy biologicznej zaliczamy:"
+        },
+        "b602db59a4ba": {
+          "text": "Odwodzenia i przywodzenia.",
+          "question": "W płaszczyźnie czołowej zachodzą ruchy:"
+        },
+        "6b02296a02ee": {
+          "text": "Powyżej 60 ml/kg/min.",
+          "question": "Satysfakcjonujący poziom maksymalnego minutowego poboru tlenu u siatkarzy powinien wynosić:"
+        },
+        "a6101a59d0e1": {
+          "text": "Wszystkie powyższe odpowiedzi są prawidłowe.",
+          "question": "Do cech budowy kręgu szczytowego należy:"
+        },
+        "2b6eabf2dde8": {
+          "text": "Wytrzymałościowymi.",
+          "question": "II próg mleczanowy koreluje ze zdolnościami:"
+        },
+        "7c00c0846451": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Potencjalne efekty Kinesio Tapingu to:"
+        },
+        "d57507c1731e": {
+          "text": "42 % u kobiet i 47 % u mężczyzn.",
+          "question": "Hematokryt wynosi średnio:"
+        },
+        "06b966eaa784": {
+          "text": "Anaerobowo-aerobowym.",
+          "question": "Piłka siatkowa jest dyscypliną sportową o podłożu energetycznym:"
+        },
+        "4b4550ae1dcb": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Czynniki determinujące wydolność fizyczną to:"
+        },
+        "50c03ed54800": {
+          "text": "Submaksymalnej.",
+          "question": "Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:"
+        },
+        "a886df12cbeb": {
+          "text": "Wszystkie odpowiedzi są fałszywe.",
+          "question": "Wybierz właściwą odpowiedź dotyczącą urazów i obrażeń ostrych w siatkówce:"
+        },
+        "a00c986cbb0e": {
+          "text": "Siłą bodźca, przekrojem fizjologicznym, stopniem rozciągnięcia, typem komórek mięśniowych i temperaturą.",
+          "question": "Siła mięśniowa determinowana jest:"
+        },
+        "80e3415f6881": {
+          "text": "W szczytowym momencie superkompensacji.",
+          "question": "W cyklu treningowym, kolejny trening powinien być zaplanowany:"
+        },
+        "6dd30e3e377c": {
+          "text": "Wszystkie odpowiedzi są fałszywe.",
+          "question": "W przypadku ogólnego wychłodzenia ciała:"
+        },
+        "ecf10b0e5f1c": {
+          "text": "4 fazach: generalizacja, hamowanie, stabilizacja, automatyzacja.",
+          "question": "Kształtowanie nawyku ruchowego przebiega kolejno w:"
+        },
+        "586c0ad6d5ca": {
+          "text": "Zwiększenie masy mięśni, poprawa koordynacji, zwiększenie objętości krwi.",
+          "question": "Wskaż efekty treningu fizycznego:"
+        },
+        "6da779d1fd9a": {
+          "text": "Tłuszcze.",
+          "question": "Substratem energetycznym uwalniającym najwięcej energii z 1 grama są:"
+        },
+        "bc2321f7a061": {
+          "text": "Styl skoncentrowany na zadaniu, styl skoncentrowany na emocjach i styl skoncentrowany na unikaniu.",
+          "question": "Kwestionariusz radzenia sobie w sytuacjach stresowych - CISS mierzy następujące style radzenia sobie ze stresem:"
+        },
+        "c14fc39f0334": {
+          "text": "Wyobrażanie sobie strategii używanych podczas realnego startu.",
+          "question": "Efekty zastosowania twórczych wyobrażeń w treningu umiejętności psychologicznych to:"
+        },
+        "cee476590400": {
+          "text": "Podążanie, prowadzenie, kierowanie.",
+          "question": "Trzy style komunikacji motywującej to:"
+        },
+        "119bd711b40f": {
+          "text": "Stawiając sobie realistyczne cele.",
+          "question": "Zawodnicy pokonują swój lęk przed porażką:"
+        },
+        "0eb4f9032613": {
+          "text": "Prawidłowo formułują cele mistrzowskie i wynikowe.",
+          "question": "Zwycięskie zespoły:"
+        },
+        "a25235d439de": {
+          "text": "Jasne cele.",
+          "question": "Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:"
+        },
+        "206ba7c59609": {
+          "text": "Koncentrację szeroką, wąską, zewnętrzną i wewnętrzną.",
+          "question": "Które wymiary uwagi opisuje Model Koncentracji Nideffera:"
+        },
+        "47528d43d02b": {
+          "text": "Dziecko martwi się tym, że zawiedzie oczekiwania osób dorosłych.",
+          "question": "Emocje wpływają na poziom wykonania zadania sportowego u dzieci, ponieważ:"
+        },
+        "e6c136cd69fe": {
+          "text": "Mięsień prosty brzucha.",
+          "question": "W czasie prawidłowego wydechu służącego regulacji pobudzenia organizmu biorą udział:"
+        },
+        "02db329b7c1c": {
+          "text": "Autokratyczny styl wychowania, służący „wyręczeniu” trenera w pracy trenerskiej.",
+          "question": "Niepożądane postawy rodziców wobec dzieci uprawiających sport to:"
+        },
+        "5f3cf7f5f912": {
+          "text": "Przecenianie roli cech osobowości i niedocenianie wpływu właściwości sytuacji, będąc obserwatorem określonego zdarzenia.",
+          "question": "Podstawowy błąd popełniany w sytuacji przypisywania przyczyn ludzkiego zachowania to:"
+        },
+        "6619a09b7a4e": {
+          "text": "Trener, środowisko startowe i przygotowanie mentalne.",
+          "question": "Źródła pewności siebie w sporcie to:"
+        },
+        "5580f2c6f797": {
+          "text": "Satysfakcja z osiągnięć, zaangażowanie, wysiłek kompensacyjny.",
+          "question": "Ambicję zawodnika w rozumieniu motywacji osiągnięć charakteryzuje:"
+        },
+        "977922e453df": {
+          "text": "Wyobrażeń poznawczych i motywacyjnych.",
+          "question": "Technika wizualizacji sprzyja wspieraniu rehabilitacji zawodnika w trakcie kontuzji, ponieważ sportowcy używają poniższych rodzajów wyobrażeń:"
+        },
+        "8f9d99915431": {
+          "text": "Styl mistrzowski: zawodnik doświadcza emocji pozytywnych i negatywnych, ale potrafi skoncentrować się na zadaniu i utrzymuje optymalny poziom wykonania.",
+          "question": "Jaki styl zachowania na boisku powinni przyjąć zawodnicy w sytuacji zagrożenia:"
+        },
+        "a3280c7575f4": {
+          "text": "Rozmówcy poznają samych siebie, są wnikliwymi obserwatorami, szanują swojego rozmówcę.",
+          "question": "Znajomość podstawowych zasad poprawnego komunikowania się zmniejsza prawdopodobieństwo pojawienia się konfliktów, ponieważ:"
+        },
+        "e787e2e06f75": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Charakterystyczne objawy wypalenia w sporcie to:"
+        },
+        "56e004e4bd92": {
+          "text": "Jest doskonałym odbiorcą emocjonalności.",
+          "question": "Wzorce myślowe zawsze tworzą wzorce przeżywania uczuć w narządzie ruchu, ponieważ narząd ruchu :"
+        },
+        "2d4b4f4ee73c": {
+          "text": "Zaangażowanie, elastyczność, niezależność.",
+          "question": "Najważniejsze aspekty motywacji osiągnięć w sporcie to:"
+        },
+        "8261da8f7e6a": {
+          "text": "Podejścia opartego na współpracy z dzieckiem.",
+          "question": "Specyfika komunikacji z dziećmi polega na uwzględnieniu:"
+        },
+        "9aa15fd5e133": {
+          "text": "Wzmacnianie wytrwałości w pokonywaniu trudności sportowych.",
+          "question": "Zasady wzmacniania odporności emocjonalnej dzieci i młodzieży to:"
+        },
+        "af229f3c3b1f": {
+          "text": "Doradzanie w sporcie powinno służyć faworyzowaniu zawodników.",
+          "question": "Wybierz zdanie fałszywe:"
+        },
+        "5c415277b168": {
+          "text": "Kształtowanie ducha gry zespołowej i współpracy.",
+          "question": "Cele pedagogiczne funkcjonowania młodego zespołu to:"
+        },
+        "f5480201727d": {
+          "text": "Stawiają sobie cele realistyczne, ale trochę przekraczające ich możliwości.",
+          "question": "Zawodnicy sukcesu:"
+        },
+        "6a1fe72cb654": {
+          "text": "Podawanie racjonalnych powodów dla wyznaczonych reguł.",
+          "question": "Najczęściej wykorzystywane zasady komunikacji interpersonalnej w relacji trener-zawodnik to:"
+        },
+        "0f81ac2410b9": {
+          "text": "Informacje zwrotne ukazujące negatywne efekty działalności.",
+          "question": "Motywację wewnętrzną osłabia:"
+        },
+        "8b4097b1d874": {
+          "text": "Wzorce zachowań traumatycznych powstałe u dzieci w wyniku traumy są szkodliwe dla ich całego życia.",
+          "question": "Wybierz zadanie fałszywe:"
+        },
+        "6c2a35bcccf5": {
+          "text": "Traktowanie wypoczynku, jako równie ważnego jak trening.",
+          "question": "Narzędzia i metody zapobiegania i leczenia syndromu wypalenia w sporcie to:"
+        },
+        "1b33f9a6f77c": {
+          "text": "Odczuwania masy ciała prowadzącego do stopniowego bezwładu i zwiotczenia mięśni szkieletowych.",
+          "question": "Trening relaksacji autogennej służy do:"
+        },
+        "db0cbdf8b60d": {
+          "text": "Unikanie odpowiedzialności, negatywne domniemania, zmiana tematu konfliktu.",
+          "question": "Najczęściej spotykane reakcje w sytuacji konfliktu to:"
+        },
+        "7087b6fe2f8e": {
+          "text": "Reaguje na zmiany sytuacji.",
+          "question": "Skuteczny trener:"
+        },
+        "399a178ef44d": {
+          "text": "Personalizacja, stałość, zasięg.",
+          "question": "Według koncepcji Selingmana zawodnicy tłumaczą swoje sukcesy/porażki poniższymi wymiarami:"
+        },
+        "a3e09b6f1e67": {
+          "text": "Dążeniem do osiągnięcia rekordowych wyników mimo istniejących trudności.",
+          "question": "Zawodnicy czynnie uprawiający sport kierują się poniższymi motywami działalności sportowej:"
+        },
+        "1006e34c3949": {
+          "text": "Pasma brzuszno–pępkowego.",
+          "question": "Skutkami mechanizmów negatywnego stymulowania nie jest dotknięta płaszczyzna:"
+        },
+        "ba6acc83bd30": {
+          "text": "Porozumiewa się szybciej niż układ nerwowy.",
+          "question": "Podstawowe cechy powięzi to:"
+        },
+        "f6543219f4d2": {
+          "text": "Wytrwale i energicznie pracujących na treningu i zawodach.",
+          "question": "Samokontrola jako czynnik motywacji osiągnięć charakteryzuje zawodników:"
+        },
+        "35cc07d928c1": {
+          "text": "Nieustannie ocenia zawodnika, wprowadzając go tym samym w stan niepewności.",
+          "question": "Trener sędzia:"
+        },
+        "9fce1a71f718": {
+          "text": "Organizm nie jest wystarczająco pobudzony, aby optymalnie funkcjonować.",
+          "question": "Zjawisko załamania wiąże się ze stanem podaktywności organizmu. Oznacza to, że:"
+        },
+        "29304d5c9aed": {
+          "text": "Ustal cele na każdy dzień treningu i zapisuj czy udało ci się je zrealizować.",
+          "question": "Prawidłowe sugestie dla zawodników doświadczających „wyuczonej bezradności”:"
+        },
+        "7d284345987b": {
+          "text": "Cele mistrzowskie i cele wynikowe.",
+          "question": "Wyróżniamy następujące rodzaje celów sportowych:"
+        },
+        "48ceb882c76b": {
+          "text": "Dzieci, którym dawane są zadania zbyt zaawansowane na ich wiek, pozostają motywowane zewnętrznie do ich wykonania.",
+          "question": "Wybierz zdanie prawdziwe dotyczące rozwoju motywacji wewnętrznej:"
+        },
+        "013312853a48": {
+          "text": "Podkreślania błędów w wykonaniu zadania sportowego.",
+          "question": "Dzieci uprawiające sport nie lubią u swoich rodziców:"
+        },
+        "dfa352324125": {
+          "text": "Kontrolowania energii, zmęczenia, gniewu.",
+          "question": "Efektywna regulacja nastroju powinna dotyczyć następujących wymiarów nastroju:"
+        },
+        "9f76fabee751": {
+          "text": "Obniżenie odczuwanego pobudzenia oraz lęku startowego.",
+          "question": "Funkcja motywacyjna wyobrażeń to:"
+        },
+        "afc3f7fe86fe": {
+          "text": "Osoby, u których motyw dążenia do sukcesu( Ms) jest wyższy niż motyw do unikania niepowodzenia (Maf), podnoszą swój poziom aspiracji po osiągnięcie sukcesu a obniżają go po niepowodzeniu.",
+          "question": "Wykorzystując wiedzę na temat teorii motywacji osiągnięć J.W.Atkinsona wybierz zdanie prawdziwe:"
+        },
+        "feb94c412be2": {
+          "text": "Zawsze rozpoczynać od relaksacji.",
+          "question": "W czasie treningu wyobrażeniowego sportowiec powinien:"
+        },
+        "1fe93acf6867": {
+          "text": "Odwołaniu się do asertywności.",
+          "question": "Kontrola i kierowanie stresem polega na:"
+        },
+        "7a6f0862374f": {
+          "text": "Sportowcy o wysokim poziomie lęku – cechy nie będą reagować lękiem w sytuacjach silnie zagrażających.",
+          "question": "Wybierz zdanie fałszywe na temat lęku w sporcie:"
+        },
+        "93a48c74e4aa": {
+          "text": "Potrafią zaakceptować porażki swojego dziecka, aby pomóc mu dostrzec w doświadczeniu przegranej pozytywne aspekty.",
+          "question": "Rodzice dzieci zaangażowanych w sport:"
+        },
+        "e9df177e250b": {
+          "text": "Niezależni i odważni.",
+          "question": "Pewnością siebie charakteryzują się zawodnicy:"
+        },
+        "afe89b7c3a05": {
+          "text": "Umiejętność szybkiego reagowania, utrzymywania dużego tempa wykonywanych czynności i łatwa zmiana zachowania w odpowiedzi na zmianę warunków zewnętrznych.",
+          "question": "Żwawość mierzona kwestionariuszem temperamentu FCZ–KT to:"
+        },
+        "638edfedbeb3": {
+          "text": "Technikę wyobrażeń koncentrujących się na przezwyciężaniu lęku przed ponowną kontuzją.",
+          "question": "W sytuacji pomocy zawodnikowi po kontuzji należy zastosować:"
+        },
+        "e36966dc98fa": {
+          "text": "Lepszemu utlenieniu układu nerwowego.",
+          "question": "Ćwiczenia oddechowe, jako podstawowa forma relaksacji służą:"
+        },
+        "b09578640671": {
+          "text": "Opanowanie technik relaksacji autogennej i progresywnej.",
+          "question": "Do najważniejszych etapów treningu umiejętności psychologicznych należy:"
+        },
+        "7f5324992bbd": {
+          "text": "Odsłonięcie rozmówcy, wsparcie osobiste, uściślenie zarzutów.",
+          "question": "Najskuteczniejsze działania integrujące i budujące więzi w sytuacji rozwiązywania konfliktów to:"
+        },
+        "bc8677c1a542": {
+          "text": "Aspekty fizyczne, techniczne, koordynacyjne, strategiczne i psychologiczne.",
+          "question": "W profilu umiejętności stosowanym w pracy trenera należy uwzględnić:"
+        },
+        "184c97c507af": {
+          "text": "Uznanie i docenienie roli każdego zawodnika w drużynie, filozofia drużyny.",
+          "question": "Najważniejsze zasady tworzenia zespołu sportowego to:"
+        },
+        "c86da86c8e4c": {
+          "text": "Zagrożenie trenerskimi emocjami utrudnia zawodnikom radzenie sobie ze stresem startowym.",
+          "question": "Wybierz zdanie prawdziwe:"
+        },
+        "df2410e61009": {
+          "text": "Warunkiem skutecznego doradzania w sporcie powinno być zaufanie do zawodnika i przekonanie zawodnika o tym zaufaniu.",
+          "question": "Wybierz zdanie prawdziwe:"
+        },
+        "f8906e24fdf0": {
+          "text": "Podstawowym narzędziem ekspresji w ciele jest oddech i mięśnie.",
+          "question": "Wybierz zdanie prawdziwe:"
+        },
+        "5b67aa41a33b": {
+          "text": "Mikrocyklu i mezocyklu.",
+          "question": "Na jakim poziomie struktury czasowej prowadzona jest kontrola operacyjna?"
+        },
+        "c12f352b4a52": {
+          "text": "Kikakrotnym powtarzaniu obwodu ćwiczebnego bez przerw między obwodami.",
+          "question": "Na czym polega trening strumieniowy?"
+        },
+        "37985fe1ee24": {
+          "text": "Wszechstronny, ukierunkowany, specjalistyczny, mistrzowski.",
+          "question": "Etapy w szkoleniu sportowym siatkarza:"
+        },
+        "a9b5fdd60fc4": {
+          "text": "Siła zrywowa.",
+          "question": "Który rodzaj siły dominuje w wyskoku do ataku?"
+        },
+        "5f9ac44e8f06": {
+          "text": "Budowanie formy sportowej.",
+          "question": "Jakie jest główne zadanie okresu przygotowawczego?"
+        },
+        "ff87af3fdba6": {
+          "text": "Sformalizowany system norm i ich wartości w przechodzeniu kolejnych etapów szkolenia.",
+          "question": "Selekcja kierowana polega na:"
+        },
+        "dd0cf504da9b": {
+          "text": "Wszechstronny, ukierunkowany, specjalistyczny.",
+          "question": "Które rodzaje treningu realizowane są w przekroju całej kariery zawodnika?"
+        },
+        "9cb1ef0b26e5": {
+          "text": "Uzdolnienia ruchowe.",
+          "question": "Które z kryteriów do piłki siatkowej może opierać się na obserwacji trenera?"
+        },
+        "389b98461178": {
+          "text": "Uporządkowanym zbiorem informacji dotyczących przedsięwzięć organizacyjno-szkoleniowych.",
+          "question": "Czym jest dokumentacja szkoleniowa?"
+        },
+        "8a3be91360cb": {
+          "text": "Zgodna z aktualnym wzorcem wykonania startowego.",
+          "question": "Jaka powinna być dobra technika w procesie szkolenia młodych siatkarzy?"
+        },
+        "83552a87982a": {
+          "text": "Procesem zbierania informacji o treningu, zawodach, odnowie.",
+          "question": "Czym jest kontrola treningu?"
+        },
+        "8f0b9c26430c": {
+          "text": "Czasowe obniżenie formy sportowej.",
+          "question": "Jakie jest główne zadanie okresu przejściowego?"
+        },
+        "691890420fa5": {
+          "text": "Koordynacja ruchowa.",
+          "question": "Które z cech motorycznych mają wymiar jakościowy?"
+        },
+        "3545768ee2aa": {
+          "text": "Uczy się techniki szybko, doładnie i trwale.",
+          "question": "Wybitny talent to ten, który:"
+        },
+        "8b064b983d56": {
+          "text": "Startowym.",
+          "question": "W którym okresie w makrocyklu występuje mikrocykl wprowadzający?"
+        },
+        "c08e61ec22b1": {
+          "text": "Zwiększenie mocy wykorzystując pracę mięśni w cyklu rozciągnięcie – skurcz.",
+          "question": "Co jest istotą treningu plyometrycznego?"
+        },
+        "ae13f251935f": {
+          "text": "Zwrotna informacja o skuteczności działania.",
+          "question": "Istotą stosowania trenażerów jest:"
+        },
+        "94e850025a92": {
+          "text": "Dostosowanie rozwiązań metodycznych do możliwości i potrzeb zawodników.",
+          "question": "W czym przejawia się zasada indywidualizacji?"
+        },
+        "f298f6e4994f": {
+          "text": "Wyzwolenie jak największego potencjału zawodnika i osiągnięcie maksimum jego możliwości.",
+          "question": "Co jest istotą coachingu?"
+        },
+        "749c12786522": {
+          "text": "Przedstartowa.",
+          "question": "Który rodzaj rozgrzewki jest zgodny z wymogami wysiłku startowego?"
+        },
+        "6ba2413695f2": {
+          "text": "Przygotownie sprawnościowe, techniczne, taktyczne, psychiczne, teoretyczne, intelektualne.",
+          "question": "Co składa się na strukturę rzeczową treningu?"
+        },
+        "c759835ad91f": {
+          "text": "Zwinności i zręczności.",
+          "question": "Koordynacja ruchowa jest funkcją?"
+        },
+        "3f2558390396": {
+          "text": "Doprowadzenie organizmu ćwiczących do względnego stanu równowagi funkcjonalnej.",
+          "question": "Jakie jest główne zadanie części końcowej jednostki treningowej?"
+        },
+        "6683c9770ad8": {
+          "text": "Ścisła.",
+          "question": "Podstawowa forma w nauczaniu techniki:"
+        },
+        "82f4d0155c08": {
+          "text": "Rozwijający, stabilizujący.",
+          "question": "Które mezocykle pełnią główną rolę w okresie przygotowawczym?"
+        },
+        "95938c7b50e4": {
+          "text": "Okres młodszy szkolny.",
+          "question": "Który okres rozwojowy nazywany jest złotym wiekiem rozwoju sprawności?"
+        },
+        "df9ffc3caef4": {
+          "text": "Metody, formy i środki treningu.",
+          "question": "Najważniejsze elementy warsztatu trenerskiego to:"
+        },
+        "eb1fc0ecd6a1": {
+          "text": "Wszystkie odpowiedzi są prawidłowe.",
+          "question": "Zadania przygotowania sprawnościowego:"
+        },
+        "191a7e32c8fc": {
+          "text": "Szybkość i siła.",
+          "question": "Które z cech motorycznych warunkują poziom skoczności?"
+        },
+        "a641c4bf6852": {
+          "text": "Okresie startowym.",
+          "question": "W którym momencie struktury makrocyklu odbywa się utrwalenie i uplastycznienie wariantów taktycznych?"
+        },
+        "598915d97008": {
+          "text": "Siłowe.",
+          "question": "Jakie ćwiczenia mogą ograniczać rozwój gibkości?"
+        },
+        "d03888ea8b23": {
+          "text": "Wyznaczenia celu głównego i celów pośrednich oraz terminów i miejsc ich realizacji.",
+          "question": "Planowanie makrocyklu powinno rozpoczynać się od:"
+        },
+        "e7048c8fd9b1": {
+          "text": "Struktura działań i ruchów w wykonywanej technice ruchu.",
+          "question": "Wymogi do organizacji treningu sprawności funkcjonalnej:"
+        },
+        "7e35e292c635": {
+          "text": "Ćwiczenia.",
+          "question": "Podstawowymi środkami stosowanymi w treningu są:"
+        },
+        "183713622960": {
+          "text": "Wszechstronne.",
+          "question": "Do jakiej grupy ćwiczeń należy zaliczyć sporty uzupełniające?"
+        },
+        "7136394db11b": {
+          "text": "Z kalendarza zawodów.",
+          "question": "Z czego wynika wewnętrzna struktura okresu startowego?"
+        },
+        "85788134f8e8": {
+          "text": "Niepełny czas przerwy wypoczynkowej.",
+          "question": "Co jest istotą metody interwałowej w kształtowaniu wytrzymałości?"
+        },
+        "a2dd50b359a9": {
+          "text": "Obserwacja trenerska.",
+          "question": "Która z metod oceny techniki stosowana jest w początkowej fazie szkolenia młodocianych zawodników?"
+        },
+        "66d9646265e3": {
+          "text": "Przygotowanie wolicjonalne.",
+          "question": "Który z elementów przygotowania psychicznego zawodników kształtuje ich cechy charakteru?"
+        },
+        "b7dbdbe50484": {
+          "text": "Wydolność.",
+          "question": "Co jest podstawą rozwoju wytrzymałości?"
+        },
+        "eb29babaec10": {
+          "text": "Części głównej.",
+          "question": "W której części jednostki treningowej odbywa się nauczanie techniki?"
+        },
+        "491a3b85134f": {
+          "text": "Rozluźnienie mięśni przed przystąpieniem do wykonywania ćwiczeń.",
+          "question": "Podstawowy warunek metodyczny, który powinien być przestrzegany podczas ćwiczenia gibkości:"
+        },
+        "4354c3386b6b": {
+          "text": "Zespół reakcji organizmu na obciążenie zewnętrzne.",
+          "question": "Obciążenie wewnętrzne określa:"
+        },
+        "b00d6e36e020": {
+          "text": "Podmiotowości i indywidualizacji.",
+          "question": "Która z zasad pełni w treningu zasadniczą rolę?"
+        },
+        "78fcd2bdb2ab": {
+          "text": "Zmienna.",
+          "question": "Która z metod treningowych nie wymaga określenia wszystkich czterech parametrów tj. czasu trwania wysiłku, liczby powtórzeń, intensywności, czasu i charakteru przerw wypoczynkowych:"
+        },
+        "4d0f953cf3fa": {
+          "text": "Wyposażenie zawodnika w odpowiedni zasób wiedzy.",
+          "question": "Co jest głównym zadaniem przygotowania teoretycznego i intelektualnego?"
+        },
+        "18e7d4245a8e": {
+          "text": "Koordynacja, siła.",
+          "question": "Cechy motoryczne przejawiające się w wykonaniu zagrywki:"
+        },
+        "ceaaf1c93c2e": {
+          "text": "Rozłożeniu metod, form i środków w określonym czasie: makrocyklu, okresie, mezocyklu.",
+          "question": "Na czym polega planowanie właściwe treningu?"
+        },
+        "50db47981235": {
+          "text": "Prowadzeniu obserwacji w przebiegu całego procesu szkolenia.",
+          "question": "Czy selekcja w piłce siatkowej polega na:"
+        },
+        "50450035be16": {
+          "text": "Przygotowawczy, startowy, przejściowy.",
+          "question": "Jakie okresy treningowe występują w makrocyklu?"
+        },
+        "5518a2a8e1cd": {
+          "text": "Trening sportowy jest procesem specjalizacji, który nie zaburzając harmonijnego rozwoju osobowości zawodnika zmierza do rozwinięcia tych jego cech fizycznych, psychicznych i sprawnościowych, które umożliwią mu osiągnięcie najwyższego wyniku sportowego.",
+          "question": "Która z definicji treningu sportowego w pełni oddzwierciedla jego istotę?"
+        },
+        "fff48c60700c": {
+          "text": "Powtórzeniową.",
+          "question": "Którą z metod treningu kształtuje się skoczność?"
+        },
+        "77bb1e6e50fc": {
+          "text": "Auotrytet.",
+          "question": "Podstawową cechą charakteryzującą dobrego trenera jest:"
+        },
+        "e637ea3cca46": {
+          "text": "Zmęczenie.",
+          "question": "Który z parametrów treningu nie jest korzystny dla właściwego treningu szybkości?"
+        },
+        "e2eaa50517a7": {
+          "text": "Trening obwodowy.",
+          "question": "Który z treningów siły jest wskazany dla młodocianych siatkarzy?"
+        },
+        "230fcc9586a9": {
+          "text": "Automatyzacji.",
+          "question": "Która z faz kształtowania nawyku ruchowego ma miejsce zarówno w nauczaniu jak i doskonaleniu techniki?"
+        },
+        "3b0fb17e8adc": {
+          "text": "Ćwiczenia koordynacyjne stosunkowo szybko prowadzą do zmęczenia.",
+          "question": "Dlaczego kształtowanie koordynacji odbywa się metodą powtórzeniową?"
+        },
+        "1e1ea1f5a4ba": {
+          "text": "Wytrzymałość.",
+          "question": "Z którą z cech motorycznych szybkość ma najmniejszy związek?"
+        },
+        "6399164910f1": {
+          "text": "Bieg zwinnościowy ze zmianą kierunków.",
+          "question": "Która z prób sprawnościowych w naborze do SMS odbywa się na boisku siatkarskim?"
+        },
+        "75d5a2b4ec5b": {
+          "text": "Relacja trener-zawodnik.",
+          "question": "Co jest najistotniejsze w procesie kierowania treningiem sportowym?"
+        }
       }
 
-      const { question, options } = questions[currentIndex];
+      /**
+       * Oczekiwany format plików JSON od tej wersji:
+       *
+       * QUESTIONS_FILE (allQuestions.json)
+       * {
+       *    "<id>": {
+       *       "question": "Treść pytania",
+       *       "answers": [ "A", "B", "C", "D" ]
+       *    },
+       *    ...
+       * }
+       *
+       * ANSWERS_FILE (answers.json)
+       * {
+       *    "<id>": {
+       *       "text": "Poprawna odpowiedź (pełny tekst)",
+       *       "question": "Treść pytania" // (nie jest wymagane do działania)
+       *    },
+       *    ...
+       * }
+       */
 
-      // Pytanie
-      document.getElementById("question-text").textContent = `${currentIndex + 1}. ${question}`;
+      // Zamieniamy strukturę pytań na tablicę obiektów { id, question, options }
+      questions = Object.entries(qRes).map(([id, obj]) => ({
+        id,
+        question: obj.question,
+        options: obj.answers,
+      }));
 
-      // Odpowiedzi
-      const optionsContainer = document.getElementById("options-container");
-      optionsContainer.innerHTML = "";
-      options.forEach((opt, idx) => {
-        const optionId = `opt-${idx}`;
+      // Tasujemy i ograniczamy do MAX_QUESTIONS pozycji
+      questions = shuffleArray(questions).slice(0, MAX_QUESTIONS);
 
-        const input = document.createElement("input");
-        input.type = "radio";
-        input.name = "answer";
-        input.id = optionId;
-        input.value = opt;
+      // Mapa poprawnych odpowiedzi { id: correctAnswerText }
+      answersMap = Object.fromEntries(
+              Object.entries(aRes).map(([id, obj]) => [id, obj.text])
+      );
 
-        // Aktywuj przycisk "Dalej" po wyborze
-        input.addEventListener("change", () => {
-          document.getElementById("next-btn").disabled = false;
-        });
-
-        const label = document.createElement("label");
-        label.setAttribute("for", optionId);
-        label.textContent = opt;
-        label.prepend(input);
-
-        optionsContainer.appendChild(label);
-      });
-
-      // Dezaktywujemy przycisk "Dalej", dopóki nie wybierzemy odpowiedzi
-      document.getElementById("next-btn").disabled = true;
-    }
-
-    document.getElementById("next-btn").addEventListener("click", () => {
-      const selected = document.querySelector("input[name='answer']:checked");
-      if (!selected) return; // bezpieczeństwo
-
-      const userAnswer = selected.value;
-      const { question } = questions[currentIndex];
-      const correctAnswer = answersMap[question] || "";
-
-      userResults.push({
-        question,
-        userAnswer,
-        correctAnswer,
-        isCorrect: userAnswer === correctAnswer,
-      });
-
-      currentIndex++;
       renderQuestion();
+    } catch (err) {
+      alert(
+              "Błąd wczytywania plików JSON. Sprawdź ścieżki lub uruchom serwer lokalny (np. Live Server / http-server)."
+      );
+      console.error(err);
+    }
+  });
+
+  /* ---------------------------------------------
+   *  Logika quizu
+   *  -------------------------------------------*/
+  function renderQuestion() {
+    if (currentIndex >= questions.length) {
+      return renderResults();
+    }
+
+    const { id, question, options } = questions[currentIndex];
+
+    // Treść pytania
+    document.getElementById("question-text").textContent = `${
+            currentIndex + 1
+    }. ${question}`;
+
+    // Odpowiedzi
+    const optionsContainer = document.getElementById("options-container");
+    optionsContainer.innerHTML = "";
+
+    shuffleArray(options).forEach((opt, idx) => {
+      const optionId = `opt-${idx}`;
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = "answer";
+      input.id = optionId;
+      input.value = opt;
+
+      // Aktywuj przycisk "Dalej" po wyborze
+      input.addEventListener("change", () => {
+        document.getElementById("next-btn").disabled = false;
+      });
+
+      const label = document.createElement("label");
+      label.setAttribute("for", optionId);
+      label.textContent = opt;
+      label.prepend(input);
+
+      optionsContainer.appendChild(label);
     });
 
-    /* --- Wyniki --- */
-    function renderResults() {
-      // Ukryj panel pytań, pokaż rezultaty
-      document.getElementById("question-area").classList.add("hidden");
-      document.getElementById("result-area").classList.remove("hidden");
+    // Dezaktywujemy przycisk "Dalej", dopóki nie wybierzemy odpowiedzi
+    document.getElementById("next-btn").disabled = true;
+  }
 
-      const correctCount = userResults.filter((r) => r.isCorrect).length;
-      document.getElementById("correct-count").textContent = correctCount;
-      document.getElementById("total-count").textContent = userResults.length;
+  document.getElementById("next-btn").addEventListener("click", () => {
+    const selected = document.querySelector("input[name='answer']:checked");
+    if (!selected) return; // (bezpieczeństwo)
 
-      // Tabela z podsumowaniem
-      const tbody = document.querySelector("#review-table tbody");
-      tbody.innerHTML = "";
-      userResults.forEach((res) => {
-        const tr = document.createElement("tr");
+    const userAnswer = selected.value;
+    const { id, question } = questions[currentIndex];
+    const correctAnswer = answersMap[id] || "";
 
-        const tdQ = document.createElement("td");
-        tdQ.textContent = res.question;
+    userResults.push({
+      question,
+      userAnswer,
+      correctAnswer,
+      isCorrect: userAnswer === correctAnswer,
+    });
 
-        const tdU = document.createElement("td");
-        tdU.textContent = res.userAnswer;
-        if (!res.isCorrect) tdU.classList.add("user-wrong");
+    currentIndex++;
+    renderQuestion();
+  });
 
-        const tdC = document.createElement("td");
-        tdC.textContent = res.correctAnswer;
-        tdC.classList.add("correct-answer");
+  /* ---------------------------------------------
+   *  Wyniki
+   *  -------------------------------------------*/
+  function renderResults() {
+    // Ukryj panel pytań, pokaż rezultaty
+    document.getElementById("question-area").classList.add("hidden");
+    document.getElementById("result-area").classList.remove("hidden");
 
-        tr.append(tdQ, tdU, tdC);
-        tbody.appendChild(tr);
-      });
+    const correctCount = userResults.filter((r) => r.isCorrect).length;
+    document.getElementById("correct-count").textContent = correctCount;
+    document.getElementById("total-count").textContent = userResults.length;
+
+    // Tabela z podsumowaniem
+    const tbody = document.querySelector("#review-table tbody");
+    tbody.innerHTML = "";
+
+    userResults.forEach((res) => {
+      const tr = document.createElement("tr");
+
+      const tdQ = document.createElement("td");
+      tdQ.textContent = res.question;
+
+      const tdU = document.createElement("td");
+      tdU.textContent = res.userAnswer;
+      if (!res.isCorrect) tdU.classList.add("user-wrong");
+
+      const tdC = document.createElement("td");
+      tdC.textContent = res.correctAnswer;
+      tdC.classList.add("correct-answer");
+
+      tr.append(tdQ, tdU, tdC);
+      tbody.appendChild(tr);
+    });
+  }
+
+  /* ---------------------------------------------
+   *  Funkcje pomocnicze
+   *  -------------------------------------------*/
+  function shuffleArray(arr) {
+    // Algorytm Fisher–Yates
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-
-    /* --- Funkcje pomocnicze --- */
-    function shuffleArray(arr) {
-      // Algorytm Fisher–Yates
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-      }
-      return arr;
-    }
-  </script>
+    return arr;
+  }
+</script>
 </body>
 </html>
