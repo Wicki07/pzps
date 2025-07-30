@@ -9,201 +9,14 @@
     /* -------------------------------------------------------------
        2. Stałe i „pamięci”
      ------------------------------------------------------------- */
-    const CORRECTS      = {
-        "85df9e4de1a9": {
-            "text": "Że jego zespół rozpocznie mecz od odbioru zagrywki",
-            "question": "Przeciwnik wygrał losowanie i wskazał stronę boiska, na której chce rozpocząć mecz. Co może wybrać w tym momencie kapitan drugiego zespołu?"
-        },
-        "a264c94f7d52": {
-            "text": "Wszystkie odpowiedzi są prawidłowe",
-            "question": "Jakie zachowanie zespołu wskazuje na popełnianie błędu zasłony?"
-        },
-        "bc51b5c6ad7f": {
-            "text": "Trener może dokonać w ramach jednej przerwy zmiany zawodników i zmiany powrotnej między tymi samymi zawodnikami",
-            "question": "Które zdanie dotyczące korzystania z regulaminowych przerw w grze jest nieprawdziwe?"
-        },
-        "8574451abc1b": {
-            "text": "Rozgrywający nie może teraz odbić piłki zanim nie zrobi tego któryś z jego partnerów",
-            "question": "Zawodnik rozgrywający, będący w tym momencie zawodnikiem linii obrony, po złym przyjęciu zagrywki w swoim zespole – piłka poleciała nad siatkę, gdzie została zaatakowana przez przeciwnika – stanął na trzecim metrze od siatki i podniósł w górę ręce, sięgając wyżej niż siatka. Piłka uderzyła go w dłonie. Które z poniższych zdań jest prawdziwe?"
-        },
-        "8191771519de": {
-            "text": "Dwaj zawodnicy jednego zespołu pobili się",
-            "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary?"
-        },
-        "3c5d5f2e7d39": {
-            "text": "Trener poprosił o przerwę dla odpoczynku po gwizdku sędziego na zagrywkę. Był to pierwszy tego typu przypadek w meczu, ale zespół miał już upomnienie za opóźnianie z powodu opóźniania wznowienia gry",
-            "question": "W którym z poniższych przypadków zespół nie straci punktu w wyniku kary za opóźnianie?"
-        },
-        "d70a41c29804": {
-            "text": "Wszystkie odpowiedzi są prawidłowe",
-            "question": "Jakie są konsekwencje błędu rotacji?"
-        },
-        "8c32c131b8c0": {
-            "text": "Jeżeli w zespole jest dwóch Libero, nie mogą oni mieć koszulek w różnych kolorach (każda z nich odróżniająca Libero od „zwykłych” zawodników)",
-            "question": "Które z poniższych stwierdzeń nie jest prawdziwe w kontekście przepisów dotyczących zawodników Libero?"
-        },
-        "0b6ebf730113": {
-            "text": "Kapitan zespołu poprosił o przerwę dla odpoczynku, chociaż trener siedział na ławce rezerwowych",
-            "question": "Który z poniższych przypadków jest przykładem prośby nieuzasadnionej nie skutkującej sankcjami dla zespołu?"
-        },
-        "a833c7e80768": {
-            "text": "Zawodnik biegnący za piłką może chwycić się słupka, by sobie pomóc w biegu",
-            "question": "Piłka po przyjęciu przeleciała nad antenką w stronę wolnej strefy przeciwnika. Które zdanie jest prawdziwe?"
-        },
-        "33974fdc07bf": {
-            "text": "Trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, wówczas nie przeprowadza się zmiany regulaminowej",
-            "question": "Przed rozpoczęciem meczu na boisku znalazł się zawodnik niewpisany na kartce z ustawieniem. Jakie są konsekwencje?"
-        },
-        "4b2e55e8f782": {
-            "text": "Pomiar wysokości siatki, losowanie, rozgrzewka przy siatce, dostarczenie kartek z ustawieniem początkowym, przywitanie się zespołów",
-            "question": "Jaka jest właściwa kolejność w ceremoniale przedmeczowym?"
-        },
-        "c06e7c87e8f7": {
-            "text": "Nie ma błędu ustawienia",
-            "question": "Na poniższych zdjęciach numery na koszulkach zawodniczek odpowiadają ich pozycjom na boisku (2, 3, 4). Czy i w jaki sposób popełniają one błąd ustawienia?"
-        },
-        "7ae49d11b04a": {
-            "text": "Wszystkie powyższe akcje są atakami",
-            "question": "Która z akcji nie jest atakiem?"
-        },
-        "3b9011ae1743": {
-            "text": "Po ataku piłka odbiła się od dłoni blokujących i wysokim łukiem leciała daleko za boisko. Atakujący usiłując nie wkroczyć na boisko przeciwnika przebiegł schylony po linii środkowej i wbiegł w wolną strefę przeciwnika pod siatką",
-            "question": "Która z sytuacji nie jest błędem?"
-        },
-        "8180409aadb7": {
-            "text": "Po wykonanym ataku zawodnik wykonał jeszcze krok i oparł się klatką piersiową o siatkę, centralnie o taśmę boczną przymocowaną do siatki. Sędzia nie odgwizdał błędu.",
-            "question": "W której z sytuacji sędzia popełnił błąd?"
-        },
-        "ebf4524d86b1": {
-            "text": "Rozgrywający kiwa piłkę nad siatką, przy czym kontakt z piłką ma miejsce nad jego boiskiem, ale po kiwce dłoń zawodnik sięga na stronę przeciwnika",
-            "question": "Która z sytuacji nie jest błędem?"
-        },
-        "d3a8d552a949": {
-            "text": "Dwie białe taśmy przymocowane są pionowo do siatki dokładnie nad każdą linią boczną.",
-            "question": "Które ze zdań jest prawdziwe odnośnie siatki?"
-        },
-        "6606a942ca50": {
-            "text": "Zawodnik rozsunął panele reklamowe za boiskiem i wykonał zagrywkę spomiędzy nich",
-            "question": "Które wykonanie zagrywki jest nieprawidłowe?"
-        },
-        "bd76e3426887": {
-            "text": "Libero może być kapitanem zespołu.",
-            "question": "Które ze zdań nie jest prawdziwe odnośnie składu i lokalizacji zespołu?"
-        },
-        "b05c8069f640": {
-            "text": "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero",
-            "question": "Podstawowy rozgrywający zespołu został zmieniony przez drugiego rozgrywającego. Następnie miała miejsce zmiana powrotna, która był szóstą zmianą w tym zespole w tym secie. Chwilę później zawodnik rozgrywający doznał kontuzji. Libero zespołu przebywał w tym momencie na ławce. Jakie pole manewru ma trener zespołu?"
-        },
-        "f825ef38de15": {
-            "text": "W bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu",
-            "question": "Które z poniższych zdań nie jest prawdziwe w kontekście charakterystyki odbicia piłki?"
-        },
-        "ab26e3348904": {
-            "text": "Oficjalny protest zapisywany jest w protokole zawodów wyłącznie po zakończeniu meczu",
-            "question": "Które ze zdań jest prawdziwe odnośnie protestu?"
-        }
-    };          // tu zapisywane są już poznane poprawne odpowiedzi
+    const CORRECTS      = {};          // tu zapisywane są już poznane poprawne odpowiedzi
     const allQuestions  = {};          // hasz => { question, answers[] }
-    const allAnswers    = {
-        "8180409aadb7": [
-            "po wykonanym bloku punktowym zawodnik ratując się przed utratą równowagi silnie pociągnął za siatkę poza antenką. sędzia nie odgwizdał błędu",
-            "w reakcji na wystawę po stronie przeciwnika zawodnik środkowy przemieszczał się do bloku podwójnego. jeszcze przed wyskokiem dotknął dolną taśmę siatki. sędzia odgwizdał błąd dotknięcia siatki",
-            "po wykonanym ataku zawodnik wykonał jeszcze krok i oparł się klatką piersiową o siatkę, centralnie o taśmę boczną przymocowaną do siatki. sędzia nie odgwizdał błędu."
-        ],
-        "ebf4524d86b1": [
-            "wystawiona przez przeciwnika piłka znalazła się blisko siatki. blokujący sięgnął na drugą stronę i dotknął piłkę równocześnie z atakującym",
-            "blokujący sięga na stronę przeciwnika ponad siatką i dotyka piłki wystawionej przez przeciwnika, której lot jest równoległy do siatki",
-            "rozgrywający kiwa piłkę nad siatką, przy czym kontakt z piłką ma miejsce nad jego boiskiem, ale po kiwce dłoń zawodnik sięga na stronę przeciwnika"
-        ],
-        "f825ef38de15": [
-            "jeżeli zawodnik nie jest w bardzo dobrej pozycji do odbicia piłki, sędzia pierwszy powinien być mniej rygorystyczny w ocenie odbicia piłk",
-            "nie ma takiego błędu jak „piłka niesiona”",
-            "przy odbiciu piłki palcami jednej dłoni zawodnikowi nie można odgwizdać błędu podwójnego odbicia",
-            "w bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu"
-        ],
-        "c06e7c87e8f7": [
-            "tak, stopa zawodniczki prawego ataku nie może być bliżej lewej linii bocznej niż obie stopy zawodniczki środkowej",
-            "tak, zawodniczka lewego ataku znajduje się na prawo od zawodniczki prawego ataku",
-            "nie ma błędu ustawienia"
-        ],
-        "bd76e3426887": [
-            "w rozgrywkach szczebla centralnego pzps może zostać wpisanych do protokołu zawodów i brać udział w meczu maksymalnie 14 zawodników",
-            "zawodnicy mogą rozgrzewać się z użyciem piłek tylko pomiędzy setami",
-            "wolno grać w okularach",
-            "libero może być kapitanem zespołu."
-        ],
-        "d3a8d552a949": [
-            "dla gry czwórkami w mini siatkówce wysokość siatki jest taka sama dla chłopców, jak dla dziewczynek",
-            "przed meczem kadetów wysokość siatki przy antenkach może wynosić 237 cm",
-            "dwie białe taśmy przymocowane są pionowo do siatki dokładnie nad każdą linią boczną."
-        ],
-        "8c32c131b8c0": [
-            "trener nie jest zadowolony z gry libero. ma wówczas prawo zgłosić go jako niezdolnego do gry i wyznaczyć innego zawodnika do roli libero",
-            "jeżeli w zespole jest dwóch libero, nie mogą oni mieć koszulek w różnych kolorach (każda z nich odróżniająca libero od „zwykłych” zawodników)"
-        ],
-        "ab26e3348904": [
-            "kapitan zespołu nie może własnoręcznie wpisać treści oficjalnego protestu do protokołu zawodów",
-            "jeśli kapitan zespołu nie zgadza się z wyjaśnieniami sędziego pierwszego udzielonymi grającemu kapitanowi, może złożyć protest przeciwko danej decyzji i musi natychmiast zgłosić sędziemu pierwszemu, że rezerwuje sobie prawo do wpisania oficjalnego protestu w protokole zawodów po zakończeniu meczu",
-            "kapitan zespołu może skutecznie zgłosić chęć wpisania oficjalnego protestu do protokołu zawodów po zakończeniu meczu, ale pod warunkiem, że nastąpi to przed podpisaniem protokołu",
-            "oficjalny protest zapisywany jest w protokole zawodów wyłącznie po zakończeniu meczu"
-        ],
-        "8191771519de": [
-            "dwaj zawodnicy jednego zespołu pobili się"
-        ],
-        "b05c8069f640": [
-            "trener może dokonać zmiany kontuzjowanego tylko z drugim rozgrywającym",
-            "nie ma żadnego pola manewru, bo wykorzystał sześć zmian i w tym zmianę rozgrywającego. kontuzjowanemu zostanie przyznana 3-minutwa przerwa i jeśli po tym czasie zawodnik nie będzie mógł grać, to zespół przegra seta jako zdekompletowany",
-            "trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem libero oraz drugiego rozgrywającego",
-            "trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem libero"
-        ],
-        "33974fdc07bf": [
-            "trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, a w tym celu przeprowadzana jest zmiana regulaminowa",
-            "sekretarz poprawia zapis na kartce z ustawieniem oraz w protokole zawodów na zgodny ze stanem na boisku – bez pytania trenera zespołu",
-            "trener może zadecydować o pojawieniu się na boisku zawodnika wpisanego na kartce z ustawieniem, wówczas nie przeprowadza się zmiany regulaminowej"
-        ],
-        "3b9011ae1743": [
-            "po bloku spadająca po stronie zespołu atakującego piłką uderzyła w stopę opadającego blokującego, która znajdowała się nad boiskiem przeciwnika",
-            "piłka po bloku opadała wzdłuż siatki. zawodnik zespołu blokującego sięgnął pod siatką i wykonał ruch, jakby chciał dotknąć piłkę, co zmyliło obrońcę próbującego piłkę podbić",
-            "po ataku piłka odbiła się od dłoni blokujących i wysokim łukiem leciała daleko za boisko. atakujący usiłując nie wkroczyć na boisko przeciwnika przebiegł schylony po linii środkowej i wbiegł w wolną strefę przeciwnika pod siatką"
-        ],
-        "a833c7e80768": [
-            "trener stojący zgodnie z przepisami przed swoją ławką rezerwowych nie musi się odsunąć, by zrobić miejsce biegnącemu przeciwnikowi",
-            "zawodnik biegnący za piłką może chwycić się słupka, by sobie pomóc w biegu"
-        ],
-        "7ae49d11b04a": [
-            "kiwka rozgrywającego w drugim uderzeniu zespołu",
-            "złe przyjęcie zagrywki, po którym piłka przelatuje nad siatką na stronę przeciwnika",
-            "wszystkie powyższe akcje są atakami"
-        ],
-        "4b2e55e8f782": [
-            "losowanie, dostarczenie kartek z ustawieniem początkowym, pomiar wysokości siatki, rozgrzewka przy siatce, przywitanie się zespołów",
-            "przywitanie się zespołów, losowanie, rozgrzewka przy siatce, pomiar wysokości siatki, dostarczenie kartek z ustawieniem początkowym",
-            "pomiar wysokości siatki, losowanie, rozgrzewka przy siatce, dostarczenie kartek z ustawieniem początkowym, przywitanie się zespołów"
-        ],
-        "d70a41c29804": [
-            "zagrywać będzie zespół przeciwny",
-            "wszystkie odpowiedzi są prawidłowe"
-        ],
-        "0b6ebf730113": [
-            "trener poprosił o trzecią przerwę dla odpoczynku w secie i została ona przyznana. po dłuższej chwili zespołom kazano powrócić na boisko",
-            "kapitan zespołu poprosił o przerwę dla odpoczynku, chociaż trener siedział na ławce rezerwowych"
-        ],
-        "3c5d5f2e7d39": [
-            "trener poprosił o przerwę dla odpoczynku po gwizdku sędziego na zagrywkę. był to pierwszy tego typu przypadek w meczu, ale zespół miał już upomnienie za opóźnianie z powodu opóźniania wznowienia gry"
-        ],
-        "6606a942ca50": [
-            "zawodnik po gwizdku sędziego i zorientował się, że nie on ma wykonać zagrywkę. przywołał właściwego zawodnika, przekazał mu piłkę i wbiegł na boisko. zagrywka została wykonana w ciągu 8 sekund od gwizdka sędziego",
-            "zawodnik wykonał zagrywkę łokciem",
-            "zawodnik rozsunął panele reklamowe za boiskiem i wykonał zagrywkę spomiędzy nich"
-        ]
-    };          // question (raw) => zapamiętane strzały
+    const allAnswers    = {};          // question (raw) => zapamiętane strzały
     const LETTERS       = 'abcdefghijklmnopqrstuvwxyz'.split('');
     const history       = [];
 
     let amountAutoSelected  = 0;
     let wasFinalButtonClicked = false;
-
-    console.log(Object.keys(CORRECTS).length + "/850");
 
     /* -------------------------------------------------------------
        3. Uniwersalna, *deterministyczna* funkcja hashująca
@@ -271,7 +84,11 @@
         renderSummary();
 
         const nextButton = document.getElementById("btnnext");
-        if (nextButton && !nextButton.classList.contains("disabled")) {
+        if (nextButton) {
+            if (wasFinalButtonClicked) return;
+            if (nextButton.classList.contains("disabled")) {
+                wasFinalButtonClicked = true;
+            }
             setTimeout(() => {
                 nextButton.click()
             }, 500);
@@ -340,6 +157,7 @@
         btn.addEventListener('click', async ()=>{
             await captureCurrent();         // zapisz stan *przed* zmianą
             setTimeout(async ()=>{
+                if (wasFinalButtonClicked) return;
                 await autoSelectCorrect();  // zaznacz nową / losową
             }, 300);
         }, true); // faza capture

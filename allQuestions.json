@@ -1,4 +1,5 @@
 {
+//   przepisy gry
   "8180409aadb7": {
     "question": "W której z sytuacji sędzia popełnił błąd?",
     "answers": [
@@ -195,6 +196,781 @@
       "Tak, prawa stopa zawodniczki lewego ataku znajduje się bliżej prawej linii bocznej od obu stóp zawodniczki środkowej",
       "Nie ma błędu ustawienia",
       "Tak, zawodniczka lewego ataku znajduje się na prawo od zawodniczki prawego ataku"
+    ]
+  },
+  // biomed
+  "6dd30e3e377c": {
+    "question": "W przypadku ogólnego wychłodzenia ciała:",
+    "answers": [
+      "Podajemy poszkodowanemu gorące, słodkie napoje z alkoholem.",
+      "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do sztucznych oddechów i pośredniego masażu serca.",
+      "Wszystkie odpowiedzi są fałszywe.",
+      "Zawsze wzywamy pomoc, układamy poszkodowanego w pozycji bocznej ustalonej i czekamy na przyjazd karetki."
+    ]
+  },
+  "7c00c0846451": {
+    "question": "Potencjalne efekty Kinesio Tapingu to:",
+    "answers": [
+      "Zmniejszenie bólu.",
+      "Zmniejszenie obrzęku.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Zwiększenie zakresu ruchu."
+    ]
+  },
+  "a5f84ed94d57": {
+    "question": "Sarkomer zbudowany jest:",
+    "answers": [
+      "Z aktyny, troponiny i tropomiozyny.",
+      "Z aktyny i miozyny.",
+      "Z neuronów.",
+      "Z miocytów."
+    ]
+  },
+  "c95619a9ed63": {
+    "question": "Ogólny wydatek energetyczny związany z aktywnością fizyczną:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Wpływa na wysokość ogólnej dobowej przemiany materii",
+      "Określa się go doświadczalnie najczęściej przy zastosowaniu metodyki kalorymetrii pośredniej.",
+      "Określa się go również doświadczalnie na podstawie szybkości akcji serca."
+    ]
+  },
+  "c94a6ae2bbf9": {
+    "question": "Wydolność aerobowa mierzona jest przez pomiar:",
+    "answers": [
+      "Maksymalnej mocy mięśni.",
+      "Maksymalnej siły mięśni.",
+      "Submaksymalnej częstości skurczów serca.",
+      "Maksymalnego minutowego poboru tlenu."
+    ]
+  },
+  "6e08fe6e1689": {
+    "question": "Do rotatorów zewnętrznych podudzia zaliczamy:",
+    "answers": [
+      "Mięsień półbłoniasty.",
+      "Mięsień smukły.",
+      "Mięsień dwugłowy uda.",
+      "Mięsień krawiecki."
+    ]
+  },
+  "f0d24f403f1e": {
+    "question": "Mechaniczna sztywność mięśnia podczas czynnościowego rozciągania:",
+    "answers": [
+      "Może zwiększać się bądź zmienijszeć w zależności od kierunku ruchu.",
+      "Maleje.",
+      "Pozostaje bez zmian.",
+      "Rośnie."
+    ]
+  },
+  "7fd9ecb1de32": {
+    "question": "Systemy do trójwymiarowej rejestracji ruchu (3D) umożliwiają:",
+    "answers": [
+      "Pomiar sił działających na dowolny punkt ciała.",
+      "Ocenę kosztu energetycznego rejestrowanego ruchu.",
+      "Obliczenie wewnętrznej pracy mechanicznej wykonanej przez mięśnie.",
+      "Rejestrację trajektorii dowolnego punktu ciała."
+    ]
+  },
+  "4b4550ae1dcb": {
+    "question": "Czynniki determinujące wydolność fizyczną to:",
+    "answers": [
+      "Koordynacja nerwowo-mięśniowa i termoregulacja.",
+      "Technika i przemiany energetyczne ustroju.",
+      "Budowa ciała i gospodarka wodno-elektrolitowa.",
+      "Wszystkie odpowiedzi są prawidłowe."
+    ]
+  },
+  "b3a4fdd6be9c": {
+    "question": "Do grupy bocznej mięśni przedramienia należy:",
+    "answers": [
+      "Prostownik promieniowy krótki nadgarstka.",
+      "Zginacz promieniowy nadgarstka.",
+      "Zginacz łokciowy nadgarstka.",
+      "Prostownik łokciowy nadgarstka."
+    ]
+  },
+  "848c00e53d0d": {
+    "question": "Urazy w sporcie dzielimy na:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Typowo sportowe.",
+      "Ostre i przewlekłe.",
+      "Przypadkowe."
+    ]
+  },
+  "a886df12cbeb": {
+    "question": "Wybierz właściwą odpowiedź dotyczącą urazów i obrażeń ostrych w siatkówce:",
+    "answers": [
+      "Do ostrych obrażeń w siatkówce nie należą skręcenia i uszkodzenia stawu skokowego.",
+      "Do ostrych obrażeń w siatkówce nie należą skręcenia i uszkodzenia stawu kolanowego.",
+      "Do ostrych obrażeń w siatkówce nie należą obrażenia palców.",
+      "Wszystkie odpowiedzi są fałszywe."
+    ]
+  },
+  "6b02296a02ee": {
+    "question": "Satysfakcjonujący poziom maksymalnego minutowego poboru tlenu u siatkarzy powinien wynosić:",
+    "answers": [
+      "Powyżej 15 W/kg.",
+      "Około 45 ml/kg/min.",
+      "Około 15 ml/kg/min.",
+      "Powyżej 60 ml/kg/min."
+    ]
+  },
+  "b2dbdc02fd94": {
+    "question": "W utrzymaniu stałego pH płynów ustrojowych biorą udział:",
+    "answers": [
+      "Wszystkie wymienione.",
+      "Sprawnie działające płuca.",
+      "Układy buforowe.",
+      "Sprawnie działające nerki."
+    ]
+  },
+  "9ff6a189c9bd": {
+    "question": "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:",
+    "answers": [
+      "Co 2 lata.",
+      "Co 12 miesięcy.",
+      "Co 6 miesięcy.",
+      "Przy każdej wizycie u lekarza sportowego."
+    ]
+  },
+  "6c82e13e87b4": {
+    "question": "Ruchy w stawie biodrowym to wszystkie z wyjątkiem:",
+    "answers": [
+      "Odwodzenie.",
+      "Obwodzenie.",
+      "Prostowanie.",
+      "Unoszenie."
+    ]
+  },
+  "67999e89a3e6": {
+    "question": "W skurczu izometrycznym:",
+    "answers": [
+      "Zmienia się zarówno długość jak i napięcie mięśnia.",
+      "Zmienia się napięcie mięśnia.",
+      "Zmienia się długość mięśnia.",
+      "Wszystkie powyższe odpowiedzi są błędne."
+    ]
+  },
+  "607a314c4a8a": {
+    "question": "Procesy anaboliczne to:",
+    "answers": [
+      "Procesy pozyskiwania energii z pożywienia.",
+      "Procesy nie wymagające energii.",
+      "Procesy egzoergiczne.",
+      "Procesy endoergiczne (syntez) do których potrzebna jest energia z ATP."
+    ]
+  },
+  "ee94723a98b2": {
+    "question": "U człowieka dorosłego wentylacja minutowa płuc w spoczynku wynosi około:",
+    "answers": [
+      "250-300 mL · min-1.",
+      "2-3 L· min-1.",
+      "6-8 mL· min-1.",
+      "6-8 L· min-1."
+    ]
+  },
+  "3f16bec4e77f": {
+    "question": "Markerami uszkodzenia komórek mięśni we krwi są:",
+    "answers": [
+      "Troponina.",
+      "Mioglobina.",
+      "Enzymy komórkowe np. kinaza kreatynowa lub dehydrogenaza mleczanowa.",
+      "Wszystkie wymienione."
+    ]
+  },
+  "50c03ed54800": {
+    "question": "Wysiłek o intensywności wynoszącej 75%VO2max to wysiłek o intensywności:",
+    "answers": [
+      "Supramaksymalnej.",
+      "Wszystkie odpowiedzi są błędne.",
+      "Maksymalnej.",
+      "Submaksymalnej."
+    ]
+  },
+  "52c7fb5feb39": {
+    "question": "Możliwe efekty treningu hipoksycznego to:",
+    "answers": [
+      "Poprawa wydolności tlenowej.",
+      "Zwiększenie pojemności tlenowej krwi.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Zwiększenie poziomu erytrocytów."
+    ]
+  },
+  "6978c40c3518": {
+    "question": "Nacisk zawodnika na podłoże podczas wyskoku do bloku może być:",
+    "answers": [
+      "Mniejszy, większy jak i równy ciężarowi ciała.",
+      "Równy ciężarowi ciała.",
+      "Wyłącznie większy od ciężaru ciała.",
+      "Wyłącznie mniejszy od ciężaru ciała."
+    ]
+  },
+  "15365a24d9a5": {
+    "question": "Analiza fazowa ruchu w siatkówce nie umożliwia określenia:",
+    "answers": [
+      "Czasu trwania odbicia do bloku.",
+      "Struktury czasowej zagrywki.",
+      "Liczby i częstotliwości kroków podczas np. rozbiegu.",
+      "Położenia ogólnego środka ciężkości zawodnika."
+    ]
+  },
+  "d57507c1731e": {
+    "question": "Hematokryt wynosi średnio:",
+    "answers": [
+      "42 % u kobiet i 55 % u mężczyzn.",
+      "Jest taki sam u mężczyzn i kobiet.",
+      "42 % u kobiet i 47 % u mężczyzn.",
+      "46 % u mężczyzn i 55 % u kobiet."
+    ]
+  },
+  "d5a9ec74936e": {
+    "question": "Dobrymi markerami przetrenowania są pomiary we krwi:",
+    "answers": [
+      "Tylko stężenie tylko kortyzolu.",
+      "Zarówno stężenia testosteronu i kortyzolu.",
+      "Tylko stężenie testosteronu.",
+      "Nie ma wskaźników przetrenowania."
+    ]
+  },
+  "ecf10b0e5f1c": {
+    "question": "Kształtowanie nawyku ruchowego przebiega kolejno w:",
+    "answers": [
+      "4 fazach: hamowanie, generalizacja, stabilizacja, automatyzacja.",
+      "4 fazach: generalizacja, hamowanie, stabilizacja, automatyzacja.",
+      "3 fazach: generalizacja, stabilizacja, automatyzacja.",
+      "5 fazach: generalizacja, hamowanie, stabilizacja, automatyzacja, pobudzanie."
+    ]
+  },
+  "578848b9a26d": {
+    "question": "Podstawowe cele w żywieniu sportowców w okresie treningowym to:",
+    "answers": [
+      "Zapewnienie optymalnego udziału poszczególnych składników pokarmowych w dobowej diecie, czyli ok. 55-60% to węglowodany, 25-30% tłuszcze, a 12-15% to białka.",
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Optymalna podaż białek w praktyce sportowej - 1,2-1,6 g/kg m.c./dobę, regeneracja zasobów węglowodanów oraz wody i elektrolitów po treningu.",
+      "Utrzymanie zrównoważonego bilansu energetycznego i utrzymanie optymalnej masy ciała oraz jego składu."
+    ]
+  },
+  "2b6eabf2dde8": {
+    "question": "II próg mleczanowy koreluje ze zdolnościami:",
+    "answers": [
+      "Skocznościowymi.",
+      "Siłowymi.",
+      "Szybkościowymi.",
+      "Wytrzymałościowymi."
+    ]
+  },
+  "945790f7d660": {
+    "question": "Potencjał siłowy mięśni zawodnika najlepiej charakteryzuje wartość:",
+    "answers": [
+      "Spadku siły mięśniowej w działaniu długotrwałym.",
+      "Maksymalnej szybkości narastania siły mięśniowej.",
+      "Maksymalnej siły oporu.",
+      "Maksymalnego momentu siły oporu."
+    ]
+  },
+  "fb8d744c379c": {
+    "question": "Pojemność tlenowa krwi wynosi:",
+    "answers": [
+      "60%.",
+      "20 ml O2 na 100 ml krwi.",
+      "30%.",
+      "10%."
+    ]
+  },
+  "f25114a4d391": {
+    "question": "Łąkotki stawu kolanowego:",
+    "answers": [
+      "Pogłębiają panewkę stawu kolanowego.",
+      "Wszystkie powyższe odpowiedzi są prawidłowe.",
+      "Leżą między kłykciami kości udowej i piszczelowej.",
+      "Dzielą częściowo jamę stawu na piętro górne i dolne."
+    ]
+  },
+  "ebca50948428": {
+    "question": "Najefektywniejszą drogą oddawania ciepła podczas pracy fizycznej jest:",
+    "answers": [
+      "Promieniowanie.",
+      "Przewodzenie.",
+      "Konwekcja.",
+      "Parowanie."
+    ]
+  },
+  "80e3415f6881": {
+    "question": "W cyklu treningowym, kolejny trening powinien być zaplanowany:",
+    "answers": [
+      "Moment superkompensacji jest bez znaczenia w planowaniu treningu.",
+      "Przed wystąpieniem superkompensacji.",
+      "Po zakończeniu superkompensacji.",
+      "W szczytowym momencie superkompensacji."
+    ]
+  },
+  "d8ad7224c9d2": {
+    "question": "Ilość krwi tłoczona przez serce człowieka w spoczynku wynosi w trakcie 1 minuty:",
+    "answers": [
+      "Od 4 do 6 litrów.",
+      "Od 1 do 4 litrów.",
+      "Od 6 do 9 litrów.",
+      "Od 20 do 40 litrów."
+    ]
+  },
+  "007bf394777b": {
+    "question": "Na końcu tylnym żebra znajduje się:",
+    "answers": [
+      "Trzon żebra.",
+      "Kąt żebra.",
+      "Głowa żebra.",
+      "Bruzda żebra."
+    ]
+  },
+  "4b17fb357b11": {
+    "question": "Do pomiaru maksymalnego minutowego poboru tlenu (wydolności tlenowej) należy zastosować test:",
+    "answers": [
+      "Wingate.",
+      "Harwardzki.",
+      "Stopniowany.",
+      "Bosco."
+    ]
+  },
+  "a00c986cbb0e": {
+    "question": "Siła mięśniowa determinowana jest:",
+    "answers": [
+      "Siłą bodźca i przekrojem poprzecznym, długością mięśnia.",
+      "Siłą bodźca, przekrojem fizjologicznym, stopniem rozciągnięcia, typem komórek mięśniowych i temperaturą.",
+      "Siłą bodźca, temperaturą, przekrojem poprzecznym, stopniem rozciągnięcia.",
+      "Przekrojem poprzecznym mięśnia, jego długością, rodzajem impulsu."
+    ]
+  },
+  "eaeb5c6e42e3": {
+    "question": "Powierzchnia stawowa stawu ramienno-łokciowego leży na:",
+    "answers": [
+      "Guzowatości kości łokciowej.",
+      "Bloczku kości ramiennej.",
+      "Głowie kości łokciowej.",
+      "Wszystkie powyższe odpowiedzi są prawidłowe."
+    ]
+  },
+  "8f85c8ef7556": {
+    "question": "Do oceny zdolności wytrzymałościowych w grach zespołowych można zastosować test:",
+    "answers": [
+      "Yo-Yo.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "RAST.",
+      "Wingate."
+    ]
+  },
+  "8c405885835b": {
+    "question": "I próg metaboliczny występuje przy intensywności pracy:",
+    "answers": [
+      "60-80% VO2max.",
+      "20-30% VO2max.",
+      "40-60% VO2max.",
+      "100-120% VO2max."
+    ]
+  },
+  "eb3cb251ca5f": {
+    "question": "Największy wpływ na poziom maksymalnego minutowego poboru tlenu ma:",
+    "answers": [
+      "Zaopatrzenie mięśni w substraty energetyczne.",
+      "Maksymalna pojemność minutowa serca.",
+      "Maksymalna wentylacja płuc.",
+      "Gęstość kapilar w mięśniu."
+    ]
+  },
+  "86a9c5e95f06": {
+    "question": "Przyczep końcowy mięśnia zębatego przedniego to:",
+    "answers": [
+      "Wyrostek barkowy.",
+      "Wyrostek kruczy.",
+      "Brzeg przyśrodkowy łopatki.",
+      "Grzebień guzka większego."
+    ]
+  },
+  "de1849244db9": {
+    "question": "Bezpośrednio po jednorazowym wysiłku występuje:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Przetrenowanie.",
+      "Zmęczenie przewlekłe.",
+      "Zmęczenie ostre."
+    ]
+  },
+  "edbaf68b7e27": {
+    "question": "Maksymalny sprint trwający 6 sekund wymaga od zawodnika wysokiej wydolności:",
+    "answers": [
+      "Anaerobowej fosfagenowej.",
+      "Aerobowej glikolitycznej.",
+      "Aerobowej.",
+      "Anaerobowej glikolitycznej."
+    ]
+  },
+  "27a3904b228c": {
+    "question": "Problemy jakimi zajmuje się medycyna sportowa to:",
+    "answers": [
+      "Monitorowanie stanu zdrowia sportowca, bezpieczeństwo w sporcie i udzielanie pierwszej pomocy.",
+      "Przygotowanie sportowca do podróży i ocena wpływu warunków środowiskowych na zdrowie i wydolność zawodnika.",
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Stosowanie dopingu w sporcie"
+    ]
+  },
+  "ecd8d3429d87": {
+    "question": "Do oceny mocy wybicia w wyskoku można użyć testu:",
+    "answers": [
+      "Bosco.",
+      "PWC170.",
+      "Astranda.",
+      "Wingate."
+    ]
+  },
+  "2d0c032f792b": {
+    "question": "Po około 25 roku życia zmniejsza się:",
+    "answers": [
+      "Wszystkie odpowiedzi są błędne.",
+      "Tylko wydolność aerobowa.",
+      "Tylko wydolność anaerobowa.",
+      "Wydolność aerobowa i anaerobowa."
+    ]
+  },
+  "544b2af12c44": {
+    "question": "Test harwardzki (harvard step-test) służy do oceny:",
+    "answers": [
+      "Sprawności termoregulacji.",
+      "Koordynacji nerwowo-mięśniowej.",
+      "Szybkości reakcji.",
+      "Wydolności fizycznej."
+    ]
+  },
+  "225c1cc8661f": {
+    "question": "Do rotatorów wewnętrznych stawu biodrowego należy:",
+    "answers": [
+      "Mięsień biodrowy.",
+      "Mięsień biodrowo-lędźwiowy.",
+      "Mięsień pośladkowy wielki.",
+      "Mięsień pośladkowy średni."
+    ]
+  },
+  "7a80702c8616": {
+    "question": "Po stwierdzeniu, że poszkodowany jest nieprzytomny:",
+    "answers": [
+      "Wzywamy pomoc, sprawdzamy oddech i przystępujemy do pośredniego masażu serca i sztucznych oddechów.",
+      "Wszystkie odpowiedzi są fałszywe.",
+      "Sprawdzamy oddech i przystępujemy do sztucznych oddechów i pośredniego masażu serca.",
+      "Zawsze wzywamy pomoc, układamy poszkodowanego w pozycji bocznej ustalonej i czekamy na przyjazd karetki."
+    ]
+  },
+  "1b294df3ee14": {
+    "question": "Wskaźnikiem oceniającym potencjał fosfagenowy zawodnika mierzony w teście Wingate jest:",
+    "answers": [
+      "Spadek mocy.",
+      "Czas utrzymania mocy szczytowej.",
+      "Moc szczytowa (maksymalna).",
+      "Moc średnia."
+    ]
+  },
+  "1936fe9ee806": {
+    "question": "Proces rehydratacji (nawodnienia) zachodzi najszybciej jeśli:",
+    "answers": [
+      "Wraz z wodą podawane są roztwory elektrolitów (chlorki potasu i sodu) oraz glukozy.",
+      "Podawane płyny są izotoniczne.",
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Podawane płyny są o odpowiednim ciśnieniu osmotycznym podobnym do ciśnienia osmotycznego krwi."
+    ]
+  },
+  "3ec1f860bd3b": {
+    "question": "ATP w mięśniach powstaje na drodze przemian:",
+    "answers": [
+      "Zarówno tlenowych jak i beztlenowych.",
+      "ATP w mięśniach nie powstaje.",
+      "Tylko beztlenowych.",
+      "Tylko tlenowych."
+    ]
+  },
+  "462d270d4871": {
+    "question": "Przyczep końcowy mieśnia najszerszego grzbietu to:",
+    "answers": [
+      "Grzebień guzka większego.",
+      "Wyrostek kruczy.",
+      "Wyrostek barkowy.",
+      "Grzebień guzka mniejszego."
+    ]
+  },
+  "6da779d1fd9a": {
+    "question": "Substratem energetycznym uwalniającym najwięcej energii z 1 grama są:",
+    "answers": [
+      "Węglowodany.",
+      "Tłuszcze.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Białka."
+    ]
+  },
+  "3fae31074695": {
+    "question": "Nasilenie pracy serca powodują:",
+    "answers": [
+      "Adrenalina, jony potasu, insulina.",
+      "Insulina, adrenalina, tyroksyna.",
+      "Tyroksyna, glukagon, adrenalina.",
+      "Tyroksyna, insulina, acetylocholina."
+    ]
+  },
+  "e7090dbeac70": {
+    "question": "Fizykalne zabiegi odnawiająco–hartujące to:",
+    "answers": [
+      "Zabiegi w których stosowane są bodźce termiczne.",
+      "Zabiegi w których stosowane sa bodźce elektryczne i świetlne.",
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Zabiegi w których stosowane są bodźce mechaniczne."
+    ]
+  },
+  "a6101a59d0e1": {
+    "question": "Do cech budowy kręgu szczytowego należy:",
+    "answers": [
+      "Brak trzonu.",
+      "Wszystkie powyższe odpowiedzi są prawidłowe.",
+      "Brak wyrostka kolczystego.",
+      "Otwór wyrostka poprzecznego."
+    ]
+  },
+  "5852f89d4474": {
+    "question": "Bóle w dolnym odcinku kręgosłupa są spowodowane:",
+    "answers": [
+      "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa oraz mięśni rotatorów.",
+      "Stanami przeciążeniowymi mięśni rotatorów oraz mięśnia 4-głowego.",
+      "Wszystkie odpowiedzi są fałszywe.",
+      "Stanami przeciążeniowymi mięśni i więzadeł odcinka lędźwiowego kręgosłupa."
+    ]
+  },
+  "98b09b1d11fc": {
+    "question": "Średnia ilość elementów morfotycznych w 1 mm3 wynosi:",
+    "answers": [
+      "WBC 7,5 tyś; RBC 5 mln; PLT 250 tyś.",
+      "PLT 10 tyś; WBC 5 tyś, RBC 4 mln.",
+      "PLT 4,5 mln; RBC 300 tyś; WBC 5 tyś.",
+      "RBC 5 tyś; WBC 200 tyś; PLT 4 mln."
+    ]
+  },
+  "06b966eaa784": {
+    "question": "Piłka siatkowa jest dyscypliną sportową o podłożu energetycznym:",
+    "answers": [
+      "Aerobowo-anaerobowym.",
+      "Anaerobowo-aerobowym.",
+      "Beztlenowym.",
+      "Tlenowym."
+    ]
+  },
+  "885dcc785db2": {
+    "question": "Oznaczenie stężenia mleczanu we krwi:",
+    "answers": [
+      "Może służyć także jako marker do planowania i prowadzenia treningu sportowego z określoną intensywnością.",
+      "Wszystkie odpowiedzi są prawdziwe,",
+      "Stężenie mleczanu po wysiłkach o charakterze beztlenowym zależy m.in. od specyfiki treningowej i stopnia wytrenowania zawodnika.",
+      "Zależy od zasobów i rodzaju źródeł energetycznych oraz czasu i intensywności wysiłku."
+    ]
+  },
+  "77da9ff851e5": {
+    "question": "Pierwszą czynnością w przypadku oparzenia termicznego jest:",
+    "answers": [
+      "Zakładamy jałowy opatrunek z gazy na oparzone miejsce i czekamy na pogotowie.",
+      "Polewanie skóry czystą, chłodną wodą przez około 20 minut celem odebrania ciepła z tkanek.",
+      "Smarujemy tłuszczem oparzone miejsce.",
+      "Wszystkie odpowiedzi są fałszywe."
+    ]
+  },
+  "76277fbe0781": {
+    "question": "Typowe elementy gry w piłce siatkowej oparte są na podłożu energetycznym:",
+    "answers": [
+      "Beztlenowym fosfagenowym.",
+      "Oksydacja wolnych kwasów tłuszczowych.",
+      "Tlenowym.",
+      "Beztlenowym glikolitycznym."
+    ]
+  },
+  "fa7246a883d2": {
+    "question": "Opóźniona bolesność mięśnia spowodowana jest przez:",
+    "answers": [
+      "Zaburzenia wodno-elektrolitowe.",
+      "Mechaniczne uszkodzenia tkanki mięśniowej i łącznej.",
+      "Wzrost pH w mięśniu.",
+      "Zakwaszenie mięśnia."
+    ]
+  },
+  "1d3c4dc21c06": {
+    "question": "Uzyskanie bezpłatnej porady sportowo-lekarskiej jest możliwe:",
+    "answers": [
+      "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w poradni mającej kontrakt z NFZ, pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu (rodzinnego).",
+      "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia w każdej poradni sportowo-lekarskiej.",
+      "Przez dzieci i młodzież do ukończenia 21 roku życia i zawodników do 23 roku życia.",
+      "Tylko przez dzieci i młodzież do ukończenia 21 roku życia pod warunkiem dostarczenia skierowania od lekarza pierwszego kontaktu."
+    ]
+  },
+  "21309ade08b2": {
+    "question": "Bezpośrednim źródłem energii do pracy komórek mięśniowych jest:",
+    "answers": [
+      "ADP.",
+      "ATP.",
+      "NAD+.",
+      "AMP."
+    ]
+  },
+  "c0053a3cc8ac": {
+    "question": "Przyczyny zmęczenia to:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Odwodnienie i wyczerpanie zasobów energetycznych.",
+      "Hipertermia i utrata elektrolitów.",
+      "Zakwaszenie i niedotlenienie."
+    ]
+  },
+  "c60f5470f8aa": {
+    "question": "W stawie skokowym górnym można wykonywać ruchy:",
+    "answers": [
+      "Przywodzenia, odwodzenia, nawracania i odwracania.",
+      "Zginania i prostowania.",
+      "Zginania, prostowania, nawracania i odwracania.",
+      "Nawracania i odwracania."
+    ]
+  },
+  "416a2a0d9c9d": {
+    "question": "W skład ściany przedniej jamy brzusznej wchodzą:",
+    "answers": [
+      "Mięsień biodrowy.",
+      "Mięsień biodrowo-lędźwiowy.",
+      "Mięsień lędźwiowy większy.",
+      "Mięsień prosty brzucha."
+    ]
+  },
+  "03fb3487ca76": {
+    "question": "Do kości twarzoczaszki zaliczamy wszystkie z wyjątkiem:",
+    "answers": [
+      "Kości nosowe, łzowe, żuchwa.",
+      "Kości nosowe, łzowe, jarzmowe.",
+      "Kości nosowe, łzowe, sitowe.",
+      "Kości nosowe, łzowe, gnykowa."
+    ]
+  },
+  "b602db59a4ba": {
+    "question": "W płaszczyźnie czołowej zachodzą ruchy:",
+    "answers": [
+      "Zginania i prostowania.",
+      "Skrętu na zewnątrz i do wewnątrz.",
+      "Odwodzenia i przywodzenia.",
+      "Przeciwstawiania i odprowadzania."
+    ]
+  },
+  "6bb6250d2c13": {
+    "question": "Skurcz ekscentryczny charakteryzuje się:",
+    "answers": [
+      "Przyczepy mięśnia w czasie pracy oddalają się.",
+      "Stałym napięciem włókien, zmienna jest ich długość.",
+      "Przyczepy mięśnia w czasie pracy przybliżają się.",
+      "Zmienną długością i napięciem."
+    ]
+  },
+  "a161a6251f0e": {
+    "question": "Zasada PRICE stosowana jest:",
+    "answers": [
+      "Przy uszkodzeniach zamkniętych tkanek miękkich narządu ruchu.",
+      "W przypadku każdego uszkodzenia pourazowego w sporcie.",
+      "Wszystkie odpowiedzi są fałszywe.",
+      "Przy uszkodzeniach zamkniętych i otwartych tkanek miękkich narządu ruchu."
+    ]
+  },
+  "cf38b57c542d": {
+    "question": "Mięsień piszczelowy przedni:",
+    "answers": [
+      "Prostuje i nawraca stopę.",
+      "Zgina i nawraca stopę.",
+      "Zgina i odwraca stopę.",
+      "Prostuje i odwraca stopę."
+    ]
+  },
+  "5f2e6fb03134": {
+    "question": "Co to jest TLC i ile wynosi.",
+    "answers": [
+      "Pojemność całkowita płuc, 6000 ml.",
+      "Pojemność minutowa płuc, 4800 ml.",
+      "Pojemność życiowa płuc, 6000 ml.",
+      "Objętość zapasowa wdechowa, 4800 ml."
+    ]
+  },
+  "deeb6c4f8047": {
+    "question": "Do celów odnowy biologicznej zaliczamy:",
+    "answers": [
+      "Aktywizację procesów wypoczynkowych.",
+      "Hartowanie (uodparnianie) organizmu na zmiany warunków środowiskowych.",
+      "Wszystkie odpowiedzi są prawdziwe.",
+      "Profilaktykę i zmniejszenie skutków przeciążeń powolnych."
+    ]
+  },
+  "c464abbc353b": {
+    "question": "Środki wspomagające to:",
+    "answers": [
+      "Legalne i nielegalne środki ergogeniczne.",
+      "Tylko legalne (nie zabronione) środki i metody.",
+      "Środki i metody nielegalne, zabronione, znajdujące się na liście WADA.",
+      "Wszystkie odpowiedzi są prawdziwe."
+    ]
+  },
+  "cecacf4a20c6": {
+    "question": "Na powierzchni żebrowej łopatki znajduje się:",
+    "answers": [
+      "Dół nadgrzebieniowy.",
+      "Grzebień łopatki.",
+      "Wszystkie powyższe odpowiedzi są prawidłowe.",
+      "Dół podłopatkowy."
+    ]
+  },
+  "586c0ad6d5ca": {
+    "question": "Wskaż efekty treningu fizycznego:",
+    "answers": [
+      "Poprawa termoregulacji, zwiększenie otłuszczenia ciała, spadek hemoglobiny.",
+      "Bradykardia, podwyższenie poziomu lipidów we krwi, wzrost poziomu hemoglobiny.",
+      "Zwiększenie masy mięśni, poprawa koordynacji, zwiększenie objętości krwi.",
+      "Zwiększenie siły, wzrost spoczynkowego tętna, pogrubienie chrząstek stawowych."
+    ]
+  },
+  "79d2cc8428b0": {
+    "question": "Niekwasomlekowa faza długu tlenowego trwa około:",
+    "answers": [
+      "60 min.",
+      "30 min.",
+      "3 min.",
+      "10 min."
+    ]
+  },
+  "908dc16380c0": {
+    "question": "Mięśnie nadgrzebieniowy i podgrzebieniowy:",
+    "answers": [
+      "Rotują do wewnątrz w stawie ramiennym.",
+      "Przyczepiają się do guzka mniejszego kości ramiennej.",
+      "Przyczepiają się do powierzchni żebrowej łopatki.",
+      "Przyczepiają się do guzka większego kości ramiennej."
+    ]
+  },
+  "a61e11148f79": {
+    "question": "Jaki jest wpływ wysiłku fizycznego o charakterze wytrzymałościowym na wydzielanie GH:",
+    "answers": [
+      "Wzrasta wydzielanie GH.",
+      "Wzrost stężenia GH zależy od intensywności wysiłku i od czasu trwania wysiłku.",
+      "Zjawisko to występuje w czasie wysiłku i bezpośrednio po jego zakończeniu.",
+      "Wszystkie odpowiedzi są prawdziwe."
+    ]
+  },
+  "b92cf201b3ec": {
+    "question": "W przypadku pełnosprawnych zawodników orzeczenie o zdolności do sportu może wydać:",
+    "answers": [
+      "Tylko specjalista medycyny sportowej.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Każdy lekarz.",
+      "Specjalista medycyny sportowej lub lekarz z certyfikatem PTMS."
+    ]
+  },
+  "5c7755d34f93": {
+    "question": "Intensywność rozgrzewki powinna wynosić:",
+    "answers": [
+      "Poniżej 40%VO2max.",
+      "Nie ma to znaczenia.",
+      "Powyżej 80%VO2max.",
+      "40-60%VO2max."
     ]
   }
 }
