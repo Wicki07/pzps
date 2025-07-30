@@ -9,6 +9,10 @@
       --bg: #f2f2f2;
       --card: #ffffff;
       --accent: #0077ff;
+      --success-bg: #d4edda;
+      --success-border: #28a745;
+      --error-bg: #f8d7da;
+      --error-border: #dc3545;
     }
 
     body {
@@ -107,6 +111,17 @@
 
     .user-wrong {
       color: crimson;
+    }
+
+    .correct-opt {
+      background: var(--success-bg) !important;
+      border-color: var(--success-border) !important;
+    }
+
+    .wrong-opt {
+      background: var(--error-bg) !important;
+      border-color: var(--error-border) !important;
+      color: #b52a2a;
     }
 
     .hidden {
@@ -3228,7 +3243,10 @@
       input.value = opt;
 
       // Aktywuj przycisk "Dalej" po wyborze
-      input.addEventListener("change", () => {
+      input.addEventListener("change", (e) => {
+        // Podświetl poprawne/wrong odpowiedzi
+        const { id } = questions[currentIndex];
+        highlightAnswers(e.target.value, answersMap[id]);
         document.getElementById("next-btn").disabled = false;
       });
 
@@ -3295,6 +3313,18 @@
 
       tr.append(tdQ, tdU, tdC);
       tbody.appendChild(tr);
+    });
+  }
+
+  function highlightAnswers(userAnswer, correctAnswer) {
+    document.querySelectorAll("#options-container label").forEach((label) => {
+      const text = label.textContent.trim();
+      if (text === correctAnswer) {
+        label.classList.add("correct-opt");
+      }
+      if (text === userAnswer && userAnswer !== correctAnswer) {
+        label.classList.add("wrong-opt");
+      }
     });
   }
 
