@@ -2063,5 +2063,267 @@
       "Z kalendarza zawodów.",
       "Składu osobowego drużyny."
     ]
+  },
+  // sitakówka 1
+  "e985488b1601": {
+    "question": "Do sposobów przemieszczania się w piłce siatkowej należy zaliczyć:",
+    "answers": [
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Krok dostawny, krok skrzyżny, zwód pojedynczy.",
+      "Wypad, naskok, pad.",
+      "Piwot, pad siatkarski, obrót."
+    ]
+  },
+  "29935bcffb9d": {
+    "question": "W padzie bokiem z przwrotem przez bark obrońca:",
+    "answers": [
+      "Po wykonaniu odbicia, kontakt z podłożem kończy wykonaniem przewrotu przez bark jednoimienny z nogą wykroczną.",
+      "Po wykonaniu odbicia, kontakt z podłożem kończy wykonaniem przewrotu przez bark przeciwny do nogi wykrocznej.",
+      "Po wykonaniu odbicia, kontakt z podłożem kończy się wykonaniem przewrotu przez bark przeciwny do nogi zakrocznej.",
+      "Wszystkie odpowiedzi sa niewłaściwe."
+    ]
+  },
+  "e6bf19029ea3": {
+    "question": "W ustawieniu do przyjęcia zagrywki na rysunku 3:",
+    "answers": [
+      "Przyjmuje trzech zawodników, wystawiający wchodzi z pozycji 6.",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Przyjmuje czterech zawodników, wystawiający wchodzi z pozycji 3.",
+      "Jest to ustawienie błędne ze względu na przepisy."
+    ]
+  },
+  "f4f476eafd56": {
+    "question": "W zagrywce tenisowej uderzenie w piłkę następuje:",
+    "answers": [
+      "Z przodu, ponad głową, nasadą dłoni (zagrywka \"bezrotacyjna\").",
+      "Nad barkiem ramienia uderzającego, wewnętrzną częścią dłoni o palcach zwartych.",
+      "Za głową, wewnętrzną cząścią dłoni o palcach zwartych.",
+      "Z przodu, ponad głową, wewnętrzną częścią dłoni o palcach rozwartych."
+    ]
+  },
+  "e18a30a415a5": {
+    "question": "Opis techniki odbicia w tył sposobem oburącz górnym powinien być następujący:",
+    "answers": [
+      "W fazie przyjęcia następuje odchylenie tułowia w tył, a w fazie podania wyprost ramion w kierunku w górę w tył (za głowę).",
+      "W fazie przyjęcia ustawienie takie jak podczas odbicia do przodu, w fazie podania następuje wyprost ramion w kierunku w górę w tył (za głowę), a następnie odchylenie tułowia w tył.",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "W fazie przyjęcia ustawienie takie jak podczas odbicia do przodu, w fazie podania następuje wyprost ramion w kierunku w górę w tył (za głowę) przy możliwym równoczesnym niewielkim odchyleniu tułowia."
+    ]
+  },
+  "860426cfaf11": {
+    "question": "W ustawieniu do przyjęcia zagrywki na rysunku 8:",
+    "answers": [
+      "Przyjmuje czterech zawodników, wystawiającym jest nr 5.",
+      "Przyjmuje czterech zawodników, wystawiającym jest nr 3.",
+      "Przyjmuje trzech zawodników, wystawiającym jest nr 3.",
+      "Jest to ustawienie błędne ze względu na przepisy."
+    ]
+  },
+  "e063d8d9ca45": {
+    "question": "Rzut siatkarski - jest techniką stosowaną:",
+    "answers": [
+      "Do obrony piłek przebijanych łatwo (wolna piłka).",
+      "Wyłącznie przez zespoły żeńskie.",
+      "Do obrony piłek trudnych, spadających w odległości uniemożliwiającej obronę w postawie stabilnej.",
+      "Do obrony piłek trudnych lecących z boku."
+    ]
+  },
+  "ad9b26c89c70": {
+    "question": "Które zdanie najlepiej opisuje odbicie górne oburącz:",
+    "answers": [
+      "Dłonie przed twarzą, nogi wyprostowane.",
+      "Dłonie przed klatką piersiową, nogi ugięte.",
+      "Dłonie ponad głową, nogi ugięte.",
+      "Wszystkie odpowiedzi są nieprawidłowe."
+    ]
+  },
+  "c8a2758116e5": {
+    "question": "Drużyna początkujących, grająca na dwóch rozgrywających, powinna wykorzystać następujący system:",
+    "answers": [
+      "Żaden z wymienionych systemów.",
+      "Wejście czwartego.",
+      "Z wystawiającym w linii ataku.",
+      "Z wystawiającym w linii obrony."
+    ]
+  },
+  "94b226c378c6": {
+    "question": "Postawa siatkarska jest to układ ciała poprzedzający wykonanie:",
+    "answers": [
+      "Wyłącznie przyjęcia zagrywki.",
+      "Wyłącznie rozegrania.",
+      "Jakiegokolwiek elementu techniki.",
+      "Wyłącznie obrony."
+    ]
+  },
+  "fb8eec182a31": {
+    "question": "Rysunek 9 przedstawia rozegranie ataku w systemie:",
+    "answers": [
+      "Po wystawie zawodnika linii obrony bez zmiany stref.",
+      "Po wystawie zawodnika linii obrony ze zmianą stref.",
+      "Po wystawie zawodnika linii ataku bez zmiany stref.",
+      "Po wystawie zawodnika linii ataku ze zmianą stref."
+    ]
+  },
+  "c0303343b784": {
+    "question": "W zagrywce szybującej bez wyskoku (górnej z miejsca) pozycja wyjściowa u praworęcznych to:",
+    "answers": [
+      "Stopy w wykroku, z przodu lewa noga, piłka trzymana w lewej ręce, prawa ręka uniesiona do góry, łokieć zgięty na wysokości głowy.",
+      "Stopy w wykroku, z przodu lewa noga, piłka trzymana oburącz.",
+      "Stopy w rozkroku, z przodu noga lewa, piłka trzymana w lewej ręce, prawa ręka uniesiona do góry, łokieć zgięty na wysokości głowy.",
+      "Stopy w wykroku, z przodu prawa noga, piłka trzymana w prawej ręce."
+    ]
+  },
+  "aa1cd195e969": {
+    "question": "Który z wymienionych elementów ma istotny wpływ na technikę wykonania zagrywki rotacyjnej:",
+    "answers": [
+      "Wszystkie odpowiedzi prawidłowe.",
+      "Uderzenie na zasięgu i lądowanie w boisku.",
+      "Regularny, dokładny podrzut piłki w boisko.",
+      "Rytm rozbiegu."
+    ]
+  },
+  "9622fa9ef6a4": {
+    "question": "W systemie zdobywania punktu po zagrywce własnej punkty zdobywane są:",
+    "answers": [
+      "Wszystkie odpowiedzi sa prawidłowe.",
+      "Blokiem.",
+      "Atakiem po obronie (kontratakiem).",
+      "Zagrywką."
+    ]
+  },
+  "5036a19c1b48": {
+    "question": "Który z systemów i wariantów atakowania jest najtrudniejszy do wykonania:",
+    "answers": [
+      "Atak bez zmiany stref po wystawie zawodnika linii ataku.",
+      "Atak ze zmianą stref po wystawie zawodnika linii obrony.",
+      "Atak bez zmiany stref po wystawie zawodnika linii obrony.",
+      "Atak ze zmianą stref po wystawie zawodnika linii ataku."
+    ]
+  },
+  "21c8ffb7088a": {
+    "question": "Elementy gry w piłkę siatkową to:",
+    "answers": [
+      "Sposoby poruszania się, odbicia, zagrywki.",
+      "Przyjęcie, rozegranie, atak.",
+      "Przyjęcie, odbicie oburącz górnym, atak.",
+      "Wszystkie odpowiedzi są poprawne."
+    ]
+  },
+  "ef107121a667": {
+    "question": "Które zdanie nie opisuje fazy podrzutu i rozbiegu w zagrywce szybującej w wyskoku:",
+    "answers": [
+      "Dwukrokowe przemieszczenie (z pozycji przygotowawczej – pierwszy krok prawą nogą – dostawienie lewej - wyskok).",
+      "Dwukrokowe przemieszczenie (z pozycji przygotowawczej – pierwszy krok lewą nogą – dostawienie lewej - wyskok).",
+      "Wszystkie odpowiedzi są nieprawidłowe.",
+      "Dwukrokowe przemieszczenie (z pozycji przygotowawczej – pierwszy krok prawą nogą – lewą nogą z jednoczesnym odbiciem z jednej nogi)."
+    ]
+  },
+  "89e27716e5c9": {
+    "question": "Sposoby przemieszczania się po boisku w piłce siatkowej to:",
+    "answers": [
+      "Wyskok, pad siatkarski, obrót.",
+      "Piwot, rzut siatkarski, rozbieg.",
+      "Krok dostawny, krok skrzyżny, zwód podwójny przodem.",
+      "Wypad, doskok, pad siatkarski."
+    ]
+  },
+  "e535ad7eae24": {
+    "question": "Ilu wystawiających musi być w drużynie, która atakować będzie wyłącznie w systemie po wystawie zawodnika z linii ataku:",
+    "answers": [
+      "Co najmniej dwóch.",
+      "Czterech.",
+      "Jeden.",
+      "Co najmniej trzech."
+    ]
+  },
+  "8a9679ac9983": {
+    "question": "Prawidłowy opis fazy przyjęcia i fazy podania piłki podczas wystawiania w przód jest następujący:",
+    "answers": [
+      "Przyjęcie i podanie w ustawieniu przodem do kierunku wystawy.",
+      "Przyjęcie i podanie w ustawieniu przodem do kierunku nagrania.",
+      "Przyjęcie przodem do kierunku nagrania, podanie przodem do kierunku wystawy.",
+      "Wszystkie odpowiedzi są nieprawidłowe."
+    ]
+  },
+  "68c6c673d610": {
+    "question": "Który z wymienionych elementów niekorzystnie wpływa na jakość uderzenia w zagrywce szybującej bez wyskoku:",
+    "answers": [
+      "Wszystkie odpowiedzi są właściwe.",
+      "Uderzenie rozluźnioną dłonią w środek piłki.",
+      "Uderzenie piłki powinno być wykonane nad boiskiem (po odbiciu się do wyskoku z pola zagrywki).",
+      "Kontakt z piłką dynamiczny i maksymalnie krótki."
+    ]
+  },
+  "4a3234525e4f": {
+    "question": "Fazę podrzutu w zagrywce szybującej (bez rotacji) bez wyskoku najlepiej charakteryzuje zdanie:",
+    "answers": [
+      "Podrzut pionowy, nieduży, bez rotacji piłki.",
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Jednorącz, na stronę ramienia uderzającego, z przodu tułowia, z wysokości barku, nie wyżej niż maksymalny zasięg zagrywającego.",
+      "Możliwość wykonania małego kroku lewą nogą w momencie podrzutu piłki."
+    ]
+  },
+  "b6aed5c00cdb": {
+    "question": "Rysunek 4 przedstawia rozegranie ataku w systemie:",
+    "answers": [
+      "Po wystawie zawodnika linii obrony ze zmianą stref.",
+      "Po wystawie zawodnika linii ataku bez zmiany stref.",
+      "Po wystawie zawodnika linii obrony bez zmiany stref.",
+      "Po wystawie zawodnika linii ataku ze zmianą stref."
+    ]
+  },
+  "a19ade1cfd93": {
+    "question": "Wskaż zdanie najdokładniej opisujące podrzut piłki do zagrywki rotacyjnej dla zawodnika praworęcznego:",
+    "answers": [
+      "Z pozycji wyjściowej krok lewą nogą i jednoczesny wysoki wyrzut piłki ręką uderzającą bez rotacji.",
+      "Z pozycji wyjściowej krok prawą nogą i jednoczesny wysoki wyrzut piłki ręką uderzającą z rotacją postępującą.",
+      "Wszystkie odpowiedzi prawidłowe.",
+      "Z pozycji wyjściowej krok lewą nogą i jednoczesny wysoki wyrzut piłki ręką uderzającą z rotacją postępującą."
+    ]
+  },
+  "7d371e6e2638": {
+    "question": "W technice zagrywki rotacyjnej możemy wyróżnić następujące fazy:",
+    "answers": [
+      "Przyjęcie pozycji przygotowawczej, podrzut piłki, wyskok i uderzenie, lądowanie.",
+      "Podrzut piłki, rozbieg/naskok, wyskok i uderzenie, lądowanie.",
+      "Przyjęcie pozycji przygotowawczej, rozbieg/naskok, wyskok i uderzenie, lądowanie.",
+      "Przyjęcie pozycji przygotowawczej, podrzut piłki, rozbieg/naskok, wyskok i uderzenie, lądowanie."
+    ]
+  },
+  "b34e86b80ad2": {
+    "question": "Który z systemów w taktyce atakowania jest najłatwiejszy:",
+    "answers": [
+      "Z dwoma rozgrywającymi na boisku.",
+      "Z jednym rozgrywającym na boisku.",
+      "Bez specjalizacji - rozgrywa zawsze zawodnik strefy III.",
+      "Z dwoma rozgrywającymi na boisku, lecz wystawia R w linii ataku."
+    ]
+  },
+  "bb24c598b5d8": {
+    "question": "Rzut siatkarski z przetoczeniem przez plecy – jest techniką stosowaną:",
+    "answers": [
+      "Szczególnie przez zespoły żeńskie na etapie seniorskim.",
+      "Szczególnie przez zespoły żeńskie.",
+      "Szczególnie przez zespoły męskie.",
+      "Szczególnie przez zespoły młodzieżowe."
+    ]
+  },
+  "f43f7390a6b6": {
+    "question": "W mini-siatkówce podstawową techniką zagrywania powinna być:",
+    "answers": [
+      "Zagrywka dolna, gdyż jest łatwa do opanowania dla wszystkich dzieci i gwarantuje (niemal w 100%) poprawne wprowadzenie piłki do gry.",
+      "Zagrywka tenisowa, gdyż pomimo dość dużego ryzyka popełnienia błędu zagrywki jest to technika, która stosowana będzie w następnych etapach szkolenia.",
+      "Zagrywka rotacyjna w wyskoku, ponieważ gwarantuje łatwe zdobytcie punktu.",
+      "Technikę zagrywki należy dobrać indywidualnie, uwzględniając uzdolnienia ruchowe i poziom zdolności motorycznych dzieci."
+    ]
+  },
+  "7ca97c4bdf05": {
+    "question": "Które zdanie najlepiej opisuje odbicie dolne oburącz:",
+    "answers": [
+      "Ramiona i nogi wyprostowane, tułów odchylony w tył.",
+      "Ramiona ugięte, nogi wyprostowane, tułów wyprostowany.",
+      "Ramiona wyprostowane, nogi ugięte, tułów pochylony w przód.",
+      "Wszystkie odpowiedzi są poprawne."
+    ]
   }
 }
