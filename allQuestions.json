@@ -972,5 +972,546 @@
       "Powyżej 80%VO2max.",
       "40-60%VO2max."
     ]
+  },
+  // psychologia
+  "dfa352324125": {
+    "question": "Efektywna regulacja nastroju powinna dotyczyć następujących wymiarów nastroju:",
+    "answers": [
+      "Kontrolowania kontaktów towarzyskich, rozluźnienia, energii.",
+      "Kontrolowania energii, zmęczenia, gniewu.",
+      "Kontrolowania diety, dezorientacji, depresyjności.",
+      "Kontrolowania motywacji, zmęczenia, lęku."
+    ]
+  },
+  "f5480201727d": {
+    "question": "Zawodnicy sukcesu:",
+    "answers": [
+      "Nie stosują treningu wyobrażeniowego w okresie słabszego funkcjonowania.",
+      "Stawiają sobie cele realistyczne, ale trochę przekraczające ich możliwości.",
+      "Obawiają się stresu, jako zjawiska zagrażającego sukcesowi.",
+      "Nie akceptują doświadczania silnych emocji pozytywnych i negatywnych."
+    ]
+  },
+  "afc3f7fe86fe": {
+    "question": "Wykorzystując wiedzę na temat teorii motywacji osiągnięć J.W.Atkinsona wybierz zdanie prawdziwe:",
+    "answers": [
+      "Osoby, u których motyw dążenia do sukcesu (Ms) jest niższy niż motyw do unikania niepowodzenia (Maf), podnoszą swój poziom aspiracji po osiągnięciu sukcesu a obniżają po niepowodzeniu.",
+      "Osoby, u których motyw dążenia do sukcesu( Ms) jest wyższy niż motyw do unikania niepowodzenia (Maf), podnoszą swój poziom aspiracji po osiągnięcie sukcesu a obniżają go po niepowodzeniu.",
+      "Osoby, u których motyw dążenia do sukcesu (Ms) jest niższy niż motyw do unikania niepowodzenia( Maf) są bardziej wytrwałe przy początkowym zadaniu związanym z osiągnięciem.",
+      "Osoby, u których motyw dążenia do sukcesu (Ms) jest wyższy niż motyw do unikania niepowodzenia( Maf) preferują zadania o wysokim stopniu trudności."
+    ]
+  },
+  "bc2321f7a061": {
+    "question": "Kwestionariusz radzenia sobie w sytuacjach stresowych - CISS mierzy następujące style radzenia sobie ze stresem:",
+    "answers": [
+      "Styl skoncentrowany na zadaniu, styl skoncentrowany na emocjach i styl skoncentrowany na unikaniu.",
+      "Styl skoncentrowany na unikaniu.",
+      "Styl skoncentrowany na poszukiwaniu kontaktów towarzyskich.",
+      "Styl skoncentrowany na zadaniu i styl skoncentrowany na emocjach."
+    ]
+  },
+  "7a6f0862374f": {
+    "question": "Wybierz zdanie fałszywe na temat lęku w sporcie:",
+    "answers": [
+      "Lęk - cecha odpowiada za różnice indywidualne.",
+      "Lęk – stan odpowiada za zmienność wyników z sytuacji na sytuację .",
+      "Sportowcy o wysokim poziomie lęku – cechy nie będą reagować lękiem w sytuacjach silnie zagrażających.",
+      "Formowanie się osobowości lękowej wiąże się z wczesnym okresem dzieciństwa."
+    ]
+  },
+  "c14fc39f0334": {
+    "question": "Efekty zastosowania twórczych wyobrażeń w treningu umiejętności psychologicznych to:",
+    "answers": [
+      "Wyobrażanie sobie strategii używanych podczas realnego startu.",
+      "Wyobrażanie sobie negatywnych i pozytywnych emocji podczas startu.",
+      "Wyobrażanie sobie strategii używanych podczas treningu.",
+      "Wyobrażanie sobie miejsca startu."
+    ]
+  },
+  "f8906e24fdf0": {
+    "question": "Wybierz zdanie prawdziwe:",
+    "answers": [
+      "Sfera narządu ruchu nie integruje osobowości, mięsni i struktur łącznotkankowych.",
+      "Zapis informacji genetycznej całkowicie decyduje o równowadze psychofizycznej.",
+      "Sfera środowiskowo–społeczna nie wpływa na równowagę między ciałem i umysłem.",
+      "Podstawowym narzędziem ekspresji w ciele jest oddech i mięśnie."
+    ]
+  },
+  "cee476590400": {
+    "question": "Trzy style komunikacji motywującej to:",
+    "answers": [
+      "Podążanie, prowadzenie, kierowanie.",
+      "Słuchanie, podążanie, kierowanie.",
+      "Słuchanie, informowanie, prowadzenie.",
+      "Słuchanie, informowanie, kierowanie."
+    ]
+  },
+  "c86da86c8e4c": {
+    "question": "Wybierz zdanie prawdziwe:",
+    "answers": [
+      "Zagrożenie trenerskimi emocjami utrudnia zawodnikom radzenie sobie ze stresem startowym.",
+      "Najlepsza praktyką jest praktyka.",
+      "Praca trenera nie wymaga stałego poszukiwania nowych, doskonalszych narzędzi i metod nawiązywania i utrzymywania pozytywnych relacji.",
+      "Cechy osobowości w odróżnieniu od cech temperamentu nie podlegają modyfikacji."
+    ]
+  },
+  "af229f3c3b1f": {
+    "question": "Wybierz zdanie fałszywe:",
+    "answers": [
+      "Doradzanie w sporcie powinno służyć przekonaniu zawodnika o jego przydatności do zespołu.",
+      "Doradzanie w sporcie powinno służyć nabywaniu nowej wiedzy i umiejętności.",
+      "Doradzanie w sporcie powinno służyć faworyzowaniu zawodników.",
+      "Doradzanie w sporcie powinno służyć podnoszeniu pewności siebie i poczucia bezpieczeństwa zawodnika."
+    ]
+  },
+  "feb94c412be2": {
+    "question": "W czasie treningu wyobrażeniowego sportowiec powinien:",
+    "answers": [
+      "Budować obrazy z pozycji obserwatora a nie aktora zdarzenia.",
+      "Koncentrować się na szczegółach i ogółach.",
+      "Zawsze rozpoczynać od relaksacji.",
+      "Używać tylko jednego zmysłu."
+    ]
+  },
+  "1fe93acf6867": {
+    "question": "Kontrola i kierowanie stresem polega na:",
+    "answers": [
+      "Odwoływaniu się do przeszłych doświadczeń zawodnika.",
+      "Pozbyciu się pozytywnego myślenia.",
+      "Odwołaniu się do asertywności.",
+      "Równoważeniu stresu traumą."
+    ]
+  },
+  "119bd711b40f": {
+    "question": "Zawodnicy pokonują swój lęk przed porażką:",
+    "answers": [
+      "Stawiając sobie realistyczne cele.",
+      "Stawiając sobie wysokie cele.",
+      "Formułując negatywne cele.",
+      "Wizualizując porażkę."
+    ]
+  },
+  "f6543219f4d2": {
+    "question": "Samokontrola jako czynnik motywacji osiągnięć charakteryzuje zawodników:",
+    "answers": [
+      "Niezadowolonych z różnych przeszkód, które pojawiają się na drodze do realizacji celów długoterminowych.",
+      "Tłumaczących konsekwencje swoich zachowań przyczynami zewnętrznymi.",
+      "Reagujących zmniejszonym zaangażowaniem i wysiłkiem w trudnych sytuacjach.",
+      "Wytrwale i energicznie pracujących na treningu i zawodach."
+    ]
+  },
+  "0eb4f9032613": {
+    "question": "Zwycięskie zespoły:",
+    "answers": [
+      "Prawidłowo formułują cele mistrzowskie i wynikowe.",
+      "Rozwijają się tylko wtedy, gdy ponoszą porażki.",
+      "Pokonują swoje słabości trenując tylko z lepszymi od siebie zespołami.",
+      "Żródeł sukcesu upatrują w negatywnych doświadczeniach."
+    ]
+  },
+  "a25235d439de": {
+    "question": "Podstawowy wymiar najtrafniej opisujący stan umysłu w przepływie to:",
+    "answers": [
+      "Jasne cele.",
+      "Koncentracja na przeszłości.",
+      "Utrata podświadomości.",
+      "Niejednoznaczna informacja zwrotna."
+    ]
+  },
+  "206ba7c59609": {
+    "question": "Które wymiary uwagi opisuje Model Koncentracji Nideffera:",
+    "answers": [
+      "Koncentrację szeroką, wąską, zewnętrzną i wewnętrzną.",
+      "Koncentrację wąską i bliską.",
+      "Koncentrację szeroką i koncentrację odległą.",
+      "Koncentrację szeroką i wewnętrzną."
+    ]
+  },
+  "1006e34c3949": {
+    "question": "Skutkami mechanizmów negatywnego stymulowania nie jest dotknięta płaszczyzna:",
+    "answers": [
+      "Górnego otworu klatki piersiowej.",
+      "Pasma brzuszno–pępkowego.",
+      "Powierzchni podeszwowej stopy.",
+      "Obręczy bioder z dnem miednicy mniejszej."
+    ]
+  },
+  "47528d43d02b": {
+    "question": "Emocje wpływają na poziom wykonania zadania sportowego u dzieci, ponieważ:",
+    "answers": [
+      "Dziecko martwi się tym, że zawiedzie oczekiwania osób dorosłych.",
+      "Dziecko obawia się, że w sytuacji sukcesu straci prestiż wśród rówieśników.",
+      "Dziecko zawsze czuje się osamotnione w przeżywaniu silnych emocji.",
+      "Dziecko nie kieruje się w rywalizacji sportowej zasadą fair play."
+    ]
+  },
+  "9f76fabee751": {
+    "question": "Funkcja motywacyjna wyobrażeń to:",
+    "answers": [
+      "Sprzyjanie formułowaniu celów wynikowych.",
+      "Utrwalenie zależności pomiędzy samoskutecznością a pobudzeniem.",
+      "Obniżenie odczuwanego pobudzenia oraz lęku startowego.",
+      "Zwiększenie odczuwanego pobudzenie i zmniejszenie lęku startowego."
+    ]
+  },
+  "7f5324992bbd": {
+    "question": "Najskuteczniejsze działania integrujące i budujące więzi w sytuacji rozwiązywania konfliktów to:",
+    "answers": [
+      "Przyjęcie odpowiedzialności, podkreślenie wspólnoty, brak wsparcia osobistego.",
+      "Odsłanianie się, brak wsparcia osobistego, podkreślenie wspólnoty.",
+      "Wsparcie osobiste, uściślenie zarzutów, brak prośby o odsłonięcie rozmówcy.",
+      "Odsłonięcie rozmówcy, wsparcie osobiste, uściślenie zarzutów."
+    ]
+  },
+  "7087b6fe2f8e": {
+    "question": "Skuteczny trener:",
+    "answers": [
+      "Rozszerza liczbę swoich celów.",
+      "Reaguje na zmiany sytuacji.",
+      "Kształtuje swoje relacje z zawodnikami na kierowaniu zawodnikami.",
+      "Ceni siłę charakteru zawodnika, nie doceniając jego zdolności."
+    ]
+  },
+  "df2410e61009": {
+    "question": "Wybierz zdanie prawdziwe:",
+    "answers": [
+      "Warunkiem skutecznego doradzania w sporcie powinno być nieustanne stymulowanie zawodnika do wytężonej pracy.",
+      "Warunkiem skutecznego doradzania w sporcie powinno być zaufanie do zawodnika i przekonanie zawodnika o tym zaufaniu.",
+      "Warunkiem skutecznego doradzania w sporcie powinno być utrudnianie zawodnikowi zadawania pytań.",
+      "Warunkiem skutecznego doradzania w sporcie powinna być zasada zamkniętych drzwi."
+    ]
+  },
+  "8b4097b1d874": {
+    "question": "Wybierz zadanie fałszywe:",
+    "answers": [
+      "Środek ciężkości ciała ludzkiego znajduje się tuż przed trzecim kręgiem kości krzyżowej.",
+      "Napięcie mięśni biodrowo–lędźwiowych powoduje napięcie mięśnia prostownika grzbietu i przepony.",
+      "Ochronie przed traumą służy grupa mięśni biodrowo–lędźwiowych.",
+      "Wzorce zachowań traumatycznych powstałe u dzieci w wyniku traumy są szkodliwe dla ich całego życia."
+    ]
+  },
+  "e9df177e250b": {
+    "question": "Pewnością siebie charakteryzują się zawodnicy:",
+    "answers": [
+      "Podporządkowani i wierzący w porażkę.",
+      "Preferujący łatwe zadania i elastyczni.",
+      "Wierzący w sukces i preferujący łatwe zadania.",
+      "Niezależni i odważni."
+    ]
+  },
+  "e6c136cd69fe": {
+    "question": "W czasie prawidłowego wydechu służącego regulacji pobudzenia organizmu biorą udział:",
+    "answers": [
+      "Mięsień prosty brzucha.",
+      "Przepona.",
+      "Mięśnie międzyżebrowe zewnętrzne.",
+      "Mięśnie karku."
+    ]
+  },
+  "a3e09b6f1e67": {
+    "question": "Zawodnicy czynnie uprawiający sport kierują się poniższymi motywami działalności sportowej:",
+    "answers": [
+      "Chęcią pokonania lęku przed porażką.",
+      "Dążeniem do osiągnięcia rekordowych wyników mimo istniejących trudności.",
+      "Uświadomieniem sobie swoich słabości.",
+      "Skupieniem się na sobie."
+    ]
+  },
+  "399a178ef44d": {
+    "question": "Według koncepcji Selingmana zawodnicy tłumaczą swoje sukcesy/porażki poniższymi wymiarami:",
+    "answers": [
+      "Personalizacja, stałość, zaangażowanie.",
+      "Personalizacja, stałość, zasięg.",
+      "Samokontrola, personalizacja, zaangażowanie.",
+      "Zasięg, zaangażowanie, niezależność."
+    ]
+  },
+  "ba6acc83bd30": {
+    "question": "Podstawowe cechy powięzi to:",
+    "answers": [
+      "Dzięki szybkiemu rozciąganiu deformuje się plastycznie.",
+      "Porozumiewa się szybciej niż układ nerwowy.",
+      "Kiedy traci płynność staje się bardziej wodnista.",
+      "Otacza tylko niektóre grupy mięśni."
+    ]
+  },
+  "184c97c507af": {
+    "question": "Najważniejsze zasady tworzenia zespołu sportowego to:",
+    "answers": [
+      "Bezpieczeństwo i wyzwania, uszanowanie indywidualnych zasad etycznych.",
+      "Brak skutecznej komunikacji, prawidłowe procesy strukturalne.",
+      "Skuteczna komunikacja, zajmowanie się wszystkimi zawodnikami.",
+      "Uznanie i docenienie roli każdego zawodnika w drużynie, filozofia drużyny."
+    ]
+  },
+  "02db329b7c1c": {
+    "question": "Niepożądane postawy rodziców wobec dzieci uprawiających sport to:",
+    "answers": [
+      "Autokratyczny styl wychowania, służący „wyręczeniu” trenera w pracy trenerskiej.",
+      "Docenianie umiejętności dziecka i stawianie mu w związku z tym adekwatnych wymagań.",
+      "Wspieranie dziecka w sytuacji poniesionego niepowodzenia.",
+      "Rodzice mają realne oczekiwania wobec wiedzy i umiejętności sportowych dziecka."
+    ]
+  },
+  "5f3cf7f5f912": {
+    "question": "Podstawowy błąd popełniany w sytuacji przypisywania przyczyn ludzkiego zachowania to:",
+    "answers": [
+      "Przecenianie roli cech osobowości i niedocenianie wpływu właściwości sytuacji, będąc obserwatorem określonego zdarzenia.",
+      "Skłonność do upatrywania przyczyn zdarzeń w obiektywnych aspektach sytuacji.",
+      "Jedno zjawisko ma nie tylko jedną przyczynę.",
+      "Skłonność do upatrywania przyczyn własnych niepowodzeń w samym sobie, przyczyn sukcesów zaś we właściwościach środowiska."
+    ]
+  },
+  "6619a09b7a4e": {
+    "question": "Źródła pewności siebie w sporcie to:",
+    "answers": [
+      "Trener, środowisko startowe i przygotowanie mentalne.",
+      "Biegłość i brak wsparcia.",
+      "Biegłość i skuteczna komunikacja w zespole.",
+      "Przygotowanie mentalne i brak biegłości."
+    ]
+  },
+  "e36966dc98fa": {
+    "question": "Ćwiczenia oddechowe, jako podstawowa forma relaksacji służą:",
+    "answers": [
+      "Uświadomieniu sobie sposobu oddychania.",
+      "Nauce oddechu paradoksalnego.",
+      "Lepszemu utlenieniu układu nerwowego.",
+      "Zwolnieniu regeneracji organizmu."
+    ]
+  },
+  "5c415277b168": {
+    "question": "Cele pedagogiczne funkcjonowania młodego zespołu to:",
+    "answers": [
+      "Przekazywanie wiedzy na temat psychologii wychowawczej.",
+      "Kształtowanie świadomości kontuzji.",
+      "Kształtowanie ducha gry zespołowej i współpracy.",
+      "Pozytywne wzmacnianie zdolności młodych zawodników."
+    ]
+  },
+  "5580f2c6f797": {
+    "question": "Ambicję zawodnika w rozumieniu motywacji osiągnięć charakteryzuje:",
+    "answers": [
+      "Satysfakcja z osiągnięć, zaangażowanie, wysiłek kompensacyjny.",
+      "Brak zapału do nauki, flow, satysfakcja z niepowodzeń innych.",
+      "Flow, brak zaangażowania, dbanie o prestiż.",
+      "Satysfakcja, ukierunkowanie na cel, niechęć porównywania się z innymi."
+    ]
+  },
+  "977922e453df": {
+    "question": "Technika wizualizacji sprzyja wspieraniu rehabilitacji zawodnika w trakcie kontuzji, ponieważ sportowcy używają poniższych rodzajów wyobrażeń:",
+    "answers": [
+      "Wyobrażeń poznawczych i motywacyjnych.",
+      "Wyobrażeń poznawczych specyficznych i wyobrażeń motywacyjnych specyficznych.",
+      "Wyobrażeń motywacyjnych.",
+      "Wyobrażeń poznawczych."
+    ]
+  },
+  "56e004e4bd92": {
+    "question": "Wzorce myślowe zawsze tworzą wzorce przeżywania uczuć w narządzie ruchu, ponieważ narząd ruchu :",
+    "answers": [
+      "Nie reaguje na specyficzne bodżce lecznicze.",
+      "Jest doskonałym odbiorcą emocjonalności.",
+      "Funkcjonuje niezależnie od innych sfer naszego ciała.",
+      "Nie integruje osobowości."
+    ]
+  },
+  "db0cbdf8b60d": {
+    "question": "Najczęściej spotykane reakcje w sytuacji konfliktu to:",
+    "answers": [
+      "Prowadzenie rozmówcy, negatywne domniemania.",
+      "Unikanie odpowiedzialności, negatywne domniemania, zmiana tematu konfliktu.",
+      "Wrogie pytania, pożądanie za rozmówcą, żartowanie.",
+      "Negowanie istnienia konfliktu, pozytywne domniemania, przyjazne pytania."
+    ]
+  },
+  "93a48c74e4aa": {
+    "question": "Rodzice dzieci zaangażowanych w sport:",
+    "answers": [
+      "Nie pozwalają dziecku na podejmowanie samodzielnych decyzji, ponieważ boją się, że stanie się zbyt dojrzałe i samodzielne.",
+      "Mają prawo do złości na dziecko w sytuacji jego niepowodzenia.",
+      "Nie towarzyszą dziecku na zawodach, bo są przekonani, że poradzi sobie samo.",
+      "Potrafią zaakceptować porażki swojego dziecka, aby pomóc mu dostrzec w doświadczeniu przegranej pozytywne aspekty."
+    ]
+  },
+  "b09578640671": {
+    "question": "Do najważniejszych etapów treningu umiejętności psychologicznych należy:",
+    "answers": [
+      "Opanowanie technik włączania się w bodżce negatywne.",
+      "Opanowanie technik budowania pewności siebie w oparciu o negatywny dialog wewnętrzny.",
+      "Opanowanie technik prawidłowego formułowania celów wynikowych.",
+      "Opanowanie technik relaksacji autogennej i progresywnej."
+    ]
+  },
+  "6a1fe72cb654": {
+    "question": "Najczęściej wykorzystywane zasady komunikacji interpersonalnej w relacji trener-zawodnik to:",
+    "answers": [
+      "Założenie, że zawodnicy mają podobne lub takie same doświadczenia.",
+      "Formułowanie przede wszystkim celów wynikowych.",
+      "Podawanie racjonalnych powodów dla wyznaczonych reguł.",
+      "Negatywne wzmacnianie niewłaściwych zachowań zawodników."
+    ]
+  },
+  "2d4b4f4ee73c": {
+    "question": "Najważniejsze aspekty motywacji osiągnięć w sporcie to:",
+    "answers": [
+      "Internalizacja, flow, nastawienie na brak rywalizacji.",
+      "Brak samokontroli, wytrwałość, flow.",
+      "Zaangażowanie, elastyczność, niezależność.",
+      "Uzależnienie od autorytetu, wiara w sukces, odwaga."
+    ]
+  },
+  "8f9d99915431": {
+    "question": "Jaki styl zachowania na boisku powinni przyjąć zawodnicy w sytuacji zagrożenia:",
+    "answers": [
+      "Styl mistrzowski: zawodnik doświadcza emocji pozytywnych i negatywnych, ale potrafi skoncentrować się na zadaniu i utrzymuje optymalny poziom wykonania.",
+      "Styl wynikowy: zawodnik koncentruje się na wyniku a nie na wykonaniu.",
+      "Styl syntetyczny: zawodnik koncentruje się przede wszystkim na pozytywnych emocjach.",
+      "Styl kierujący: zawodnik kieruje innymi zawodnikami a nie swoim zachowaniem."
+    ]
+  },
+  "9aa15fd5e133": {
+    "question": "Zasady wzmacniania odporności emocjonalnej dzieci i młodzieży to:",
+    "answers": [
+      "Silne naciski na osiągnięcia maksymalne.",
+      "Wzmacnianie wytrwałości w pokonywaniu trudności sportowych.",
+      "Stosowanie zbyt radykalnych metod redukcji pobudzenia.",
+      "Kontrolowanie stosowania specjalistycznych technik zmiany napięcia emocjonalnego sportowca."
+    ]
+  },
+  "638edfedbeb3": {
+    "question": "W sytuacji pomocy zawodnikowi po kontuzji należy zastosować:",
+    "answers": [
+      "Technikę wyobrażeń dotycząca kontroli pozytywnych emocji.",
+      "Technikę wyobrażeń dotyczących celów wynikowych.",
+      "Technikę wyobrażeń koncentrujących się na przezwyciężaniu lęku przed ponowną kontuzją.",
+      "Technikę wyobrażeń dotyczących wzmocnienia negatywnych emocji."
+    ]
+  },
+  "a3280c7575f4": {
+    "question": "Znajomość podstawowych zasad poprawnego komunikowania się zmniejsza prawdopodobieństwo pojawienia się konfliktów, ponieważ:",
+    "answers": [
+      "Rozmówcy poznają samych siebie, są wnikliwymi obserwatorami, szanują swojego rozmówcę.",
+      "Udzielają dobrych rad.",
+      "Formułują przedwczesne oceny i sądy.",
+      "Nie zwracają uwagi na szczegóły wypowiedzi i działań."
+    ]
+  },
+  "0f81ac2410b9": {
+    "question": "Motywację wewnętrzną osłabia:",
+    "answers": [
+      "Pozytywna informacja zwrotna.",
+      "Informacje zwrotne ukazujące negatywne efekty działalności.",
+      "Możliwość wyboru sposobu wykonania zadania.",
+      "Informacje zwrotne potwierdzające poprawne wykonanie zadania."
+    ]
+  },
+  "1b33f9a6f77c": {
+    "question": "Trening relaksacji autogennej służy do:",
+    "answers": [
+      "Podwyższenia napięcia w narządach jamy brzusznej poprzez działanie na splot trzewny.",
+      "Opanowania regulacji naczynioruchowej w obrębie jamy brzusznej.",
+      "Odczuwania masy ciała prowadzącego do stopniowego bezwładu i zwiotczenia mięśni szkieletowych.",
+      "Odczuwania chłodu prowadzącego stopniowo do zwiotczenia mięśni gładkich i zwężenia naczyń krwionośnych."
+    ]
+  },
+  "8261da8f7e6a": {
+    "question": "Specyfika komunikacji z dziećmi polega na uwzględnieniu:",
+    "answers": [
+      "Podejścia uległego.",
+      "Podejścia opartego na współpracy z dzieckiem.",
+      "Braku informacji o zachowaniu dziecka.",
+      "Podejścia autorytarnego."
+    ]
+  },
+  "6c2a35bcccf5": {
+    "question": "Narzędzia i metody zapobiegania i leczenia syndromu wypalenia w sporcie to:",
+    "answers": [
+      "Formułowanie wysokich celów wynikowych.",
+      "Traktowanie wypoczynku, jako równie ważnego jak trening.",
+      "Wzięcie całkowitej odpowiedzialności za siebie i zawodnika.",
+      "Trening umiejętności fizycznych."
+    ]
+  },
+  "afe89b7c3a05": {
+    "question": "Żwawość mierzona kwestionariuszem temperamentu FCZ–KT to:",
+    "answers": [
+      "Skłonność do drobiazgowej analizy zdarzeń, sumienność w wykonywaniu czynności, umiejętność wolnego reagowania.",
+      "Elastyczność w zachowaniu, skłonność do zachowań impulsywnych, negatywna reakcja na brak zajęć.",
+      "Umiejętność szybkiego reagowania, utrzymywania dużego tempa wykonywanych czynności i łatwa zmiana zachowania w odpowiedzi na zmianę warunków zewnętrznych.",
+      "Wytrzymałość na trudy życia, umiejętność pracy ze szczególna intensywnością."
+    ]
+  },
+  "29304d5c9aed": {
+    "question": "Prawidłowe sugestie dla zawodników doświadczających „wyuczonej bezradności”:",
+    "answers": [
+      "Wzmacniaj pozytywnie każdy wynik a nie mistrzostwo wykonania.",
+      "Ustal cele na każdy dzień treningu i zapisuj czy udało ci się je zrealizować.",
+      "Formułuj cel mistrzowski tylko dla potrzeb treningu a nie meczu.",
+      "Rywalizuj na każdym treningu i na każdych zawodach."
+    ]
+  },
+  "e787e2e06f75": {
+    "question": "Charakterystyczne objawy wypalenia w sporcie to:",
+    "answers": [
+      "Wszystkie odpowiedzi są prawidłowe.",
+      "Fizjologiczne wyczerpanie.",
+      "Poczucie obniżonych osiągnięć, często niezgodne z obiektywnymi wynikami.",
+      "Emocjonalne wyczerpanie."
+    ]
+  },
+  "7d284345987b": {
+    "question": "Wyróżniamy następujące rodzaje celów sportowych:",
+    "answers": [
+      "Cele wewnętrzne i zewnętrzne.",
+      "Cele zmienne i cele stałe.",
+      "Cele uniwersalne i cele ograniczone.",
+      "Cele mistrzowskie i cele wynikowe."
+    ]
+  },
+  "bc8677c1a542": {
+    "question": "W profilu umiejętności stosowanym w pracy trenera należy uwzględnić:",
+    "answers": [
+      "Aspekty psychologiczne, fizyczne, strategiczne i techniczne.",
+      "Aspekty fizyczne, techniczne, koordynacyjne, strategiczne i psychologiczne.",
+      "Aspekty fizyczne i aspekty strategiczne.",
+      "Aspekty psychologiczne."
+    ]
+  },
+  "013312853a48": {
+    "question": "Dzieci uprawiające sport nie lubią u swoich rodziców:",
+    "answers": [
+      "Zaangażowania w sport dziecka.",
+      "Podkreślania błędów w wykonaniu zadania sportowego.",
+      "Zachęcania do doskonalenia sportowych umiejętności.",
+      "Akceptacji po przegranej dziecka."
+    ]
+  },
+  "9fce1a71f718": {
+    "question": "Zjawisko załamania wiąże się ze stanem podaktywności organizmu. Oznacza to, że:",
+    "answers": [
+      "Organizm jest wystarczająco pobudzony, aby optymalnie funkcjonować.",
+      "Organizm nie jest wystarczająco pobudzony, aby optymalnie funkcjonować.",
+      "Zawodnik ma zbyt wysokie tętno i zbyt wysokie ciśnienie krwi.",
+      "W procesach biochemicznych organizm nie wytwarza odpowiedniej ilości energii."
+    ]
+  },
+  "48ceb882c76b": {
+    "question": "Wybierz zdanie prawdziwe dotyczące rozwoju motywacji wewnętrznej:",
+    "answers": [
+      "Rozwijamy motywację wewnętrzną, aby wykonać działania, które nie dają nam satysfakcji.",
+      "W dzieciństwie styl rodzicielski, który jest wspierający a nie kontrolujący rodzi motywację zewnętrzną.",
+      "Przy bardzo skomplikowanych i trudnych zadaniach motywację wewnętrzna można rozwinąć poprzez podejmowanie początkowo łatwych celów cząstkowych.",
+      "Dzieci, którym dawane są zadania zbyt zaawansowane na ich wiek, pozostają motywowane zewnętrznie do ich wykonania."
+    ]
+  },
+  "35cc07d928c1": {
+    "question": "Trener sędzia:",
+    "answers": [
+      "Przekazuje informację zwrotną w sytuacji poprawnego wykonania zadania sportowego.",
+      "Nieustannie ocenia zawodnika, wprowadzając go tym samym w stan niepewności.",
+      "Instruuje swoich zawodników.",
+      "Przekazuje informacje o tym jak skorygować błąd."
+    ]
   }
 }
