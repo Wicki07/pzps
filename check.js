@@ -1,8 +1,23 @@
 (() => {
   /* === 1. Słownik pytań/odpowiedzi === */
   const questions = {
-  "Pełny zakres badań wymaganych do uzyskania orzeczenia o zdolności do sportu trzeba wykonać:": "Co 2 lata."
-};
+    "bd76e3426887": {
+      "text": "Libero może być kapitanem zespołu.",
+      "question": "Które ze zdań nie jest prawdziwe odnośnie składu i lokalizacji zespołu?"
+    },
+    "b05c8069f640": {
+      "text": "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero",
+      "question": "Podstawowy rozgrywający zespołu został zmieniony przez drugiego rozgrywającego. Następnie miała miejsce zmiana powrotna, która był szóstą zmianą w tym zespole w tym secie. Chwilę później zawodnik rozgrywający doznał kontuzji. Libero zespołu przebywał w tym momencie na ławce. Jakie pole manewru ma trener zespołu?"
+    },
+    "f825ef38de15": {
+      "text": "W bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu",
+      "question": "Które z poniższych zdań nie jest prawdziwe w kontekście charakterystyki odbicia piłki?"
+    },
+    "ab26e3348904": {
+      "text": "Oficjalny protest zapisywany jest w protokole zawodów wyłącznie po zakończeniu meczu",
+      "question": "Które ze zdań jest prawdziwe odnośnie protestu?"
+    }
+  };
 
   /* === 2. Znalezienie tabeli === */
   const table = document.querySelector('td.summary-filelist table');
@@ -20,15 +35,9 @@
 
     // Tekst pytania – bez spacji i końcowego dwukropka
     const q = firstTd.textContent.trim().replace(/ {2,}/g, ' ');
-    if (q in questions) {
-
-      /* 3b. Usuń odpowiadający wpis ze słownika */
-      delete questions[q];
-      keysRemoved++;
-    } else {
-        console.log(q)
-        console.log(questions[q])
-    }
+    const questionKey = Object.keys(questions).find(key => questions[key].question === q);
+    if (!questionKey) return;
+    delete questions[questionKey];
   });
 
   /* === 4. Raport końcowy === */
