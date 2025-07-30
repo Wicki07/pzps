@@ -141,7 +141,7 @@
         }
 
         pre.textContent = JSON.stringify(newly, null, 2) + '\n\n'
-            // + JSON.stringify(allQuestions, null, 2) + '\n\n'
+            + JSON.stringify(allQuestions, null, 2) + '\n\n'
             + JSON.stringify(allAnswers,   null, 2);
 
         console.log(Object.keys(CORRECTS).length + "/850");

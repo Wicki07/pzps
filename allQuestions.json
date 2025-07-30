@@ -189,6 +189,15 @@
       "Trener może dokonać zmiany kontuzjowanego z dowolnym zawodnikiem nieprzebywającym na boisku w momencie kontuzji z wyjątkiem Libero oraz drugiego rozgrywającego"
     ]
   },
+  "f825ef38de15": {
+    "question": "Które z poniższych zdań nie jest prawdziwe w kontekście charakterystyki odbicia piłki?",
+    "answers": [
+      "Jeżeli zawodnik nie jest w bardzo dobrej pozycji do odbicia piłki, sędzia pierwszy powinien być mniej rygorystyczny w ocenie odbicia piłk",
+      "Nie ma takiego błędu jak „piłka niesiona”",
+      "W bloku mogą nastąpić po sobie kolejne dotknięcia piłki wykonane przez jednego lub kilku zawodników, pod warunkiem że kontakt z piłką ma miejsce w jednym zagraniu, ale każde odbicie poza pierwszym zaliczane jest do limitu odbić zespołu",
+      "Przy odbiciu piłki palcami jednej dłoni zawodnikowi nie można odgwizdać błędu podwójnego odbicia"
+    ]
+  },
   "c06e7c87e8f7": {
     "question": "Na poniższych zdjęciach numery na koszulkach zawodniczek odpowiadają ich pozycjom na boisku (2, 3, 4). Czy i w jaki sposób popełniają one błąd ustawienia?",
     "answers": [
