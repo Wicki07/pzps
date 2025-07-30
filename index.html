@@ -147,6 +147,10 @@
         Prawidłowe odpowiedzi: <strong id="correct-count"></strong> z
         <span id="total-count"></span>
       </p>
+      <p>
+        wymagane 70% żeby zdać
+      </p>
+      <button id="restart-btn">Zacznij od nowa</button>
       <table id="review-table">
         <thead>
           <tr>
@@ -3281,6 +3285,11 @@
     renderQuestion();
   });
 
+  document.getElementById("restart-btn").addEventListener("click", () => {
+    // Resetujemy quiz
+    window.location.reload();
+  });
+
   /* ---------------------------------------------
    *  Wyniki
    *  -------------------------------------------*/
@@ -3291,7 +3300,7 @@
 
     const correctCount = userResults.filter((r) => r.isCorrect).length;
     document.getElementById("correct-count").textContent = correctCount;
-    document.getElementById("total-count").textContent = userResults.length;
+    document.getElementById("total-count").textContent = userResults.length + " " + Math.floor(correctCount / userResults.length * 100) + "%";
 
     // Tabela z podsumowaniem
     const tbody = document.querySelector("#review-table tbody");
