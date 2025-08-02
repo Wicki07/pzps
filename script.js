@@ -57,30 +57,36 @@
         if (correct) {
             Array.from(document.querySelectorAll('#contentAnswers .box_answer')).forEach(box => {
                 const btnText = box.querySelector('.btn')?.innerText.trim() || '';
-                if (btnText === correct.text) {
+
+              /* ---------------------------------------------
+              Zmienić tutaj jeśli szukam poprawnej odpowiedzi
+              --------------------------------------------- */
+
+                if (btnText !== correct.text) {
                     const inp = box.querySelector('input');
                     if (inp && !inp.checked) inp.click();
                 }
             });
         } else {
-			let inputChecked = false;
-			Array.from(document.querySelectorAll('#contentAnswers .box_answer')).forEach(box => {
-				if (inputChecked) return;
-				const inp     = box.querySelector('input');
-				let   btnText = box.querySelector('.btn')?.innerText.trim() || '';
-				btnText = btnText.replace(/\s+/g,' ').toLowerCase();
+          let inputChecked = false;
+          Array.from(document.querySelectorAll('#contentAnswers .box_answer')).forEach(box => {
+            if (inputChecked) return;
+            const inp     = box.querySelector('input');
+            let   btnText = box.querySelector('.btn')?.innerText.trim() || '';
+            btnText = btnText.replace(/\s+/g,' ').toLowerCase();
 
-				if (btnText && !inp.checked && !allAnswers[questionHash]?.includes(btnText)) {
-					inp.click();
-					inputChecked = true;
-					amountAutoSelected++;
+            if (btnText && !inp.checked && !allAnswers[questionHash]?.includes(btnText)) {
+              inp.click();
+              inputChecked = true;
+              amountAutoSelected++;
 
-					allAnswers[questionHash] = allAnswers[questionHash] || [];
-					allAnswers[questionHash].push(btnText);
-				}
-			});
+              allAnswers[questionHash] = allAnswers[questionHash] || [];
+              allAnswers[questionHash].push(btnText);
+            }
+          });
         }
 
+        await captureCurrent(); // zapisz stan przed zmianą
         renderSummary();
 
         const nextButton = document.getElementById("btnnext");
@@ -91,7 +97,7 @@
             }
             setTimeout(() => {
                 nextButton.click()
-            }, 500);
+            }, 200);
         }
     }
 
@@ -154,8 +160,7 @@
         const btn = document.getElementById(id);
         if(!btn) return;
 
-        btn.addEventListener('click', async ()=>{
-            await captureCurrent();         // zapisz stan *przed* zmianą
+        btn.addEventListener('click', async ()=>{     // zapisz stan *przed* zmianą
             setTimeout(async ()=>{
                 if (wasFinalButtonClicked) return;
                 await autoSelectCorrect();  // zaznacz nową / losową

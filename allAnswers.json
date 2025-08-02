@@ -1268,5 +1268,1892 @@
   "8dd9db06190f": {
     "text": "Atak w 1 tempo ustalonej akcji (np. akcje \"1\", \"C\"- haczyk, \"2\", \"7\").",
     "question": "Która z zasad obowiązujących środkowego przy przyjęciu dokładnym, jest zasadą nadrzędną:"
-  }
+  },
+  "fb7f5bf1bd61": {
+    "text": "Osłabienie siły ataku tak, aby można było obronić piłkę.",
+    "question": "Celem bloku pasywnego jest:"
+  },
+  "134cb088adbd": {
+    "text": "Skoczyć po atakującym.",
+    "question": "Blokując piłki atakowane w pierwszym tempie zawodnik nie powinien:"
+  },
+  "56ed4497aa2c": {
+    "text": "Blokujący powinien skakać po atakującym.",
+    "question": "Prawidłowy opis tempa blokowania piłki atakowanej z wysokiej wystawy jest następujący:"
+  },
+  "7b2c5f45d4f0": {
+    "text": "Ustawienie szwu dwubloku na piłkę.",
+    "question": "Która z zasad obowiązujących skrzydłowego przy ustawianiu bloku w strefach II lub IV jest najtrudniejsza do realizacji:"
+  },
+  "6a23ad6e0b1b": {
+    "text": "Każdy swego, w strefach.",
+    "question": "Rodzaje systemów blokowania to:"
+  },
+  "71c0480a894a": {
+    "text": "Nogi w rozkroku na szerokości bioder, stopy równolegle, tułów wyprostowany, ramiona uniesione, ugięte w stawach łokciowych, dłonie powyżej głowy, łokcie ułożone swobodnie przed sobą.",
+    "question": "Pozycję wyjściową do bloku najtrafniej opisuje zdanie:"
+  },
+  "2ae2d7565c24": {
+    "text": "Blokowanie I tempa i kontrola ataku z VI strefy.",
+    "question": "W grze opcją w systemie organizacji blokowania w grze Reprezentacji Polski trenera A. Anastasiego, priorytetem dla zawodników skrzydłowych było:"
+  },
+  "71cc85457acd": {
+    "text": "Blok na kierunku 0.",
+    "question": "W sygnalizacji zawodników w bloku – cała dłoń lub ugięte dwa palce - oznaczają:"
+	},
+	"dce6fba7bc79": {
+		"text": "Ustawienie na kierunek rozbiegu atakującego.",
+		"question": "Która z zasad ustawiania bloku przez zawodnika skrzydłowego przedstawiona jest na rysunkach 30 i 31:"
+	},
+	"0af7d1d4dce6": {
+		"text": "Lądowanie po bloku musi być zawsze w innym miejscu niż odbicie.",
+		"question": "W technice bloku, w fazie lądowania błędem jest:"
+	},
+	"4c14f3d88227": {
+		"text": "Z przekazywaniem.",
+		"question": "Rysunek 4a przedstawia blokowanie systemem:"
+	},
+	"89bb6c872880": {
+		"text": "W strefach.",
+		"question": "Rysunek 9 przedstawia blokowanie systemem:"
+	},
+  "3ed4eff29b8d": {
+		"text": "Po kroku dostawnym z ustawienia szerokiego.",
+		"question": "Który ze sposobów ustawiania bloku w strefach zewnętrznych daje gwarancję stabilniejszego bloku:"
+	},
+	"990496b369fa": {
+		"text": "Atakujący przeciwnik nie może wykonać skutecznego ataku wzdłuż linii bocznej boiska.",
+		"question": "Przy bloku na kierunku 1:"
+	},
+	"be087d82705f": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Który z wymienionych rodzajów blokowania jest właściwy:"
+	},
+	"feff829d62e8": {
+		"text": "Wąsko, szeroko.",
+		"question": "Pozycje wyjściowe do bloku po zmianie stref to:"
+	},
+	"23a7777256b8": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Celem bloku jest:"
+	},
+	"d167a69e798d": {
+		"text": "Dojścia (nie zawsze występuje), wyskoku, blokowania, lądowania.",
+		"question": "W technice blokowania wyróżnia się następujące po sobie fazy:"
+	},
+	"16f9f931370a": {
+		"text": "Normalne. Nisko.",
+		"question": "Rodzaje tempa bloku to:"
+	},
+	"a76c337b0129": {
+		"text": "Wszystkie odpowiedzi są prawidłowe.",
+		"question": "Wskaż właściwy sposób ustawiania bloku w strefie II lub IV przez zawodnika skrzydłowego:"
+	},
+  "d4fb5ad7fbd1": {
+		"text": "Blok na kierunku 2.",
+		"question": "W sygnalizacji zawodników w bloku – wyprostowane pod kątem dwa palce: wskazujący i środkowy – „litera V”, oznaczają:"
+	},
+	"1b30be0f7496": {
+		"text": "Ustawienie w osi boiska – brak przemieszczenia za piłką bez względu na miejsce przyjęcia piłki.",
+		"question": "Podstawowym priorytetem trenera A. Anastasiego w systemie organizacji blokowania w grze Reprezentacji Polski dla zawodnika środkowego było:"
+	},
+	"d8386add124f": {
+		"text": "Przeciwnik posiada mocnego przyjmującego w strefie IV.",
+		"question": "Pozycje wyjściowe do bloku określane jako ustawienie wąsko w prawo – nie są stosowane w sytuacji gdy:"
+	},
+	"196696270677": {
+		"text": "Blok na kierunku 1.",
+		"question": "Strefa bloku - prosta - to określenie:"
+	},
+	"3c395dfddb82": {
+		"text": "Blok na kierunku 2.",
+		"question": "Strefa bloku - przekątna - to określenie:"
+	},
+	"d63d6c3c7be2": {
+		"text": "Przeciwnik posiada mocnego atakującego w strefie II lub I.",
+		"question": "Pozycje wyjściowe do bloku określane jako ustawienie wąsko w lewo – nie są stosowane w sytuacji gdy:"
+	},
+  "99df701927dd": {
+		"text": "Przeciwnik gra często przez środek siatki.",
+		"question": "Pozycje wyjściowe do bloku określane jako ustawienie wąsko stosowane są w sytuacji gdy:"
+	},
+  "68768e15d3df": {
+		"text": "Powinny być przełożone na drugą stronę siatki.",
+		"question": "W przypadku zastosowania bloku taktycznego ręce blokujących:"
+	},
+  "02a0eed768d7": {
+		"text": "Zagrywka rotacyjna w wyskoku po podrzucie jednorącz (ręką uderzającą) i po 2-krokowym przemieszczeniu (z pozycji przygotowawczej – z l.nogą z przodu - jeden krok p. nogą – drugi lewą) - zagrywka rotacyjna w wyskoku po podrzucie jednorącz i po 3-krokowym przemieszczeniu (z pozycji przygotowawczej – z p. nogą z przodu - pierwszy krok l. nogą – drugi prawą- trzeci lewą ).",
+		"question": "Kolejność nauczania zagrywki rotacyjnej w wyskoku to:"
+	},
+	"add61aa5a6fd": {
+		"text": "Atak z piłki wysokiej, atak z piłki przyspieszonej (\"super\"), atak z piłki szybkiej (\"quick\").",
+		"question": "Właściwa kolejność nauczania ataku jednorącz, od minisiatkówki do poziomu mistrzowskiego to:"
+	},
+	"177f0ca39bd7": {
+		"text": "Nauki ruchu ramienia uderzającego.",
+		"question": "Nauczanie ataku metodą analityczną należy rozpoczynać od:"
+	},
+	"13edcb5f9f8e": {
+		"text": "Nauka pozycji przygotowawczej – nauka ruchu ramienia uderzającego – nauka podrzutu – zagrywka w pełnej formie – zagrywka kierunkowa.",
+		"question": "Nauczanie zagrywki szybującej w wyskoku metodą analityczną, po pokazie i objaśnieniu, odbywa się w następujących etapach:"
+	},
+	"4a793c7b63da": {
+		"text": "Niewłaściwe miejsce kontaktu z piłką w fazie uderzenia, np. uderzenie piłki za głową lub za nisko na wysokości głowy.",
+		"question": "Następstwem którego z błędów, w technice wykonania zagrywki szybującej w wyskoku, jest zagrywka w aut lub w siatkę:"
+	},
+	"60b3724a47cb": {
+		"text": "Nauczanie odbić: po własnym podrzucie, piłek dorzucanych, po dojściu.",
+		"question": "Nauczanie odbić dolnych metodą syntetyczną uwzględnia - po pokazie i objaśnieniu - następujące etapy:"
+	},
+	"439ca2ed3dbf": {
+		"text": "Odbicia wielokrotne ponad głową.",
+		"question": "Które z ćwiczeń nie jest przygotowującym do nauki odbić górnych:"
+	},
+	"b63dd4a73d28": {
+		"text": "Po podrzucie wymach nogi nad kozłującą piłką, chwyt po koźle.",
+		"question": "Które z ćwiczeń nie jest ćwiczeniem nauczającym odbić górnych:"
+	},
+	"813d4da18e07": {
+		"text": "Zagrywka szybująca z miejsca, z podrzutu oburącz - zagrywka szybująca z miejsca, z podrzutu jednorącz - piłka trzymana jest jednorącz, przed tułowiem od dołu ręką przeciwną uderzającej.",
+		"question": "Kolejność nauczania zagrywki szybującej bez wyskoku to:"
+	},
+	"aa01b1291ebd": {
+		"text": "Nauki bloku podwójnego w miejscu.",
+		"question": "Nauczanie blokowania grupowego rozpoczyna się od:"
+	},
+	"e46821e7d7b0": {
+		"text": "Nauczanie: postawy, ruchu ramion, wyskoku i lądowania.",
+		"question": "Nauczanie blokowania metodą analityczną odbywa się w następujących etapach (po pokazie i objaśnieniu):"
+	},
+  "228ea3600e2c": {
+		"text": "Nauczanie: ustawienia dłoni - fazy przyjęcia – fazy podania – odbić piłki.",
+		"question": "W nauczaniu odbić górnych metodą analityczną po pokazie i objaśnieniu, należy uwzględnić następujące etapy:"
+	},
+	"5187f869091b": {
+		"text": "Nauczanie blokowania: piłki zawieszonej, piłki przerzucanej, piłki atakowanej.",
+		"question": "Nauczanie blokowania metodą syntetyczną odbywa się w następujących etapach (po pokazie i objaśnieniu):"
+	},
+	"9e06bfc6159a": {
+		"text": "Podrzut bez rotacji jednorącz lub oburącz, z jednoczesnym zamachem w tył, a następnie chwyt oburącz nad barkiem ramienia uderzającego.",
+		"question": "Które z ćwiczeń nie dotyczy nauki podrzutu do zagrywki rotacyjnej bez wyskoku:"
+	},
+	"8719122a2be6": {
+		"text": "Naskoku na śródstopie w fazie rozbiegu.",
+		"question": "Następstwem którego błędu w technice ataku jest odbicie w dal:"
+	},
+	"74f4a881d9de": {
+		"text": "Korygować wszytkich błędów jednocześnie.",
+		"question": "W szkoleniu młodzieży, po rozpoznaniu błędu i ocenie jego ważności, trener nie powinien:"
+	},
+  "a5fd36c58d55": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Przykładowe ćwiczenia fazy przyjęcia w nauczaniu odbić oburącz dolnych to:"
+	},
+	"6d9eb667df5d": {
+		"text": "Nauka pozycji przygotowawczej - nauka ruchu ramienia uderzającego - nauka podrzutu - zagrywka w pełnej formie.",
+		"question": "Nauczanie zagrywki dolnej metodą analityczną odbywa się w następujących etapach:"
+	},
+	"313374e89050": {
+		"text": "Odwrotnym ustawieniem stóp podczas naskoku - lewa/prawa.",
+		"question": "Odwrotny naskok to błąd w technice wykonania ataku (zawodnik praworęczny), charakteryzujący się:"
+	},
+	"6745a5477f6c": {
+		"text": "Ustawienie stóp w wykroku, stopa jednoimienna z ręką uderzającą.",
+		"question": "Wskaż błąd wykonania, dotyczący zagrywki dolnej:"
+	},
+	"01f90b23adb9": {
+		"text": "Przyjmowanie pozycji do wykonania zagrywki, przodem do kierunku zagrywania z lewą nogą z przodu, piłka w lewej dłoni, 2-krokowe przemieszczenie (pierwszy krok prawą nogą – drugi lewą).",
+		"question": "Wskaż ćwiczenie zawierające błąd w nauczaniu pozycji przygotowawczej zagrywki rotacyjnej w wyskoku, metodą analityczną:"
+	},
+	"aa8fc5597e30": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Sprzężenie zwrotne w korekcie błędów to:"
+	},
+	"66cc29f54297": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Wskaż błędy występujące w technice odbić górnych:"
+	},
+	"8fe3267a7d2f": {
+		"text": "Zagrywka na niewielkie odległości.",
+		"question": "Które z podanych ćwiczeń nie jest przygotowującym do nauki zagrywki dolnej:"
+	},
+	"e00993598972": {
+		"text": "Zbyt szerokie rozstawienie łokci oraz ustawienie zbyt daleko od siatki lub za blisko siatki.",
+		"question": "Który z wymienionych błędów w technice wykonania bloku dotyczy postawy gotowości:"
+	},
+	"1677e0187c0a": {
+		"text": "Odbicia wielokrotne ponad głową po koźle.",
+		"question": "Które z podanych ćwiczeń nie jest przygotowującym do nauki odbić dolnych:"
+	},
+	"71c6395a7881": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Wskaż błąd, który pojawia się w fazie uderzenia, w technice wykonania zagrywki szybującej bez wyskoku:"
+	},
+	"7f76e5216ed4": {
+		"text": "Nieprawidłowe ustawienie stóp w postawie przygotowawczej.",
+		"question": "Wskaż błąd, który pojawia się jako pierwszy w nauczaniu zagrywki rotacyjnej w wyskoku:"
+	},
+  "af15ab241562": {
+		"text": "Przyjęcie piłki przydłoniową, wewnętrzną częścią złączonych przedramion.",
+		"question": "Wskaż zdanie, w którym nie występują błędy w technice odbić dolnych:"
+	},
+	"c4b40dd24379": {
+		"text": "Nauczanie : pracy ramienia uderzającego - ustawienia nóg i tułowia- uderzenia w piłkę zawieszoną - podrzutu - zagrywania na małe odległości.",
+		"question": "Etapy nauczania zagrywki metodą analityczną są następujące (po pokazie i objaśnieniu):"
+	},
+	"07348af7a903": {
+		"text": "Zagrywka szybująca w wyskoku po dwukrokowym rozbiegu, z odbicia obunóż (piłka trzymana oburącz) - zagrywka szybująca w wyskoku po 2-krokowym rozbiegu, z odbicia jednonóż ( piłka trzymana przed tułowiem jednorącz) od dołu ręką przeciwną uderzającej – obydwa warianty ze stopniowym wydłużaniem rozbiegu.",
+		"question": "Kolejność nauczania zagrywki szybującej w wyskoku to:"
+	},
+	"892d472cabb9": {
+		"text": "Odbicie oburącz górne w przód i w tył w miejscu - odbicie oburącz górne w przód i w tył po przemieszczeniu - odbicie oburącz górne w przód i w tył w wyskoku.",
+		"question": "Kolejność nauczania odbić górnych jest następująca:"
+	},
+	"c5e081512e25": {
+		"text": "Zagrywka rotacyjna z miejsca, z podrzutu oburącz - zagrywka rotacyjna z miejsca, z podrzutu jednorącz, ręką uderzającą, 1-krokowe przemieszczenie - zagrywka rotacyjna z miejsca, z podrzutu jednorącz, 3-krokowe przemieszczenie.",
+		"question": "Kolejność nauczania zagrywki rotacyjnej bez wyskoku to:"
+	},
+	"19a7e5e4fafc": {
+		"text": "Rozbieg (dojście), wyskok, uderzenie, lądowanie.",
+		"question": "Cztery fazy (części) czynności zbicia w nauczaniu ataku metodą kompleksową to:"
+	},
+	"c58243b480d9": {
+		"text": "Podrzut piłki za nisko, do przodu lub na wysokość lewego ramienia, piłka podrzucona bez rotacji.",
+		"question": "Wskaż błąd w technice wykonania zagrywki rotacyjnej bez wyskoku:"
+	},
+	"7922e74f32e2": {
+		"text": "Z ustawienia przodem do ściany, w postawie rozkroczno-wykrocznej, z nogą wykroczną jednoimienną do ręki uderzającej, ręka uderzająca uniesiona do góry, nieznacznie ugięta w stawie łokciowym, zamach i uderzenie dłonią w ścianę lub drabinki na maksymalnym zasięgu.",
+		"question": "Wskaż ćwiczenie zawierające błąd w nauczaniu ruchu ramienia uderzającego przy zagrywce szybującej bez wyskoku:"
+	},
+	"8c8cf0b7702c": {
+		"text": "Odbicia wielokrotne ponad głową po koźle.",
+		"question": "Które z ćwiczeń służy nauczaniu odbić dolnych:"
+	},
+	"f3dc74710a4d": {
+		"text": "Nauczanie: ustawienia ramion - fazy przyjęcia - fazy przyjęcia i fazy podania.",
+		"question": "W nauczaniu odbić dolnych metodą analityczną po pokazie i objaśnieniu, należy uwzględnić następujące etapy:"
+	},
+	"5f237ff633a3": {
+		"text": "Z ustawienia z prawą nogą z przodu, wykonanie wzdłuż wyklejonej lub narysowanej linii długiego kroku lewą nogą, naskoku (prawa/ lewa noga), wyskoku i lądowania w miejscu, z którego nastąpił wyskok.",
+		"question": "Wskaż ćwiczenie nauczające zbicia metodą analityczną w kompleksie: rozbieg – wyskok – lądowanie:"
+	},
+    "5f6459026582": {
+    "text": "Nauczanie postawy – nauczanie pracy ramion – nauczanie blokowania piłki zawieszonej – nauczanie blokowania piłki rzucanej – nauczanie blokowania piłki atakowanej.",
+    "question": "Nauczanie blokowania metodą analityczną odbywa się w następujących etapach (po pokazie i objaśnieniu):"
+  },
+  "27e27ad8ac1a": {
+		"text": "Gry uproszczonej.",
+		"question": "Zadaniem której z form nauczania jest dostosowanie stopnia trudności gry do aktualnego poziomu umiejętności uczniów:"
+	},
+	"0d85f8f1b087": {
+		"text": "Nauczanie: ułożenia ramion i rąk, przyjęcia piłki, podania piłki, odbić w miejscu.",
+		"question": "Nauczanie odbić górnych metodą analityczną uwzględnia - po pokazie i objaśnieniu - następujące, kolejne etapy:"
+	},
+	"8af9935786bf": {
+		"text": "Mieszaną, izolującą fazę ruchu ramienia uderzającego oraz fazę rozbiegu.",
+		"question": "W nauczaniu zbicia tenisowego najlepiej stosować metodę:"
+	},
+	"a5990430f31c": {
+		"text": "Naucza się specyficznych elementów gry i dopiero potem łączy je w całość.",
+		"question": "Który z wymienionych argumentów jest charakterystyczny dla podejścia tradycyjnego w nauczaniu piłki siatkowej:"
+	},
+	"1b5727fb3856": {
+		"text": "Przekazywanie wiadomości poprzez różnego rodzaju środki wizualne (np. pokaz) ułatwia opanowanie umiejętności.",
+		"question": "Stosowanie w szkoleniu siatkarza zasady poglądowości gwarantuje, że:"
+	},
+	"5196068de3c3": {
+		"text": "Podejścia całościowego.",
+		"question": "Nauczanie umiejętności technicznych i taktycznych, w których nacisk położony jest na uczenie się gry, określa się mianem:"
+	},
+	"170a05aaee3a": {
+		"text": "Doskonalenie wybranego elementu techniki lub taktyki indywidualnej.",
+		"question": "Celem gry szkolnej jest:"
+	},
+  "a0c7acf2f6b3": {
+		"text": "Zasada stopniowania trudności.",
+		"question": "Która z zasad nauczania zakłada dobór treści zajęć dostosowany do określonego poziomu umiejętności ćwiczących:"
+	},
+	"40ae6b8be9e8": {
+		"text": "Ćwiczący koncentrują uwagę na poprawnym wykonaniu zadanego ruchu.",
+		"question": "Zaletą nauczania w formie ścisłej jest to, iż:"
+	},
+  "a3c0d508b3f5": {
+		"text": "Gra właściwa.",
+		"question": "Która z form nauczania odbywa się z udziałem przeciwnika:"
+	},
+	"e135f99c6e85": {
+		"text": "Syntetyczną w nauczaniu zagrywki dolnej, gdyż jest to łatwa czynność ruchowa.",
+		"question": "W nauczaniu zagrywki najlepiej stosować metodę:"
+	},
+	"4997c63e1620": {
+		"text": "W grze szkolnej.",
+		"question": "W której formie nauczania w treningu, trenerzy skupiają uwagę zawodników na kluczowych elementach gry:"
+	},
+	"4db5b7fefb9f": {
+		"text": "Łapanie i rzucanie piłki, większa liczba odbić w jednej akcji (więcej niż 3), dopuszczenie dodatkowych odbić nad sobą przez jednego zawodnika.",
+		"question": "Uproszczenia przepisów w grze uproszczonej to:"
+	},
+	"89552ca55860": {
+		"text": "Forma gry.",
+		"question": "Która z form nauczania jest najbardziej atrakcyjna dla uczniów:"
+	},
+	"558818a15b5e": {
+		"text": "Na takich samych zasadach, niezależnie czy szkolimy dzieci, młodzież, dorosłych, amatorów, czy profesjonalistów.",
+		"question": "Nauczanie gry w siatkówkę powinno odbywać się:"
+	},
+	"81a94de84e3b": {
+		"text": "Naucza się gry, a dopiero potem doskonali poszczególne jej części.",
+		"question": "Który z wymienionych argumentów jest charakterystyczny dla podejścia całościowego w nauczaniu piłki siatkowej:"
+	},
+	"b3353e56091f": {
+		"text": "Forma fragmentów gry.",
+		"question": "Która z form nauczania techniki piłki siatkowej pozwala na tworzenie warunków, w których ćwiczący wykonywać będą zadania odwzorowujące części akcji:"
+	},
+  "fed120fc0390": {
+		"text": "Obowiązek stosowania wyłącznie odbić górnych - ograniczenie pola, w które należy trafić zagrywką - wskazanie obowiązkowego kierunku atakowania (np. po prostej).",
+		"question": "Przykładowe przepisy w grze szkolnej to:"
+	},
+	"2610769df9bb": {
+		"text": "Nauczanie odbywa się w warunkach rywalizacji i zabawy, co uatrakcyjnia zajęcia.",
+		"question": "Zaletą zabawowej formy nauczania jest to, iż:"
+	},
+	"c6ab2e572aab": {
+		"text": "Wyobrażenia sobie gry zespołu, który będą prowadzić.",
+		"question": "Rozpoczynając pracę z drużyną, trenerzy powinni zaczynać od:"
+	},
+  
+  "ddc2fc710a15": {
+		"text": "Stanowić zagrożenie atakiem na swojej pozycji.",
+		"question": "W organizacji kontrataku, przy dokładnym dograniu piłki, zadaniem środkowego jest:"
+	},
+	"d22e00163dcc": {
+		"text": "Organizowanie przyjęcia zagrywki.",
+		"question": "W fazie Break Point efektywność gry w obronie nie może być zwiększona poprzez:"
+	},
+	"5d905ecd902b": {
+		"text": "Dojście do bloku – wyskok/lądowanie, po lądowaniu zwrot przez prawe ramię, dostosowanie w tył skos krokiem dostawnym, obserwując całe boisko oraz tor lotu piłki, w momencie gdy piłka dogrywana jest ,,zawieszona’’ w najwyższym punkcie lub zaczyna opadać, rozpoczęcie rozbiegu.",
+		"question": "Zachowanie w kontrataku zawodnika środkowego bloku w sytuacji, gdy blokuje on w strefie IV, jest następujące:"
+	},
+	"a0a97f29bab8": {
+		"text": "Wszystkie wymienione są ważne.",
+		"question": "Od którego z wymienionych czynników zależy wybór, do którego z zawodników skrzydłowych należy wystawić piłkę w kontrataku:"
+	},
+	"b6388f23b975": {
+		"text": "Liczby zawodników przyjmujących.",
+		"question": "Udział zawodników w poszczególnych formacjach obronnych nie jest zależny od:"
+	},
+	"3f6ba26226ff": {
+		"text": "Zagrywającą.",
+		"question": "Faza Break Point znana również jako Kompleks 2, jest fazą gry przeprowadzaną przez drużynę:"
+	},
+	"7b3102768820": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Ryzyko podczas zagrywki powinno być proporcjonalne do:"
+	},
+	"5574ae7b1a84": {
+		"text": "Piłkę broni przyjmujący linii obrony w pozycji o zachwianej równowadze.",
+		"question": "Kombinacja pipe (połączenie ataku w pierwszym tempie z atakiem przyjmującego ze strefy VI – warianty 1/VI, 2/VI lub 7/VI) nie jest skutecznym rozwiązaniem w momencie, gdy:"
+	},
+	"e68784104efd": {
+		"text": "Płynne przejście do ataku \"7\" - krótka przesunięta - \"suw\".",
+		"question": "Organizując kontratak w sytuacji, gdy piłka zostanie obroniona w okolice 3-4 m, zadaniem środkowych jest:"
+	},
+  "7541d40aaeca": {
+		"text": "Piłkę niedokładnie wystawioną atakujemy \"mądrze\", najczęściej do strefy I na atakującego lub rozgrywającego drużyny przeciwnej.",
+		"question": "Taktykę indywidualną ataku z piłki sytuacyjnej ze skrzydła opisuje zdanie:"
+	},
+	"a925a7baab37": {
+		"text": "Atakuje sytuacyjnie ze strefy V.",
+		"question": "Na poziomie mistrzowskim, organizując kontratak w sytuacji: blok podwójny na kierunku 2 w strefie II /asekuracja nieblokującym (zawodnik strefy IV) w przypadku podbicia piłki kiwanej za blok przez zawodnika strefy IV – zawodnik strefy VI:"
+	},
+	"09a227b7f129": {
+		"text": "Wykonywanie zagrywek łatwiejszych bez ich straty (tj. bez straty punktu).",
+		"question": "Którą strategię w systemie zdobywania punktów przy zagrywce własnej, powinien zastosować zespół posiadający dobry blok i obronę:"
+	},
+	"18ac8636939b": {
+		"text": "Wystawić w stabilnej pozycji wysoką piłkę do skrzydłowych.",
+		"question": "W celu zorganizowania skutecznego kontrataku na niższym poziomie gry, zadaniem rozgrywającego jest:"
+	},
+	"feecfc4ed5bd": {
+		"text": "Blokujących – broniących w polu – asekurujących.",
+		"question": "System gry w obronie to współdziałanie zawodników:"
+	},
+  "6ceca472f05a": {
+		"text": "Miejsca, z którego wystawiana jest piłka.",
+		"question": "Sposób rozbiegu do ataku z piłki sytuacyjnej zależy od:"
+	},
+  "9ede5f936140": {
+		"text": "Zagrywka pewna.",
+		"question": "Która z zasad w strategii wykonania zagrywki powinna być stosowana na początku meczu:"
+	},
+	"ee7dcef648b9": {
+		"text": "Wystawia środkowy ataku, jeżeli piłka spada w polu ataku.",
+		"question": "Która z zasad organizacji kontrataku obowiązuje w przypadku obrony przez zawodnika rozgrywającego:"
+	},
+	"c0405d17172f": {
+		"text": "Wystawa oburącz górnym w przód / wystawa do tyłu / wystawa w kierunku przeciwnym niż ustawienie tułowia / wystawa oburącz dolnym trenowana równocześnie na każdym poziomie.",
+		"question": "W treningu wystawy sytuacyjnej kolejność nauczania jest następująca:"
+	},
+	"74e582669cde": {
+		"text": "Gdy przeciwnik dysponuje dobrym przyjęciem zagrywki i groźnym atakiem.",
+		"question": "Trudną zagrywkę należy wykonywać w następujących sytuacjach:"
+	},
+	"f6a1cafaf33e": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Zagrywka powinna być absolutnie pewna (nie zepsuta), gdy:"
+	},
+  "bdeb411ac144": {
+		"text": "Linią.",
+		"question": "Rysunek 7 przedstawia ustawienie drużyny w obronie przy bloku w strefie II, z asekuracją:"
+	},
+	"ff3a1c6ab410": {
+		"text": "Patrz i reaguj.",
+		"question": "Rysunek 37 przedstawia ustawienie drużyny w obronie (2:0:4) przy bloku podwójnym w strefie II, na kierunku 1 z założeniem asekuracji:"
+	},
+	"36da25853a41": {
+		"text": "Przeciwnik kończy ruch prowadzenia ręki do ataku.",
+		"question": "Pozycja bazowa w obronie pola oznacza miejsce na boisku, w którym znajduje się zawodnik w momencie gdy:"
+	},
+	"89ca36fc960a": {
+		"text": "Prostą.",
+		"question": "Który kierunek powinien zasłaniać blok potrójny przy wystawie wysokiej piłki sytuacyjnej na skrzydła:"
+	},
+	"2ac56c698280": {
+		"text": "Kontaktu dłoni atakującego z piłką.",
+		"question": "Zawodnik broniący w strefie I atak po skosie, powinien zatrzymać się w pozycji bazowej w momencie:"
+	},
+	"f3e951b60d3b": {
+		"text": "Krokiem dostawnym w tył skos - ruch dostosowania rozpoczyna noga lewa.",
+		"question": "Zawodnik skrzydłowy obrony w strefie V, broniąc piłki atakowane po prostej ze strefy II, przemieszcza się z pozycji wyjściowej do pozycji bazowej:"
+	},
+	"66d0f897042c": {
+		"text": "Powinien dostosować się i wykonać ruch do środka boiska.",
+		"question": "Przewidując (czytając) działania przeciwnika w grze, w przypadku, gdy piłka została wystawiona za antenkę obrońca ustawiony po prostej:"
+	},
+	"6159359e4337": {
+		"text": "Obrony mocnego ataku oraz dobiegnięcia do piłki kiwanej.",
+		"question": "Zawodnik w obronie, przyjmując określoną postawę, powinien w każdej akcji mieć możliwość:"
+	},
+	"7c1cad0faac8": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Zasada ustawiania się w obronie na ,,skraju bloku” jest korzystna, ponieważ:"
+	},
+	"512c96d77f9d": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "W jakich sytuacjach podczas meczu obrońca powinien zastosować obronę sytuacyjną:"
+	},
+	"2681e13c7add": {
+		"text": "Jest to umowna linia łącząca uderzaną piłkę (obok bloku) i obrońcę.",
+		"question": "Które zdanie najlepiej opisuje pojęcie skraju bloku:"
+	},
+	"a49f6a535fc5": {
+		"text": "Pozycja wyjściowa – przemieszczenie – pozycja bazowa – reakcja na piłkę.",
+		"question": "Schemat działania zawodnika w grze obronnej to kolejno:"
+	},
+	"c2e13d2533c1": {
+		"text": "Obronę po biegu i doskoku.",
+		"question": "Jaką technikę obrony powinien zastosować obrońca w przypadku, gdy czas lotu piłki jest wydłużony:"
+	},
+	"7d3bbff3a9d2": {
+		"text": "Obrona systemem 1:1:4 – obrońcy 1-0-3.",
+		"question": "Rysunek 36 przedstawia ustawienie drużyny w obronie przy bloku pojedynczym w strefie II na kierunku 0, w systemie:"
+	},
+	"fc1e0df1a199": {
+		"text": "Zawodnik 4 – broni piłki atakowane po ostrym skosie i spadające wzdłuż siatki oraz do środka boiska / Zawodnik 5 - broni piłki atakowane skosie i po przekątnej.",
+		"question": "Którą z poniższych zasad, współpracując w obronie, stosują zawodnicy (rysunek 47): nieblokujący w strefie IV ze skrzydłowym w strefie V, w przypadku bloku w strefie II na kierunku 1 - zasłaniający prostą:"
+	},
+  "491148651e78": {
+		"text": "Z nogi wykrocznej.",
+		"question": "Zawodniczka stosująca w obronie rzut siatkarski z przetoczeniem przez plecy powinna odbić się:"
+	},
+	"63c7de2c1c39": {
+		"text": "Prawą nogą.",
+		"question": "Zawodniczka stosująca w obronie rzut siatkarski z przetoczeniem przez plecy, po przemieszczeniu do pozycji bazowej w strefie V, powinna wykonać pierwszy krok:"
+	},
+	"be19883a880c": {
+		"text": "Zatrzymania, zaraz po przemieszczeniu się zawodnika do pozycji bazowej.",
+		"question": "Reakcja na piłkę w obronie pola odbywa się w momencie:"
+	},
+	"e16b1b4656aa": {
+		"text": "Przyjmujący będący w linii obrony.",
+		"question": "W przypadku, gdy zawodnik libero nie przebywa na boisku, piłki wolne w pierwszej kolejności powinien nagrywać zawodnik:"
+	},
+	"8837a9812039": {
+		"text": "Zawodnik 5 – broni piłki lecące bezpośrednio w niego / Zawodnik 6 – ustawienie na skraju bloku (ręka zewnętrzna skrzydłowego) broni piłki atakowane po prostej, lecące powyżej linii bioder, z prawej strony zawodnika skrzydłowego.",
+		"question": "Współpracę zawodników skrzydłowego i środkowego obrony przy piłkach atakowanych po prostej (rysunek 46), w sytuacji bloku podwójnego w strefie IV na kierunku 2 (przekątna zasłonięta), charakteryzuje zasada:"
+	},
+	"00ccb3a599f6": {
+		"text": "Jako najczęściej występujący system.",
+		"question": "Schemat ustawienia obrońców na pozycjach wyjściowych przedstawiony na rysunku 33a stosowany jest:"
+	},
+	"e69a349eff0b": {
+		"text": "Dostosować się i wykonać ruch wzdłuż linii bocznej.",
+		"question": "Przewidując (czytając) działania przeciwnika w grze, w przypadku gdy piłka została wystawiona za wąsko do skrzydła i jest zasłonięta przez blok, obrońca ustawiony po prostej powinien:"
+	},
+	"2e6bd27fdbd3": {
+		"text": "Blok podwójny w strefie IV, asekuracja skrzydłowym obrony.",
+		"question": "Rysunek 10 przedstawia ustawienie w obronie, w następującej sytuacji:"
+	},
+	"2075a8cde266": {
+		"text": "Obrona piłki pomiędzy nogami lub ze swojej lewej strony.",
+		"question": "Podstawową zasadą ustawienia w obronie przez zawodnika strefy V (atak ze strefy IV po przekątnej) jest:"
+	},
+	"079d3f7c12a2": {
+		"text": "Asekuracja mieszana, blok pojedynczy.",
+		"question": "Który z systemów należy stosować u początkujących w drużynie szkolnej:"
+	},
+  "e045e6bbef8d": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Przy bloku podwójnym w strefie III zadaniem zawodnika broniącego w strefie VI jest:"
+	},
+	"45d81d7fbd62": {
+		"text": "Przemieszczają się wykonując ruch dostosowania do pozycji bazowej – ruchem w tył, wzdłuż linii bocznej.",
+		"question": "Jak powinni zachować się zawodnicy skrzydłowi obrony w przypadku, gdy nie ma ataku w pierwszym tempie, a rozgrywający przeciwnika wystawił piłkę do ataku ze strefy VI:"
+	},
+	"041ee9c6f48b": {
+		"text": "Krokiem dostawnym zakończonym skrzyżnym, cały czas utrzymując kontakt wzrokowy z piłką.",
+		"question": "Zawodnik nieblokujący w strefie IV, w przypadku bloku na kierunku 1 w strefie II, do pozycji bazowej w obronie przemieszcza się:"
+	},
+	"d31fc1f59136": {
+		"text": "Blok na kierunku 1 w strefie IV/ blok zamknięty, obrona systemem 2:0:4.",
+		"question": "W ustawieniu drużyny w obronie na rysunku 38 przedstawiona jest sytuacja:"
+	},
+	"3f670f75bf8b": {
+		"text": "W możliwie stabilnej postawie.",
+		"question": "W grze obronnej od początku szkolenia zawodnicy powinni dążyć do takiego ustawiania na boisku, aby obrona odbywała się:"
+	},
+	"7773319073e5": {
+		"text": "Ustawienie stóp zawodnika w kierunku celu podania piłki.",
+		"question": "Prawidłowa zasada ustawienia zawodnika w przypadku dogrania piłki sytuacyjnej sposobem górnym oburącz to:"
+	},
+	"52a7cb02a773": {
+		"text": "Piłka jest po stronie drużyny przeciwnej przed jej odbiciem przez rozgrywającego.",
+		"question": "Pozycja wyjściowa w obronie pola po zagrywce własnej oznacza miejsce na boisku, w którym znajduje się zawodnik w momencie, gdy:"
+	},
+	"673d9820665e": {
+		"text": "Blokowania kierunku po przekątnej i asekuracji nieblokującym.",
+		"question": "Rysunek 34 przedstawia ustawienie drużyny w obronie przy bloku pojedynczym w strefie II z założeniem:"
+	},
+	"6d7410c8a93b": {
+		"text": "Skrzydłowym obrony.",
+		"question": "Rysunek 1 przedstawia ustawienie drużyny w obronie przy bloku w strefie IV, z asekuracją:"
+	},
+	"66d4ea98c602": {
+		"text": "Zawodnik 4 - broni piłki atakowane po ostrym skosie / Zawodnik 1 – broni piłki kiwane za blok.",
+		"question": "Według której z poniższych zasad współpracują zawodnicy (rysunek 45): nieblokujący w strefie IV i skrzydłowy w strefie I, w przypadku bloku w strefie II na kierunku 1 (zasłaniający prostą):"
+	},
+	"6a59afcea2bf": {
+		"text": "Taktyka bliższej linii.",
+		"question": "Która taktyka nie reguluje zasady współpracy w obronie:"
+	},
+	"ee913ebe928a": {
+		"text": "Zawodnicy w poszczególnych sytuacjach przewidują (czytają) działania atakujących i w danej sytuacji wykonują indywidualne zadania.",
+		"question": "Które zdanie najlepiej charakteryzuje taktykę regulującą zasady współpracy w obronie, określaną jako taktyka - patrz i reaguj:"
+	},
+  "c6864eb2cc0d": {
+		"text": "Rysunek 39.",
+		"question": "Który z rysunków przedstawia blok na kierunku 2 w strefie II i obronę systemem 2:1:3 – obrońcy 2-0-1:"
+	},
+	"0177f1369799": {
+		"text": "Na skraju bloku.",
+		"question": "Zawodnik skrzydłowy obrony, broniący piłki atakowane po skosie ze strefy II lub IV, powinien ustawić się w obronie:"
+	},
+	"137682e69f94": {
+		"text": "Ustawienie się na \"skraju bloku\", który w tym przypadku wyznacza zewnętrzna ręka skrzydłowego bloku.",
+		"question": "Zadaniem obrońcy w strefie VI – przy bloku podwójnym na kierunku 2, w strefie II (blok zasłaniający strefę VI) jest:"
+	},
+	"0f4b903bab97": {
+		"text": "Gry na niskim poziomie i stosowania asekuracji środkiem obrony.",
+		"question": "Rysunek 33 przedstawia schemat ustawienia obrońców na pozycjach wyjściowych w sytuacji:"
+	},
+	"f51dea9a0d7f": {
+		"text": "Zatrzymać się.",
+		"question": "W pozycji bazowej obrońca, który prawidłowo zareagował (przewidział działania przeciwnika), powinien:"
+	},
+	"73872aa4d994": {
+		"text": "Zawężenia pola gry.",
+		"question": "W przypadku organizacji dogrania wolnej piłki obowiązuje zasada:"
+	},
+	"e0da494a3119": {
+		"text": "Piłkę należy nagrać wysokim łukiem, aby stworzyć atakującym dogodną sytuację do przygotowania kontrataku.",
+		"question": "W przypadku przebicia przez przeciwnika wolnej piłki („free ball”) powinno nastąpić działanie:"
+	},
+	"65f0c17f65db": {
+		"text": "Ustawienie stóp nieznacznie szerzej niż barki oraz ustawienie płaszczyzny odbicia.",
+		"question": "Postawę gotowości w trakcie obrony ataku zawodnika ustawionego na pozycji bazowej charakteryzuje:"
+	},
+	"5b2f27b95920": {
+		"text": "Nieblokującym.",
+		"question": "Rysunek 2 przedstawia ustawienie drużyny w obronie przy bloku pojedynczym w strefie II, z asekuracją:"
+	},
+	"f18eb444e6ca": {
+		"text": "Biegnąc w tył w skos, cały czas utrzymując kontakt wzrokowy z piłką.",
+		"question": "Zawodnik nieblokujący w strefie IV, w przypadku, gdy rozgrywający zespołu przeciwnego jest w pierwszej linii, do pozycji bazowej w obronie przemieszcza się:"
+	},
+	"93466775685f": {
+		"text": "Wszystkie odpowiedzi są prawidłowe.",
+		"question": "Zadaniem obrońcy w strefie VI – przy bloku podwójnym na kierunku 1 (blok zasłaniający prostą”) - jest:"
+	},
+	"f139c56a6f73": {
+		"text": "Blok podwójny w strefie II, asekuracja środkowym obrony.",
+		"question": "Rysunek 5 przedstawia ustawienie w obronie - następującą sytuację:"
+	},
+	"910c4607df2c": {
+		"text": "Asekuracji mieszanej nieblokującym i środkowym obrony.",
+		"question": "Rysunek 6 przedstawia ustawienie drużyny w obronie przy bloku pojedynczym w strefie II z założeniem:"
+	},
+	"18f802d4c5e5": {
+		"text": "Kierunek 5.",
+		"question": "Rysunek 48 przedstawia ustawienie w obronie zespołu przy bloku pojedynczym w strefie III i obronę systemem 1:2:3. Jaki jest kierunek bloku:"
+	},
+	"c4b9c7f4e3af": {
+		"text": "Ustawienie zawodnika w kierunku nadlatującej piłki.",
+		"question": "Prawidłowa zasada ustawienia zawodnika w przypadku nagrania piłki sytuacyjnej sposobem dolnym oburącz to:"
+	},
+	"4b49a9828c3d": {
+		"text": "Obrona systemem 1:1:4 – obrońcy 2-0-2.",
+		"question": "Rysunek 35 przedstawia ustawienie drużyny w obronie przy bloku pojedynczym w strefie IV na kierunku 2, w systemie:"
+	},
+  "671d26a59558": {
+		"text": "Zawodnik przyjmujący drugi nie atakuje po przyjęciu zagrywki z prawego skrzydła.",
+		"question": "Analiza meczu - zaznacz zdanie prawdziwe:"
+	},
+	"1559fcdc786f": {
+		"text": "R4, R5, R6.",
+		"question": "Przyjmujący drugi jest zawodnikiem linii ataku w ustawieniach:"
+	},
+	"1a3af0ee732a": {
+		"text": "Wszystkie odpowiedzi są prawdziwe.",
+		"question": "Rola pierwszego przyjmującego w grze. Wskaż zdanie prawdziwe:"
+	},
+	"b934caa10d3b": {
+		"text": "Wszystkie odpowiedzi są poprawne.",
+		"question": "Analiza rozkładu ataku w opracowaniach statystyki meczowej uwzględnia:"
+	},
+	"804eaa7f08a4": {
+		"text": "Zagranie zakończone stratą punktu.",
+		"question": "Symbol = w języku Data Volley oznacza:"
+	},
+	"f6ff5f8444d6": {
+		"text": "Wszystkie odpowiedzi są prawidlowe.",
+		"question": "Analizę statystyczną w piłce siatkowej stosuje się by:"
+	},
+	"b4cad01486e1": {
+		"text": "R3, R4, R5.",
+		"question": "Środkowy pierwszy jest zawodnikiem linii ataku w ustawieniach:"
+	},
+	"6b4c7dc06e21": {
+		"text": "Działanie skuteczne zakończone sukcesem (zdobycie punktu).",
+		"question": "Symbol # w języku Data Volley oznacza:"
+	},
+	"244e0dcb81a7": {
+		"text": "Czas wykonania zagrywki po gwizdku sędziego.",
+		"question": "Dokonując analizy statystycznej zagrywki nie zwracamy uwagi na:"
+	},
+	"86af7be360fe": {
+		"text": "W ustawieniu R1.",
+		"question": "W którym ustawieniu zawodnik atakujący po przyjęciu zagrywki wykonuje atak ze strefy IV:"
+	},
+	"b60ba6fcfe8f": {
+		"text": "Analizę wideo popartą analizą statystyczną.",
+		"question": "Podczas analizy każdego elementu gry należy stosować:"
+  },
+  "0912e6b18020": {
+		"text": "Współczynnik udziału w grze.",
+		"question": "Stosunek ilości wszystkich działań w danym elemencie wykonanym przez zawodnika do ilości wszystkich działań w tym samym elemencie wykonanym przez zespół wyraża:"
+	},
+	"d4f67bf6a1f4": {
+		"text": "R 1.",
+		"question": "W którym ustawieniu lub ustawieniach zawodnik przyjmujący grający w linii ataku ustawiony jest do przyjęcia zagrywki na prawej stronie boiska:"
+	},
+	"e416503e8933": {
+		"text": "Przyjęcie oznaczone symbolem \"#\".",
+		"question": "Który znak w komputerowym zapisie statystyk programu Data Volley opisuje przyjęcie perfekcyjne:"
+	},
+	"55c38b197bff": {
+		"text": "R2, R3, R4.",
+		"question": "Zawodnik atakujący jest zawodnikiem linii obrony w ustawieniach:"
+	},
+	"6cdf50c77992": {
+		"text": "R 3 i R 6.",
+		"question": "W których ustawieniach zawodnik środkowy wbiega do ataku po przyjęciu zagrywki z prawej strony boiska:"
+	},
+	"d92e36c5ce14": {
+		"text": "Poszukuje się różnic w ustawieniu bloku i obrony w zależności od strefy wykonania ataku.",
+		"question": "Dokonując analizy ustawienia zespołu w bloku i obronie:"
+	},
+	"352461953ddf": {
+		"text": "Jakim odbiciem (górnym, dolnym) była wykonana wystawa poprzedzająca atak.",
+		"question": "Dokonując analizy statystycznej gry zawodnika w ataku nie bierze się pod uwagę:"
+	},
+  "d255cf621c20": {
+		"text": "To tak zwany \"streaming video\"",
+		"question": "Narzędzie służące do odtwarzaniu obrazu spotkania z opóźnieniem, umożliwiające ponowną analizę ostatnich kilku sekund akcji:"
+	},
+	"6b4226e0ae3d": {
+		"text": "Indywidualna, grupowa, zespołowa.",
+		"question": "Zaznacz prawidłową kolejność nauczania taktyki gry:"
+	},
+	"d38de62842ae": {
+		"text": "Wszystkie odpowiedzi są prawdziwe.",
+		"question": "Podczas trwania meczu zadaniem statystyka jest:"
+	},
+	"aa95bfd59eda": {
+		"text": "Wbiegnięcie do wystawy po przyjęciu zagrywki z lewej strony w ustawieniach R4, R5.",
+		"question": "Zadania zawodnika rozgrywającego podczas gry to między innymi:"
+	},
+	"709b0882d4f3": {
+		"text": "I i VI.",
+		"question": "W których strefach na boisku ustawiony jest zawodnik libero podczas przyjęcia zagrywki:"
+	},
+	"5d32461929fe": {
+		"text": "Wszystkie odpowiedzi są właściwe.",
+		"question": "Analizy główne w programie data volley można tworzyć według:"
+	},
+	"f3142de64ce7": {
+		"text": "Wszystkie odpowiedzi są poprawne.",
+		"question": "Zapisu przebiegu gry w piłce siatkowej można dokonać za pomocą:"
+	},
+  "23c36fb2ae62": {
+		"text": "Współczynnik efektywności gry.",
+		"question": "W przygotowaniu statystyk przykładem współczynnika jakościowego jest:"
+	},
+	"a82efc8aaea9": {
+		"text": "Współczynnik efektywności.",
+		"question": "W przygotowaniu statystyk, który ze współczynników w swoim wzorze, bierze pod uwagę zagrania błędne:"
+	},
+	"e2af3a05656c": {
+		"text": "Wszystkie odpowiedzi są prawidlowe.",
+		"question": "Jakie wyróżniamy fazy obserwacji gry w piłkę siatkową:"
+	},
+	"18ddbdc74cf5": {
+		"text": "Wszystkie odpowiedzi są prawidlowe.",
+		"question": "Obserwacja czynności ruchowych podczas gry może obejmować:"
+	},
+	"37e11b4ed68a": {
+		"text": "Wspołczynnik skuteczności.",
+		"question": "W przygotowaniu statystyk stosunek działań zakończonych sukcesem do sumy wszystkich działań w tym elemencie wyraża:"
+	},
+	"9ffd6cd50e18": {
+		"text": "Zawodnika rozgrywającego.",
+		"question": "Akcja bazowa dotyczy analizy gry:"
+	},
+  
+  "05017009e136": {
+		"text": "Wszystkie czynniki są ważne.",
+		"question": "Który z wymienionych czynników określa podstawowe zadanie trenera:"
+	},
+	"35db79d10ee0": {
+		"text": "Nie uwzględnianiem opinii i przekonań członków drużyny.",
+		"question": "Autokratyczny styl kierowania zespołem charakteryzuje się:"
+	},
+	"9d0da848ec3c": {
+		"text": "Im wyższe są wartości moralne i doświadczenie sportowe zawodników.",
+		"question": "W którym przypadku demokratyzacja modelu kierowania winna być głębsza:"
+	},
+	"a1223bc3e0af": {
+		"text": "Kalendarz zawodów - terminy rozpoczęcia i zakończenia.",
+		"question": "Planując proces szkoleniowy, ramy czasowe okresu startowego wyznaczamy w oparciu o:"
+	},
+	"4d3ce2311c3b": {
+		"text": "Planowanie od tyłu.",
+		"question": "Generalną zasadą planowania procesu szkoleniowego jest:"
+	},
+	"0e843afe570c": {
+		"text": "Opisowa, graficzna.",
+		"question": "Plan organizacji szkolenia składa się z dwóch części, wskaż właściwe:"
+	},
+	"821dc0f8bcf6": {
+		"text": "Czasu okresu startowego, liczby i rangi występujących w nim zawodów.",
+		"question": "Wyznaczenie ram czasowych okresu przygotowawczego zależy od:"
+	},
+  "02b53569c6f6": {
+		"text": "Wszystkie odpowiedzi dotyczą stylu demokratycznego.",
+		"question": "Demokratyczy styl kierowania zespołem charakteryzuje się tym, że:"
+	},
+  "0ff7edf6dee3": {
+		"text": "Określenie drogi realizacji wyznaczonego celu (harmonogramu kolejnych działań).",
+		"question": "Programowanie w procesie planowania szkolenia to:"
+	},
+	"180bfc52eee4": {
+		"text": "Wyboru misji (cel, strategia, wartości, postawy), wyboru personelu, wyboru zawodników.",
+		"question": "Tworząc drużynę każdy trener powinien zaczynać pracę kolejno od:"
+	},
+  "980851f9b095": {
+		"text": "Ucząc przez grę.",
+		"question": "Umiejętności gry można najlepiej rozwijać:"
+	},
+	"f4e7d2b18495": {
+		"text": "Wyznaczenie realnego celu - sportowego lub szkoleniowego.",
+		"question": "Prognozowanie w procesie planowania szkolenia to:"
+	},
+	"7887608c9c4c": {
+		"text": "Właściwemu rozłożeniu metod, form i środków w określonym czasie makrocyklu, mezocyklu, mikrocyklu, jednostce treningowej.",
+		"question": "Planowanie treningu polega na:"
+	},
+	"f378ffcd0b7d": {
+		"text": "Styl liberalny.",
+		"question": "Styl charakteryzujący się tym, że trener podejmuje jak najmniej decyzji to:"
+	},
+	"3510e659abe1": {
+		"text": "Celowość, wykonalność.",
+		"question": "Które z wymienionych cech są charakterystyczne dla planu szkoleniowego:"
+	},
+	"d6c162e47d41": {
+		"text": "Wszystkie wymienione cele są ważne.",
+		"question": "Wskaż, który z celów sportu jest najważniejszy wg trenerów:"
+	},
+  
+"dd623ac969a7": {
+		"text": "Informacja na żądanie ucznia.",
+		"question": "Który ze sposobów informacji zwrotnej przy doskonaleniu ruchu jest najbardziej skuteczny:"
+	},
+	"372d63ce343e": {
+		"text": "Puchar Świata kobiet.",
+		"question": "Które z podanych poniżej wydarzeń pojawiło się najwcześniej:"
+	},
+	"bc3a76181ef1": {
+		"text": "Naukę elementu lub umiejętności rozkładamy na kilka części.",
+		"question": "Jeżeli podczas treningu u zawodnika pojawiają się błędy w wykonaniu ruchu to:"
+	},
+	"5c602581430c": {
+		"text": "Rozwój sprawności w grze.",
+		"question": "Który z przedstawionych warunków rozwoju uzdolnień do gry jest nadużywany w ocenie rozwoju zawodnika:"
+	},
+  "850e41ea2416": {
+		"text": "Trening fizyczny.",
+		"question": "Jaki rodzaj treningu jest bazą dla treningu specjalistycznego:"
+	},
+	"85f48b68c8bc": {
+		"text": "Kryterium rozwoju biologicznego.",
+		"question": "Który czynnik należy brać pod uwagę w różnicowaniu treningu wszechstronnego:"
+	},
+	"383f8c0a861d": {
+		"text": "Podstawa przyszłego rozwoju sportowego.",
+		"question": "Które określenie charakteryzuje przygotowanie wszechstronne:"
+	},
+	"dc14bfd399c8": {
+		"text": "Ćwiczenia ukierunkowane na technikę wykonania.",
+		"question": "Na jaki element, w zależności od etapu i zadań szkoleniowych, powinny być ukierunkowane ćwiczenia w pracy z początkującymi:"
+	},
+	"363a136205b0": {
+		"text": "Większym efekcie nauczania po jakimś czasie.",
+		"question": "Wyższość ćwiczeń przeplatanych nad powtarzanymi w nauczaniu ruchu polega na:"
+	},
+  "8fd7c6f84dda": {
+		"text": "Co 2 lata.",
+		"question": "W jakim cyklu rozgrywane są Mistrzostwa Europy kadetów:"
+	},
+	"5a283ee7538e": {
+		"text": "Zachowanie ducha walki całego zespołu do końca.",
+		"question": "Który z psychologicznych aspektów gry w obronie jest najistotniejszy dla zespołu:"
+	},
+	"2a2f309f1409": {
+		"text": "Złoty medal Mistrzostw Europy kobiet w Chorwacji.",
+		"question": "Które z osiągnięć polskich siatkarzy/siatkarek było pierwsze:"
+	},
+	"a9d117e1bd69": {
+		"text": "Struktura treningu.",
+		"question": "Który z elementów planowania i realizacji treningu dotyczy cykli treningowych:"
+	},
+	"3d7d5e845470": {
+		"text": "Model gry zespołu w ataku i obronie.",
+		"question": "Wiodącym elementem w modelu mistrzostwa sportowego w siatkówce jest:"
+	},
+	"647d3bf83061": {
+		"text": "1-5 powtórzeń.",
+		"question": "Przy jakiej liczbie powtórzeń trening siły maksymalnej jest najbardziej efektywny:"
+	},
+	"56ac1f8b7efc": {
+		"text": "Blok.",
+		"question": "Jaki element techniczny nie jest podstawą do opanowania innych elementów gry:"
+	},
+	"d55eb2735f46": {
+		"text": "Treści specjalne.",
+		"question": "Które z treści przygotowania teoretycznego dotyczą strategii gry w siatkówkę:"
+	},
+  "02bfc7bb53ff": {
+		"text": "Atrakcyjność ćwiczeń.",
+		"question": "Która z zasad prowadzenia treningu odpowiada mentalności dzieci:"
+	},
+	"c2d29186b768": {
+		"text": "Obecność libero.",
+		"question": "Które z przepisów gry w piłkę siatkową na siedząco nie różnią się od przepisów gry w piłkę siatkową halową:"
+	},
+	"69569f8c041b": {
+		"text": "Przenoszenie gotowych wzorów z innych treningów.",
+		"question": "Jaki rodzaj ćwiczeń nie powinien mieć miejsca w treningu zespołu:"
+	},
+	"1ef7fb731c64": {
+		"text": "Stwarzanie sytuacji „uczenia się” na podstawie analizy gry.",
+		"question": "Które ze stwierdzeń charakteryzuje nowoczesne podejście do treningu:"
+	},
+	"ed0467724b74": {
+		"text": "Wąska wewnętrzna.",
+		"question": "Jaki typ uwagi przejawia siatkarz podczas utrzymywania właściwej postawy ciała:"
+	},
+	"ba6714957931": {
+		"text": "Mięsień poprzeczny brzucha.",
+		"question": "Który z mięśni zalicza się do grupy mięśni stabilizacyjnych:"
+	},
+	"8c77783121b9": {
+		"text": "Ścisła.",
+		"question": "Która z form nauczania ruchu jest uznawana za podstawową w nauczaniu techniki i taktyki gry:"
+	},
+  "2adfeabc6a04": {
+		"text": "Z boczną rotacją.",
+		"question": "Jaki rodzaj uderzenia wykonywany jest w ataku blok-aut:"
+	},
+	"38cc42fcea9e": {
+		"text": "Piłce \"super\" do skrzydeł.",
+		"question": "Wprowadzenie gry kombinacyjnej w wieku kadeta możliwe jest dzięki:"
+	},
+	"269a94c2a00a": {
+		"text": "Etap III.",
+		"question": "Na którym etapie nauczania znane działania wykonywane są w losowej kolejności:"
+	},
+	"b96c83bfc3ff": {
+		"text": "Uderzeniem piłki.",
+		"question": "Tempo ataku, to różnica czasu pomiędzy momentem wystawienia a:"
+	},
+	"7ae1ad9ee47f": {
+		"text": "Kombinacja „pipe”.",
+		"question": "Jakie rozwiązanie taktyczne nie znajduje się w programie kadeta:"
+	},
+	"85b0b8ad0f1e": {
+		"text": "Zagrywka rotacyjna w wyskoku.",
+		"question": "Która z przedstawionych umiejętności nie jest zgodna z Programem szkolenia młodzika:"
+	},
+	"40c986d2b985": {
+		"text": "Umiejętności trenera.",
+		"question": "Który ze składników dobrego treningu jest decydujący w osiąganiu sukcesów:"
+	},
+	"b9c307ad6364": {
+		"text": "Kiwnięcie.",
+		"question": "Która technika ataku powinna być największym zaskoczeniem dla obrońców:"
+	},
+	"f0318de61707": {
+		"text": "Przyjęcie „W” w 5 przyjmujących.",
+		"question": "Który element taktyki gry funkcjonuje praktycznie tylko w wieku młodzika:"
+	},
+	"5e85e9638a14": {
+		"text": "Zajęcie pozycji wyjściowej uwzględniającej system gry w przyjęciu zagrywki .",
+		"question": "Jakie działanie w przyjęciu zagrywki na poziomie juniora można traktować jako strategiczne:"
+	},
+  "9a0bfc80b884": {
+		"text": "Obrona na „skraju” i „szwie” bloku.",
+		"question": "Która umiejętność w wieku juniora jest wprowadzana również w dwóch poprzednich okresach (młodzik, kadet):"
+	},
+	"0e04e81b1e38": {
+		"text": "Zasada dostosowania ćwiczeń i obciążeń do wieku zawodników.",
+		"question": "Która z zasad jest najistotniejsza podczas treningu z początkującymi:"
+	},
+	"4eac9bf4e612": {
+		"text": "Stosowanie sytuacji występujących w grze.",
+		"question": "Które z rozwiązań szkoleniowych jest najbardziej zalecane w opanowaniu umiejętności techniczno-taktycznych:"
+	},
+	"0a71c2edd8ee": {
+		"text": "System mieszany.",
+		"question": "Który system jako pierwszy pozwala na wprowadzanie specjalizacji środkowego:"
+	},
+	"50974d2dd15a": {
+		"text": "Ćwiczenia globalne.",
+		"question": "Który rodzaj ćwiczeń w treningu juniora jest najbardziej związany z grą:"
+	},
+	"3575363f0b49": {
+		"text": "Wprowadzenia piłek przyspieszonych do skrzydła.",
+		"question": "System gry w obronie w wieku kadeta zmienia się w zależności od:"
+	},
+	"5f85b8c64ad5": {
+		"text": "Obserwacja atakującego.",
+		"question": "Które elementy są decydujące przy nauce ustawienia bloku:"
+	},
+	"389d8ce63d5f": {
+		"text": "Zajęcie pozycji pozwalającej na dobrą obserwację atakującego.",
+		"question": "Jakie zachowanie w obronie po wystawieniu piłki powinno dotyczyć wieku młodzika:"
+	},
+	"f002eb1051e4": {
+		"text": "Ustawianie blokującego na przeciwko rozbiegu atakującego.",
+		"question": "Podstawowym zadaniem w nauczaniu bloku w wieku młodzika jest:"
+	},
+	"c1f159e63d06": {
+		"text": "Akademia S.O.S.",
+		"question": "Który z etapów szkolenia S.O.S. nie jest finansowany z budżetu państwa:"
+	},
+	"5c970a0afe77": {
+		"text": "WZPS.",
+		"question": "Kto wybiera trenerów do prowadzenia kadry wojewódzkiej KNO:"
+	},
+  "6debadcb8b0e": {
+		"text": "Ćwiczenia syntetyczne.",
+		"question": "Jaki rodzaj pracy powinien być dominujący w programie III klasy gimnazjum:"
+	},
+	"82bd337f8fde": {
+		"text": "Tak, ale pozostawić mu opcję ataku w II lub III tempo.",
+		"question": "Czy docelowo na etapie młodzika można wyodrębnić specjalizację środkowego:"
+	},
+	"fa06d0be17c9": {
+		"text": "Ćwiczenia syntetyczne.",
+		"question": "Jaki rodzaj pracy powinien być dominujący w programie II klasy gimnazjum:"
+	},
+	"15e473d66f89": {
+		"text": "Trening taktyki zespołowej.",
+		"question": "Jaki rodzaj treningu najlepiej pozwala na wychwycenie popełnianych błędów przez zawodnika?"
+	},
+	"96124431ab35": {
+		"text": "2-0-2.",
+		"question": "Jakie ustawienie zawodników w obronie odpowiada podwojeniu obrony po prostej:"
+	},
+	"4849f1ba559a": {
+		"text": "Obserwacja nóg atakującego.",
+		"question": "Jaki zakres informacji w przewidywaniu ataku, powinien być przekazywany blokującemu w pierwszej kolejności, w wieku juniora:"
+	},
+	"44ffa127761c": {
+		"text": "Ustawienie w strefach.",
+		"question": "Która podstawowa zasada w przyjęciu zagrywki obowiązuje na początku nauczania w wieku młodzika:"
+	},
+  "82a8a6fa08e3": {
+		"text": "Szybkości.",
+		"question": "W złotym wieku sprawności u dzieci następuje wysoka dynamika przyrostu cech motorycznych. Odnosi się to szczególnie do:"
+	},
+	"0cb73f43ac8c": {
+		"text": "Stosowanie zagrywki taktycznej, wykorzystując słabości rywala.",
+		"question": "Który z elementów zagrywki w wieku kadeta wymaga największych umiejętności:"
+	},
+	"a2ff7528b0d5": {
+		"text": "Kombinacja „pipe”.",
+		"question": "Jaki sposób gry wprowadzany jest w kategorii juniora:"
+	},
+	"0a233537e482": {
+		"text": "Trajektorii zagrywki.",
+		"question": "W ustawieniu czterech zawodników do przyjęcia odpowiedzialność w strefach lub w pasach zależy od:"
+	},
+	"fca516bf4b13": {
+		"text": "Wywołanie pożądanego efektu w danej akcji.",
+		"question": "Specyficznym zadaniem zagrywki taktycznej współpracującej z blokiem jest:"
+	},
+	"fa55134e09d0": {
+		"text": "Zmiana kierunku ataku poprzez zmianę prowadzenia ramienia",
+		"question": "Która z przedstawionych umiejętności nie jest zgodna z Programem szkolenia kadeta:"
+	},
+	"6e6ce1176250": {
+		"text": "Atak „pipe”.",
+		"question": "Który z wymienionych sposobów ataku wprowadzonego w wieku juniora jest kombinacją:"
+	},
+	"f5571ec60134": {
+		"text": "Nie, tylko po dojściu w przód, stopniowo zwiększając wysokość podrzutu, ale bez wyskoku.",
+		"question": "Czy całościowa forma zagrywki rotacyjnej w wyskoku powinna być uwzględniona w metodyce nauczania w wieku młodzika:"
+	},
+	"a58a69ee4c40": {
+		"text": "Ćwiczenia analityczne.",
+		"question": "Jaki rodzaj pracy powinien być dominujący w programie I klasy gimnazjum:"
+	},
+	"92b9fa79bf8f": {
+		"text": "Uderzenie z prowadzeniem ramienia pod kątem do tułowia.",
+		"question": "Który z wprowadzonych sposobów ataku w wieku juniora jest priorytetowy:"
+	},
+  "f9879553af0a": {
+		"text": "Dwublok.",
+		"question": "Który z elementów nauki blokowania powinien być uczony w ostatniej kolejności:"
+	},
+	"3956514c4b2f": {
+		"text": "Atak z wyskoku.",
+		"question": "Które działanie zawodnika po wykonaniu zagrywki, w grze 4 x 4, jest nieprawidłowe:"
+	},
+	"3587767093aa": {
+		"text": "Wszechstronny.",
+		"question": "Zawodnik jakiej specjalizacji w strukturze zespołu młodzieżowego wspomaga grę rozgrywającego:"
+	},
+	"96c58e4f1e72": {
+		"text": "Przemieszczanie.",
+		"question": "Na jaki element w nauczaniu bloku zwraca się uwagę po opanowaniu innych wcześniejszych elementów bloku:"
+	},
+	"d6ae586edc11": {
+		"text": "Zmienność funkcji w przyjęciu i wystawieniu.",
+		"question": "Która forma ataku w minisiatkówce, w grze 2x2, wymaga największej współpracy pomiędzy zawodnikami:"
+	},
+	"51d80239896a": {
+		"text": "Trening ukierunkowany.",
+		"question": "Który rodzaj treningu w szkoleniu młodzieży obejmuje ćwiczenia siłowe, zwinnościowe i koordynacyjne:"
+	},
+	"d6e3a0ce8d32": {
+		"text": "Obrona - wystawienie - atak.",
+		"question": "Która z sekwencji w ćwiczeniach syntetycznych nie pochodzi z systemu gry w ataku:"
+	},
+	"2761e40ead23": {
+		"text": "Umiejętność wykorzystania zagrywki taktycznej.",
+		"question": "Która umiejętność zagrywania powinna być częścią planu gry każdego zespołu:"
+	},
+	"d5d146d84ec8": {
+		"text": "Oswojenie z podłożem bez przyborów.",
+		"question": "Który z elementów nauczania gry w obronie powinien być przyswojony najwcześniej:"
+	},
+	"77c943dfe971": {
+		"text": "Miejscem wykonania ataku.",
+		"question": "Czym uwarunkowany jest poprawny kąt dojścia atakującego do siatki w grze 6x6:"
+	},
+  "473534672846": {
+		"text": "Po opanowaniu podstaw techniki.",
+		"question": "Kiedy w szkoleniu młodzieży powinno się rozpoczynać nauczanie taktyki wystawiania:"
+	},
+	"6cd85c402724": {
+		"text": "Stopniowe ograniczanie ruchu ramion podczas wystawienia.",
+		"question": "Która z wymienionych wskazówek odnosi się do nauczania i doskonalenia wystawienia w późniejszym okresie szkolenia (po etapie młodzika):"
+	},
+	"9c36c46ee63f": {
+		"text": "Zaangażowanie i zdolność do współpracy.",
+		"question": "Która z cech wystawiającego jest podstawą jego rozwoju:"
+	},
+	"a96dc704c7ea": {
+		"text": "Atak - blok.",
+		"question": "Która z sekwencji w ćwiczeniach syntetycznych nie pochodzi z systemu gry w kontrataku:"
+	},
+	"afdef95cf6ef": {
+		"text": "Z indywidualnych umiejętności wszystkich zawodników zespołu.",
+		"question": "Wprowadzenie danego systemu gry powinno wynikać:"
+	},
+	"33238956d491": {
+		"text": "Obrona z „czytaniem” gry.",
+		"question": "Jaki rodzaj obrony w minisiatkówce, w grze 3 x 3, wymaga największych umiejętności:"
+	},
+	"107510212e53": {
+		"text": "Niedopuszczenie do pojawienia się przyruchów.",
+		"question": "Podczas nauki i doskonalenia zagrywki priorytetem jest:"
+	},
+	"bcce8f042665": {
+		"text": "Pozycja dostosowania.",
+		"question": "Z której pozycji zawodnik wykonuje bezpośredni ruch do piłki:"
+	},
+	"7acbd4b16eaa": {
+		"text": "Ćwiczenia syntetyczne.",
+		"question": "Jakich rodzajów ćwiczeń dotyczą sekwencje działań w ataku i obronie:"
+	},
+	"ad78dca5afd1": {
+		"text": "Atak zawodnika praworęcznego z lewego skrzydła.",
+		"question": "W jakiej sytuacji dopuszczamy wyjście zawodnika do ataku poza linię boczną boiska:"
+	},
+	"dc1689ebe21a": {
+		"text": "Zrównoważenie \"siły\" ustawień.",
+		"question": "Przy ustalaniu kolejności ustawienia zawodników w grze 6x6, w rotacji bierze się głównie pod uwagę:"
+	},
+	"b2dacb9092d8": {
+		"text": "Zagrywka dolna.",
+		"question": "Który ze sposobów zagrywania powinien być nauczany jako pierwszy:"
+	},
+	"a68e172ca74f": {
+		"text": "Strategia i taktyka to określenia jednoznaczne.",
+		"question": "Które ze zdań niezgodne jest z określeniem relacji strategii i taktyki:"
+	},
+	"0b7b08e4901b": {
+		"text": "Taktyka zespołowa.",
+		"question": "Który z elementów nauczania umiejętności taktycznych wynika z wcześniejszych ustaleń:"
+	},
+	"b44c4605a1e9": {
+		"text": "Kombinacja 2-ch zawodników.",
+		"question": "Jaki system ataku po zagrywce rywala zalecany jest w wieku kadeta:"
+	},
+	"82a11723ce6d": {
+		"text": "Łączeniu elementów gry w sekwencje w danym systemie.",
+		"question": "Zasada budowania ćwiczeń syntetycznych polega na:"
+	},
+  "506b13af041c": {
+		"text": "W kolejności liczbę zawodników blokujących, asekurujących i broniących pola.",
+		"question": "W grze obronnej system opisany jako 2:1:3 oznacza:"
+	},
+	"e3dee956d5ef": {
+		"text": "Ćwiczenia globalne oraz fragmenty gry.",
+		"question": "Poprzez jakie formy ćwiczeń powinna być nauczana taktyka zespołowa:"
+	},
+	"1152d36a4c7c": {
+		"text": "Pochylenie tułowia za piłką podczas uderzenia.",
+		"question": "Jaki element podczas nauki ataku najmniej wpływa na szybkość uderzanej piłki:"
+	},
+	"42c5b9d75422": {
+		"text": "Realizacja zadań poprzez zdobycie punktu.",
+		"question": "Jaka forma realizacji zadań odróżnia grę od fragmentów gry:"
+	},
+	"fb4fd691370b": {
+		"text": "Ustawienie się w obronie na skraju bloku.",
+		"question": "Która umiejętność zawodnika obrony wynika z podziału zadań blok-obrona:"
+	},
+	"a623d16375ef": {
+		"text": "Mentalne nastawienie do przyjęcia.",
+		"question": "Które z umiejętności decydują o jakości przyjęcia zagrywki:"
+	},
+	"569a929c9deb": {
+		"text": "Trzej zawodnicy przechodzą kolejno wszystkie pozycje.",
+		"question": "Jakie są zasady rotacji w grze trójkami:"
+	},
+	"58624afc6654": {
+		"text": "1-3 z libero z tyłu.",
+		"question": "Który rodzaj asekuracji jest najczęściej stosowany przez zespoły grające atak z „pipe”:"
+	},
+	"e687dbf9fcc6": {
+		"text": "Zawodnik zagrywający nie może atakować piłki powyżej górnej taśmy siatki",
+		"question": "Która z zasad minisiatkówki dotyczy gry 3 x 3:"
+	},
+	"476a34bfa617": {
+		"text": "Koordynacją działań całego zespołu.",
+		"question": "Utrzymanie kombinacyjnej gry przy dograniu dalej od siatki jest uwarunkowane:"
+	},
+	"d7f91e0f0106": {
+		"text": "Współdziałanie w drużynie.",
+		"question": "Jaki element treningu taktycznego szczególnie podnosi wartość bojową w zespole:"
+	},
+	"20af4614dc8d": {
+		"text": "Aktywny ruch do piłki zamiast czekania.",
+		"question": "Która czynność wykonywana w obronie jest konsekwencją wcześniejszych działań:"
+	},
+	"77de260c012f": {
+		"text": "Krok dostawny.",
+		"question": "Który ze sposobów przemieszczania stosowany jest na krótkich odcinkach:"
+	},
+  "7783b04e5310": {
+		"text": "Kąty ustawienia ramion w relacji zagrywający-cel.",
+		"question": "Który warunek szczególnie determinuje dokładność przyjęcia:"
+	},
+	"70e4ee481007": {
+		"text": "Ścieżki przemieszczania według zadań w ataku.",
+		"question": "Jaka umiejętność w przyjęciu zagrywki wprowadzana jest po opanowaniu pozostałych:"
+	},
+	"bdae0c05430a": {
+		"text": "Każdy zawodnik kolejno bezwarunkowo odpowiada za osiągnięcie celu.",
+		"question": "Na czy polega zasada funkcjonowania systemu gry w ataku i kontrataku:"
+	},
+	"65a99d3681cb": {
+		"text": "Szeroka - wewnętrzna.",
+		"question": "Jaki rodzaj koncentracji występuje u blokującego przy ocenie możliwości atakującego przeciwnika:"
+	},
+	"70542eef887e": {
+		"text": "Rozwój sposobów uderzania piłki w określonym kierunku.",
+		"question": "Która z umiejętności ulega największej ewolucji w procesie nauczania:"
+	},
+	"8940b5f01d7b": {
+		"text": "Dostosowanie pozycji w obronie do atakującego.",
+		"question": "Podstawowym zadaniem broniącego w minisiatkówce, w grze 2x2, jest:"
+	},
+	"592e78728bae": {
+		"text": "Kombinacje równoległe z większą ilością zawodników.",
+		"question": "Jaki typ kombinacji dominuje w grze doświadczonych zespołów:"
+	},
+	"9de68b7545a0": {
+		"text": "Rywalizacja w ściśle określonym wieku.",
+		"question": "Co odróżnia minisiatkówkę od małych gier:"
+	},
+	"9398c026189e": {
+		"text": "Ułożenie ramion do przyjęcia.",
+		"question": "Jaki jest nadrzędny element skutecznego przyjęcia:"
+	},
+	"444cab827d20": {
+		"text": "Pad boczny.",
+		"question": "Który sposób poruszania się w obronie jest najszybszy na krótkim dystansie:"
+	},
+	"1d2fa146db8a": {
+		"text": "W pozycji do ataku z łokciem za głową.",
+		"question": "W której z faz ruchu można rozdzielić naukę ataku podczas ćwiczeń analitycznych:"
+	},
+	"6e07bd8501c3": {
+		"text": "Gry w ataku.",
+		"question": "Zmiana założeń zespołowych gry w etapach szkolenia młodzieży zależy od rozwoju umiejętności:"
+	},
+	"f84ea6fc76f2": {
+		"text": "Obrona dwoma zawodnikami z przodu poprzez „czytanie” atakującego.",
+		"question": "Do jakiego sposobu obrony powinno się dążyć w minisiatkówce, w grze 4x4:"
+	},
+	"dce10f7df8c1": {
+		"text": "Sukcesywnie przechodzimy od nauki odbić do wystawienia piłki.",
+		"question": "Jaka powinna być właściwa kolejność metodyki nauczania wystawienia:"
+	},
+	"a0bdf5b1f75b": {
+		"text": "Środkowy obrony, przyjmujący.",
+		"question": "Która z pozycji w grze „czwórkami” nie występuje w grze „trójkami”:"
+	},
+	"884db341102e": {
+		"text": "Sprzyjanie ciągłości gry oraz zachowanie zasady wyrównanych szans.",
+		"question": "Jakie są podstawowe zadania upraszczania przepisów gry:"
+	},
+	"9f4043bda133": {
+		"text": "Od ćwiczeń globalnych poprzez ćwiczenia syntetyczne do analitycznych.",
+		"question": "Jakie nowe podejście metodyczne uwzględnia program szkolenia siatkarza:"
+	},
+	"c788ffa3110a": {
+		"text": "Ćwiczenia ze zmianą rytmu przemieszczania.",
+		"question": "Który z podanych sposobów przemieszczania wymaga opanowania pozostałych:"
+	},
+	"c97d6daa497f": {
+		"text": "Element zaskoczenia.",
+		"question": "Podczas nauki kiwnięcia największą uwagę zwracamy na:"
+	},
+	"1ccc2b1e4aa9": {
+		"text": "Wąska - zewnętrzna.",
+		"question": "Jaki rodzaj koncentracji występuje u atakującego przy przenoszeniu wzroku na wystawioną piłkę:"
+	},
+  
+  "e40c987b1a32": {
+		"text": "Ćwiczenia plyometryczne.",
+		"question": "Które z ćwiczeń kształtujących skoczność stanowią największe obciążenie dla zawodnika:"
+	},
+	"615a02ace14b": {
+		"text": "Dodatkowa siatka nad siatką główną.",
+		"question": "Który z trenażerów ułatwia naukę asekuracji:"
+	},
+	"c0ce7b960e83": {
+		"text": "Atak z II linii.",
+		"question": "Jakie działanie zawodnika atakującego w treningu indywidualnym jest priorytetowe:"
+	},
+	"e6a4465ff142": {
+		"text": "Obwód 65-67 cm, waga 260-280 g, ciśnienie 0,3-0,325 kg/cm2.",
+		"question": "Które parametry piłki do gry są zgodne z przepiami FIVB:"
+	},
+	"527e5b791cf8": {
+		"text": "Rozgrywający.",
+		"question": "Który z zawodników zawsze asekuruje blisko atakującego ze skrzydła (ze strefy I lub II) w grze kombinacyjnej:"
+	},
+	"3091bc159a84": {
+		"text": "Wystawienie poza antenką.",
+		"question": "Przy jakim wystawieniu blokujący na skrzydle powinien rozważać nieprzekładanie ramion:"
+	},
+	"0e0f1a675160": {
+		"text": "Broniący po prostej.",
+		"question": "Który z zawodników w obronie z obrotem zapoczątkowuje ruch:"
+	},
+	"77d5f795ea45": {
+		"text": "Jeden broniący po prostej, jeden na „szwie” bloku i dwóch po skosie.",
+		"question": "System obrony 1 -1 -2 oznacza:"
+	},
+	"807cd879ae8d": {
+		"text": "Idzie wzdłuż linii wychodząc z „cienia bloku”.",
+		"question": "Jakie powinno być zachowanie broniącego po prostej w sytuacji częściowego zasłaniania prostej przez blok:"
+	},
+  "9e4596823ad5": {
+		"text": "Broniącego po skosie.",
+		"question": "Zwiekszenie odpowiedzialności w obronie najczęściej dotyczy:"
+	},
+	"ae604a3ea4cc": {
+		"text": "Broniący w środku pola.",
+		"question": "Który z zawodników w obronie skrzydłami jest zwolniony za obronę piłek blisko siatki:"
+	},
+	"ca291c79a420": {
+		"text": "Obrona piłek uderzanych do środka boiska.",
+		"question": "Słaby punkt obrony przy zawodniku „6” cofniętym do linii końcowej to:"
+	},
+	"d92f8c6692ca": {
+		"text": "Niepełnym odpoczynkiem po wykonanej pracy.",
+		"question": "Metoda interwałowa kształtująca wytrzymałość w piłce siatkowej charakteryzuje się:"
+	},
+	"f991d6030614": {
+		"text": "Braku możliwości mocnego ataku.",
+		"question": "W jakim przypadku powinna być stosowana obrona polem:"
+	},
+	"13007237c602": {
+		"text": "Gry bez ataku w I tempo.",
+		"question": "Przyjęcie zagrywki w 4 zawodników nie jest zasadne w wypadku:"
+	},
+  "74d4e206f33f": {
+		"text": "Podest treningowy.",
+		"question": "Który z wymienionych trenażerów pełni inną funkcję niż pozostałe:"
+	},
+	"445a18983e09": {
+		"text": "Zastępuje działanie zawodnika.",
+		"question": "Jaką rolę w treningu spełnia atrapa bloku:"
+	},
+	"8775eb570e90": {
+		"text": "Wykorzystanie ich zależy od pomysłowości trenera.",
+		"question": "Jaka jest różnica pomiędzy pomocami sportowymi a trenażerami:"
+	},
+	"2f643f966f61": {
+		"text": "Obrona piłek „pomiędzy”, lecących do linii bocznej.",
+		"question": "Jakie jest zadanie w obronie skrzydłowego linii obrony w odróżnieniu od zawodnika „wolnego” od bloku:"
+	},
+	"dbcd65aa1fe4": {
+		"text": "Daje relację zwrotną o skuteczności działania.",
+		"question": "Jaką rolę w treningu spełnia „radar” (obręcz do celowania):"
+	},
+	"dd98cb242a07": {
+		"text": "Ustawienie ramion pod odpowiednim kątem.",
+		"question": "Który z czynników wpływa bezpośrednio na dokładność przyjęcia:"
+	},
+	"75386244f0e5": {
+		"text": "Obronie na skraju bloku.",
+		"question": "Rola środkowego obrony przy bloku zamkniętym przeciwko atakowi w I tempo polega na:"
+	},
+	"8173a948a068": {
+		"text": "Ustawienie się na „szwie” bloku.",
+		"question": "Jakie działanie obrońcy na pozycji środka obrony wynika ze współpracy z blokiem:"
+	},
+  "9c64a5e638df": {
+		"text": "Dostosować się do tempa wystawionej piłki.",
+		"question": "Podczas przemieszczania w bloku do wystawionej piłki zawodnik powinien:"
+	},
+	"80639f6d6bf9": {
+		"text": "Kierunek zagrywki.",
+		"question": "Jaki element taktyki indywidualnej zagrywającego jest najczęściej wykorzystywany podczas gry:"
+	},
+	"0abd04885f4f": {
+		"text": "Podwojeniu obrony w „dziurze” bloku.",
+		"question": "Obrona ataku w I tempo z „dziurą” w bloku polega na:"
+	},
+	"e3d880475be6": {
+		"text": "Pozycja dostosowania.",
+		"question": "Jaki rodzaj pozycji w obronie wymaga maksymalnej koncentracji i „uaktywnienia się”:"
+	},
+  "f996dddb6e9d": {
+		"text": "Blok podwójny otwarty.",
+		"question": "Jaki rodzaj bloku przy szybkiej piłce do skrzydła jest najbardziej przewidywalny dla obrońców:"
+	},
+	"40eae472da7d": {
+		"text": "Libero.",
+		"question": "Kto najczęściej dogrywa piłkę free ball zagraną przed atakującego:"
+	},
+	"db55a65cb8b3": {
+		"text": "Atakujący.",
+		"question": "Kto odpowiada w asekuracji atakującego ze skrzydła za piłki spadające do 2 m od siatki:"
+	},
+  "7c4145a07eeb": {
+		"text": "Średnim (odległość równa wysokości zawodnika + 1m).",
+		"question": "W jakim zasięgu stosowana jest najczęściej obrona padem:"
+	},
+	"dd663b59bdb3": {
+		"text": "Ochronić strefę boiska przeciwko mocnym atakom w głąb boiska.",
+		"question": "Jaki warunek odróżnia zadanie bloku „miękkiego” od agresywnego (atakującego):"
+	},
+	"9e5abd7b36af": {
+		"text": "Wystawiona piłka jest niedociągnięta do skrzydła.",
+		"question": "W jakich sytuacjach zawodnik skrzydłowy nieblokujący przemieszcza się za blok do obrony:"
+	},
+  "f3cc482bf713": {
+		"text": "Bierze piłki na styku (\"pomiędzy\").",
+		"question": "Jakie zadania ma zawodnik lepiej przyjmujący ustawiony do przyjęcia w trzech zawodników:"
+	},
+  
+  "37adbe88194e": {
+		"text": "Metoda powtórzeniowa.",
+		"question": "Metodą, którą kształtujemy szybkość w piłce siatkowej jest:"
+	},
+	"a001caac5328": {
+		"text": "Zwiększeniu lub zmniejszeniu proporcjonalnie wszystkich kroków.",
+		"question": "Zachowanie rytmu dojścia do ataku przy zmianie odległości do miejsca wyskoku, polega na:"
+	},
+	"e158d9a599b6": {
+		"text": "Ogólnie słabsze umiejętności w przyjęciu.",
+		"question": "Jaki jest zasadniczy powód brany pod uwagę przy ograniczeniu szerokości strefy do przyjęcia:"
+	},
+	"775b3ded40a3": {
+		"text": "Technika wykonania cwiczenia.",
+		"question": "Która zmienna kształtowania siły w piłce siatkowej jest najważniejsza:"
+	},
+	"91331a81a468": {
+		"text": "Przyspieszenie ręki podczas ataku .",
+		"question": "Jakie znaczenie ma włączenie do ruchu łańcucha kinematycznego:"
+	},
+	"a1aea2ecb182": {
+		"text": "Trening kompleksowy zbliżony do profilu gry.",
+		"question": "Który rodzaj treningu prowadzi do znacznej poprawy szybkości działania oraz poszczególnych składowych szybkości:"
+	},
+	"eeaf1226b7b3": {
+		"text": "Sposób rozbiegu atakującego.",
+		"question": "Która wskazówka przy „czytaniu” atakującego powinna być przyswojona najwcześniej:"
+	},
+	"fc3c715217b1": {
+		"text": "Wszystkie odpowiedzi są prawidłowe.",
+		"question": "Która z zasad zwiększania kompetencji bloku w kolejnych latach szkolenia jest istotna:"
+	},
+	"0f6cfd7ea6c8": {
+		"text": "Po zaatakowaniu piłki przez własny zespół.",
+		"question": "Przejście z fazy ataku do fazy obrony następuje w momencie:"
+	},
+	"683f52845e44": {
+		"text": "Gra bez bloku.",
+		"question": "Wskaż podobieństwo obrony „polem” i obrony piłki „za darmo”:"
+	},
+	"f9b75d88b692": {
+		"text": "Zmiana na pozycję wyjściową przeciw atakowi ze skrzydła.",
+		"question": "Jakie działanie w obronie wymaga często największych przemieszczeń pod presją czasu:"
+	},
+	"08a5fbf52740": {
+		"text": "Uzyskanie umiejętności sprawnego działania w osiągnięciu celów gry.",
+		"question": "Jakie zadanie ma łączenie poprzez trening różnych dyspozycji w interdyspozycje do gry:"
+	},
+	"2b7b4d5227c2": {
+		"text": "Reagowanie bloku na atak w I tempo.",
+		"question": "Które z działań wymaga skrajnie maksymalnej szybkości wykonania:"
+	},
+  "1353f57615d6": {
+		"text": "Tworzenie wstępnego planu gry.",
+		"question": "W której fazie wprowadzania planu gry zawodnicy otrzymują indywidualne cele taktyczne:"
+	},
+	"7c7ef92e31e2": {
+		"text": "Etap specjalizacji wystawiających.",
+		"question": "Formacja gry 3 x 3 ma swoje ograniczenia w stosowaniu, jako:"
+	},
+	"fb31ad505ba6": {
+		"text": "Określenie sytuacji taktycznej dla zawodnika.",
+		"question": "Które działanie w planowaniu treningu stanowi bazę do konstruowania ćwiczeń:"
+	},
+	"ff939a6f3171": {
+		"text": "Określenie systemu gry zespołu.",
+		"question": "Punktem docelowym planowania treningu w piłce siatkowej jest:"
+	},
+	"28507eea2b1e": {
+		"text": "Ćwiczenia rozwijające wrodzone zdolności ruchowe.",
+		"question": "Jaki rodzaj ćwiczeń jest charakterystyczny dla treningu wszechstronnego:"
+	},
+	"1224f040a074": {
+		"text": "Różne formy ataku w I tempo.",
+		"question": "Która czynność jest najbardziej specyficzna dla gry środkowego:"
+	},
+	"2d03afa3286a": {
+		"text": "Wprowadzenie do gry środkowego.",
+		"question": "Jakie zadanie ma wprowadzenie w formacji 4-2 systemu „mieszanego”:"
+	},
+	"b2435e9ae9a6": {
+		"text": "„Swojego” atakującego w zespole rywala.",
+		"question": "Którego z rywali, blokujący powinien utrzymywać cały czas w peryferycznym widzeniu:"
+	},
+	"7cf304e712c6": {
+		"text": "Wychwycenie problemów rozgrywającego.",
+		"question": "Co jest podstawą pracy na treningach z rozgrywającym:"
+	},
+	"a006645261c9": {
+		"text": "Adaptacja anatomiczna, wytrzymałość siłowa, hipertrofia, siła maksymalna, siła dynamiczna.",
+		"question": "Podaj kolejność kształtowania siły w procesie szkoleniowym:"
+	},
+	"24e7045d8a5e": {
+		"text": "Realizacja zadań wynikających z gry.",
+		"question": "Jakie są wspólne elementy dla ćwiczeń syntetycznych i fragmentów gry:"
+	},
+	"f5edeb965ed7": {
+		"text": "Formowaniu grupy ćwiczebnej.",
+		"question": "Podstawowym celem naboru jest:"
+	},
+	"783f3762be64": {
+		"text": "Blok.",
+		"question": "Który z wymienionych elementów jest charakterystyczny tylko dla systemu zdobywania punktów przy zagrywce własnej:"
+	},
+	"4611f0e88a39": {
+		"text": "Rozciągnięcie bloku.",
+		"question": "Jaki punkt strategiczny stanowi podstawę ataku kombinacyjnego:"
+	},
+	"4b669eb8f1f6": {
+		"text": "Łączenie ćwiczeń syntetycznych w przyjęciu we współpracę całego zespołu.",
+		"question": "Które działanie jest strategiczne dla efektywności gry w „kompleksie I”:"
+	},
+	"680220d17b2d": {
+		"text": "Wytrzymałości tlenowej.",
+		"question": "Rozwój której cechy stanowi podstawowy warunek pełnej realizacji szybkich działań w grze:"
+	},
+  "4b7ec9d4a86c": {
+		"text": "W nauce danego elementu technicznego.",
+		"question": "W szkoleniu młodzieży ćwiczenia analityczne stosuje się:"
+	},
+	"ef6dcff052b6": {
+		"text": "Dostosowanie w obronie.",
+		"question": "Które z działań dostosowania ruchu do sytuacji wymaga największej siły statycznej:"
+	},
+	"813ee3d3a6c9": {
+		"text": "Trening wytrzymałościowy.",
+		"question": "Który z rodzajów treningu pozwala na utrzymanie wyższej intensywności w grze:"
+	},
+	"ef4f1772c96d": {
+		"text": "Praca ręki atakującego.",
+		"question": "Jakie wskazówki decydują o „dostrojeniu” swojej pozycji w obronie:"
+	},
+	"7a7b2675db00": {
+		"text": "Ćwiczenia globalne.",
+		"question": "Która grupa ćwiczeń w procesie nauczania gry wymaga udziału całego zespołu:"
+	},
+	"c3face837db0": {
+		"text": "Asekuracja skrzydłami obrony.",
+		"question": "Który ze sposobów asekuracji w obronie pozwala na najlepsze dostosowanie do zmieniającej się sytuacji:"
+	},
+	"e901f219ef15": {
+		"text": "Technice wykonania.",
+		"question": "Podczas eliminowania błędów w grze, należy skupić się na:"
+	},
+	"b81a6135d1a6": {
+		"text": "Atak po przyjęciu.",
+		"question": "Która z czynności przyjmującego powinna być nadrzędna w treningu indywidualnym przyjmującego:"
+	},
+	"7e59be9857c7": {
+		"text": "Atak po przyjęciu zagrywki.",
+		"question": "Jaki rodzaj ataku stanowi podstawę treningu w „kompleksie I”:"
+	},
+	"810f7ebf32df": {
+		"text": "Przeważnie nie potrafi dobrze atakować ze strefy IV.",
+		"question": "Na podstawie analiz wynika, że w ustawieniu 1 zawodnik atakujący, po przyjęciu zagrywki:"
+	},
+	"e62cace4dfb0": {
+		"text": "Powtórzeniowa.",
+		"question": "Zdolnośći koordynacyjne kształtuje się za pomocą jednej z metod szkoleniowych. Jest to metoda:"
+	},
+	"b83be7e21af3": {
+		"text": "Zawodnik lepszy w przyjęciu.",
+		"question": "Kto jest odpowiedzialny podczas przyjęcia zagrywki za piłki spadające pomiędzy zawodnikami:"
+	},
+  "028e4eb668ec": {
+		"text": "Blok pojedynczy na skrzydle.",
+		"question": "Która z zasad nie jest istotna dla systemu „czytania przez blok”:"
+	},
+	"d53a4be7d68a": {
+		"text": "Skuteczność działania w różnych grach.",
+		"question": "Nadrzędnym celem podnoszenia skuteczności działania w piłce siatkowej jest:"
+	},
+	"afb794ff75c5": {
+		"text": "Piłkę.",
+		"question": "Rozgrywający wbiegając po zagrywce na pozycję wyjściową powinien obserwować:"
+	},
+  "ca0193330059": {
+		"text": "Braku komunikacji.",
+		"question": "Brak jakiej cechy charakteru trener nie może akceptować u rozgrywającego:"
+	},
+	"80ef9b6a292f": {
+		"text": "Hipertrofii.",
+		"question": "W treningu siłowym liczba 3-5 serii na ćwiczenie po 8-12 powtórzeń, to proces kształtowania:"
+	},
+	"d791ca72badd": {
+		"text": "W trakcie meczu.",
+		"question": "Kiedy trener powinien dać rozgrywającemu najwięcej samodzielności:"
+	},
+	"84282fe9aad5": {
+		"text": "Zawsze powinno się przekładać ręce na drugą stronę siatki.",
+		"question": "W bloku ofensywnym jedną z głównych zasad jest:"
+	},
+  "49caa9ca8ebe": {
+		"text": "Liczbę zawodników wystawiających.",
+		"question": "Co oznacza druga cyfra (np. 4-2) w określeniu systemu gry danego zespołu w ataku:"
+	},
+	"11f2ee8085ca": {
+		"text": "Taktyka obrony.",
+		"question": "Który z elementów taktyki zespołowej jest szczególnie dostosowany do gry rywala:"
+	},
+	"fa20cbe14011": {
+		"text": "Wystawienie.",
+		"question": "Które z działań libero może być traktowane jak jego dodatkowa specjalizacja:"
+	},
+  "3429225083de": {
+		"text": "Koordynowany centralnie system edukacji sportowej.",
+		"question": "Który system szkolenia najlepiej zabezpiecza indywidualny awans zawodnika oraz interesy klubów:"
+	},
+	"287c7b5670ab": {
+		"text": "Atak z drugiej piłki.",
+		"question": "Które z zadań treningu indywidualnego dla rozgrywającego ma charakter sytuacyjny:"
+	},
+  "41c2ca2bd20c": {
+		"text": "Na optymalnie wysokim zasięgu.",
+		"question": "Przy szybkiej grze, wysoko dograna piłka powinna być wystawiana :"
+	},
+  
+  "e33f6d0693a4": {
+		"text": "Tomasz Sińczak i Rafał Szternel – brązowy medal Mistrzostw Świata U-18 Pattaya Tajlandia.",
+		"question": "Siatkówka plażowa. Pierwsze medale dla Polski w rozgrywkach międzynarodowych zdobyli :"
+	},
+	"3da1c7e8a546": {
+		"text": "Dysponujemy dwójką graczy o nieprzeciętnych możliwościach w obronie.",
+		"question": "Siatkówka plażowa. System gry bez bloku stosujemy, gdy:"
+	},
+	"8c8076ac25b2": {
+		"text": "Masa piłki.",
+		"question": "Jakie przepisy są wspólne dla siatkówki plażowej i halowej:"
+	},
+	"78934803f5f4": {
+		"text": "Uderzenia dłonią i odpowiedniej pracy nadgarstka.",
+		"question": "Siatkówka plażowa. Do zagrania skutecznych plasów zawodnik potrzebuje:"
+	},
+	"1a5ba6e32d63": {
+		"text": "Piłka jest uderzona zgiętymi kostkami palców.",
+		"question": "Siatkówka plażowa. Drapem nazywamy zagranie, gdy:"
+	},
+	"b7d95bf4ea98": {
+		"text": "Tor lotu i warunki pogodowe gwarantują możliwość czystego odbicia piłki.",
+		"question": "Siatkówka plażowa. Wystawę sposobem oburącz górnym stosujemy, gdy:"
+	},
+	"f0ca8086aeef": {
+		"text": "Wysokości ciała i siły jaką dysponuje zagrywający.",
+		"question": "Siatkówka plażowa. Ustawienie zespołu do przyjęcia zagrywki nie zależy od:"
+	},
+  "924974905ee3": {
+		"text": "Broń piłki w postawie o zachwianej równowadze.",
+		"question": "Siatkówka plażowa. Której zasady nie powinien stosować zawodnik w obronie:"
+	},
+	"d1eb529e37ab": {
+		"text": "W 2013 roku.",
+		"question": "W którym roku odbyły się w Polsce Mistrzostwa Świata w siatkówce plażowej mężczyzn:"
+	},
+	"195646772cf1": {
+		"text": "Gdy tor lotu wystawionej piłki jest daleki od siatki.",
+		"question": "Siatkówka plażowa. Kiedy blokujący powinien odejść od siatki i zająć pozycję w obronie:"
+	},
+	"94a4dd7e8f87": {
+		"text": "Piłka wystawiana jest niskim szybkim torem lotu.",
+		"question": "Siatkówka plażowa. Rozegranie piłki jest skuteczne, gdy:"
+	},
+	"eadd1c84f37a": {
+		"text": "Wszystkie odpowiedzi są prawidłowe.",
+		"question": "Jakie cechy charakteryzują dobrego gracza w siatkówce plażowej:"
+	},
+  "c472465890a7": {
+		"text": "Elementy techniki zawodników.",
+		"question": "Siatkówka plażowa. W grze uproszczonej doskonalimy:"
+	},
+	"fb3e8dd05ba1": {
+		"text": "Plasuje nad blokiem do linii w lewą lub prawą stronę boiska.",
+		"question": "Siatkówka plażowa. Gdy blok na środku siatki zastawia jednorącz oba kierunki po skosie i obrońca stoi na środku obrony, to atak ze środka boiska jest skuteczny, gdy atakujący:"
+	},
+	"9cb1ad697c1a": {
+		"text": "W 1993 roku.",
+		"question": "Kiedy rozegrano Pierwsze Mistrzostwa Europy w siatkówce plażowej:"
+	},
+	"0eca9d7685bb": {
+		"text": "Możliwość wystawy na dowolną odległość.",
+		"question": "Siatkówka plażowa. Wystawa sposobem oburącz dolnym zapewnia:"
+	},
+	"1dde986d8de3": {
+		"text": "Łatwość odczytania zamiarów obrony.",
+		"question": "Siatkówka plażowa. Stosowanie taktyki gry z zawodnikiem zbyt wcześnie ustawionym na zewnątrz bloku umożliwia przeciwnikowi:"
+	},
+	"ddd5a5b30d3a": {
+		"text": "Informacji o współdziałaniu blok–obrona w ich zespole.",
+		"question": "Siatkówka plażowa. Zawodnicy za pomocą palców obu dłoni przekazują sobie ważne informacje, które dotyczą:"
+	},
+	"6c62b1710910": {
+		"text": "Dysponujemy wysokim i bardzo dobrym blokującym.",
+		"question": "Siatkówka plażowa. Taktykę gry z zawodnikiem ustawionym za blokiem stosujemy, gdy:"
+	},
+	"9084b6feafe2": {
+		"text": "Zagrożenie atakiem z drugiej piłki.",
+		"question": "Siatkówka plażowa. Wpływ na ustawienie blokującego przed wykonaniem zagrywki ma:"
+	},
+	"9385bf7a6072": {
+		"text": "Słońce, siła i kierunek wiatru.",
+		"question": "Siatkówka plażowa. Jakie czynniki mają wpływ na wybór miejsca i sposobu wykonania zagrywki:"
+	},
+  "a02a4ce0ed00": {
+		"text": "\"Wgrać\" ją mocno do siatki.",
+		"question": "Siatkówka plażowa. Przyjmujący zagrywkę wykonaną z wiatrem powinien:"
+	},
+	"0548dde8fcee": {
+		"text": "Uderzenia piłki w kierunek, który sugerował jako wolny od bloku.",
+		"question": "Siatkówka plażowa. Blokujący zmienia kierunek bloku przez zmianę miejsca wyskoku, prowokując atakującego do:"
+	},
+	"38159aaee537": {
+		"text": "Systemem brazylijskim (podwójnych eliminacji).",
+		"question": "Siatkówka plażowa. Jakim systemem rozgrywane są turnieje finałowe Mistrzostw Polski seniorów i seniorek:"
+	},
+	"b3bb9a37c242": {
+		"text": "Bardzo wysokim torem lotu piłki.",
+		"question": "Siatkówka plażowa. Zagrywka słoneczna charakteryzuje się:"
+	},
+	"441ac99e2863": {
+		"text": "Ustawienie zespołu przyjmującego zagrywkę.",
+		"question": "Siatkówka plażowa. Zawodnik wykonujący zagrywkę powinien brać pod uwagę:"
+	},
+  
+  "d8663639ef81": {
+		"text": "Znajomość gry rywala oraz charakterystyki konkretnego zawodnika.",
+		"question": "Które z podanych wytycznych dla blokującego są podstawą do skutecznego stosowania pozostałych działań:"
+	},
+	"9849d721cde6": {
+		"text": "Wykorzystanie sytuacji w bloku.",
+		"question": "Jakie są główne zadania taktyki indywidualnej w ataku:"
+	},
+	"d52e64e685e2": {
+		"text": "W pozycji neutralnej.",
+		"question": "W jakiej pozycji powinna być ustawiona miednica podczas wykonywania ćwiczenia most:"
+	},
+	"8a2ca0ad4d2d": {
+		"text": "Atak.",
+		"question": "Który element techniki, podczas treningu indywidualnego zawodnika przyjmującego, najlepiej łączyć z przyjęciem zagrywki:"
+	},
+  "da3401e05211": {
+		"text": "Brak skupienia się na przyjęciu do końca wykonania ruchu.",
+		"question": "Które z wymienionych działań powoduje niedokładność przyjęcia zawodnika I linii:"
+	},
+	"9b2f73906c91": {
+		"text": "Dostosowanie do piłki.",
+		"question": "Które z wymienionych działań wpływa bezpośrednio na skuteczność obrony:"
+	},
+	"c4c5a9c0e993": {
+		"text": "Mentalne nastawienie do aktywnego poszukiwania piłki.",
+		"question": "Które z przedstawionych działań w grze obronnej wpływa na pozostałe:"
+	},
+	"ac2cbf635850": {
+		"text": "Przysiad jednonóż.",
+		"question": "Które z ćwiczeń zalicza się do grupy ćwiczeń funkcjonalnych:"
+	},
+	"469cff364212": {
+		"text": "Pozycja w bloku.",
+		"question": "Która pozycja początkowa wynika ze specjalizacji zawodnika środkowego:"
+	},
+	"71dd8c80b550": {
+		"text": "Grupa tylna mięśni uda.",
+		"question": "Jaki mięsień jest usprawniany podczas ćwiczenia izolowanego ruchu w stawie biodrowym:"
+	},
+	"c54db0837d12": {
+		"text": "Z wystawiającym.",
+		"question": "Z kim szczególnie powinien prowadzić współpracę zawodnik atakujący podczas treningu indywidualnego:"
+	},
+  "d23f3b812e7d": {
+		"text": "Mięsień pośladkowy wielki.",
+		"question": "Który z wymienionych mięśni jest najważniejszy z punktu widzenia stabilizacji:"
+	},
+	"7705ad9a36bc": {
+		"text": "Wysoko do środka boiska.",
+		"question": "Przyjęcie lub obrona mocnej piłki powinny być skierowane:"
+	},
+	"bbbb5d7f212e": {
+		"text": "W stawie biodrowym.",
+		"question": "Ruch w którym stawie powinien zapoczątkować wykonywanie przysiadu:"
+	},
+	"1f639eae261e": {
+		"text": "Tworzenie dobrze skoordynowanego bloku ze skrzydłowym.",
+		"question": "Która z umiejętności jest najtrudniejszym zadaniem środkowego bloku:"
+	},
+	"08626b45bd0d": {
+		"text": "Hantel.",
+		"question": "Czy dla siatkarza, do treningu barku, bardziej przydatny jest hantel czy guma thera-band:"
+	},
+	"3f4a9f1b17b8": {
+		"text": "Prostownik grzbietu.",
+		"question": "Który z mięśni może przejąć funkcję mięśni pośladkowych wielkich:"
+	},
+	"ca3620925f9f": {
+		"text": "Wystawienie z jednej pozycji w różne miejsca.",
+		"question": "Które z ćwiczeń dla zawodnika rozgrywającego powinno być szczególnie połączone z zadaniem obserwacji własnego zespołu i rywala:"
+	},
+	"9fb0c1b6bec4": {
+		"text": "W I ustawieniu do przyjęcia zagrywki.",
+		"question": "Jaka pozycja startowa jest najczęściej stosowana w treningu indywidualnym rozgrywającego:"
+	},
+	"b56e81bcf07b": {
+		"text": "Płaszczkowatego.",
+		"question": "Oznaką przykurczu jakiego mięśnia jest uniesienie pięt podczas wykonywania przysiadu:"
+	},
+  "7498ab8848e4": {
+		"text": "Rzepka.",
+		"question": "Który z punktów anatomicznych nie zawiera się w linii pionowej przy prawidłowej postawie ciała:"
+	},
+	"8ca2cabc8ea6": {
+		"text": "Utrzymanie stałego zagrożenia atakiem w I tempo lub atakiem z drugiej piłki.",
+		"question": "Które z działań w taktyce indywidualnej rozgrywającego „ustawia grę”:"
+	},
+	"e10a428933d4": {
+		"text": "Dotyczą rozwiązań sytuacyjnych, pojawiających się podczas gry.",
+		"question": "Czym się różnią indywidualne umiejętności taktyczne od taktyki zespołowej:"
+	},
+	"22126c44f3e0": {
+		"text": "Sekwencyjne wykonywanie 2-3 elementów.",
+		"question": "Jaki rodzaj treningu indywidualnego zawodnika środkowego jest najbardziej skuteczny:"
+	},
+	"70493e26cfd8": {
+		"text": "Wczesny ruch do piłki.",
+		"question": "Jaka umiejętność przyjmującego wynika z „głębokiego widzenia”:"
+	},
+	"65f2b7ec996d": {
+		"text": "W dół.",
+		"question": "W którą stronę powinna przesuwać się skóra przy napinaniu brzucha:"
+	},
+	"de9ce962af9c": {
+		"text": "Przyjęcie dołem przed sobą.",
+		"question": "Jaki sposób przyjęcia powinien być priorytetowym podczas treningu libero:"
+	}
 }
